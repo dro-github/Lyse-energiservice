@@ -1,0 +1,55 @@
+2024-01-15 12:15:35,150 INFO org.springframework.boot.StartupInfoLogger [main] Starting StartPoint on NOLI125045 with PID 12736 (C:\sandbox\evinyFordelingstjenesterOnSmart24\target\classes started by ronend in C:\sandbox\evinyFordelingstjenesterOnSmart24)
+2024-01-15 12:15:35,160 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2024-01-15 12:15:36,817 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2024-01-15 12:15:36,883 INFO org.springframework.boot.StartupInfoLogger [main] Started StartPoint in 2.64 seconds (JVM running for 3.438)
+2024-01-15 12:15:36,891 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-01-15 12:15:37,224 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-01-15 12:15:37,393 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2024-01-15 12:15:37,404 INFO com.cts.controller.Controller [scheduling-1] Found 2 sub-directories - one directory per file format.
+2024-01-15 12:15:37,404 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\MVV.
+2024-01-15 12:15:37,414 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2024-01-15 12:15:37,414 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2024-01-15 12:15:37,415 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\MVV in 0 seconds.
+2024-01-15 12:15:37,415 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Zaptec.
+2024-01-15 12:15:37,439 INFO com.cts.controller.Controller [scheduling-1] Found 1 new input file/s.
+2024-01-15 12:15:37,440 INFO com.cts.controller.Controller [scheduling-1] Will merge all 1 input files into one file
+2024-01-15 12:15:37,444 INFO com.cts.utils.MergerFiles [scheduling-1] merging: C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Zaptec\testMTGW-621_TimestampRead_1705317337418.txt into C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Zaptec\Merged_Temp\mergedFile.txt.
+2024-01-15 12:15:37,447 INFO com.cts.controller.Controller [scheduling-1] Moving used file C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Zaptec\testMTGW-621_TimestampRead_1705317337418.txt to Used folder at C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Zaptec\Used\.
+2024-01-15 12:15:37,448 INFO com.cts.controller.Controller [scheduling-1] Starting to move used input files to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Zaptec\Used\.
+2024-01-15 12:15:37,457 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] testMTGW-621_TimestampRead_1705317337418.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Zaptec\Used\ .
+2024-01-15 12:15:37,458 INFO com.cts.controller.Controller [scheduling-1] Completed moving used file in 0 seconds.
+2024-01-15 12:15:37,464 INFO com.cts.controller.Controller [scheduling-1] Found input file: mergedFile_TimestampRead_1705317337458.txt.
+2024-01-15 12:15:37,466 INFO com.cts.generator.ProcessInput [scheduling-1] Start processing input file mergedFile_TimestampRead_1705317337458.txt.
+2024-01-15 12:15:37,468 INFO com.cts.ioutils.InputFileReader [scheduling-1] Starting to read mergedFile_TimestampRead_1705317337458.txt.
+2024-01-15 12:15:37,469 INFO com.cts.ioutils.InputFileReader [scheduling-1] Completed reading. Total rows read = 3.
+2024-01-15 12:15:37,470 INFO com.cts.generator.ProcessInput [scheduling-1] Collected 3 input rows.
+2024-01-15 12:15:37,470 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct date format.
+2024-01-15 12:15:37,539 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Completed checking 3 rows, out of which 3 have correct date format.
+2024-01-15 12:15:37,539 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Checked date for 3 rows in less than a second.
+2024-01-15 12:15:37,540 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct number format.
+2024-01-15 12:15:37,541 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 3 rows, out of which 3 have correct number format.
+2024-01-15 12:15:37,542 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 3 rows in less than a second.
+2024-01-15 12:15:37,542 INFO com.cts.generator.ProcessInput [scheduling-1] Received 3 input rows, will check for an entry in customer for distinct meters in the input.
+2024-01-15 12:15:37,544 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2024-01-15 12:15:37,588 WARN com.infosynergi.framework.yafr.restful.YafrRestTemplate [scheduling-1] Failed to reset the logger, framework log events may be logged as part of application logs, error: In java 12+ final cannot be removed.
+2024-01-15 12:15:38,104 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2024-01-15 12:15:38,153 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2024-01-15 12:15:38,153 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
+2024-01-15 12:15:38,153 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2024-01-15 12:15:38,154 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 3 input rows.
+2024-01-15 12:15:38,156 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 3 records for json file - forbruksImportFormat.
+2024-01-15 12:15:38,161 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] Creating jsonPayload for periodic consumption 'Forbruk' format
+2024-01-15 12:15:38,220 INFO com.cts.generator.ProcessInput [scheduling-1] Created json file/s from input.
+2024-01-15 12:15:38,222 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput.
+2024-01-15 12:15:38,229 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Completed writeOutput.
+2024-01-15 12:15:38,230 INFO com.cts.controller.Controller [scheduling-1] Json file for input file mergedFile_TimestampRead_1705317337458.txt written to C:\Users\ronend\Desktop\techyon_In\measurements\.
+2024-01-15 12:15:38,230 INFO com.cts.controller.Controller [scheduling-1] Starting to move used merged input file to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Zaptec\Merged_Temp\mergedFile_TimestampRead_1705317337458.txt.
+2024-01-15 12:15:38,235 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] mergedFile_TimestampRead_1705317337458.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Zaptec\Used\ .
+2024-01-15 12:15:38,235 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 0 seconds.
+2024-01-15 12:15:38,235 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2024-01-15 12:15:38,236 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Zaptec in 0 seconds.
+2024-01-15 12:15:38,236 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 0 seconds.
+2024-01-15 12:15:38,236 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2024-01-15 12:15:51,482 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'taskScheduler'
+2024-01-15 12:15:51,484 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-01-15 12:15:51,487 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.

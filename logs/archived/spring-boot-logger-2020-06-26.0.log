@@ -1,0 +1,563 @@
+2020-06-26 15:33:17,026 INFO org.springframework.boot.StartupInfoLogger [main] Starting StartPoint on NOLI125045 with PID 22352 (C:\sandbox\BKK_EnergiTjenester_SpringBoot\target\classes started by ronend in C:\sandbox\BKK_EnergiTjenester_SpringBoot)
+2020-06-26 15:33:17,034 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-06-26 15:33:18,453 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2020-06-26 15:33:18,633 INFO org.springframework.boot.StartupInfoLogger [main] Started StartPoint in 2.405 seconds (JVM running for 3.17)
+2020-06-26 15:33:18,653 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-06-26 15:33:18,713 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2020-06-26 15:33:18,755 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2020-06-26 15:33:18,755 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC.
+2020-06-26 15:33:18,756 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\ for existing sub-directories.
+2020-06-26 15:33:18,771 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for circutorPLCFormat - one for each meter data collection system .
+2020-06-26 15:33:18,772 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1.
+2020-06-26 15:33:18,780 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:33:18,780 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_2.
+2020-06-26 15:33:18,784 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:33:18,785 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_3.
+2020-06-26 15:33:18,787 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:33:18,788 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2020-06-26 15:33:18,789 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2020-06-26 15:33:18,789 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2020-06-26 15:33:18,798 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2020-06-26 15:33:18,798 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2020-06-26 15:33:18,800 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:33:18,800 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2020-06-26 15:33:18,802 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:33:18,803 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2020-06-26 15:33:18,805 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:33:18,805 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2020-06-26 15:33:18,806 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV.
+2020-06-26 15:33:18,806 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\ for existing sub-directories.
+2020-06-26 15:33:18,813 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VBVFormat - one for each meter data collection system .
+2020-06-26 15:33:18,814 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_1.
+2020-06-26 15:33:18,816 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:33:18,817 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_2.
+2020-06-26 15:33:18,820 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:33:18,821 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_3.
+2020-06-26 15:33:18,824 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:33:18,824 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2020-06-26 15:33:18,825 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT.
+2020-06-26 15:33:18,825 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\ for existing sub-directories.
+2020-06-26 15:33:18,829 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VTFormat - one for each meter data collection system .
+2020-06-26 15:33:18,829 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_1.
+2020-06-26 15:33:18,831 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:33:18,832 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_2.
+2020-06-26 15:33:18,835 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:33:18,835 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_3.
+2020-06-26 15:33:18,837 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:33:18,838 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2020-06-26 15:33:18,838 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2020-06-26 15:33:18,838 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2020-06-26 15:33:18,844 INFO com.cts.controller.Controller [scheduling-1] Found 4 sub-folders for mBusFormat - one for each meter data collection system .
+2020-06-26 15:33:18,844 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2020-06-26 15:33:18,847 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:33:18,847 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2020-06-26 15:33:18,849 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:33:18,850 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2020-06-26 15:33:18,852 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:33:18,852 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2020-06-26 15:33:18,874 INFO com.cts.controller.Controller [scheduling-1] Found 1 new input file/s.
+2020-06-26 15:33:18,875 INFO com.cts.controller.Controller [scheduling-1] Found input file: bus_1_TimestampRead_1593178398858.txt.
+2020-06-26 15:33:18,883 INFO com.cts.generator.ProcessInput [scheduling-1] Start processing input file bus_1_TimestampRead_1593178398858.txt.
+2020-06-26 15:33:18,888 INFO com.cts.ioutils.InputFileReader [scheduling-1] Starting to read bus_1_TimestampRead_1593178398858.txt.
+2020-06-26 15:33:18,899 INFO com.cts.ioutils.InputFileReader [scheduling-1] Completed reading. Total rows read = 2.
+2020-06-26 15:33:18,900 INFO com.cts.generator.ProcessInput [scheduling-1] Collected 2 input rows.
+2020-06-26 15:33:18,900 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct date format.
+2020-06-26 15:33:19,121 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Completed checking 2 rows, out of which 2 have correct date format.
+2020-06-26 15:33:19,122 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Checked date for 2 rows in less than a second.
+2020-06-26 15:33:19,122 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct number format.
+2020-06-26 15:33:19,128 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 2 rows, out of which 2 have correct number format.
+2020-06-26 15:33:19,129 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 2 rows in less than a second.
+2020-06-26 15:33:19,131 INFO com.cts.generator.ProcessInput [scheduling-1] Received 2 input rows, will check for an entry in customer for distinct meters in the input.
+2020-06-26 15:33:19,137 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-06-26 15:33:19,622 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-06-26 15:33:37,237 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
+2020-06-26 15:33:37,283 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 11334019, UNIT Step, from internal local H2 DB.
+2020-06-26 15:33:37,284 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 15038675, UNIT Step, from internal local H2 DB.
+2020-06-26 15:33:37,284 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 2 meters. Out of which 2 has Customer entry.
+2020-06-26 15:33:37,284 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 2 meters =  0 seconds.
+2020-06-26 15:33:37,284 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 2 meters which have a Customer record.
+2020-06-26 15:33:37,284 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 2 input rows.
+2020-06-26 15:33:37,284 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
+2020-06-26 15:33:37,288 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 2 meters out of a total of 2 meters.
+2020-06-26 15:33:37,295 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] starting to assign productType from Customer.
+2020-06-26 15:33:37,303 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Checking if meter 11334019 exists in base of previously checked meters.
+2020-06-26 15:33:37,304 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Found meter 11334019, productType DistrictHeatingSteppedMeasured, in in base of previously checked meters.
+2020-06-26 15:33:37,304 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Checking if meter 15038675 exists in base of previously checked meters.
+2020-06-26 15:33:37,304 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Found meter 15038675, productType DistrictHeatingSteppedMeasured, in in base of previously checked meters.
+2020-06-26 15:33:37,304 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Completed to retrieve productType for 2 meters out of 2 total distinct meters.
+2020-06-26 15:33:37,305 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 2 records for gs2 file - mBusFormat.
+2020-06-26 15:33:38,363 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 11334019. Last stand date from DB is 2019-01-01T23:00:00.000+01:00, current stand date is 2019-01-01T23:00:00.000+01:00. Will create day stands for 1 days.
+2020-06-26 15:33:38,380 ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler [scheduling-1] Unexpected error occurred in scheduled task
+java.lang.ArithmeticException: BigInteger divide by zero
+	at java.math.MutableBigInteger.divide(MutableBigInteger.java:1440)
+	at java.math.BigDecimal.divideAndRound(BigDecimal.java:4248)
+	at java.math.BigDecimal.divide(BigDecimal.java:5191)
+	at java.math.BigDecimal.divide(BigDecimal.java:1561)
+	at java.math.BigDecimal.divide(BigDecimal.java:1591)
+	at com.cts.generator.GeneratorForLastHourlyStand.createStandForMissingDays(GeneratorForLastHourlyStand.java:195)
+	at com.cts.generator.GeneratorForLastHourlyStand.getSeg2(GeneratorForLastHourlyStand.java:159)
+	at com.cts.generator.GeneratorForLastHourlyStand.makeProfileReadings(GeneratorForLastHourlyStand.java:68)
+	at com.cts.generator.GeneratorForLastHourlyStand.<init>(GeneratorForLastHourlyStand.java:58)
+	at com.cts.generator.ProcessInput.createLastStandFile(ProcessInput.java:212)
+	at com.cts.generator.ProcessInput.initiateDetailsList(ProcessInput.java:127)
+	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:75)
+	at com.cts.controller.Controller.printOutput(Controller.java:207)
+	at com.cts.controller.Controller.startProgram(Controller.java:143)
+	at com.cts.controller.Controller.execute(Controller.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-06-26 15:37:07,278 INFO org.springframework.boot.StartupInfoLogger [main] Starting StartPoint on NOLI125045 with PID 29708 (C:\sandbox\BKK_EnergiTjenester_SpringBoot\target\classes started by ronend in C:\sandbox\BKK_EnergiTjenester_SpringBoot)
+2020-06-26 15:37:07,283 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-06-26 15:37:08,518 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2020-06-26 15:37:08,574 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2020-06-26 15:37:08,577 INFO org.springframework.boot.StartupInfoLogger [main] Started StartPoint in 2.032 seconds (JVM running for 2.739)
+2020-06-26 15:37:08,587 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-06-26 15:37:08,611 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2020-06-26 15:37:08,613 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC.
+2020-06-26 15:37:08,614 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\ for existing sub-directories.
+2020-06-26 15:37:08,622 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for circutorPLCFormat - one for each meter data collection system .
+2020-06-26 15:37:08,622 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1.
+2020-06-26 15:37:08,629 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:37:08,630 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_2.
+2020-06-26 15:37:08,632 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:37:08,633 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_3.
+2020-06-26 15:37:08,637 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:37:08,638 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2020-06-26 15:37:08,638 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2020-06-26 15:37:08,639 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2020-06-26 15:37:08,643 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2020-06-26 15:37:08,644 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2020-06-26 15:37:08,646 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:37:08,648 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2020-06-26 15:37:08,652 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:37:08,652 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2020-06-26 15:37:08,654 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:37:08,655 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2020-06-26 15:37:08,655 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV.
+2020-06-26 15:37:08,655 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\ for existing sub-directories.
+2020-06-26 15:37:08,659 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VBVFormat - one for each meter data collection system .
+2020-06-26 15:37:08,660 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_1.
+2020-06-26 15:37:08,661 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:37:08,662 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_2.
+2020-06-26 15:37:08,664 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:37:08,665 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_3.
+2020-06-26 15:37:08,667 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:37:08,667 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2020-06-26 15:37:08,667 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT.
+2020-06-26 15:37:08,667 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\ for existing sub-directories.
+2020-06-26 15:37:08,671 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VTFormat - one for each meter data collection system .
+2020-06-26 15:37:08,672 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_1.
+2020-06-26 15:37:08,674 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:37:08,674 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_2.
+2020-06-26 15:37:08,676 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:37:08,677 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_3.
+2020-06-26 15:37:08,679 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:37:08,679 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2020-06-26 15:37:08,680 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2020-06-26 15:37:08,680 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2020-06-26 15:37:08,685 INFO com.cts.controller.Controller [scheduling-1] Found 4 sub-folders for mBusFormat - one for each meter data collection system .
+2020-06-26 15:37:08,686 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2020-06-26 15:37:08,689 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:37:08,689 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2020-06-26 15:37:08,691 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:37:08,691 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2020-06-26 15:37:08,693 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:37:08,694 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2020-06-26 15:37:08,719 INFO com.cts.controller.Controller [scheduling-1] Found 1 new input file/s.
+2020-06-26 15:37:08,722 INFO com.cts.controller.Controller [scheduling-1] Found input file: bus_1_TimestampRead_1593178628697.txt.
+2020-06-26 15:37:08,726 INFO com.cts.generator.ProcessInput [scheduling-1] Start processing input file bus_1_TimestampRead_1593178628697.txt.
+2020-06-26 15:37:08,734 INFO com.cts.ioutils.InputFileReader [scheduling-1] Starting to read bus_1_TimestampRead_1593178628697.txt.
+2020-06-26 15:37:08,736 INFO com.cts.ioutils.InputFileReader [scheduling-1] Completed reading. Total rows read = 2.
+2020-06-26 15:37:08,737 INFO com.cts.generator.ProcessInput [scheduling-1] Collected 2 input rows.
+2020-06-26 15:37:08,737 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct date format.
+2020-06-26 15:37:08,840 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Completed checking 2 rows, out of which 2 have correct date format.
+2020-06-26 15:37:08,841 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Checked date for 2 rows in less than a second.
+2020-06-26 15:37:08,841 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct number format.
+2020-06-26 15:37:08,846 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 2 rows, out of which 2 have correct number format.
+2020-06-26 15:37:08,846 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 2 rows in less than a second.
+2020-06-26 15:37:08,846 INFO com.cts.generator.ProcessInput [scheduling-1] Received 2 input rows, will check for an entry in customer for distinct meters in the input.
+2020-06-26 15:37:08,850 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-06-26 15:37:09,121 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-06-26 15:37:26,308 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
+2020-06-26 15:37:26,336 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 11334019, UNIT Step, from internal local H2 DB.
+2020-06-26 15:37:26,337 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 15038675, UNIT Step, from internal local H2 DB.
+2020-06-26 15:37:26,337 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 2 meters. Out of which 2 has Customer entry.
+2020-06-26 15:37:26,337 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 2 meters =  0 seconds.
+2020-06-26 15:37:26,337 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 2 meters which have a Customer record.
+2020-06-26 15:37:26,338 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 2 input rows.
+2020-06-26 15:37:26,338 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
+2020-06-26 15:37:26,341 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 2 meters out of a total of 2 meters.
+2020-06-26 15:37:26,344 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] starting to assign productType from Customer.
+2020-06-26 15:37:26,349 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Checking if meter 11334019 exists in base of previously checked meters.
+2020-06-26 15:37:26,350 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Found meter 11334019, productType DistrictHeatingSteppedMeasured, in in base of previously checked meters.
+2020-06-26 15:37:26,350 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Checking if meter 15038675 exists in base of previously checked meters.
+2020-06-26 15:37:26,350 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Found meter 15038675, productType DistrictHeatingSteppedMeasured, in in base of previously checked meters.
+2020-06-26 15:37:26,350 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Completed to retrieve productType for 2 meters out of 2 total distinct meters.
+2020-06-26 15:37:26,351 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 2 records for gs2 file - mBusFormat.
+2020-06-26 15:37:27,342 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 11334019. Last stand date from DB is 2019-01-01T23:00:00.000+01:00, current stand date is 2019-01-01T23:00:00.000+01:00. Will create day stands for 1 days.
+2020-06-26 15:37:27,835 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 15038675. Last stand date from DB is 2019-01-01T23:00:00.000+01:00, current stand date is 2019-01-01T23:00:00.000+01:00. Will create day stands for 1 days.
+2020-06-26 15:37:27,836 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
+2020-06-26 15:37:27,842 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.
+2020-06-26 15:37:27,851 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Completed writeOutput.
+2020-06-26 15:37:27,852 INFO com.cts.controller.Controller [scheduling-1] GS2 file for input file bus_1_TimestampRead_1593178628697.txt written to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test\Processed\.
+2020-06-26 15:37:27,852 INFO com.cts.controller.Controller [scheduling-1] Starting to move used input files to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test\Used\.
+2020-06-26 15:37:27,865 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] bus_1_TimestampRead_1593178628697.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test\Used\ .
+2020-06-26 15:37:27,865 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 19 seconds.
+2020-06-26 15:37:27,866 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2020-06-26 15:37:27,866 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 19 seconds.
+2020-06-26 15:37:27,866 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde.
+2020-06-26 15:37:27,867 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\ for existing sub-directories.
+2020-06-26 15:37:27,874 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for gamleAnleggFormat - one for each meter data collection system .
+2020-06-26 15:37:27,874 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_1.
+2020-06-26 15:37:27,877 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:37:27,877 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_2.
+2020-06-26 15:37:27,880 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:37:27,881 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_3.
+2020-06-26 15:37:27,883 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:37:27,883 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 19 seconds.
+2020-06-26 15:37:27,883 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 19 seconds.
+2020-06-26 15:37:27,883 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2020-06-26 15:57:50,404 INFO org.springframework.boot.StartupInfoLogger [main] Starting StartPoint on NOLI125045 with PID 30200 (C:\sandbox\BKK_EnergiTjenester_SpringBoot\target\classes started by ronend in C:\sandbox\BKK_EnergiTjenester_SpringBoot)
+2020-06-26 15:57:50,411 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-06-26 15:57:51,592 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2020-06-26 15:57:51,636 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2020-06-26 15:57:51,640 INFO org.springframework.boot.StartupInfoLogger [main] Started StartPoint in 2.025 seconds (JVM running for 2.716)
+2020-06-26 15:57:51,650 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-06-26 15:57:51,665 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2020-06-26 15:57:51,666 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC.
+2020-06-26 15:57:51,667 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\ for existing sub-directories.
+2020-06-26 15:57:51,671 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for circutorPLCFormat - one for each meter data collection system .
+2020-06-26 15:57:51,671 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1.
+2020-06-26 15:57:51,677 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:57:51,677 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_2.
+2020-06-26 15:57:51,680 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:57:51,680 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_3.
+2020-06-26 15:57:51,682 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:57:51,682 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2020-06-26 15:57:51,683 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2020-06-26 15:57:51,683 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2020-06-26 15:57:51,686 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2020-06-26 15:57:51,687 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2020-06-26 15:57:51,689 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:57:51,689 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2020-06-26 15:57:51,691 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:57:51,691 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2020-06-26 15:57:51,693 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:57:51,693 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2020-06-26 15:57:51,694 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV.
+2020-06-26 15:57:51,694 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\ for existing sub-directories.
+2020-06-26 15:57:51,698 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VBVFormat - one for each meter data collection system .
+2020-06-26 15:57:51,698 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_1.
+2020-06-26 15:57:51,700 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:57:51,700 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_2.
+2020-06-26 15:57:51,702 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:57:51,702 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_3.
+2020-06-26 15:57:51,704 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:57:51,704 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2020-06-26 15:57:51,704 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT.
+2020-06-26 15:57:51,704 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\ for existing sub-directories.
+2020-06-26 15:57:51,708 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VTFormat - one for each meter data collection system .
+2020-06-26 15:57:51,709 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_1.
+2020-06-26 15:57:51,711 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:57:51,711 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_2.
+2020-06-26 15:57:51,713 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:57:51,713 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_3.
+2020-06-26 15:57:51,715 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:57:51,716 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2020-06-26 15:57:51,716 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2020-06-26 15:57:51,716 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2020-06-26 15:57:51,720 INFO com.cts.controller.Controller [scheduling-1] Found 4 sub-folders for mBusFormat - one for each meter data collection system .
+2020-06-26 15:57:51,721 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2020-06-26 15:57:51,722 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:57:51,723 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2020-06-26 15:57:51,725 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:57:51,725 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2020-06-26 15:57:51,727 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:57:51,727 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2020-06-26 15:57:51,742 INFO com.cts.controller.Controller [scheduling-1] Found 1 new input file/s.
+2020-06-26 15:57:51,743 INFO com.cts.controller.Controller [scheduling-1] Found input file: bus_1_TimestampRead_1593179871730.txt.
+2020-06-26 15:57:51,745 INFO com.cts.generator.ProcessInput [scheduling-1] Start processing input file bus_1_TimestampRead_1593179871730.txt.
+2020-06-26 15:57:51,746 INFO com.cts.ioutils.InputFileReader [scheduling-1] Starting to read bus_1_TimestampRead_1593179871730.txt.
+2020-06-26 15:57:51,748 INFO com.cts.ioutils.InputFileReader [scheduling-1] Completed reading. Total rows read = 2.
+2020-06-26 15:57:51,748 INFO com.cts.generator.ProcessInput [scheduling-1] Collected 2 input rows.
+2020-06-26 15:57:51,748 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct date format.
+2020-06-26 15:57:51,812 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Completed checking 2 rows, out of which 2 have correct date format.
+2020-06-26 15:57:51,812 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Checked date for 2 rows in less than a second.
+2020-06-26 15:57:51,813 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct number format.
+2020-06-26 15:57:51,816 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 2 rows, out of which 2 have correct number format.
+2020-06-26 15:57:51,816 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 2 rows in less than a second.
+2020-06-26 15:57:51,816 INFO com.cts.generator.ProcessInput [scheduling-1] Received 2 input rows, will check for an entry in customer for distinct meters in the input.
+2020-06-26 15:57:51,819 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-06-26 15:57:52,028 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-06-26 15:58:09,023 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
+2020-06-26 15:58:09,052 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 11334019, UNIT Step, from internal local H2 DB.
+2020-06-26 15:58:09,052 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 15038675, UNIT Step, from internal local H2 DB.
+2020-06-26 15:58:09,052 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 2 meters. Out of which 2 has Customer entry.
+2020-06-26 15:58:09,053 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 2 meters =  0 seconds.
+2020-06-26 15:58:09,053 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 2 meters which have a Customer record.
+2020-06-26 15:58:09,053 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 2 input rows.
+2020-06-26 15:58:09,053 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
+2020-06-26 15:58:09,056 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 2 meters out of a total of 2 meters.
+2020-06-26 15:58:09,059 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] starting to assign productType from Customer.
+2020-06-26 15:58:09,064 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Checking if meter 11334019 exists in base of previously checked meters.
+2020-06-26 15:58:09,065 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Found meter 11334019, productType DistrictHeatingSteppedMeasured, in in base of previously checked meters.
+2020-06-26 15:58:09,065 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Checking if meter 15038675 exists in base of previously checked meters.
+2020-06-26 15:58:09,065 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Found meter 15038675, productType DistrictHeatingSteppedMeasured, in in base of previously checked meters.
+2020-06-26 15:58:09,066 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Completed to retrieve productType for 2 meters out of 2 total distinct meters.
+2020-06-26 15:58:09,066 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 2 records for gs2 file - mBusFormat.
+2020-06-26 15:58:10,005 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 11334019. Last stand date from DB is 2019-01-01T23:00:00.000+01:00, current stand date is 2019-01-01T23:00:00.000+01:00. Will create day stands for 1 days.
+2020-06-26 15:58:10,294 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 15038675. Last stand date from DB is 2019-01-01T23:00:00.000+01:00, current stand date is 2019-01-01T23:00:00.000+01:00. Will create day stands for 1 days.
+2020-06-26 15:58:10,295 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
+2020-06-26 15:58:10,299 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.
+2020-06-26 15:58:10,305 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Completed writeOutput.
+2020-06-26 15:58:10,305 INFO com.cts.controller.Controller [scheduling-1] GS2 file for input file bus_1_TimestampRead_1593179871730.txt written to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test\Processed\.
+2020-06-26 15:58:10,306 INFO com.cts.controller.Controller [scheduling-1] Starting to move used input files to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test\Used\.
+2020-06-26 15:58:10,327 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] bus_1_TimestampRead_1593179871730.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test\Used\ .
+2020-06-26 15:58:10,328 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 18 seconds.
+2020-06-26 15:58:10,329 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2020-06-26 15:58:10,329 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 18 seconds.
+2020-06-26 15:58:10,330 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde.
+2020-06-26 15:58:10,331 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\ for existing sub-directories.
+2020-06-26 15:58:10,337 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for gamleAnleggFormat - one for each meter data collection system .
+2020-06-26 15:58:10,338 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_1.
+2020-06-26 15:58:10,339 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:58:10,340 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_2.
+2020-06-26 15:58:10,342 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:58:10,342 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_3.
+2020-06-26 15:58:10,344 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:58:10,345 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 18 seconds.
+2020-06-26 15:58:10,345 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 18 seconds.
+2020-06-26 15:58:10,345 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2020-06-26 15:59:17,407 INFO org.springframework.boot.StartupInfoLogger [main] Starting StartPoint on NOLI125045 with PID 26504 (C:\sandbox\BKK_EnergiTjenester_SpringBoot\target\classes started by ronend in C:\sandbox\BKK_EnergiTjenester_SpringBoot)
+2020-06-26 15:59:17,411 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-06-26 15:59:18,646 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2020-06-26 15:59:18,706 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2020-06-26 15:59:18,710 INFO org.springframework.boot.StartupInfoLogger [main] Started StartPoint in 2.225 seconds (JVM running for 2.925)
+2020-06-26 15:59:18,719 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-06-26 15:59:18,733 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2020-06-26 15:59:18,734 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC.
+2020-06-26 15:59:18,734 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\ for existing sub-directories.
+2020-06-26 15:59:18,739 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for circutorPLCFormat - one for each meter data collection system .
+2020-06-26 15:59:18,739 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1.
+2020-06-26 15:59:18,746 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:59:18,746 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_2.
+2020-06-26 15:59:18,748 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:59:18,748 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_3.
+2020-06-26 15:59:18,750 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:59:18,751 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2020-06-26 15:59:18,751 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2020-06-26 15:59:18,752 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2020-06-26 15:59:18,755 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2020-06-26 15:59:18,755 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2020-06-26 15:59:18,756 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:59:18,757 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2020-06-26 15:59:18,759 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:59:18,759 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2020-06-26 15:59:18,761 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:59:18,762 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2020-06-26 15:59:18,762 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV.
+2020-06-26 15:59:18,762 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\ for existing sub-directories.
+2020-06-26 15:59:18,766 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VBVFormat - one for each meter data collection system .
+2020-06-26 15:59:18,766 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_1.
+2020-06-26 15:59:18,770 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:59:18,770 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_2.
+2020-06-26 15:59:18,772 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:59:18,772 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_3.
+2020-06-26 15:59:18,774 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:59:18,775 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2020-06-26 15:59:18,775 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT.
+2020-06-26 15:59:18,775 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\ for existing sub-directories.
+2020-06-26 15:59:18,779 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VTFormat - one for each meter data collection system .
+2020-06-26 15:59:18,780 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_1.
+2020-06-26 15:59:18,782 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:59:18,782 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_2.
+2020-06-26 15:59:18,783 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:59:18,784 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_3.
+2020-06-26 15:59:18,785 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:59:18,786 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2020-06-26 15:59:18,786 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2020-06-26 15:59:18,786 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2020-06-26 15:59:18,790 INFO com.cts.controller.Controller [scheduling-1] Found 4 sub-folders for mBusFormat - one for each meter data collection system .
+2020-06-26 15:59:18,790 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2020-06-26 15:59:18,792 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:59:18,792 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2020-06-26 15:59:18,793 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:59:18,794 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2020-06-26 15:59:18,795 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:59:18,795 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2020-06-26 15:59:18,809 INFO com.cts.controller.Controller [scheduling-1] Found 1 new input file/s.
+2020-06-26 15:59:18,810 INFO com.cts.controller.Controller [scheduling-1] Found input file: bus_1b_TimestampRead_1593179958798.txt.
+2020-06-26 15:59:18,813 INFO com.cts.generator.ProcessInput [scheduling-1] Start processing input file bus_1b_TimestampRead_1593179958798.txt.
+2020-06-26 15:59:18,816 INFO com.cts.ioutils.InputFileReader [scheduling-1] Starting to read bus_1b_TimestampRead_1593179958798.txt.
+2020-06-26 15:59:18,818 INFO com.cts.ioutils.InputFileReader [scheduling-1] Completed reading. Total rows read = 2.
+2020-06-26 15:59:18,818 INFO com.cts.generator.ProcessInput [scheduling-1] Collected 2 input rows.
+2020-06-26 15:59:18,819 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct date format.
+2020-06-26 15:59:18,923 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Completed checking 2 rows, out of which 2 have correct date format.
+2020-06-26 15:59:18,924 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Checked date for 2 rows in less than a second.
+2020-06-26 15:59:18,924 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct number format.
+2020-06-26 15:59:18,928 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 2 rows, out of which 2 have correct number format.
+2020-06-26 15:59:18,928 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 2 rows in less than a second.
+2020-06-26 15:59:18,929 INFO com.cts.generator.ProcessInput [scheduling-1] Received 2 input rows, will check for an entry in customer for distinct meters in the input.
+2020-06-26 15:59:18,933 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-06-26 15:59:19,208 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-06-26 15:59:36,304 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
+2020-06-26 15:59:36,333 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 11334019, UNIT Step, from internal local H2 DB.
+2020-06-26 15:59:36,333 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 15038675, UNIT Step, from internal local H2 DB.
+2020-06-26 15:59:36,333 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 2 meters. Out of which 2 has Customer entry.
+2020-06-26 15:59:36,333 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 2 meters =  0 seconds.
+2020-06-26 15:59:36,334 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 2 meters which have a Customer record.
+2020-06-26 15:59:36,334 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 2 input rows.
+2020-06-26 15:59:36,334 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
+2020-06-26 15:59:36,337 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 2 meters out of a total of 2 meters.
+2020-06-26 15:59:36,341 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] starting to assign productType from Customer.
+2020-06-26 15:59:36,345 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Checking if meter 11334019 exists in base of previously checked meters.
+2020-06-26 15:59:36,346 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Found meter 11334019, productType DistrictHeatingSteppedMeasured, in in base of previously checked meters.
+2020-06-26 15:59:36,347 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Checking if meter 15038675 exists in base of previously checked meters.
+2020-06-26 15:59:36,347 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Found meter 15038675, productType DistrictHeatingSteppedMeasured, in in base of previously checked meters.
+2020-06-26 15:59:36,347 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Completed to retrieve productType for 2 meters out of 2 total distinct meters.
+2020-06-26 15:59:36,348 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 2 records for gs2 file - mBusFormat.
+2020-06-26 15:59:37,247 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 11334019. Last stand date from DB is 2019-01-01T23:00:00.000+01:00, current stand date is 2019-01-01T23:00:00.000+01:00. Will create day stands for 1 days.
+2020-06-26 15:59:37,511 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 15038675. Last stand date from DB is 2019-02-01T01:00:00.000+01:00, current stand date is 2019-02-01T01:00:00.000+01:00. Will create day stands for 1 days.
+2020-06-26 15:59:37,511 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
+2020-06-26 15:59:37,513 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.
+2020-06-26 15:59:37,519 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Completed writeOutput.
+2020-06-26 15:59:37,520 INFO com.cts.controller.Controller [scheduling-1] GS2 file for input file bus_1b_TimestampRead_1593179958798.txt written to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test\Processed\.
+2020-06-26 15:59:37,520 INFO com.cts.controller.Controller [scheduling-1] Starting to move used input files to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test\Used\.
+2020-06-26 15:59:37,540 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] bus_1b_TimestampRead_1593179958798.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test\Used\ .
+2020-06-26 15:59:37,541 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 18 seconds.
+2020-06-26 15:59:37,542 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2020-06-26 15:59:37,542 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 18 seconds.
+2020-06-26 15:59:37,542 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde.
+2020-06-26 15:59:37,543 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\ for existing sub-directories.
+2020-06-26 15:59:37,547 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for gamleAnleggFormat - one for each meter data collection system .
+2020-06-26 15:59:37,548 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_1.
+2020-06-26 15:59:37,549 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:59:37,549 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_2.
+2020-06-26 15:59:37,551 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:59:37,551 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_3.
+2020-06-26 15:59:37,553 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 15:59:37,553 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 18 seconds.
+2020-06-26 15:59:37,554 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 18 seconds.
+2020-06-26 15:59:37,554 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2020-06-26 16:00:34,358 INFO org.springframework.boot.StartupInfoLogger [main] Starting StartPoint on NOLI125045 with PID 27488 (C:\sandbox\BKK_EnergiTjenester_SpringBoot\target\classes started by ronend in C:\sandbox\BKK_EnergiTjenester_SpringBoot)
+2020-06-26 16:00:34,363 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-06-26 16:00:35,573 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2020-06-26 16:00:35,622 INFO org.springframework.boot.StartupInfoLogger [main] Started StartPoint in 2.006 seconds (JVM running for 2.856)
+2020-06-26 16:00:35,621 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2020-06-26 16:00:35,632 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-06-26 16:00:35,652 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2020-06-26 16:00:35,653 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC.
+2020-06-26 16:00:35,653 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\ for existing sub-directories.
+2020-06-26 16:00:35,657 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for circutorPLCFormat - one for each meter data collection system .
+2020-06-26 16:00:35,658 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1.
+2020-06-26 16:00:35,663 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 16:00:35,664 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_2.
+2020-06-26 16:00:35,666 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 16:00:35,666 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_3.
+2020-06-26 16:00:35,667 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 16:00:35,668 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2020-06-26 16:00:35,668 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2020-06-26 16:00:35,668 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2020-06-26 16:00:35,672 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2020-06-26 16:00:35,672 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2020-06-26 16:00:35,674 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 16:00:35,674 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2020-06-26 16:00:35,675 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 16:00:35,676 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2020-06-26 16:00:35,677 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 16:00:35,678 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2020-06-26 16:00:35,678 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV.
+2020-06-26 16:00:35,678 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\ for existing sub-directories.
+2020-06-26 16:00:35,681 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VBVFormat - one for each meter data collection system .
+2020-06-26 16:00:35,681 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_1.
+2020-06-26 16:00:35,683 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 16:00:35,683 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_2.
+2020-06-26 16:00:35,685 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 16:00:35,685 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_3.
+2020-06-26 16:00:35,687 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 16:00:35,687 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2020-06-26 16:00:35,687 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT.
+2020-06-26 16:00:35,687 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\ for existing sub-directories.
+2020-06-26 16:00:35,690 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VTFormat - one for each meter data collection system .
+2020-06-26 16:00:35,690 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_1.
+2020-06-26 16:00:35,691 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 16:00:35,692 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_2.
+2020-06-26 16:00:35,693 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 16:00:35,693 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_3.
+2020-06-26 16:00:35,694 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 16:00:35,695 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2020-06-26 16:00:35,695 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2020-06-26 16:00:35,695 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2020-06-26 16:00:35,698 INFO com.cts.controller.Controller [scheduling-1] Found 4 sub-folders for mBusFormat - one for each meter data collection system .
+2020-06-26 16:00:35,699 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2020-06-26 16:00:35,700 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 16:00:35,700 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2020-06-26 16:00:35,701 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 16:00:35,702 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2020-06-26 16:00:35,703 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 16:00:35,703 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2020-06-26 16:00:35,714 INFO com.cts.controller.Controller [scheduling-1] Found 1 new input file/s.
+2020-06-26 16:00:35,715 INFO com.cts.controller.Controller [scheduling-1] Found input file: bus_1b_TimestampRead_1593180035705.txt.
+2020-06-26 16:00:35,716 INFO com.cts.generator.ProcessInput [scheduling-1] Start processing input file bus_1b_TimestampRead_1593180035705.txt.
+2020-06-26 16:00:35,718 INFO com.cts.ioutils.InputFileReader [scheduling-1] Starting to read bus_1b_TimestampRead_1593180035705.txt.
+2020-06-26 16:00:35,719 INFO com.cts.ioutils.InputFileReader [scheduling-1] Completed reading. Total rows read = 2.
+2020-06-26 16:00:35,719 INFO com.cts.generator.ProcessInput [scheduling-1] Collected 2 input rows.
+2020-06-26 16:00:35,719 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct date format.
+2020-06-26 16:00:35,774 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Completed checking 2 rows, out of which 2 have correct date format.
+2020-06-26 16:00:35,774 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Checked date for 2 rows in less than a second.
+2020-06-26 16:00:35,774 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct number format.
+2020-06-26 16:00:35,776 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 2 rows, out of which 2 have correct number format.
+2020-06-26 16:00:35,776 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 2 rows in less than a second.
+2020-06-26 16:00:35,777 INFO com.cts.generator.ProcessInput [scheduling-1] Received 2 input rows, will check for an entry in customer for distinct meters in the input.
+2020-06-26 16:00:35,780 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-06-26 16:00:36,005 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-06-26 16:00:53,177 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
+2020-06-26 16:00:53,205 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 11334019, UNIT Step, from internal local H2 DB.
+2020-06-26 16:00:53,205 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 15038675, UNIT Step, from internal local H2 DB.
+2020-06-26 16:00:53,206 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 2 meters. Out of which 2 has Customer entry.
+2020-06-26 16:00:53,206 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 2 meters =  0 seconds.
+2020-06-26 16:00:53,206 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 2 meters which have a Customer record.
+2020-06-26 16:00:53,206 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 2 input rows.
+2020-06-26 16:00:53,206 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
+2020-06-26 16:00:53,209 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 2 meters out of a total of 2 meters.
+2020-06-26 16:00:53,213 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] starting to assign productType from Customer.
+2020-06-26 16:00:53,217 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Checking if meter 11334019 exists in base of previously checked meters.
+2020-06-26 16:00:53,218 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Found meter 11334019, productType DistrictHeatingSteppedMeasured, in in base of previously checked meters.
+2020-06-26 16:00:53,218 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Checking if meter 15038675 exists in base of previously checked meters.
+2020-06-26 16:00:53,219 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Found meter 15038675, productType DistrictHeatingSteppedMeasured, in in base of previously checked meters.
+2020-06-26 16:00:53,219 INFO com.cts.utils.InitiateMappingMeterToDetails [scheduling-1] Completed to retrieve productType for 2 meters out of 2 total distinct meters.
+2020-06-26 16:00:53,219 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 2 records for gs2 file - mBusFormat.
+2020-06-26 16:00:54,143 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 11334019. Last stand date from DB is 2019-01-01T23:00:00.000+01:00, current stand date is 2019-01-01T23:00:00.000+01:00. Will create day stands for 1 days.
+2020-06-26 16:00:54,434 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 15038675. Last stand date from DB is 2019-01-02T01:00:00.000+01:00, current stand date is 2019-01-02T01:00:00.000+01:00. Will create day stands for 1 days.
+2020-06-26 16:00:54,436 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
+2020-06-26 16:00:54,440 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.
+2020-06-26 16:00:54,448 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Completed writeOutput.
+2020-06-26 16:00:54,449 INFO com.cts.controller.Controller [scheduling-1] GS2 file for input file bus_1b_TimestampRead_1593180035705.txt written to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test\Processed\.
+2020-06-26 16:00:54,449 INFO com.cts.controller.Controller [scheduling-1] Starting to move used input files to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test\Used\.
+2020-06-26 16:00:54,464 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] bus_1b_TimestampRead_1593180035705.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test\Used\ .
+2020-06-26 16:00:54,465 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 18 seconds.
+2020-06-26 16:00:54,465 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2020-06-26 16:00:54,465 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 18 seconds.
+2020-06-26 16:00:54,466 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde.
+2020-06-26 16:00:54,466 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\ for existing sub-directories.
+2020-06-26 16:00:54,468 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for gamleAnleggFormat - one for each meter data collection system .
+2020-06-26 16:00:54,469 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_1.
+2020-06-26 16:00:54,470 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 16:00:54,471 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_2.
+2020-06-26 16:00:54,472 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 16:00:54,472 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_3.
+2020-06-26 16:00:54,473 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-26 16:00:54,474 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 18 seconds.
+2020-06-26 16:00:54,474 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 18 seconds.
+2020-06-26 16:00:54,474 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.

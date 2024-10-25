@@ -1,0 +1,849 @@
+2021-07-02 09:43:21,385 INFO org.springframework.boot.StartupInfoLogger [main] Starting StartPoint on NOLI125045 with PID 8180 (C:\sandbox\bkk_energitjenester_in_progress\target\classes started by ronend in C:\sandbox\bkk_energitjenester_in_progress)
+2021-07-02 09:43:21,394 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-07-02 09:43:22,821 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-07-02 09:43:22,879 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2021-07-02 09:43:22,883 INFO org.springframework.boot.StartupInfoLogger [main] Started StartPoint in 2.272 seconds (JVM running for 3.112)
+2021-07-02 09:43:22,892 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-07-02 09:43:22,924 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2021-07-02 09:43:22,925 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC.
+2021-07-02 09:43:22,925 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\ for existing sub-directories.
+2021-07-02 09:43:22,932 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for circutorPLCFormat - one for each meter data collection system .
+2021-07-02 09:43:22,932 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1.
+2021-07-02 09:43:22,942 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:43:22,943 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:43:22,943 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_2.
+2021-07-02 09:43:22,950 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:43:22,950 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:43:22,950 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_3.
+2021-07-02 09:43:22,955 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:43:22,956 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:43:22,957 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2021-07-02 09:43:22,958 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2021-07-02 09:43:22,958 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2021-07-02 09:43:22,964 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2021-07-02 09:43:22,964 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2021-07-02 09:43:22,968 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:43:22,970 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:43:22,970 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2021-07-02 09:43:22,973 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:43:22,973 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:43:22,974 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2021-07-02 09:43:22,978 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:43:22,979 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:43:22,980 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2021-07-02 09:43:22,981 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV.
+2021-07-02 09:43:22,981 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\ for existing sub-directories.
+2021-07-02 09:43:22,989 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VBVFormat - one for each meter data collection system .
+2021-07-02 09:43:22,990 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_1.
+2021-07-02 09:43:22,993 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:43:22,993 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:43:22,994 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_2.
+2021-07-02 09:43:22,996 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:43:22,996 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:43:22,996 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_3.
+2021-07-02 09:43:23,000 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:43:23,000 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:43:23,000 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2021-07-02 09:43:23,001 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT.
+2021-07-02 09:43:23,002 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\ for existing sub-directories.
+2021-07-02 09:43:23,006 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VTFormat - one for each meter data collection system .
+2021-07-02 09:43:23,007 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_1.
+2021-07-02 09:43:23,009 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:43:23,009 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:43:23,010 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_2.
+2021-07-02 09:43:23,012 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:43:23,012 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:43:23,012 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_3.
+2021-07-02 09:43:23,014 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:43:23,014 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:43:23,014 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2021-07-02 09:43:23,015 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2021-07-02 09:43:23,015 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2021-07-02 09:43:23,024 INFO com.cts.controller.Controller [scheduling-1] Found 5 sub-folders for mBusFormat - one for each meter data collection system .
+2021-07-02 09:43:23,025 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2021-07-02 09:43:23,046 INFO com.cts.controller.Controller [scheduling-1] Found 1 new input file/s.
+2021-07-02 09:43:23,047 INFO com.cts.controller.Controller [scheduling-1] Will merge all 1 input files into one file
+2021-07-02 09:43:23,057 INFO com.cts.utils.MergerFiles [scheduling-1] merging: C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Test_Stipulation_TimestampRead_1625211803030.txt into C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Merged_Temp\mergedFile.txt.
+2021-07-02 09:43:23,061 INFO com.cts.controller.Controller [scheduling-1] Moving used file C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Test_Stipulation_TimestampRead_1625211803030.txt to Used folder at C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\.
+2021-07-02 09:43:23,062 INFO com.cts.controller.Controller [scheduling-1] Starting to move used input files to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\.
+2021-07-02 09:43:23,074 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] Test_Stipulation_TimestampRead_1625211803030.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\ .
+2021-07-02 09:43:23,075 INFO com.cts.controller.Controller [scheduling-1] Completed moving used file in 0 seconds.
+2021-07-02 09:43:23,081 INFO com.cts.controller.Controller [scheduling-1] Found input file: mergedFile_TimestampRead_1625211803075.txt.
+2021-07-02 09:43:23,084 INFO com.cts.generator.ProcessInput [scheduling-1] Start processing input file mergedFile_TimestampRead_1625211803075.txt.
+2021-07-02 09:43:23,087 INFO com.cts.ioutils.InputFileReader [scheduling-1] Starting to read mergedFile_TimestampRead_1625211803075.txt.
+2021-07-02 09:43:23,089 INFO com.cts.ioutils.InputFileReader [scheduling-1] Completed reading. Total rows read = 1.
+2021-07-02 09:43:23,090 INFO com.cts.generator.ProcessInput [scheduling-1] Collected 1 input rows.
+2021-07-02 09:43:23,090 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct date format.
+2021-07-02 09:43:23,178 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct date format.
+2021-07-02 09:43:23,178 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Checked date for 1 rows in less than a second.
+2021-07-02 09:43:23,179 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct number format.
+2021-07-02 09:43:23,183 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct number format.
+2021-07-02 09:43:23,184 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 1 rows in less than a second.
+2021-07-02 09:43:23,184 INFO com.cts.generator.ProcessInput [scheduling-1] Received 1 input rows, will check for an entry in customer for distinct meters in the input.
+2021-07-02 09:43:23,188 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-07-02 09:43:23,333 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-07-02 09:43:24,851 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-07-02 09:43:24,884 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2021-07-02 09:43:24,884 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-07-02 09:43:24,885 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-07-02 09:43:24,885 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-07-02 09:43:24,885 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
+2021-07-02 09:43:24,885 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
+2021-07-02 09:43:24,888 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of a total of 1 meters.
+2021-07-02 09:43:24,891 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 1 records for gs2 file - mBusFormat.
+2021-07-02 09:43:24,903 INFO com.cts.utils.GetListOfInputDataForDailyStandsMBusFormat [scheduling-1] Getting valid input for daily stands for m_bus format - only stand for 00:00 hour, if not exists then stand between 20:00 hour and 01:00 hour, the closest to 00:00.
+2021-07-02 09:43:24,904 INFO com.cts.utils.GetListOfInputDataForDailyStandsMBusFormat [scheduling-1] Adding stand for 23:00 hour as there is no consecutive 00:00 hour for meter 9670 and for date 12/01/2018 23:59:00.
+2021-07-02 09:43:24,904 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] Getting last meter stand for meter 9670 from the db.
+2021-07-02 09:43:24,911 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
+2021-07-02 09:43:26,218 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] Last meter stand for meter 9670 = 28000.0.
+2021-07-02 09:43:26,218 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] getting last reading date for meter 9670 from the db.
+2021-07-02 09:43:26,225 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
+2021-07-02 09:43:26,373 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] LastReadingDate for meter 9670 = 2018-12-01T00:00:00.000+01:00.
+2021-07-02 09:43:26,393 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 9670. Last stand date from DB is 2018-12-01T00:00:00.000+01:00, current stand date is 2018-12-01T23:59:00.000+01:00. Will create day stands for 1 days.
+2021-07-02 09:43:26,397 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
+2021-07-02 09:43:26,399 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.
+2021-07-02 09:43:26,403 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Completed writeOutput.
+2021-07-02 09:43:26,403 INFO com.cts.controller.Controller [scheduling-1] GS2 file for input file mergedFile_TimestampRead_1625211803075.txt written to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Processed\.
+2021-07-02 09:43:26,404 INFO com.cts.controller.Controller [scheduling-1] Starting to move used merged input file to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Merged_Temp\mergedFile_TimestampRead_1625211803075.txt.
+2021-07-02 09:43:26,409 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] mergedFile_TimestampRead_1625211803075.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\ .
+2021-07-02 09:43:26,409 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 3 seconds.
+2021-07-02 09:43:26,409 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2021-07-02 09:43:26,409 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2021-07-02 09:43:26,411 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:43:26,411 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:43:26,411 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2021-07-02 09:43:26,413 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:43:26,414 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:43:26,414 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Paradishagen.
+2021-07-02 09:43:26,415 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:43:26,415 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:43:26,415 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2021-07-02 09:43:26,417 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:43:26,418 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:43:26,418 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 3 seconds.
+2021-07-02 09:43:26,418 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde.
+2021-07-02 09:43:26,418 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\ for existing sub-directories.
+2021-07-02 09:43:26,422 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for gamleAnleggFormat - one for each meter data collection system .
+2021-07-02 09:43:26,423 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_1.
+2021-07-02 09:43:26,424 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:43:26,425 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:43:26,425 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_2.
+2021-07-02 09:43:26,428 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:43:26,428 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:43:26,428 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_3.
+2021-07-02 09:43:26,431 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:43:26,431 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:43:26,431 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 3 seconds.
+2021-07-02 09:43:26,432 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 3 seconds.
+2021-07-02 09:43:26,432 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2021-07-02 09:44:47,751 INFO org.springframework.boot.StartupInfoLogger [main] Starting StartPoint on NOLI125045 with PID 21628 (C:\sandbox\bkk_energitjenester_in_progress\target\classes started by ronend in C:\sandbox\bkk_energitjenester_in_progress)
+2021-07-02 09:44:47,755 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-07-02 09:44:49,073 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-07-02 09:44:49,134 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2021-07-02 09:44:49,138 INFO org.springframework.boot.StartupInfoLogger [main] Started StartPoint in 2.124 seconds (JVM running for 2.81)
+2021-07-02 09:44:49,149 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-07-02 09:44:49,179 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2021-07-02 09:44:49,180 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC.
+2021-07-02 09:44:49,180 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\ for existing sub-directories.
+2021-07-02 09:44:49,187 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for circutorPLCFormat - one for each meter data collection system .
+2021-07-02 09:44:49,187 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1.
+2021-07-02 09:44:49,198 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:44:49,198 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:44:49,199 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_2.
+2021-07-02 09:44:49,203 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:44:49,203 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:44:49,204 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_3.
+2021-07-02 09:44:49,207 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:44:49,208 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:44:49,209 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2021-07-02 09:44:49,209 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2021-07-02 09:44:49,210 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2021-07-02 09:44:49,216 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2021-07-02 09:44:49,216 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2021-07-02 09:44:49,220 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:44:49,221 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:44:49,221 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2021-07-02 09:44:49,224 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:44:49,224 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:44:49,224 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2021-07-02 09:44:49,227 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:44:49,228 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:44:49,229 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2021-07-02 09:44:49,229 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV.
+2021-07-02 09:44:49,229 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\ for existing sub-directories.
+2021-07-02 09:44:49,234 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VBVFormat - one for each meter data collection system .
+2021-07-02 09:44:49,235 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_1.
+2021-07-02 09:44:49,238 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:44:49,238 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:44:49,239 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_2.
+2021-07-02 09:44:49,241 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:44:49,242 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:44:49,242 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_3.
+2021-07-02 09:44:49,244 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:44:49,245 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:44:49,245 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2021-07-02 09:44:49,245 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT.
+2021-07-02 09:44:49,245 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\ for existing sub-directories.
+2021-07-02 09:44:49,250 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VTFormat - one for each meter data collection system .
+2021-07-02 09:44:49,251 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_1.
+2021-07-02 09:44:49,253 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:44:49,254 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:44:49,254 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_2.
+2021-07-02 09:44:49,256 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:44:49,256 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:44:49,257 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_3.
+2021-07-02 09:44:49,259 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:44:49,260 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:44:49,260 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2021-07-02 09:44:49,261 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2021-07-02 09:44:49,261 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2021-07-02 09:44:49,271 INFO com.cts.controller.Controller [scheduling-1] Found 5 sub-folders for mBusFormat - one for each meter data collection system .
+2021-07-02 09:44:49,271 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2021-07-02 09:44:49,291 INFO com.cts.controller.Controller [scheduling-1] Found 1 new input file/s.
+2021-07-02 09:44:49,292 INFO com.cts.controller.Controller [scheduling-1] Will merge all 1 input files into one file
+2021-07-02 09:44:49,301 INFO com.cts.utils.MergerFiles [scheduling-1] merging: C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\mergedFile_TimestampRead_1625211889274.txt into C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Merged_Temp\mergedFile.txt.
+2021-07-02 09:44:49,304 INFO com.cts.controller.Controller [scheduling-1] Moving used file C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\mergedFile_TimestampRead_1625211889274.txt to Used folder at C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\.
+2021-07-02 09:44:49,305 INFO com.cts.controller.Controller [scheduling-1] Starting to move used input files to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\.
+2021-07-02 09:44:49,318 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] mergedFile_TimestampRead_1625211889274.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\ .
+2021-07-02 09:44:49,319 INFO com.cts.controller.Controller [scheduling-1] Completed moving used file in 0 seconds.
+2021-07-02 09:44:49,326 INFO com.cts.controller.Controller [scheduling-1] Found input file: mergedFile_TimestampRead_1625211889319.txt.
+2021-07-02 09:44:49,330 INFO com.cts.generator.ProcessInput [scheduling-1] Start processing input file mergedFile_TimestampRead_1625211889319.txt.
+2021-07-02 09:44:49,333 INFO com.cts.ioutils.InputFileReader [scheduling-1] Starting to read mergedFile_TimestampRead_1625211889319.txt.
+2021-07-02 09:44:49,335 INFO com.cts.ioutils.InputFileReader [scheduling-1] Completed reading. Total rows read = 1.
+2021-07-02 09:44:49,336 INFO com.cts.generator.ProcessInput [scheduling-1] Collected 1 input rows.
+2021-07-02 09:44:49,336 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct date format.
+2021-07-02 09:44:49,417 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct date format.
+2021-07-02 09:44:49,417 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Checked date for 1 rows in less than a second.
+2021-07-02 09:44:49,417 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct number format.
+2021-07-02 09:44:49,421 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct number format.
+2021-07-02 09:44:49,421 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 1 rows in less than a second.
+2021-07-02 09:44:49,421 INFO com.cts.generator.ProcessInput [scheduling-1] Received 1 input rows, will check for an entry in customer for distinct meters in the input.
+2021-07-02 09:44:49,425 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-07-02 09:44:49,554 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-07-02 09:44:50,894 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-07-02 09:44:50,930 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2021-07-02 09:44:50,930 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-07-02 09:44:50,930 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-07-02 09:44:50,930 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-07-02 09:44:50,931 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
+2021-07-02 09:44:50,931 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
+2021-07-02 09:44:50,934 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of a total of 1 meters.
+2021-07-02 09:44:50,936 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 1 records for gs2 file - mBusFormat.
+2021-07-02 09:44:50,947 INFO com.cts.utils.GetListOfInputDataForDailyStandsMBusFormat [scheduling-1] Getting valid input for daily stands for m_bus format - only stand for 00:00 hour, if not exists then stand between 20:00 hour and 01:00 hour, the closest to 00:00.
+2021-07-02 09:44:50,949 INFO com.cts.utils.GetListOfInputDataForDailyStandsMBusFormat [scheduling-1] Adding stand for 23:00 hour as there is no consecutive 00:00 hour for meter 9670 and for date 12/01/2018 23:00:00.
+2021-07-02 09:44:50,949 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] Getting last meter stand for meter 9670 from the db.
+2021-07-02 09:44:50,957 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
+2021-07-02 09:44:51,564 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] Last meter stand for meter 9670 = 28000.0.
+2021-07-02 09:44:51,564 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] getting last reading date for meter 9670 from the db.
+2021-07-02 09:44:51,570 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
+2021-07-02 09:44:51,713 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] LastReadingDate for meter 9670 = 2018-12-01T00:00:00.000+01:00.
+2021-07-02 09:44:51,732 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 9670. Last stand date from DB is 2018-12-01T00:00:00.000+01:00, current stand date is 2018-12-01T23:00:00.000+01:00. Will create day stands for 1 days.
+2021-07-02 09:44:51,735 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
+2021-07-02 09:44:51,737 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.
+2021-07-02 09:44:51,741 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Completed writeOutput.
+2021-07-02 09:44:51,741 INFO com.cts.controller.Controller [scheduling-1] GS2 file for input file mergedFile_TimestampRead_1625211889319.txt written to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Processed\.
+2021-07-02 09:44:51,741 INFO com.cts.controller.Controller [scheduling-1] Starting to move used merged input file to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Merged_Temp\mergedFile_TimestampRead_1625211889319.txt.
+2021-07-02 09:44:51,744 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] mergedFile_TimestampRead_1625211889319.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\ .
+2021-07-02 09:44:51,745 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 2 seconds.
+2021-07-02 09:44:51,745 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2021-07-02 09:44:51,745 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2021-07-02 09:44:51,747 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:44:51,747 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:44:51,747 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2021-07-02 09:44:51,749 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:44:51,749 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:44:51,749 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Paradishagen.
+2021-07-02 09:44:51,750 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:44:51,750 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:44:51,751 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2021-07-02 09:44:51,752 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:44:51,752 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:44:51,752 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 2 seconds.
+2021-07-02 09:44:51,753 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde.
+2021-07-02 09:44:51,753 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\ for existing sub-directories.
+2021-07-02 09:44:51,755 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for gamleAnleggFormat - one for each meter data collection system .
+2021-07-02 09:44:51,756 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_1.
+2021-07-02 09:44:51,757 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:44:51,758 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:44:51,758 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_2.
+2021-07-02 09:44:51,760 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:44:51,760 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:44:51,760 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_3.
+2021-07-02 09:44:51,763 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:44:51,763 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:44:51,763 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 2 seconds.
+2021-07-02 09:44:51,763 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 2 seconds.
+2021-07-02 09:44:51,763 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2021-07-02 09:55:03,505 INFO org.springframework.boot.StartupInfoLogger [main] Starting StartPoint on NOLI125045 with PID 5584 (C:\sandbox\bkk_energitjenester_in_progress\target\classes started by ronend in C:\sandbox\bkk_energitjenester_in_progress)
+2021-07-02 09:55:03,511 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-07-02 09:55:05,059 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-07-02 09:55:05,129 INFO org.springframework.boot.StartupInfoLogger [main] Started StartPoint in 2.499 seconds (JVM running for 3.279)
+2021-07-02 09:55:05,141 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-07-02 09:55:05,137 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2021-07-02 09:55:05,189 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2021-07-02 09:55:05,190 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC.
+2021-07-02 09:55:05,191 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\ for existing sub-directories.
+2021-07-02 09:55:05,198 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for circutorPLCFormat - one for each meter data collection system .
+2021-07-02 09:55:05,199 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1.
+2021-07-02 09:55:05,220 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:55:05,221 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:55:05,221 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_2.
+2021-07-02 09:55:05,225 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:55:05,225 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:55:05,226 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_3.
+2021-07-02 09:55:05,229 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:55:05,230 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:55:05,230 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2021-07-02 09:55:05,230 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2021-07-02 09:55:05,231 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2021-07-02 09:55:05,237 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2021-07-02 09:55:05,237 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2021-07-02 09:55:05,240 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:55:05,241 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:55:05,241 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2021-07-02 09:55:05,243 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:55:05,244 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:55:05,244 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2021-07-02 09:55:05,247 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:55:05,247 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:55:05,248 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2021-07-02 09:55:05,248 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV.
+2021-07-02 09:55:05,248 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\ for existing sub-directories.
+2021-07-02 09:55:05,255 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VBVFormat - one for each meter data collection system .
+2021-07-02 09:55:05,255 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_1.
+2021-07-02 09:55:05,257 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:55:05,258 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:55:05,258 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_2.
+2021-07-02 09:55:05,260 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:55:05,261 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:55:05,261 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_3.
+2021-07-02 09:55:05,264 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:55:05,265 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:55:05,265 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2021-07-02 09:55:05,265 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT.
+2021-07-02 09:55:05,265 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\ for existing sub-directories.
+2021-07-02 09:55:05,273 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VTFormat - one for each meter data collection system .
+2021-07-02 09:55:05,274 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_1.
+2021-07-02 09:55:05,277 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:55:05,278 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:55:05,278 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_2.
+2021-07-02 09:55:05,281 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:55:05,281 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:55:05,281 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_3.
+2021-07-02 09:55:05,284 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:55:05,285 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:55:05,285 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2021-07-02 09:55:05,286 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2021-07-02 09:55:05,286 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2021-07-02 09:55:05,299 INFO com.cts.controller.Controller [scheduling-1] Found 5 sub-folders for mBusFormat - one for each meter data collection system .
+2021-07-02 09:55:05,299 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2021-07-02 09:55:05,329 INFO com.cts.controller.Controller [scheduling-1] Found 2 new input file/s.
+2021-07-02 09:55:05,330 INFO com.cts.controller.Controller [scheduling-1] Will merge all 2 input files into one file
+2021-07-02 09:55:05,337 INFO com.cts.utils.MergerFiles [scheduling-1] merging: C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\mergedFile_TimestampRead_1625212505307.txt into C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Merged_Temp\mergedFile.txt.
+2021-07-02 09:55:05,339 INFO com.cts.utils.MergerFiles [scheduling-1] merging: C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Test_2_TimestampRead_1625212505321.txt into C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Merged_Temp\mergedFile.txt.
+2021-07-02 09:55:05,342 INFO com.cts.controller.Controller [scheduling-1] Moving used file C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\mergedFile_TimestampRead_1625212505307.txt to Used folder at C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\.
+2021-07-02 09:55:05,343 INFO com.cts.controller.Controller [scheduling-1] Starting to move used input files to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\.
+2021-07-02 09:55:05,354 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] mergedFile_TimestampRead_1625212505307.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\ .
+2021-07-02 09:55:05,354 INFO com.cts.controller.Controller [scheduling-1] Completed moving used file in 0 seconds.
+2021-07-02 09:55:05,354 INFO com.cts.controller.Controller [scheduling-1] Moving used file C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Test_2_TimestampRead_1625212505321.txt to Used folder at C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\.
+2021-07-02 09:55:05,354 INFO com.cts.controller.Controller [scheduling-1] Starting to move used input files to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\.
+2021-07-02 09:55:05,361 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] Test_2_TimestampRead_1625212505321.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\ .
+2021-07-02 09:55:05,361 INFO com.cts.controller.Controller [scheduling-1] Completed moving used file in 0 seconds.
+2021-07-02 09:55:05,366 INFO com.cts.controller.Controller [scheduling-1] Found input file: mergedFile_TimestampRead_1625212505362.txt.
+2021-07-02 09:55:05,370 INFO com.cts.generator.ProcessInput [scheduling-1] Start processing input file mergedFile_TimestampRead_1625212505362.txt.
+2021-07-02 09:55:05,373 INFO com.cts.ioutils.InputFileReader [scheduling-1] Starting to read mergedFile_TimestampRead_1625212505362.txt.
+2021-07-02 09:55:05,375 INFO com.cts.ioutils.InputFileReader [scheduling-1] Completed reading. Total rows read = 2.
+2021-07-02 09:55:05,375 INFO com.cts.generator.ProcessInput [scheduling-1] Collected 2 input rows.
+2021-07-02 09:55:05,376 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct date format.
+2021-07-02 09:55:05,452 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Completed checking 2 rows, out of which 2 have correct date format.
+2021-07-02 09:55:05,453 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Checked date for 2 rows in less than a second.
+2021-07-02 09:55:05,453 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct number format.
+2021-07-02 09:55:05,456 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 2 rows, out of which 2 have correct number format.
+2021-07-02 09:55:05,457 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 2 rows in less than a second.
+2021-07-02 09:55:05,457 INFO com.cts.generator.ProcessInput [scheduling-1] Received 2 input rows, will check for an entry in customer for distinct meters in the input.
+2021-07-02 09:55:05,461 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-07-02 09:55:05,652 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-07-02 09:55:07,139 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-07-02 09:55:07,171 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2021-07-02 09:55:07,171 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-07-02 09:55:07,171 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-07-02 09:55:07,171 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-07-02 09:55:07,171 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 2 input rows.
+2021-07-02 09:55:07,171 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
+2021-07-02 09:55:07,174 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 2 meters out of a total of 2 meters.
+2021-07-02 09:55:07,177 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 2 records for gs2 file - mBusFormat.
+2021-07-02 09:55:07,187 INFO com.cts.utils.GetListOfInputDataForDailyStandsMBusFormat [scheduling-1] Getting valid input for daily stands for m_bus format - only stand for 00:00 hour, if not exists then stand between 20:00 hour and 01:00 hour, the closest to 00:00.
+2021-07-02 09:55:07,197 INFO com.cts.utils.GetListOfInputDataForDailyStandsMBusFormat [scheduling-1] Adding stand for 23:00 hour as there is no consecutive 00:00 hour for meter 9670 and for date 12/01/2018 23:00:00.
+2021-07-02 09:55:07,198 INFO com.cts.utils.GetListOfInputDataForDailyStandsMBusFormat [scheduling-1] Adding stand for 23:00 hour as there is no consecutive 00:00 hour for meter 9670 and for date 12/02/2018 23:30:00.
+2021-07-02 09:55:07,198 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] Getting last meter stand for meter 9670 from the db.
+2021-07-02 09:55:07,205 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
+2021-07-02 09:55:07,914 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] Last meter stand for meter 9670 = 28000.0.
+2021-07-02 09:55:07,914 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] getting last reading date for meter 9670 from the db.
+2021-07-02 09:55:07,921 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
+2021-07-02 09:55:08,065 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] LastReadingDate for meter 9670 = 2018-12-01T00:00:00.000+01:00.
+2021-07-02 09:55:08,084 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 9670. Last stand date from DB is 2018-12-01T00:00:00.000+01:00, current stand date is 2018-12-01T23:00:00.000+01:00. Will create day stands for 1 days.
+2021-07-02 09:55:08,090 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 9670. Last stand date from DB is 2018-12-02T00:00:00.000+01:00, current stand date is 2018-12-02T23:30:00.000+01:00. Will create day stands for 1 days.
+2021-07-02 09:55:08,091 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
+2021-07-02 09:55:08,094 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.
+2021-07-02 09:55:08,099 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Completed writeOutput.
+2021-07-02 09:55:08,099 INFO com.cts.controller.Controller [scheduling-1] GS2 file for input file mergedFile_TimestampRead_1625212505362.txt written to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Processed\.
+2021-07-02 09:55:08,099 INFO com.cts.controller.Controller [scheduling-1] Starting to move used merged input file to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Merged_Temp\mergedFile_TimestampRead_1625212505362.txt.
+2021-07-02 09:55:08,103 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] mergedFile_TimestampRead_1625212505362.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\ .
+2021-07-02 09:55:08,104 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 2 seconds.
+2021-07-02 09:55:08,104 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2021-07-02 09:55:08,104 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2021-07-02 09:55:08,106 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:55:08,106 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:55:08,106 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2021-07-02 09:55:08,107 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:55:08,107 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:55:08,108 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Paradishagen.
+2021-07-02 09:55:08,109 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:55:08,109 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:55:08,109 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2021-07-02 09:55:08,111 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:55:08,112 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:55:08,112 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 2 seconds.
+2021-07-02 09:55:08,113 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde.
+2021-07-02 09:55:08,113 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\ for existing sub-directories.
+2021-07-02 09:55:08,116 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for gamleAnleggFormat - one for each meter data collection system .
+2021-07-02 09:55:08,116 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_1.
+2021-07-02 09:55:08,117 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:55:08,118 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:55:08,118 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_2.
+2021-07-02 09:55:08,119 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:55:08,119 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:55:08,120 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_3.
+2021-07-02 09:55:08,121 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:55:08,122 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:55:08,122 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 2 seconds.
+2021-07-02 09:55:08,122 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 2 seconds.
+2021-07-02 09:55:08,122 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2021-07-02 09:59:07,359 INFO org.springframework.boot.StartupInfoLogger [main] Starting StartPoint on NOLI125045 with PID 20960 (C:\sandbox\bkk_energitjenester_in_progress\target\classes started by ronend in C:\sandbox\bkk_energitjenester_in_progress)
+2021-07-02 09:59:07,363 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-07-02 09:59:08,818 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-07-02 09:59:08,880 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2021-07-02 09:59:08,885 INFO org.springframework.boot.StartupInfoLogger [main] Started StartPoint in 2.299 seconds (JVM running for 3.12)
+2021-07-02 09:59:08,897 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-07-02 09:59:08,928 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2021-07-02 09:59:08,929 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC.
+2021-07-02 09:59:08,930 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\ for existing sub-directories.
+2021-07-02 09:59:08,937 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for circutorPLCFormat - one for each meter data collection system .
+2021-07-02 09:59:08,938 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1.
+2021-07-02 09:59:08,947 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:59:08,948 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:59:08,948 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_2.
+2021-07-02 09:59:08,951 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:59:08,951 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:59:08,953 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_3.
+2021-07-02 09:59:08,957 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:59:08,957 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:59:08,957 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2021-07-02 09:59:08,957 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2021-07-02 09:59:08,958 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2021-07-02 09:59:08,963 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2021-07-02 09:59:08,964 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2021-07-02 09:59:08,967 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:59:08,968 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:59:08,968 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2021-07-02 09:59:08,971 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:59:08,971 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:59:08,972 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2021-07-02 09:59:08,975 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:59:08,976 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:59:08,976 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2021-07-02 09:59:08,977 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV.
+2021-07-02 09:59:08,978 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\ for existing sub-directories.
+2021-07-02 09:59:08,986 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VBVFormat - one for each meter data collection system .
+2021-07-02 09:59:08,986 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_1.
+2021-07-02 09:59:08,989 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:59:08,990 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:59:08,990 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_2.
+2021-07-02 09:59:08,993 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:59:08,993 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:59:08,994 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_3.
+2021-07-02 09:59:08,996 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:59:08,997 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:59:08,997 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2021-07-02 09:59:08,997 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT.
+2021-07-02 09:59:08,997 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\ for existing sub-directories.
+2021-07-02 09:59:09,002 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VTFormat - one for each meter data collection system .
+2021-07-02 09:59:09,003 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_1.
+2021-07-02 09:59:09,006 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:59:09,007 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:59:09,007 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_2.
+2021-07-02 09:59:09,009 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:59:09,010 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:59:09,010 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_3.
+2021-07-02 09:59:09,013 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:59:09,013 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:59:09,013 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2021-07-02 09:59:09,014 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2021-07-02 09:59:09,014 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2021-07-02 09:59:09,025 INFO com.cts.controller.Controller [scheduling-1] Found 5 sub-folders for mBusFormat - one for each meter data collection system .
+2021-07-02 09:59:09,025 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2021-07-02 09:59:09,045 INFO com.cts.controller.Controller [scheduling-1] Found 2 new input file/s.
+2021-07-02 09:59:09,045 INFO com.cts.controller.Controller [scheduling-1] Will merge all 2 input files into one file
+2021-07-02 09:59:09,050 INFO com.cts.utils.MergerFiles [scheduling-1] merging: C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\new 2_TimestampRead_1625212749029.txt into C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Merged_Temp\mergedFile.txt.
+2021-07-02 09:59:09,052 INFO com.cts.utils.MergerFiles [scheduling-1] merging: C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Test_2_TimestampRead_1625212749039.txt into C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Merged_Temp\mergedFile.txt.
+2021-07-02 09:59:09,056 INFO com.cts.controller.Controller [scheduling-1] Moving used file C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\new 2_TimestampRead_1625212749029.txt to Used folder at C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\.
+2021-07-02 09:59:09,056 INFO com.cts.controller.Controller [scheduling-1] Starting to move used input files to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\.
+2021-07-02 09:59:09,064 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] new 2_TimestampRead_1625212749029.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\ .
+2021-07-02 09:59:09,065 INFO com.cts.controller.Controller [scheduling-1] Completed moving used file in 0 seconds.
+2021-07-02 09:59:09,065 INFO com.cts.controller.Controller [scheduling-1] Moving used file C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Test_2_TimestampRead_1625212749039.txt to Used folder at C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\.
+2021-07-02 09:59:09,065 INFO com.cts.controller.Controller [scheduling-1] Starting to move used input files to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\.
+2021-07-02 09:59:09,071 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] Test_2_TimestampRead_1625212749039.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\ .
+2021-07-02 09:59:09,071 INFO com.cts.controller.Controller [scheduling-1] Completed moving used file in 0 seconds.
+2021-07-02 09:59:09,077 INFO com.cts.controller.Controller [scheduling-1] Found input file: mergedFile_TimestampRead_1625212749071.txt.
+2021-07-02 09:59:09,080 INFO com.cts.generator.ProcessInput [scheduling-1] Start processing input file mergedFile_TimestampRead_1625212749071.txt.
+2021-07-02 09:59:09,083 INFO com.cts.ioutils.InputFileReader [scheduling-1] Starting to read mergedFile_TimestampRead_1625212749071.txt.
+2021-07-02 09:59:09,084 INFO com.cts.ioutils.InputFileReader [scheduling-1] Completed reading. Total rows read = 2.
+2021-07-02 09:59:09,085 INFO com.cts.generator.ProcessInput [scheduling-1] Collected 2 input rows.
+2021-07-02 09:59:09,085 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct date format.
+2021-07-02 09:59:09,163 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Completed checking 2 rows, out of which 2 have correct date format.
+2021-07-02 09:59:09,164 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Checked date for 2 rows in less than a second.
+2021-07-02 09:59:09,164 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct number format.
+2021-07-02 09:59:09,166 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 2 rows, out of which 2 have correct number format.
+2021-07-02 09:59:09,166 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 2 rows in less than a second.
+2021-07-02 09:59:09,166 INFO com.cts.generator.ProcessInput [scheduling-1] Received 2 input rows, will check for an entry in customer for distinct meters in the input.
+2021-07-02 09:59:09,169 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-07-02 09:59:09,296 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-07-02 09:59:10,979 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-07-02 09:59:11,030 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2021-07-02 09:59:11,030 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-07-02 09:59:11,031 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-07-02 09:59:11,031 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-07-02 09:59:11,031 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 2 input rows.
+2021-07-02 09:59:11,031 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
+2021-07-02 09:59:11,037 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 2 meters out of a total of 2 meters.
+2021-07-02 09:59:11,041 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 2 records for gs2 file - mBusFormat.
+2021-07-02 09:59:11,057 INFO com.cts.utils.GetListOfInputDataForDailyStandsMBusFormat [scheduling-1] Getting valid input for daily stands for m_bus format - only stand for 00:00 hour, if not exists then stand between 20:00 hour and 01:00 hour, the closest to 00:00.
+2021-07-02 09:59:11,070 INFO com.cts.utils.GetListOfInputDataForDailyStandsMBusFormat [scheduling-1] Adding stand for 23:00 hour as there is no consecutive 00:00 hour for meter 9670 and for date 12/01/2018 23:10:00.
+2021-07-02 09:59:11,071 INFO com.cts.utils.GetListOfInputDataForDailyStandsMBusFormat [scheduling-1] Adding stand for 23:00 hour as there is no consecutive 00:00 hour for meter 9670 and for date 12/02/2018 23:05:00.
+2021-07-02 09:59:11,072 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] Getting last meter stand for meter 9670 from the db.
+2021-07-02 09:59:11,081 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
+2021-07-02 09:59:11,809 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] Last meter stand for meter 9670 = 28000.0.
+2021-07-02 09:59:11,810 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] getting last reading date for meter 9670 from the db.
+2021-07-02 09:59:11,817 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
+2021-07-02 09:59:11,964 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] LastReadingDate for meter 9670 = 2018-12-01T00:00:00.000+01:00.
+2021-07-02 09:59:11,976 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 9670. Last stand date from DB is 2018-12-01T00:00:00.000+01:00, current stand date is 2018-12-01T23:10:00.000+01:00. Will create day stands for 1 days.
+2021-07-02 09:59:11,978 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 9670. Last stand date from DB is 2018-12-02T00:00:00.000+01:00, current stand date is 2018-12-02T23:05:00.000+01:00. Will create day stands for 1 days.
+2021-07-02 09:59:11,979 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
+2021-07-02 09:59:11,980 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.
+2021-07-02 09:59:11,985 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Completed writeOutput.
+2021-07-02 09:59:11,985 INFO com.cts.controller.Controller [scheduling-1] GS2 file for input file mergedFile_TimestampRead_1625212749071.txt written to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Processed\.
+2021-07-02 09:59:11,986 INFO com.cts.controller.Controller [scheduling-1] Starting to move used merged input file to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Merged_Temp\mergedFile_TimestampRead_1625212749071.txt.
+2021-07-02 09:59:11,991 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] mergedFile_TimestampRead_1625212749071.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\ .
+2021-07-02 09:59:11,991 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 3 seconds.
+2021-07-02 09:59:11,991 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2021-07-02 09:59:11,991 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2021-07-02 09:59:11,994 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:59:11,994 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:59:11,994 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2021-07-02 09:59:11,995 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:59:11,996 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:59:11,996 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Paradishagen.
+2021-07-02 09:59:11,997 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:59:11,997 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:59:11,997 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2021-07-02 09:59:11,999 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:59:12,000 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:59:12,000 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 3 seconds.
+2021-07-02 09:59:12,000 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde.
+2021-07-02 09:59:12,000 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\ for existing sub-directories.
+2021-07-02 09:59:12,004 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for gamleAnleggFormat - one for each meter data collection system .
+2021-07-02 09:59:12,004 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_1.
+2021-07-02 09:59:12,006 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:59:12,006 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:59:12,006 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_2.
+2021-07-02 09:59:12,008 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:59:12,008 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:59:12,008 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_3.
+2021-07-02 09:59:12,010 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 09:59:12,010 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 09:59:12,010 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 3 seconds.
+2021-07-02 09:59:12,010 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 3 seconds.
+2021-07-02 09:59:12,010 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2021-07-02 10:20:58,811 INFO org.springframework.boot.StartupInfoLogger [main] Starting StartPoint on NOLI125045 with PID 19368 (C:\sandbox\bkk_energitjenester_in_progress\target\classes started by ronend in C:\sandbox\bkk_energitjenester_in_progress)
+2021-07-02 10:20:58,815 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-07-02 10:21:00,188 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-07-02 10:21:00,249 INFO org.springframework.boot.StartupInfoLogger [main] Started StartPoint in 2.13 seconds (JVM running for 2.868)
+2021-07-02 10:21:00,247 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2021-07-02 10:21:00,262 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-07-02 10:21:00,293 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2021-07-02 10:21:00,294 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC.
+2021-07-02 10:21:00,294 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\ for existing sub-directories.
+2021-07-02 10:21:00,302 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for circutorPLCFormat - one for each meter data collection system .
+2021-07-02 10:21:00,303 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1.
+2021-07-02 10:21:00,312 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:21:00,313 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:21:00,313 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_2.
+2021-07-02 10:21:00,316 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:21:00,317 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:21:00,318 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_3.
+2021-07-02 10:21:00,321 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:21:00,322 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:21:00,322 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2021-07-02 10:21:00,322 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2021-07-02 10:21:00,323 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2021-07-02 10:21:00,329 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2021-07-02 10:21:00,330 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2021-07-02 10:21:00,332 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:21:00,333 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:21:00,333 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2021-07-02 10:21:00,335 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:21:00,336 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:21:00,336 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2021-07-02 10:21:00,339 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:21:00,340 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:21:00,340 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2021-07-02 10:21:00,340 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV.
+2021-07-02 10:21:00,341 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\ for existing sub-directories.
+2021-07-02 10:21:00,345 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VBVFormat - one for each meter data collection system .
+2021-07-02 10:21:00,346 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_1.
+2021-07-02 10:21:00,348 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:21:00,349 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:21:00,349 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_2.
+2021-07-02 10:21:00,351 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:21:00,351 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:21:00,351 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_3.
+2021-07-02 10:21:00,353 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:21:00,354 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:21:00,354 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2021-07-02 10:21:00,354 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT.
+2021-07-02 10:21:00,355 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\ for existing sub-directories.
+2021-07-02 10:21:00,360 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VTFormat - one for each meter data collection system .
+2021-07-02 10:21:00,360 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_1.
+2021-07-02 10:21:00,362 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:21:00,363 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:21:00,363 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_2.
+2021-07-02 10:21:00,364 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:21:00,365 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:21:00,365 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_3.
+2021-07-02 10:21:00,366 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:21:00,366 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:21:00,367 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2021-07-02 10:21:00,367 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2021-07-02 10:21:00,367 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2021-07-02 10:21:00,375 INFO com.cts.controller.Controller [scheduling-1] Found 5 sub-folders for mBusFormat - one for each meter data collection system .
+2021-07-02 10:21:00,375 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2021-07-02 10:21:00,402 INFO com.cts.controller.Controller [scheduling-1] Found 1 new input file/s.
+2021-07-02 10:21:00,404 INFO com.cts.controller.Controller [scheduling-1] Will merge all 1 input files into one file
+2021-07-02 10:21:00,411 INFO com.cts.utils.MergerFiles [scheduling-1] merging: C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\new 2_TimestampRead_1625214060380.txt into C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Merged_Temp\mergedFile.txt.
+2021-07-02 10:21:00,414 INFO com.cts.controller.Controller [scheduling-1] Moving used file C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\new 2_TimestampRead_1625214060380.txt to Used folder at C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\.
+2021-07-02 10:21:00,414 INFO com.cts.controller.Controller [scheduling-1] Starting to move used input files to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\.
+2021-07-02 10:21:00,438 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] new 2_TimestampRead_1625214060380.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\ .
+2021-07-02 10:21:00,438 INFO com.cts.controller.Controller [scheduling-1] Completed moving used file in 0 seconds.
+2021-07-02 10:21:00,447 INFO com.cts.controller.Controller [scheduling-1] Found input file: mergedFile_TimestampRead_1625214060438.txt.
+2021-07-02 10:21:00,451 INFO com.cts.generator.ProcessInput [scheduling-1] Start processing input file mergedFile_TimestampRead_1625214060438.txt.
+2021-07-02 10:21:00,454 INFO com.cts.ioutils.InputFileReader [scheduling-1] Starting to read mergedFile_TimestampRead_1625214060438.txt.
+2021-07-02 10:21:00,457 INFO com.cts.ioutils.InputFileReader [scheduling-1] Completed reading. Total rows read = 1.
+2021-07-02 10:21:00,457 INFO com.cts.generator.ProcessInput [scheduling-1] Collected 1 input rows.
+2021-07-02 10:21:00,458 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct date format.
+2021-07-02 10:21:00,540 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct date format.
+2021-07-02 10:21:00,540 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Checked date for 1 rows in less than a second.
+2021-07-02 10:21:00,540 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct number format.
+2021-07-02 10:21:00,543 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct number format.
+2021-07-02 10:21:00,544 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 1 rows in less than a second.
+2021-07-02 10:21:00,544 INFO com.cts.generator.ProcessInput [scheduling-1] Received 1 input rows, will check for an entry in customer for distinct meters in the input.
+2021-07-02 10:21:00,548 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-07-02 10:21:00,685 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-07-02 10:21:02,023 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-07-02 10:21:02,056 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2021-07-02 10:21:02,056 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-07-02 10:21:02,056 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-07-02 10:21:02,056 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-07-02 10:21:02,056 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
+2021-07-02 10:21:02,057 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
+2021-07-02 10:21:02,060 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of a total of 1 meters.
+2021-07-02 10:21:02,065 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 1 records for gs2 file - mBusFormat.
+2021-07-02 10:21:02,076 INFO com.cts.utils.GetListOfInputDataForDailyStandsMBusFormat [scheduling-1] Getting valid input for daily stands for m_bus format - only stand for 00:00 hour, if not exists then stand between 20:00 hour and 01:00 hour, the closest to 00:00.
+2021-07-02 10:21:02,077 INFO com.cts.utils.GetListOfInputDataForDailyStandsMBusFormat [scheduling-1] Adding stand for 23:00 hour as there is no consecutive 00:00 hour for meter 9670 and for date 12/15/2018 23:05:00.
+2021-07-02 10:21:02,078 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] Getting last meter stand for meter 9670 from the db.
+2021-07-02 10:21:02,085 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
+2021-07-02 10:21:03,978 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] Last meter stand for meter 9670 = 28000.0.
+2021-07-02 10:21:03,979 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] getting last reading date for meter 9670 from the db.
+2021-07-02 10:21:03,986 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
+2021-07-02 10:21:04,135 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] LastReadingDate for meter 9670 = 2018-12-01T00:00:00.000+01:00.
+2021-07-02 10:21:04,152 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 14 day stands for meter 9670. Last stand date from DB is 2018-12-01T00:00:00.000+01:00, current stand date is 2018-12-15T23:05:00.000+01:00. Will create day stands for 14 days.
+2021-07-02 10:21:04,156 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
+2021-07-02 10:21:04,158 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.
+2021-07-02 10:21:04,163 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Completed writeOutput.
+2021-07-02 10:21:04,163 INFO com.cts.controller.Controller [scheduling-1] GS2 file for input file mergedFile_TimestampRead_1625214060438.txt written to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Processed\.
+2021-07-02 10:21:04,163 INFO com.cts.controller.Controller [scheduling-1] Starting to move used merged input file to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Merged_Temp\mergedFile_TimestampRead_1625214060438.txt.
+2021-07-02 10:21:04,168 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] mergedFile_TimestampRead_1625214060438.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\ .
+2021-07-02 10:21:04,168 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 3 seconds.
+2021-07-02 10:21:04,168 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2021-07-02 10:21:04,168 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2021-07-02 10:21:04,171 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:21:04,172 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:21:04,172 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2021-07-02 10:21:04,175 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:21:04,175 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:21:04,175 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Paradishagen.
+2021-07-02 10:21:04,177 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:21:04,177 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:21:04,177 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2021-07-02 10:21:04,180 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:21:04,180 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:21:04,181 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 3 seconds.
+2021-07-02 10:21:04,181 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde.
+2021-07-02 10:21:04,181 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\ for existing sub-directories.
+2021-07-02 10:21:04,187 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for gamleAnleggFormat - one for each meter data collection system .
+2021-07-02 10:21:04,187 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_1.
+2021-07-02 10:21:04,190 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:21:04,191 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:21:04,191 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_2.
+2021-07-02 10:21:04,193 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:21:04,194 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:21:04,194 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_3.
+2021-07-02 10:21:04,195 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:21:04,196 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:21:04,196 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 3 seconds.
+2021-07-02 10:21:04,196 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 3 seconds.
+2021-07-02 10:21:04,196 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2021-07-02 10:24:24,984 INFO org.springframework.boot.StartupInfoLogger [main] Starting StartPoint on NOLI125045 with PID 21132 (C:\sandbox\bkk_energitjenester_in_progress\target\classes started by ronend in C:\sandbox\bkk_energitjenester_in_progress)
+2021-07-02 10:24:24,989 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-07-02 10:24:26,315 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-07-02 10:24:26,375 INFO org.springframework.boot.StartupInfoLogger [main] Started StartPoint in 2.104 seconds (JVM running for 2.833)
+2021-07-02 10:24:26,372 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2021-07-02 10:24:26,385 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-07-02 10:24:26,417 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2021-07-02 10:24:26,417 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC.
+2021-07-02 10:24:26,418 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\ for existing sub-directories.
+2021-07-02 10:24:26,429 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for circutorPLCFormat - one for each meter data collection system .
+2021-07-02 10:24:26,429 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1.
+2021-07-02 10:24:26,444 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:24:26,445 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:24:26,445 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_2.
+2021-07-02 10:24:26,448 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:24:26,449 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:24:26,449 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_3.
+2021-07-02 10:24:26,453 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:24:26,454 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:24:26,455 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2021-07-02 10:24:26,455 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2021-07-02 10:24:26,455 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2021-07-02 10:24:26,468 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2021-07-02 10:24:26,468 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2021-07-02 10:24:26,472 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:24:26,473 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:24:26,473 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2021-07-02 10:24:26,476 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:24:26,476 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:24:26,477 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2021-07-02 10:24:26,479 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:24:26,480 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:24:26,480 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2021-07-02 10:24:26,481 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV.
+2021-07-02 10:24:26,481 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\ for existing sub-directories.
+2021-07-02 10:24:26,485 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VBVFormat - one for each meter data collection system .
+2021-07-02 10:24:26,485 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_1.
+2021-07-02 10:24:26,488 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:24:26,488 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:24:26,488 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_2.
+2021-07-02 10:24:26,490 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:24:26,490 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:24:26,491 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_3.
+2021-07-02 10:24:26,493 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:24:26,493 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:24:26,494 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2021-07-02 10:24:26,494 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT.
+2021-07-02 10:24:26,494 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\ for existing sub-directories.
+2021-07-02 10:24:26,499 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VTFormat - one for each meter data collection system .
+2021-07-02 10:24:26,499 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_1.
+2021-07-02 10:24:26,501 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:24:26,502 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:24:26,502 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_2.
+2021-07-02 10:24:26,504 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:24:26,505 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:24:26,505 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_3.
+2021-07-02 10:24:26,507 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:24:26,507 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:24:26,507 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2021-07-02 10:24:26,508 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2021-07-02 10:24:26,508 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2021-07-02 10:24:26,517 INFO com.cts.controller.Controller [scheduling-1] Found 5 sub-folders for mBusFormat - one for each meter data collection system .
+2021-07-02 10:24:26,517 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2021-07-02 10:24:26,544 INFO com.cts.controller.Controller [scheduling-1] Found 2 new input file/s.
+2021-07-02 10:24:26,545 INFO com.cts.controller.Controller [scheduling-1] Will merge all 2 input files into one file
+2021-07-02 10:24:26,551 INFO com.cts.utils.MergerFiles [scheduling-1] merging: C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\mergedFil_TimestampRead_1625214266521.txt into C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Merged_Temp\mergedFile.txt.
+2021-07-02 10:24:26,553 INFO com.cts.utils.MergerFiles [scheduling-1] merging: C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\new 2_TimestampRead_1625214266535.txt into C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Merged_Temp\mergedFile.txt.
+2021-07-02 10:24:26,557 INFO com.cts.controller.Controller [scheduling-1] Moving used file C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\mergedFil_TimestampRead_1625214266521.txt to Used folder at C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\.
+2021-07-02 10:24:26,557 INFO com.cts.controller.Controller [scheduling-1] Starting to move used input files to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\.
+2021-07-02 10:24:26,574 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] mergedFil_TimestampRead_1625214266521.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\ .
+2021-07-02 10:24:26,574 INFO com.cts.controller.Controller [scheduling-1] Completed moving used file in 0 seconds.
+2021-07-02 10:24:26,574 INFO com.cts.controller.Controller [scheduling-1] Moving used file C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\new 2_TimestampRead_1625214266535.txt to Used folder at C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\.
+2021-07-02 10:24:26,575 INFO com.cts.controller.Controller [scheduling-1] Starting to move used input files to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\.
+2021-07-02 10:24:26,587 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] new 2_TimestampRead_1625214266535.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\ .
+2021-07-02 10:24:26,587 INFO com.cts.controller.Controller [scheduling-1] Completed moving used file in 0 seconds.
+2021-07-02 10:24:26,599 INFO com.cts.controller.Controller [scheduling-1] Found input file: mergedFile_TimestampRead_1625214266588.txt.
+2021-07-02 10:24:26,603 INFO com.cts.generator.ProcessInput [scheduling-1] Start processing input file mergedFile_TimestampRead_1625214266588.txt.
+2021-07-02 10:24:26,607 INFO com.cts.ioutils.InputFileReader [scheduling-1] Starting to read mergedFile_TimestampRead_1625214266588.txt.
+2021-07-02 10:24:26,611 INFO com.cts.ioutils.InputFileReader [scheduling-1] Completed reading. Total rows read = 2.
+2021-07-02 10:24:26,612 INFO com.cts.generator.ProcessInput [scheduling-1] Collected 2 input rows.
+2021-07-02 10:24:26,612 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct date format.
+2021-07-02 10:24:26,723 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Completed checking 2 rows, out of which 2 have correct date format.
+2021-07-02 10:24:26,724 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Checked date for 2 rows in less than a second.
+2021-07-02 10:24:26,724 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct number format.
+2021-07-02 10:24:26,728 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 2 rows, out of which 2 have correct number format.
+2021-07-02 10:24:26,728 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 2 rows in less than a second.
+2021-07-02 10:24:26,728 INFO com.cts.generator.ProcessInput [scheduling-1] Received 2 input rows, will check for an entry in customer for distinct meters in the input.
+2021-07-02 10:24:26,751 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-07-02 10:24:27,000 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-07-02 10:24:28,506 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-07-02 10:24:28,538 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2021-07-02 10:24:28,538 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-07-02 10:24:28,539 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-07-02 10:24:28,539 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-07-02 10:24:28,539 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 2 input rows.
+2021-07-02 10:24:28,539 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
+2021-07-02 10:24:28,543 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 2 meters out of a total of 2 meters.
+2021-07-02 10:24:28,546 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 2 records for gs2 file - mBusFormat.
+2021-07-02 10:24:28,557 INFO com.cts.utils.GetListOfInputDataForDailyStandsMBusFormat [scheduling-1] Getting valid input for daily stands for m_bus format - only stand for 00:00 hour, if not exists then stand between 20:00 hour and 01:00 hour, the closest to 00:00.
+2021-07-02 10:24:28,567 INFO com.cts.utils.GetListOfInputDataForDailyStandsMBusFormat [scheduling-1] Adding stand for 23:00 hour as there is no consecutive 00:00 hour for meter 9670 and for date 12/10/2018 23:05:00.
+2021-07-02 10:24:28,568 INFO com.cts.utils.GetListOfInputDataForDailyStandsMBusFormat [scheduling-1] Adding stand for 23:00 hour as there is no consecutive 00:00 hour for meter 9670 and for date 12/15/2018 23:05:00.
+2021-07-02 10:24:28,568 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] Getting last meter stand for meter 9670 from the db.
+2021-07-02 10:24:28,575 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
+2021-07-02 10:24:29,170 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] Last meter stand for meter 9670 = 28000.0.
+2021-07-02 10:24:29,171 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] getting last reading date for meter 9670 from the db.
+2021-07-02 10:24:29,177 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
+2021-07-02 10:24:29,343 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] LastReadingDate for meter 9670 = 2018-12-01T00:00:00.000+01:00.
+2021-07-02 10:24:29,357 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 9 day stands for meter 9670. Last stand date from DB is 2018-12-01T00:00:00.000+01:00, current stand date is 2018-12-10T23:05:00.000+01:00. Will create day stands for 9 days.
+2021-07-02 10:24:29,363 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 4 day stands for meter 9670. Last stand date from DB is 2018-12-11T00:00:00.000+01:00, current stand date is 2018-12-15T23:05:00.000+01:00. Will create day stands for 4 days.
+2021-07-02 10:24:29,364 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
+2021-07-02 10:24:29,367 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.
+2021-07-02 10:24:29,373 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Completed writeOutput.
+2021-07-02 10:24:29,374 INFO com.cts.controller.Controller [scheduling-1] GS2 file for input file mergedFile_TimestampRead_1625214266588.txt written to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Processed\.
+2021-07-02 10:24:29,374 INFO com.cts.controller.Controller [scheduling-1] Starting to move used merged input file to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Merged_Temp\mergedFile_TimestampRead_1625214266588.txt.
+2021-07-02 10:24:29,379 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] mergedFile_TimestampRead_1625214266588.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\ .
+2021-07-02 10:24:29,380 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 3 seconds.
+2021-07-02 10:24:29,380 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2021-07-02 10:24:29,380 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2021-07-02 10:24:29,383 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:24:29,383 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:24:29,383 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2021-07-02 10:24:29,385 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:24:29,385 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:24:29,385 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Paradishagen.
+2021-07-02 10:24:29,386 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:24:29,386 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:24:29,387 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2021-07-02 10:24:29,390 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:24:29,391 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:24:29,392 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 3 seconds.
+2021-07-02 10:24:29,392 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde.
+2021-07-02 10:24:29,392 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\ for existing sub-directories.
+2021-07-02 10:24:29,396 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for gamleAnleggFormat - one for each meter data collection system .
+2021-07-02 10:24:29,396 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_1.
+2021-07-02 10:24:29,397 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:24:29,398 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:24:29,398 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_2.
+2021-07-02 10:24:29,399 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:24:29,400 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:24:29,400 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_3.
+2021-07-02 10:24:29,402 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-07-02 10:24:29,403 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-07-02 10:24:29,403 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 3 seconds.
+2021-07-02 10:24:29,403 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 3 seconds.
+2021-07-02 10:24:29,403 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.

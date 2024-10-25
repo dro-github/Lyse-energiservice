@@ -1,0 +1,565 @@
+2023-03-28 11:39:54,120 INFO org.springframework.boot.StartupInfoLogger [main] Starting StartPoint on NOLI125045 with PID 22180 (C:\sandbox\EvinyFordelingstjenester_futureVersion\target\classes started by ronend in C:\sandbox\EvinyFordelingstjenester_futureVersion)
+2023-03-28 11:39:54,120 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-03-28 11:39:55,604 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2023-03-28 11:39:55,687 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2023-03-28 11:39:55,700 INFO org.springframework.boot.StartupInfoLogger [main] Started StartPoint in 2.479 seconds (JVM running for 3.399)
+2023-03-28 11:39:55,704 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-28 11:39:55,770 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2023-03-28 11:39:55,770 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2023-03-28 11:39:55,770 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2023-03-28 11:39:55,803 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2023-03-28 11:39:55,820 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2023-03-28 11:39:55,820 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2023-03-28 11:39:55,837 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 11:39:55,837 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 11:39:55,837 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2023-03-28 11:39:55,837 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 11:39:55,837 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 11:39:55,837 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2023-03-28 11:39:55,837 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 11:39:55,853 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 11:39:55,853 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2023-03-28 11:39:55,853 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2023-03-28 11:39:55,853 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2023-03-28 11:39:55,853 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2023-03-28 11:39:55,853 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2023-03-28 11:39:55,870 INFO com.cts.controller.Controller [scheduling-1] Found 5 sub-folders for mBusFormat - one for each meter data collection system .
+2023-03-28 11:39:55,870 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2023-03-28 11:39:55,920 INFO com.cts.controller.Controller [scheduling-1] Found 1 new input file/s.
+2023-03-28 11:39:55,920 INFO com.cts.controller.Controller [scheduling-1] Will merge all 1 input files into one file
+2023-03-28 11:39:55,937 INFO com.cts.utils.MergerFiles [scheduling-1] merging: C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\J123MP24H_TimestampRead_1679996395870.txt into C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Merged_Temp\mergedFile.txt.
+2023-03-28 11:39:55,937 INFO com.cts.controller.Controller [scheduling-1] Moving used file C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\J123MP24H_TimestampRead_1679996395870.txt to Used folder at C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\.
+2023-03-28 11:39:55,937 INFO com.cts.controller.Controller [scheduling-1] Starting to move used input files to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\.
+2023-03-28 11:39:55,954 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] J123MP24H_TimestampRead_1679996395870.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\ .
+2023-03-28 11:39:55,954 INFO com.cts.controller.Controller [scheduling-1] Completed moving used file in 0 seconds.
+2023-03-28 11:39:55,970 INFO com.cts.controller.Controller [scheduling-1] Found input file: mergedFile_TimestampRead_1679996395954.txt.
+2023-03-28 11:39:55,970 INFO com.cts.generator.ProcessInput [scheduling-1] Start processing input file mergedFile_TimestampRead_1679996395954.txt.
+2023-03-28 11:39:55,987 INFO com.cts.ioutils.InputFileReader [scheduling-1] Starting to read mergedFile_TimestampRead_1679996395954.txt.
+2023-03-28 11:39:55,987 INFO com.cts.ioutils.InputFileReader [scheduling-1] Completed reading. Total rows read = 75.
+2023-03-28 11:39:55,987 INFO com.cts.generator.ProcessInput [scheduling-1] Collected 75 input rows.
+2023-03-28 11:39:55,987 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct date format.
+2023-03-28 11:39:56,103 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Completed checking 75 rows, out of which 75 have correct date format.
+2023-03-28 11:39:56,103 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Checked date for 75 rows in less than a second.
+2023-03-28 11:39:56,103 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct number format.
+2023-03-28 11:39:56,120 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 75 rows, out of which 75 have correct number format.
+2023-03-28 11:39:56,120 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 75 rows in less than a second.
+2023-03-28 11:39:56,120 INFO com.cts.generator.ProcessInput [scheduling-1] Received 75 input rows, will check for an entry in customer for distinct meters in the input.
+2023-03-28 11:39:56,120 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2023-03-28 11:39:56,237 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-28 11:39:57,860 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
+2023-03-28 11:39:57,923 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 3 meters. Out of which 3 has Customer entry.
+2023-03-28 11:39:57,923 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 3 meters =  0 seconds.
+2023-03-28 11:39:57,923 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 3 meters which have a Customer record.
+2023-03-28 11:39:57,923 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 75 input rows.
+2023-03-28 11:39:57,923 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 75 records for json file - mBusFormat.
+2023-03-28 11:39:57,976 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] There are 6 readings for timestamp = 00:00:00. Only readings @00:00:00 are relevant for creating dayStand payload.
+2023-03-28 11:39:57,976 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] Creating jsonPayload for daily stand M-Bus format
+2023-03-28 11:39:58,070 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] Creating jsonPayload for hourly stand 'M-Bus' format
+2023-03-28 11:39:58,070 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] Found 3 meters with hourly stands. Will create payload for hourly stand for those.
+2023-03-28 11:39:58,070 INFO com.cts.generator.ProcessInput [scheduling-1] Created json file/s from input.
+2023-03-28 11:39:58,087 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput.
+2023-03-28 11:39:58,104 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Completed writeOutput.
+2023-03-28 11:39:58,104 INFO com.cts.controller.Controller [scheduling-1] Json file for input file mergedFile_TimestampRead_1679996395954.txt written to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Processed\.
+2023-03-28 11:39:58,104 INFO com.cts.controller.Controller [scheduling-1] Starting to move used merged input file to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Merged_Temp\mergedFile_TimestampRead_1679996395954.txt.
+2023-03-28 11:39:58,120 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] mergedFile_TimestampRead_1679996395954.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\ .
+2023-03-28 11:39:58,120 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 2 seconds.
+2023-03-28 11:39:58,120 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2023-03-28 11:39:58,120 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2023-03-28 11:39:58,136 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 11:39:58,137 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 11:39:58,137 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2023-03-28 11:39:58,137 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 11:39:58,137 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 11:39:58,145 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Paradishagen.
+2023-03-28 11:39:58,145 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 11:39:58,145 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 11:39:58,145 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2023-03-28 11:39:58,145 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 11:39:58,145 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 11:39:58,145 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 2 seconds.
+2023-03-28 11:39:58,145 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 2 seconds.
+2023-03-28 11:39:58,145 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 2 seconds.
+2023-03-28 11:39:58,145 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2023-03-28 11:49:55,693 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2023-03-28 11:49:55,740 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2023-03-28 11:49:55,740 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2023-03-28 11:49:55,740 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2023-03-28 11:49:55,740 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2023-03-28 11:49:55,755 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2023-03-28 11:49:55,755 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2023-03-28 11:49:55,760 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 11:49:55,760 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 11:49:55,760 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2023-03-28 11:49:55,760 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 11:49:55,760 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 11:49:55,760 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2023-03-28 11:49:55,760 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 11:49:55,760 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 11:49:55,760 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2023-03-28 11:49:55,760 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2023-03-28 11:49:55,760 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2023-03-28 11:49:55,760 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2023-03-28 11:49:55,760 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2023-03-28 11:49:55,760 INFO com.cts.controller.Controller [scheduling-1] Found 5 sub-folders for mBusFormat - one for each meter data collection system .
+2023-03-28 11:49:55,760 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2023-03-28 11:49:55,760 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 11:49:55,760 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 11:49:55,760 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2023-03-28 11:49:55,775 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 11:49:55,775 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 11:49:55,775 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2023-03-28 11:49:55,777 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 11:49:55,777 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 11:49:55,777 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Paradishagen.
+2023-03-28 11:49:55,777 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 11:49:55,777 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 11:49:55,777 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2023-03-28 11:49:55,777 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 11:49:55,777 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 11:49:55,777 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 0 seconds.
+2023-03-28 11:49:55,777 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 0 seconds.
+2023-03-28 11:49:55,777 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 0 seconds.
+2023-03-28 11:49:55,777 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2023-03-28 11:59:55,714 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2023-03-28 11:59:55,729 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2023-03-28 11:59:55,729 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2023-03-28 11:59:55,729 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2023-03-28 11:59:55,729 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2023-03-28 11:59:55,729 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2023-03-28 11:59:55,729 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2023-03-28 11:59:55,745 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 11:59:55,745 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 11:59:55,745 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2023-03-28 11:59:55,745 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 11:59:55,745 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 11:59:55,745 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2023-03-28 11:59:55,745 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 11:59:55,745 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 11:59:55,745 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2023-03-28 11:59:55,745 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2023-03-28 11:59:55,745 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2023-03-28 11:59:55,745 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2023-03-28 11:59:55,745 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2023-03-28 11:59:55,745 INFO com.cts.controller.Controller [scheduling-1] Found 5 sub-folders for mBusFormat - one for each meter data collection system .
+2023-03-28 11:59:55,745 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2023-03-28 11:59:55,761 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 11:59:55,761 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 11:59:55,761 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2023-03-28 11:59:55,761 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 11:59:55,761 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 11:59:55,761 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2023-03-28 11:59:55,761 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 11:59:55,761 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 11:59:55,761 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Paradishagen.
+2023-03-28 11:59:55,761 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 11:59:55,761 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 11:59:55,761 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2023-03-28 11:59:55,761 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 11:59:55,761 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 11:59:55,761 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 0 seconds.
+2023-03-28 11:59:55,761 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 0 seconds.
+2023-03-28 11:59:55,761 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 0 seconds.
+2023-03-28 11:59:55,761 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2023-03-28 12:09:55,698 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2023-03-28 12:09:55,714 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2023-03-28 12:09:55,714 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2023-03-28 12:09:55,714 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2023-03-28 12:09:55,714 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2023-03-28 12:09:55,714 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2023-03-28 12:09:55,714 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2023-03-28 12:09:55,714 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:09:55,714 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:09:55,714 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2023-03-28 12:09:55,714 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:09:55,714 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:09:55,714 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2023-03-28 12:09:55,729 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:09:55,729 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:09:55,729 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2023-03-28 12:09:55,729 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2023-03-28 12:09:55,729 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2023-03-28 12:09:55,729 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2023-03-28 12:09:55,729 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2023-03-28 12:09:55,729 INFO com.cts.controller.Controller [scheduling-1] Found 5 sub-folders for mBusFormat - one for each meter data collection system .
+2023-03-28 12:09:55,729 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2023-03-28 12:09:55,729 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:09:55,729 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:09:55,729 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2023-03-28 12:09:55,729 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:09:55,729 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:09:55,729 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2023-03-28 12:09:55,729 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:09:55,729 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:09:55,729 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Paradishagen.
+2023-03-28 12:09:55,745 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:09:55,745 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:09:55,745 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2023-03-28 12:09:55,745 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:09:55,745 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:09:55,745 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 0 seconds.
+2023-03-28 12:09:55,745 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 0 seconds.
+2023-03-28 12:09:55,745 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 0 seconds.
+2023-03-28 12:09:55,745 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2023-03-28 12:19:55,709 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2023-03-28 12:19:55,724 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2023-03-28 12:19:55,724 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2023-03-28 12:19:55,724 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2023-03-28 12:19:55,724 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2023-03-28 12:19:55,724 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2023-03-28 12:19:55,724 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2023-03-28 12:19:55,724 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:19:55,724 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:19:55,724 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2023-03-28 12:19:55,724 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:19:55,724 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:19:55,724 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2023-03-28 12:19:55,724 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:19:55,724 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:19:55,724 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2023-03-28 12:19:55,724 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2023-03-28 12:19:55,724 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2023-03-28 12:19:55,724 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2023-03-28 12:19:55,724 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2023-03-28 12:19:55,740 INFO com.cts.controller.Controller [scheduling-1] Found 5 sub-folders for mBusFormat - one for each meter data collection system .
+2023-03-28 12:19:55,740 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2023-03-28 12:19:55,740 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:19:55,740 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:19:55,740 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2023-03-28 12:19:55,740 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:19:55,740 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:19:55,740 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2023-03-28 12:19:55,740 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:19:55,740 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:19:55,740 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Paradishagen.
+2023-03-28 12:19:55,740 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:19:55,740 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:19:55,740 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2023-03-28 12:19:55,756 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:19:55,756 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:19:55,756 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 0 seconds.
+2023-03-28 12:19:55,756 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 0 seconds.
+2023-03-28 12:19:55,756 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 0 seconds.
+2023-03-28 12:19:55,756 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2023-03-28 12:29:55,720 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2023-03-28 12:29:55,742 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2023-03-28 12:29:55,742 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2023-03-28 12:29:55,742 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2023-03-28 12:29:55,742 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2023-03-28 12:29:55,742 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2023-03-28 12:29:55,742 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2023-03-28 12:29:55,742 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:29:55,742 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:29:55,742 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2023-03-28 12:29:55,742 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:29:55,742 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:29:55,742 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2023-03-28 12:29:55,742 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:29:55,742 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:29:55,742 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2023-03-28 12:29:55,742 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2023-03-28 12:29:55,742 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2023-03-28 12:29:55,742 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2023-03-28 12:29:55,742 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2023-03-28 12:29:55,758 INFO com.cts.controller.Controller [scheduling-1] Found 5 sub-folders for mBusFormat - one for each meter data collection system .
+2023-03-28 12:29:55,758 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2023-03-28 12:29:55,758 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:29:55,758 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:29:55,758 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2023-03-28 12:29:55,758 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:29:55,758 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:29:55,758 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2023-03-28 12:29:55,758 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:29:55,758 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:29:55,758 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Paradishagen.
+2023-03-28 12:29:55,758 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:29:55,758 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:29:55,758 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2023-03-28 12:29:55,758 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:29:55,758 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:29:55,758 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 0 seconds.
+2023-03-28 12:29:55,758 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 0 seconds.
+2023-03-28 12:29:55,758 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 0 seconds.
+2023-03-28 12:29:55,758 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2023-03-28 12:39:55,713 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2023-03-28 12:39:55,747 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2023-03-28 12:39:55,747 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2023-03-28 12:39:55,747 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2023-03-28 12:39:55,747 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2023-03-28 12:39:55,747 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2023-03-28 12:39:55,747 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2023-03-28 12:39:55,760 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:39:55,760 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:39:55,760 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2023-03-28 12:39:55,760 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:39:55,760 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:39:55,760 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2023-03-28 12:39:55,760 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:39:55,760 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:39:55,760 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2023-03-28 12:39:55,760 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2023-03-28 12:39:55,760 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2023-03-28 12:39:55,760 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2023-03-28 12:39:55,760 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2023-03-28 12:39:55,764 INFO com.cts.controller.Controller [scheduling-1] Found 5 sub-folders for mBusFormat - one for each meter data collection system .
+2023-03-28 12:39:55,764 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2023-03-28 12:39:55,764 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:39:55,764 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:39:55,764 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2023-03-28 12:39:55,764 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:39:55,764 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:39:55,764 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2023-03-28 12:39:55,764 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:39:55,764 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:39:55,764 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Paradishagen.
+2023-03-28 12:39:55,764 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:39:55,764 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:39:55,764 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2023-03-28 12:39:55,764 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:39:55,764 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:39:55,764 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 0 seconds.
+2023-03-28 12:39:55,764 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 0 seconds.
+2023-03-28 12:39:55,764 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 0 seconds.
+2023-03-28 12:39:55,764 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2023-03-28 12:49:55,725 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2023-03-28 12:49:55,753 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2023-03-28 12:49:55,753 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2023-03-28 12:49:55,753 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2023-03-28 12:49:55,753 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2023-03-28 12:49:55,759 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2023-03-28 12:49:55,759 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2023-03-28 12:49:55,763 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:49:55,763 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:49:55,763 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2023-03-28 12:49:55,765 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:49:55,765 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:49:55,765 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2023-03-28 12:49:55,768 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:49:55,768 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:49:55,769 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2023-03-28 12:49:55,769 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2023-03-28 12:49:55,769 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2023-03-28 12:49:55,769 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2023-03-28 12:49:55,769 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2023-03-28 12:49:55,777 INFO com.cts.controller.Controller [scheduling-1] Found 5 sub-folders for mBusFormat - one for each meter data collection system .
+2023-03-28 12:49:55,777 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2023-03-28 12:49:55,780 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:49:55,780 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:49:55,780 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2023-03-28 12:49:55,782 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:49:55,782 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:49:55,782 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2023-03-28 12:49:55,784 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:49:55,785 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:49:55,785 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Paradishagen.
+2023-03-28 12:49:55,786 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:49:55,786 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:49:55,787 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2023-03-28 12:49:55,789 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:49:55,789 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:49:55,789 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 0 seconds.
+2023-03-28 12:49:55,789 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 0 seconds.
+2023-03-28 12:49:55,789 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 0 seconds.
+2023-03-28 12:49:55,790 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2023-03-28 12:59:55,730 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2023-03-28 12:59:55,776 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2023-03-28 12:59:55,777 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2023-03-28 12:59:55,777 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2023-03-28 12:59:55,777 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2023-03-28 12:59:55,781 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2023-03-28 12:59:55,781 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2023-03-28 12:59:55,783 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:59:55,783 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:59:55,783 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2023-03-28 12:59:55,785 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:59:55,785 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:59:55,785 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2023-03-28 12:59:55,787 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:59:55,787 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:59:55,787 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2023-03-28 12:59:55,787 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2023-03-28 12:59:55,787 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2023-03-28 12:59:55,787 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2023-03-28 12:59:55,787 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2023-03-28 12:59:55,793 INFO com.cts.controller.Controller [scheduling-1] Found 5 sub-folders for mBusFormat - one for each meter data collection system .
+2023-03-28 12:59:55,793 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2023-03-28 12:59:55,796 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:59:55,797 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:59:55,797 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2023-03-28 12:59:55,798 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:59:55,799 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:59:55,799 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2023-03-28 12:59:55,799 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:59:55,799 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:59:55,799 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Paradishagen.
+2023-03-28 12:59:55,799 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:59:55,799 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:59:55,799 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2023-03-28 12:59:55,799 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 12:59:55,799 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 12:59:55,799 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 0 seconds.
+2023-03-28 12:59:55,799 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 0 seconds.
+2023-03-28 12:59:55,799 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 0 seconds.
+2023-03-28 12:59:55,799 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2023-03-28 13:09:55,740 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2023-03-28 13:09:55,795 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2023-03-28 13:09:55,795 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2023-03-28 13:09:55,795 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2023-03-28 13:09:55,795 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2023-03-28 13:09:55,799 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2023-03-28 13:09:55,799 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2023-03-28 13:09:55,802 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:09:55,802 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:09:55,802 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2023-03-28 13:09:55,803 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:09:55,804 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:09:55,804 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2023-03-28 13:09:55,805 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:09:55,806 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:09:55,806 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2023-03-28 13:09:55,806 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2023-03-28 13:09:55,806 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2023-03-28 13:09:55,806 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2023-03-28 13:09:55,806 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2023-03-28 13:09:55,816 INFO com.cts.controller.Controller [scheduling-1] Found 5 sub-folders for mBusFormat - one for each meter data collection system .
+2023-03-28 13:09:55,816 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2023-03-28 13:09:55,819 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:09:55,819 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:09:55,819 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2023-03-28 13:09:55,821 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:09:55,821 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:09:55,821 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2023-03-28 13:09:55,822 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:09:55,823 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:09:55,823 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Paradishagen.
+2023-03-28 13:09:55,824 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:09:55,824 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:09:55,824 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2023-03-28 13:09:55,825 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:09:55,826 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:09:55,826 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 0 seconds.
+2023-03-28 13:09:55,826 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 0 seconds.
+2023-03-28 13:09:55,826 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 0 seconds.
+2023-03-28 13:09:55,826 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2023-03-28 13:19:55,762 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2023-03-28 13:19:55,813 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2023-03-28 13:19:55,813 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2023-03-28 13:19:55,813 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2023-03-28 13:19:55,813 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2023-03-28 13:19:55,817 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2023-03-28 13:19:55,817 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2023-03-28 13:19:55,817 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:19:55,817 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:19:55,820 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2023-03-28 13:19:55,820 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:19:55,820 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:19:55,820 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2023-03-28 13:19:55,820 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:19:55,820 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:19:55,820 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2023-03-28 13:19:55,820 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2023-03-28 13:19:55,820 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2023-03-28 13:19:55,820 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2023-03-28 13:19:55,820 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2023-03-28 13:19:55,820 INFO com.cts.controller.Controller [scheduling-1] Found 5 sub-folders for mBusFormat - one for each meter data collection system .
+2023-03-28 13:19:55,820 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2023-03-28 13:19:55,820 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:19:55,820 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:19:55,820 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2023-03-28 13:19:55,820 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:19:55,820 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:19:55,820 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2023-03-28 13:19:55,820 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:19:55,820 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:19:55,820 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Paradishagen.
+2023-03-28 13:19:55,836 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:19:55,836 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:19:55,836 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2023-03-28 13:19:55,836 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:19:55,836 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:19:55,836 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 0 seconds.
+2023-03-28 13:19:55,836 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 0 seconds.
+2023-03-28 13:19:55,836 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 0 seconds.
+2023-03-28 13:19:55,836 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2023-03-28 13:29:55,764 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2023-03-28 13:29:55,818 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2023-03-28 13:29:55,820 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2023-03-28 13:29:55,820 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2023-03-28 13:29:55,820 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2023-03-28 13:29:55,823 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2023-03-28 13:29:55,823 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2023-03-28 13:29:55,823 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:29:55,823 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:29:55,823 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2023-03-28 13:29:55,823 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:29:55,823 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:29:55,823 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2023-03-28 13:29:55,823 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:29:55,823 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:29:55,823 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2023-03-28 13:29:55,823 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2023-03-28 13:29:55,823 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2023-03-28 13:29:55,823 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2023-03-28 13:29:55,823 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2023-03-28 13:29:55,823 INFO com.cts.controller.Controller [scheduling-1] Found 5 sub-folders for mBusFormat - one for each meter data collection system .
+2023-03-28 13:29:55,823 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2023-03-28 13:29:55,823 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:29:55,823 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:29:55,823 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2023-03-28 13:29:55,823 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:29:55,823 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:29:55,823 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2023-03-28 13:29:55,839 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:29:55,839 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:29:55,839 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Paradishagen.
+2023-03-28 13:29:55,839 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:29:55,839 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:29:55,839 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2023-03-28 13:29:55,839 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:29:55,839 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:29:55,839 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 0 seconds.
+2023-03-28 13:29:55,839 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 0 seconds.
+2023-03-28 13:29:55,839 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 0 seconds.
+2023-03-28 13:29:55,839 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2023-03-28 13:39:55,776 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2023-03-28 13:39:55,797 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2023-03-28 13:39:55,797 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2023-03-28 13:39:55,797 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2023-03-28 13:39:55,797 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2023-03-28 13:39:55,800 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2023-03-28 13:39:55,801 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2023-03-28 13:39:55,803 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:39:55,803 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:39:55,803 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2023-03-28 13:39:55,804 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:39:55,805 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:39:55,805 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2023-03-28 13:39:55,806 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:39:55,806 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:39:55,806 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2023-03-28 13:39:55,807 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2023-03-28 13:39:55,807 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2023-03-28 13:39:55,807 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2023-03-28 13:39:55,807 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2023-03-28 13:39:55,813 INFO com.cts.controller.Controller [scheduling-1] Found 5 sub-folders for mBusFormat - one for each meter data collection system .
+2023-03-28 13:39:55,813 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2023-03-28 13:39:55,816 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:39:55,817 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:39:55,817 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2023-03-28 13:39:55,819 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:39:55,819 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:39:55,819 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2023-03-28 13:39:55,821 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:39:55,821 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:39:55,821 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Paradishagen.
+2023-03-28 13:39:55,822 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:39:55,822 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:39:55,822 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2023-03-28 13:39:55,825 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-03-28 13:39:55,825 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-03-28 13:39:55,825 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 0 seconds.
+2023-03-28 13:39:55,825 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 0 seconds.
+2023-03-28 13:39:55,825 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 0 seconds.
+2023-03-28 13:39:55,825 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2023-03-28 13:47:32,361 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'taskScheduler'
+2023-03-28 13:47:32,361 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-03-28 13:47:32,376 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.

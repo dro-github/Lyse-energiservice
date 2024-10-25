@@ -1,0 +1,528 @@
+2020-06-29 07:49:43,849 INFO org.springframework.boot.StartupInfoLogger [main] Starting StartPoint on NOLI125045 with PID 19068 (C:\sandbox\BKK_EnergiTjenester_SpringBoot\target\classes started by ronend in C:\sandbox\BKK_EnergiTjenester_SpringBoot)
+2020-06-29 07:49:43,864 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-06-29 07:49:46,059 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2020-06-29 07:49:46,143 INFO org.springframework.boot.StartupInfoLogger [main] Started StartPoint in 3.829 seconds (JVM running for 5.73)
+2020-06-29 07:49:46,169 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2020-06-29 07:49:46,174 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-06-29 07:49:46,209 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2020-06-29 07:49:46,210 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC.
+2020-06-29 07:49:46,210 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\ for existing sub-directories.
+2020-06-29 07:49:46,214 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for circutorPLCFormat - one for each meter data collection system .
+2020-06-29 07:49:46,214 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1.
+2020-06-29 07:49:46,249 INFO com.cts.controller.Controller [scheduling-1] Found 3 new input file/s.
+2020-06-29 07:49:46,249 INFO com.cts.controller.Controller [scheduling-1] Found input file: Test_circutorplc_TimestampRead_1593409786225.txt.
+2020-06-29 07:49:46,252 INFO com.cts.generator.ProcessInput [scheduling-1] Start processing input file Test_circutorplc_TimestampRead_1593409786225.txt.
+2020-06-29 07:49:46,255 INFO com.cts.ioutils.InputFileReader [scheduling-1] Starting to read Test_circutorplc_TimestampRead_1593409786225.txt.
+2020-06-29 07:49:46,259 INFO com.cts.ioutils.InputFileReader [scheduling-1] Completed reading. Total rows read = 31.
+2020-06-29 07:49:46,259 INFO com.cts.generator.ProcessInput [scheduling-1] Collected 31 input rows.
+2020-06-29 07:49:46,260 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct date format.
+2020-06-29 07:49:46,378 INFO com.cts.utils.VerifyDateFormat [scheduling-1] This input row contains non parsable date parameter: meter_id = Dummy_5; date = tullOgVass. 
+2020-06-29 07:49:46,382 INFO com.cts.utils.VerifyDateFormat [scheduling-1] This input row contains non parsable date parameter: meter_id = Dummy_7; date = tullOgVass. 
+2020-06-29 07:49:46,383 INFO com.cts.utils.VerifyDateFormat [scheduling-1] This input row contains non parsable date parameter: meter_id = 9691; date = tullOgVass. 
+2020-06-29 07:49:46,383 INFO com.cts.utils.VerifyDateFormat [scheduling-1] This input row contains non parsable date parameter: meter_id = 9691; date = tullOgVass. 
+2020-06-29 07:49:46,383 INFO com.cts.utils.VerifyDateFormat [scheduling-1] This input row contains non parsable date parameter: meter_id = Dummy_8; date = tullOgVass. 
+2020-06-29 07:49:46,385 INFO com.cts.utils.VerifyDateFormat [scheduling-1] This input row contains non parsable date parameter: meter_id = Dummy_9; date = tullOgVass. 
+2020-06-29 07:49:46,385 INFO com.cts.utils.VerifyDateFormat [scheduling-1] This input row contains non parsable date parameter: meter_id = Dummy_10; date = tullOgVass. 
+2020-06-29 07:49:46,386 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Completed checking 31 rows, out of which 24 have correct date format.
+2020-06-29 07:49:46,386 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Checked date for 31 rows in less than a second.
+2020-06-29 07:49:46,386 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct number format.
+2020-06-29 07:49:46,389 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] This input row contains non parsable stand/volume parameter: meter_id = 9691; Number = notAnumber. 
+2020-06-29 07:49:46,389 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] This input row contains non parsable stand/volume parameter: meter_id = 9691; Number = notAnumber. 
+2020-06-29 07:49:46,390 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 24 rows, out of which 22 have correct number format.
+2020-06-29 07:49:46,390 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 24 rows in less than a second.
+2020-06-29 07:49:46,391 INFO com.cts.generator.ProcessInput [scheduling-1] Received 22 input rows, will check for an entry in customer for distinct meters in the input.
+2020-06-29 07:49:46,395 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-06-29 07:49:46,988 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-06-29 07:50:02,076 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 14 distinct meters. Will check for a Customer registry for each.
+2020-06-29 07:50:02,125 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter Dummy_6 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,156 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = Dummy_6. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,157 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 07:50:03,158 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,203 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9680. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,204 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 07:50:03,204 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter GHI in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,247 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = GHI. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,248 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 07:50:03,248 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9673 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,290 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9673. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,291 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 07:50:03,291 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter JKL in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,335 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = JKL. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,335 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 07:50:03,336 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter MNO in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,378 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = MNO. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,379 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 07:50:03,379 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9670 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,424 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9670. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,424 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 07:50:03,425 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter PQR in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,468 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = PQR. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,469 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 07:50:03,469 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter STU in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,511 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = STU. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,512 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 07:50:03,512 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 965 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,554 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 965. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,555 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 07:50:03,555 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter ABC in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,596 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = ABC. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,596 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 07:50:03,597 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 810 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,640 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 810. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,640 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 07:50:03,641 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter DEF in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,682 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = DEF. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,683 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 07:50:03,683 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 104 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,725 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 104. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,725 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 07:50:03,726 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 14 meters. Out of which 0 has Customer entry.
+2020-06-29 07:50:03,726 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 14 meters =  1 seconds.
+2020-06-29 07:50:03,726 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 0 meters which have a Customer record.
+2020-06-29 07:50:03,727 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 0 input rows.
+2020-06-29 07:50:03,727 INFO com.cts.controller.Controller [scheduling-1] No output created from file Test_circutorplc_TimestampRead_1593409786225.txt. This might be due to wrong input at all rows, corrupt file or no input to be processed into a transaction, e.g. no stand hour between 23:00 and 01:00.
+2020-06-29 07:50:03,729 INFO com.cts.ioutils.DeviationReportWriter [scheduling-1] Publish Deviation Report = TRUE
+2020-06-29 07:50:03,736 INFO com.cts.ioutils.DeviationReportWriter [scheduling-1] AvviksRapport skrevet til: C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1\Failed\Test_circutorplc_Failed_1593409786225.txt
+2020-06-29 07:50:03,736 INFO com.cts.controller.Controller [scheduling-1] Starting to move used input files to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1\Used\.
+2020-06-29 07:50:03,747 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] Test_circutorplc_TimestampRead_1593409786225.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1\Used\ .
+2020-06-29 07:50:03,748 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 17 seconds.
+2020-06-29 07:50:03,749 INFO com.cts.controller.Controller [scheduling-1] Found input file: Test_circutorplc_2mps_TimestampRead_1593409786238.txt.
+2020-06-29 07:50:03,749 INFO com.cts.generator.ProcessInput [scheduling-1] Start processing input file Test_circutorplc_2mps_TimestampRead_1593409786238.txt.
+2020-06-29 07:50:03,749 INFO com.cts.ioutils.InputFileReader [scheduling-1] Starting to read Test_circutorplc_2mps_TimestampRead_1593409786238.txt.
+2020-06-29 07:50:03,751 INFO com.cts.ioutils.InputFileReader [scheduling-1] Completed reading. Total rows read = 13.
+2020-06-29 07:50:03,752 INFO com.cts.generator.ProcessInput [scheduling-1] Collected 12 input rows.
+2020-06-29 07:50:03,752 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct date format.
+2020-06-29 07:50:03,753 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Completed checking 12 rows, out of which 12 have correct date format.
+2020-06-29 07:50:03,753 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Checked date for 12 rows in less than a second.
+2020-06-29 07:50:03,753 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct number format.
+2020-06-29 07:50:03,754 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 12 rows, out of which 12 have correct number format.
+2020-06-29 07:50:03,754 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 12 rows in less than a second.
+2020-06-29 07:50:03,754 INFO com.cts.generator.ProcessInput [scheduling-1] Received 12 input rows, will check for an entry in customer for distinct meters in the input.
+2020-06-29 07:50:03,754 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-06-29 07:50:03,764 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
+2020-06-29 07:50:03,765 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,811 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9680. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,811 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 07:50:03,812 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9670 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,859 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9670. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,860 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 07:50:03,860 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 965 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,905 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 965. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,906 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 07:50:03,906 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 3 meters. Out of which 0 has Customer entry.
+2020-06-29 07:50:03,906 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 3 meters =  0 seconds.
+2020-06-29 07:50:03,906 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 0 meters which have a Customer record.
+2020-06-29 07:50:03,906 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 0 input rows.
+2020-06-29 07:50:03,907 INFO com.cts.controller.Controller [scheduling-1] No output created from file Test_circutorplc_2mps_TimestampRead_1593409786238.txt. This might be due to wrong input at all rows, corrupt file or no input to be processed into a transaction, e.g. no stand hour between 23:00 and 01:00.
+2020-06-29 07:50:03,908 INFO com.cts.ioutils.DeviationReportWriter [scheduling-1] Publish Deviation Report = TRUE
+2020-06-29 07:50:03,913 INFO com.cts.ioutils.DeviationReportWriter [scheduling-1] AvviksRapport skrevet til: C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1\Failed\Test_circutorplc_2mps_Failed_1593409786238.txt
+2020-06-29 07:50:03,914 INFO com.cts.controller.Controller [scheduling-1] Starting to move used input files to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1\Used\.
+2020-06-29 07:50:03,922 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] Test_circutorplc_2mps_TimestampRead_1593409786238.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1\Used\ .
+2020-06-29 07:50:03,922 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 17 seconds.
+2020-06-29 07:50:03,923 INFO com.cts.controller.Controller [scheduling-1] Found input file: Test_circutorplc_Test_TS_With_gaps_1_TimestampRead_1593409786244.txt.
+2020-06-29 07:50:03,923 INFO com.cts.generator.ProcessInput [scheduling-1] Start processing input file Test_circutorplc_Test_TS_With_gaps_1_TimestampRead_1593409786244.txt.
+2020-06-29 07:50:03,923 INFO com.cts.ioutils.InputFileReader [scheduling-1] Starting to read Test_circutorplc_Test_TS_With_gaps_1_TimestampRead_1593409786244.txt.
+2020-06-29 07:50:03,926 INFO com.cts.ioutils.InputFileReader [scheduling-1] Completed reading. Total rows read = 10.
+2020-06-29 07:50:03,926 INFO com.cts.generator.ProcessInput [scheduling-1] Collected 9 input rows.
+2020-06-29 07:50:03,926 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct date format.
+2020-06-29 07:50:03,927 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Completed checking 9 rows, out of which 9 have correct date format.
+2020-06-29 07:50:03,927 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Checked date for 9 rows in less than a second.
+2020-06-29 07:50:03,927 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct number format.
+2020-06-29 07:50:03,928 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 9 rows, out of which 9 have correct number format.
+2020-06-29 07:50:03,928 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 9 rows in less than a second.
+2020-06-29 07:50:03,928 INFO com.cts.generator.ProcessInput [scheduling-1] Received 9 input rows, will check for an entry in customer for distinct meters in the input.
+2020-06-29 07:50:03,928 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-06-29 07:50:03,942 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
+2020-06-29 07:50:03,943 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,992 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9680. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,992 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 07:50:03,992 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9670 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:04,035 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9670. This meter is ignored. Exception message below:
+2020-06-29 07:50:04,036 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 07:50:04,036 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 2 meters. Out of which 0 has Customer entry.
+2020-06-29 07:50:04,036 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 2 meters =  0 seconds.
+2020-06-29 07:50:04,036 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 0 meters which have a Customer record.
+2020-06-29 07:50:04,036 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 0 input rows.
+2020-06-29 07:50:04,036 INFO com.cts.controller.Controller [scheduling-1] No output created from file Test_circutorplc_Test_TS_With_gaps_1_TimestampRead_1593409786244.txt. This might be due to wrong input at all rows, corrupt file or no input to be processed into a transaction, e.g. no stand hour between 23:00 and 01:00.
+2020-06-29 07:50:04,037 INFO com.cts.ioutils.DeviationReportWriter [scheduling-1] Publish Deviation Report = TRUE
+2020-06-29 07:50:04,042 INFO com.cts.ioutils.DeviationReportWriter [scheduling-1] AvviksRapport skrevet til: C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1\Failed\Test_circutorplc_Test_TS_With_gaps_1_Failed_1593409786244.txt
+2020-06-29 07:50:04,043 INFO com.cts.controller.Controller [scheduling-1] Starting to move used input files to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1\Used\.
+2020-06-29 07:50:04,049 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] Test_circutorplc_Test_TS_With_gaps_1_TimestampRead_1593409786244.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1\Used\ .
+2020-06-29 07:50:04,050 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 17 seconds.
+2020-06-29 07:50:04,050 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2020-06-29 07:50:04,050 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_2.
+2020-06-29 07:50:04,053 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 07:50:04,053 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_3.
+2020-06-29 07:50:04,055 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 07:50:04,055 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 17 seconds.
+2020-06-29 07:50:04,055 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2020-06-29 07:50:04,055 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2020-06-29 07:50:04,058 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2020-06-29 07:50:04,059 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2020-06-29 07:50:04,060 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 07:50:04,060 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2020-06-29 07:50:04,062 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 07:50:04,063 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2020-06-29 07:50:04,064 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 07:50:04,065 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 17 seconds.
+2020-06-29 07:50:04,065 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV.
+2020-06-29 07:50:04,065 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\ for existing sub-directories.
+2020-06-29 07:50:04,069 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VBVFormat - one for each meter data collection system .
+2020-06-29 07:50:04,069 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_1.
+2020-06-29 07:50:04,071 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 07:50:04,071 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_2.
+2020-06-29 07:50:04,073 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 07:50:04,073 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_3.
+2020-06-29 07:50:04,075 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 07:50:04,075 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 17 seconds.
+2020-06-29 07:50:04,075 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT.
+2020-06-29 07:50:04,075 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\ for existing sub-directories.
+2020-06-29 07:50:04,080 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VTFormat - one for each meter data collection system .
+2020-06-29 07:50:04,081 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_1.
+2020-06-29 07:50:04,083 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 07:50:04,083 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_2.
+2020-06-29 07:50:04,085 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 07:50:04,085 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_3.
+2020-06-29 07:50:04,087 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 07:50:04,087 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 17 seconds.
+2020-06-29 07:50:04,087 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2020-06-29 07:50:04,088 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2020-06-29 07:50:04,093 INFO com.cts.controller.Controller [scheduling-1] Found 4 sub-folders for mBusFormat - one for each meter data collection system .
+2020-06-29 07:50:04,093 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2020-06-29 07:50:04,095 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 07:50:04,095 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2020-06-29 07:50:04,098 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 07:50:04,098 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2020-06-29 07:50:04,100 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 07:50:04,101 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2020-06-29 07:50:04,102 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 07:50:04,103 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 17 seconds.
+2020-06-29 07:50:04,103 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde.
+2020-06-29 07:50:04,103 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\ for existing sub-directories.
+2020-06-29 07:50:04,106 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for gamleAnleggFormat - one for each meter data collection system .
+2020-06-29 07:50:04,107 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_1.
+2020-06-29 07:50:04,108 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 07:50:04,108 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_2.
+2020-06-29 07:50:04,110 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 07:50:04,110 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_3.
+2020-06-29 07:50:04,113 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 07:50:04,114 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 17 seconds.
+2020-06-29 07:50:04,114 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 17 seconds.
+2020-06-29 07:50:04,114 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2020-06-29 08:11:16,874 INFO org.springframework.boot.StartupInfoLogger [main] Starting StartPoint on NOLI125045 with PID 18004 (C:\sandbox\BKK_EnergiTjenester_SpringBoot\target\classes started by ronend in C:\sandbox\BKK_EnergiTjenester_SpringBoot)
+2020-06-29 08:11:16,883 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-06-29 08:11:18,547 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2020-06-29 08:11:18,617 INFO org.springframework.boot.StartupInfoLogger [main] Started StartPoint in 2.882 seconds (JVM running for 4.101)
+2020-06-29 08:11:18,614 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2020-06-29 08:11:18,628 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-06-29 08:11:18,692 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2020-06-29 08:11:18,692 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC.
+2020-06-29 08:11:18,693 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\ for existing sub-directories.
+2020-06-29 08:11:18,699 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for circutorPLCFormat - one for each meter data collection system .
+2020-06-29 08:11:18,699 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1.
+2020-06-29 08:11:18,740 INFO com.cts.controller.Controller [scheduling-1] Found 3 new input file/s.
+2020-06-29 08:11:18,741 INFO com.cts.controller.Controller [scheduling-1] Found input file: Test_circutorplc_TimestampRead_1593411078709.txt.
+2020-06-29 08:11:18,745 INFO com.cts.generator.ProcessInput [scheduling-1] Start processing input file Test_circutorplc_TimestampRead_1593411078709.txt.
+2020-06-29 08:11:18,748 INFO com.cts.ioutils.InputFileReader [scheduling-1] Starting to read Test_circutorplc_TimestampRead_1593411078709.txt.
+2020-06-29 08:11:18,767 INFO com.cts.ioutils.InputFileReader [scheduling-1] Completed reading. Total rows read = 31.
+2020-06-29 08:11:18,772 INFO com.cts.generator.ProcessInput [scheduling-1] Collected 31 input rows.
+2020-06-29 08:11:18,773 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct date format.
+2020-06-29 08:11:18,913 INFO com.cts.utils.VerifyDateFormat [scheduling-1] This input row contains non parsable date parameter: meter_id = Dummy_5; date = tullOgVass. 
+2020-06-29 08:11:18,919 INFO com.cts.utils.VerifyDateFormat [scheduling-1] This input row contains non parsable date parameter: meter_id = Dummy_7; date = tullOgVass. 
+2020-06-29 08:11:18,919 INFO com.cts.utils.VerifyDateFormat [scheduling-1] This input row contains non parsable date parameter: meter_id = 9691; date = tullOgVass. 
+2020-06-29 08:11:18,920 INFO com.cts.utils.VerifyDateFormat [scheduling-1] This input row contains non parsable date parameter: meter_id = 9691; date = tullOgVass. 
+2020-06-29 08:11:18,920 INFO com.cts.utils.VerifyDateFormat [scheduling-1] This input row contains non parsable date parameter: meter_id = Dummy_8; date = tullOgVass. 
+2020-06-29 08:11:18,922 INFO com.cts.utils.VerifyDateFormat [scheduling-1] This input row contains non parsable date parameter: meter_id = Dummy_9; date = tullOgVass. 
+2020-06-29 08:11:18,922 INFO com.cts.utils.VerifyDateFormat [scheduling-1] This input row contains non parsable date parameter: meter_id = Dummy_10; date = tullOgVass. 
+2020-06-29 08:11:18,922 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Completed checking 31 rows, out of which 24 have correct date format.
+2020-06-29 08:11:18,923 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Checked date for 31 rows in less than a second.
+2020-06-29 08:11:18,923 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct number format.
+2020-06-29 08:11:18,926 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] This input row contains non parsable stand/volume parameter: meter_id = 9691; Number = notAnumber. 
+2020-06-29 08:11:18,927 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] This input row contains non parsable stand/volume parameter: meter_id = 9691; Number = notAnumber. 
+2020-06-29 08:11:18,927 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 24 rows, out of which 22 have correct number format.
+2020-06-29 08:11:18,928 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 24 rows in less than a second.
+2020-06-29 08:11:18,928 INFO com.cts.generator.ProcessInput [scheduling-1] Received 22 input rows, will check for an entry in customer for distinct meters in the input.
+2020-06-29 08:11:18,933 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-06-29 08:11:19,254 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-06-29 08:11:34,238 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 14 distinct meters. Will check for a Customer registry for each.
+2020-06-29 08:11:34,268 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter Dummy_6 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,017 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = Dummy_6. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,017 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 08:11:35,018 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,076 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9680. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,076 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 08:11:35,076 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter GHI in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,135 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = GHI. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,136 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 08:11:35,137 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9673 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,194 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9673. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,195 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 08:11:35,196 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter JKL in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,249 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = JKL. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,250 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 08:11:35,250 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter MNO in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,305 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = MNO. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,306 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 08:11:35,306 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9670 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,360 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9670. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,360 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 08:11:35,361 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter PQR in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,415 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = PQR. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,415 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 08:11:35,416 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter STU in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,521 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = STU. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,522 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 08:11:35,522 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 965 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,577 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 965. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,577 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 08:11:35,578 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter ABC in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,635 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = ABC. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,635 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 08:11:35,636 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 810 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,690 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 810. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,690 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 08:11:35,691 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter DEF in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,744 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = DEF. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,744 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 08:11:35,744 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 104 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,798 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 104. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,798 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 08:11:35,798 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 14 meters. Out of which 0 has Customer entry.
+2020-06-29 08:11:35,798 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 14 meters =  1 seconds.
+2020-06-29 08:11:35,799 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 0 meters which have a Customer record.
+2020-06-29 08:11:35,799 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 0 input rows.
+2020-06-29 08:11:35,799 INFO com.cts.controller.Controller [scheduling-1] No output created from file Test_circutorplc_TimestampRead_1593411078709.txt. This might be due to wrong input at all rows, corrupt file or no input to be processed into a transaction, e.g. no stand hour between 23:00 and 01:00.
+2020-06-29 08:11:35,801 INFO com.cts.ioutils.DeviationReportWriter [scheduling-1] Publish Deviation Report = TRUE
+2020-06-29 08:11:35,805 INFO com.cts.ioutils.DeviationReportWriter [scheduling-1] AvviksRapport skrevet til: C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1\Failed\Test_circutorplc_Failed_1593411078709.txt
+2020-06-29 08:11:35,805 INFO com.cts.controller.Controller [scheduling-1] Starting to move used input files to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1\Used\.
+2020-06-29 08:11:35,813 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] Test_circutorplc_TimestampRead_1593411078709.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1\Used\ .
+2020-06-29 08:11:35,813 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 17 seconds.
+2020-06-29 08:11:35,813 INFO com.cts.controller.Controller [scheduling-1] Found input file: Test_circutorplc_2mps_TimestampRead_1593411078726.txt.
+2020-06-29 08:11:35,814 INFO com.cts.generator.ProcessInput [scheduling-1] Start processing input file Test_circutorplc_2mps_TimestampRead_1593411078726.txt.
+2020-06-29 08:11:35,814 INFO com.cts.ioutils.InputFileReader [scheduling-1] Starting to read Test_circutorplc_2mps_TimestampRead_1593411078726.txt.
+2020-06-29 08:11:35,815 INFO com.cts.ioutils.InputFileReader [scheduling-1] Completed reading. Total rows read = 13.
+2020-06-29 08:11:35,816 INFO com.cts.generator.ProcessInput [scheduling-1] Collected 12 input rows.
+2020-06-29 08:11:35,816 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct date format.
+2020-06-29 08:11:35,817 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Completed checking 12 rows, out of which 12 have correct date format.
+2020-06-29 08:11:35,817 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Checked date for 12 rows in less than a second.
+2020-06-29 08:11:35,817 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct number format.
+2020-06-29 08:11:35,818 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 12 rows, out of which 12 have correct number format.
+2020-06-29 08:11:35,818 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 12 rows in less than a second.
+2020-06-29 08:11:35,818 INFO com.cts.generator.ProcessInput [scheduling-1] Received 12 input rows, will check for an entry in customer for distinct meters in the input.
+2020-06-29 08:11:35,818 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-06-29 08:11:35,828 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
+2020-06-29 08:11:35,829 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,886 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9680. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,887 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 08:11:35,887 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9670 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,943 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9670. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,943 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 08:11:35,943 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 965 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,996 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 965. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,996 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 08:11:35,997 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 3 meters. Out of which 0 has Customer entry.
+2020-06-29 08:11:35,997 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 3 meters =  0 seconds.
+2020-06-29 08:11:35,997 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 0 meters which have a Customer record.
+2020-06-29 08:11:35,997 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 0 input rows.
+2020-06-29 08:11:35,997 INFO com.cts.controller.Controller [scheduling-1] No output created from file Test_circutorplc_2mps_TimestampRead_1593411078726.txt. This might be due to wrong input at all rows, corrupt file or no input to be processed into a transaction, e.g. no stand hour between 23:00 and 01:00.
+2020-06-29 08:11:35,998 INFO com.cts.ioutils.DeviationReportWriter [scheduling-1] Publish Deviation Report = TRUE
+2020-06-29 08:11:36,001 INFO com.cts.ioutils.DeviationReportWriter [scheduling-1] AvviksRapport skrevet til: C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1\Failed\Test_circutorplc_2mps_Failed_1593411078726.txt
+2020-06-29 08:11:36,002 INFO com.cts.controller.Controller [scheduling-1] Starting to move used input files to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1\Used\.
+2020-06-29 08:11:36,007 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] Test_circutorplc_2mps_TimestampRead_1593411078726.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1\Used\ .
+2020-06-29 08:11:36,007 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 17 seconds.
+2020-06-29 08:11:36,008 INFO com.cts.controller.Controller [scheduling-1] Found input file: Test_circutorplc_Test_TS_With_gaps_1_TimestampRead_1593411078732.txt.
+2020-06-29 08:11:36,008 INFO com.cts.generator.ProcessInput [scheduling-1] Start processing input file Test_circutorplc_Test_TS_With_gaps_1_TimestampRead_1593411078732.txt.
+2020-06-29 08:11:36,008 INFO com.cts.ioutils.InputFileReader [scheduling-1] Starting to read Test_circutorplc_Test_TS_With_gaps_1_TimestampRead_1593411078732.txt.
+2020-06-29 08:11:36,010 INFO com.cts.ioutils.InputFileReader [scheduling-1] Completed reading. Total rows read = 10.
+2020-06-29 08:11:36,011 INFO com.cts.generator.ProcessInput [scheduling-1] Collected 9 input rows.
+2020-06-29 08:11:36,011 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct date format.
+2020-06-29 08:11:36,011 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Completed checking 9 rows, out of which 9 have correct date format.
+2020-06-29 08:11:36,012 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Checked date for 9 rows in less than a second.
+2020-06-29 08:11:36,012 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct number format.
+2020-06-29 08:11:36,012 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 9 rows, out of which 9 have correct number format.
+2020-06-29 08:11:36,012 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 9 rows in less than a second.
+2020-06-29 08:11:36,012 INFO com.cts.generator.ProcessInput [scheduling-1] Received 9 input rows, will check for an entry in customer for distinct meters in the input.
+2020-06-29 08:11:36,013 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-06-29 08:11:36,020 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
+2020-06-29 08:11:36,020 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:36,078 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9680. This meter is ignored. Exception message below:
+2020-06-29 08:11:36,078 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 08:11:36,079 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9670 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:36,130 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9670. This meter is ignored. Exception message below:
+2020-06-29 08:11:36,131 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 08:11:36,131 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 2 meters. Out of which 0 has Customer entry.
+2020-06-29 08:11:36,131 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 2 meters =  0 seconds.
+2020-06-29 08:11:36,131 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 0 meters which have a Customer record.
+2020-06-29 08:11:36,131 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 0 input rows.
+2020-06-29 08:11:36,131 INFO com.cts.controller.Controller [scheduling-1] No output created from file Test_circutorplc_Test_TS_With_gaps_1_TimestampRead_1593411078732.txt. This might be due to wrong input at all rows, corrupt file or no input to be processed into a transaction, e.g. no stand hour between 23:00 and 01:00.
+2020-06-29 08:11:36,131 INFO com.cts.ioutils.DeviationReportWriter [scheduling-1] Publish Deviation Report = TRUE
+2020-06-29 08:11:36,134 INFO com.cts.ioutils.DeviationReportWriter [scheduling-1] AvviksRapport skrevet til: C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1\Failed\Test_circutorplc_Test_TS_With_gaps_1_Failed_1593411078732.txt
+2020-06-29 08:11:36,134 INFO com.cts.controller.Controller [scheduling-1] Starting to move used input files to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1\Used\.
+2020-06-29 08:11:36,139 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] Test_circutorplc_Test_TS_With_gaps_1_TimestampRead_1593411078732.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1\Used\ .
+2020-06-29 08:11:36,139 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 17 seconds.
+2020-06-29 08:11:36,139 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2020-06-29 08:11:36,139 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_2.
+2020-06-29 08:11:36,140 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:11:36,141 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_3.
+2020-06-29 08:11:36,142 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:11:36,142 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 17 seconds.
+2020-06-29 08:11:36,142 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2020-06-29 08:11:36,142 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2020-06-29 08:11:36,144 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2020-06-29 08:11:36,145 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2020-06-29 08:11:36,146 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:11:36,146 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2020-06-29 08:11:36,147 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:11:36,147 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2020-06-29 08:11:36,148 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:11:36,148 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 17 seconds.
+2020-06-29 08:11:36,148 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV.
+2020-06-29 08:11:36,149 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\ for existing sub-directories.
+2020-06-29 08:11:36,151 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VBVFormat - one for each meter data collection system .
+2020-06-29 08:11:36,151 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_1.
+2020-06-29 08:11:36,152 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:11:36,152 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_2.
+2020-06-29 08:11:36,153 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:11:36,153 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_3.
+2020-06-29 08:11:36,154 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:11:36,155 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 17 seconds.
+2020-06-29 08:11:36,155 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT.
+2020-06-29 08:11:36,155 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\ for existing sub-directories.
+2020-06-29 08:11:36,157 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VTFormat - one for each meter data collection system .
+2020-06-29 08:11:36,157 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_1.
+2020-06-29 08:11:36,158 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:11:36,158 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_2.
+2020-06-29 08:11:36,159 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:11:36,160 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_3.
+2020-06-29 08:11:36,161 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:11:36,161 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 17 seconds.
+2020-06-29 08:11:36,161 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2020-06-29 08:11:36,161 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2020-06-29 08:11:36,164 INFO com.cts.controller.Controller [scheduling-1] Found 4 sub-folders for mBusFormat - one for each meter data collection system .
+2020-06-29 08:11:36,164 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2020-06-29 08:11:36,165 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:11:36,165 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2020-06-29 08:11:36,167 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:11:36,167 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2020-06-29 08:11:36,168 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:11:36,168 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2020-06-29 08:11:36,169 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:11:36,170 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 17 seconds.
+2020-06-29 08:11:36,170 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde.
+2020-06-29 08:11:36,170 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\ for existing sub-directories.
+2020-06-29 08:11:36,172 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for gamleAnleggFormat - one for each meter data collection system .
+2020-06-29 08:11:36,172 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_1.
+2020-06-29 08:11:36,173 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:11:36,173 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_2.
+2020-06-29 08:11:36,174 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:11:36,175 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_3.
+2020-06-29 08:11:36,176 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:11:36,176 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 17 seconds.
+2020-06-29 08:11:36,176 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 17 seconds.
+2020-06-29 08:11:36,176 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2020-06-29 08:14:43,388 INFO org.springframework.boot.StartupInfoLogger [main] Starting StartPoint on NOLI125045 with PID 18292 (C:\sandbox\BKK_EnergiTjenester_SpringBoot\target\classes started by ronend in C:\sandbox\BKK_EnergiTjenester_SpringBoot)
+2020-06-29 08:14:43,392 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-06-29 08:14:44,623 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2020-06-29 08:14:44,663 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2020-06-29 08:14:44,667 INFO org.springframework.boot.StartupInfoLogger [main] Started StartPoint in 2.097 seconds (JVM running for 2.904)
+2020-06-29 08:14:44,675 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-06-29 08:14:44,695 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2020-06-29 08:14:44,696 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC.
+2020-06-29 08:14:44,697 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\ for existing sub-directories.
+2020-06-29 08:14:44,701 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for circutorPLCFormat - one for each meter data collection system .
+2020-06-29 08:14:44,702 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1.
+2020-06-29 08:14:44,725 INFO com.cts.controller.Controller [scheduling-1] Found 1 new input file/s.
+2020-06-29 08:14:44,726 INFO com.cts.controller.Controller [scheduling-1] Found input file: Test_circutorplc_2mps_TimestampRead_1593411284711.txt.
+2020-06-29 08:14:44,729 INFO com.cts.generator.ProcessInput [scheduling-1] Start processing input file Test_circutorplc_2mps_TimestampRead_1593411284711.txt.
+2020-06-29 08:14:44,731 INFO com.cts.ioutils.InputFileReader [scheduling-1] Starting to read Test_circutorplc_2mps_TimestampRead_1593411284711.txt.
+2020-06-29 08:14:44,734 INFO com.cts.ioutils.InputFileReader [scheduling-1] Completed reading. Total rows read = 13.
+2020-06-29 08:14:44,736 INFO com.cts.generator.ProcessInput [scheduling-1] Collected 12 input rows.
+2020-06-29 08:14:44,736 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct date format.
+2020-06-29 08:14:44,814 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Completed checking 12 rows, out of which 12 have correct date format.
+2020-06-29 08:14:44,815 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Checked date for 12 rows in less than a second.
+2020-06-29 08:14:44,815 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct number format.
+2020-06-29 08:14:44,818 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 12 rows, out of which 12 have correct number format.
+2020-06-29 08:14:44,819 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 12 rows in less than a second.
+2020-06-29 08:14:44,819 INFO com.cts.generator.ProcessInput [scheduling-1] Received 12 input rows, will check for an entry in customer for distinct meters in the input.
+2020-06-29 08:14:44,822 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-06-29 08:14:45,139 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-06-29 08:14:58,961 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
+2020-06-29 08:14:58,991 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:14:59,691 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9680. This meter is ignored. Exception message below:
+2020-06-29 08:14:59,691 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 08:14:59,692 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9670 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:14:59,749 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9670. This meter is ignored. Exception message below:
+2020-06-29 08:14:59,750 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 08:14:59,752 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 965 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:14:59,812 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 965. This meter is ignored. Exception message below:
+2020-06-29 08:14:59,813 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
+2020-06-29 08:14:59,813 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 3 meters. Out of which 0 has Customer entry.
+2020-06-29 08:14:59,814 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 3 meters =  0 seconds.
+2020-06-29 08:14:59,814 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 0 meters which have a Customer record.
+2020-06-29 08:14:59,815 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 0 input rows.
+2020-06-29 08:14:59,816 INFO com.cts.controller.Controller [scheduling-1] No output created from file Test_circutorplc_2mps_TimestampRead_1593411284711.txt. This might be due to wrong input at all rows, corrupt file or no input to be processed into a transaction, e.g. no stand hour between 23:00 and 01:00.
+2020-06-29 08:14:59,822 INFO com.cts.ioutils.DeviationReportWriter [scheduling-1] Publish Deviation Report = TRUE
+2020-06-29 08:14:59,830 INFO com.cts.ioutils.DeviationReportWriter [scheduling-1] AvviksRapport skrevet til: C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1\Failed\Test_circutorplc_2mps_Failed_1593411284711.txt
+2020-06-29 08:14:59,831 INFO com.cts.controller.Controller [scheduling-1] Starting to move used input files to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1\Used\.
+2020-06-29 08:14:59,843 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] Test_circutorplc_2mps_TimestampRead_1593411284711.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1\Used\ .
+2020-06-29 08:14:59,844 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 15 seconds.
+2020-06-29 08:14:59,844 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2020-06-29 08:14:59,844 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_2.
+2020-06-29 08:14:59,848 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:14:59,848 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_3.
+2020-06-29 08:14:59,851 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:14:59,851 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 15 seconds.
+2020-06-29 08:14:59,851 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2020-06-29 08:14:59,852 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2020-06-29 08:14:59,857 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2020-06-29 08:14:59,857 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2020-06-29 08:14:59,859 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:14:59,859 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2020-06-29 08:14:59,861 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:14:59,861 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2020-06-29 08:14:59,862 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:14:59,862 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 15 seconds.
+2020-06-29 08:14:59,862 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV.
+2020-06-29 08:14:59,863 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\ for existing sub-directories.
+2020-06-29 08:14:59,865 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VBVFormat - one for each meter data collection system .
+2020-06-29 08:14:59,865 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_1.
+2020-06-29 08:14:59,866 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:14:59,867 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_2.
+2020-06-29 08:14:59,868 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:14:59,868 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_3.
+2020-06-29 08:14:59,869 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:14:59,869 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 15 seconds.
+2020-06-29 08:14:59,869 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT.
+2020-06-29 08:14:59,869 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\ for existing sub-directories.
+2020-06-29 08:14:59,872 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VTFormat - one for each meter data collection system .
+2020-06-29 08:14:59,872 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_1.
+2020-06-29 08:14:59,873 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:14:59,873 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_2.
+2020-06-29 08:14:59,874 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:14:59,875 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_3.
+2020-06-29 08:14:59,876 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:14:59,876 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 15 seconds.
+2020-06-29 08:14:59,876 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2020-06-29 08:14:59,876 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2020-06-29 08:14:59,879 INFO com.cts.controller.Controller [scheduling-1] Found 4 sub-folders for mBusFormat - one for each meter data collection system .
+2020-06-29 08:14:59,879 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2020-06-29 08:14:59,880 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:14:59,880 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2020-06-29 08:14:59,881 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:14:59,881 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2020-06-29 08:14:59,882 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:14:59,882 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2020-06-29 08:14:59,884 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:14:59,884 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 15 seconds.
+2020-06-29 08:14:59,884 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde.
+2020-06-29 08:14:59,884 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\ for existing sub-directories.
+2020-06-29 08:14:59,886 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for gamleAnleggFormat - one for each meter data collection system .
+2020-06-29 08:14:59,886 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_1.
+2020-06-29 08:14:59,887 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:14:59,887 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_2.
+2020-06-29 08:14:59,889 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:14:59,889 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_3.
+2020-06-29 08:14:59,890 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2020-06-29 08:14:59,891 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 15 seconds.
+2020-06-29 08:14:59,891 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 15 seconds.
+2020-06-29 08:14:59,891 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.

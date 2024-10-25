@@ -1,0 +1,7 @@
+#Date format properties:
+mBusDateFormat=MM/dd/yyyy HH:mm:ss
+circutorPLCDateFormat=dd/MM/yyyy HH:mm:ss
+forbruksImportDateFormat=dd.MM.yyyy
+gamleAnleggDateFormat=yyyy.MM.dd HH:mm
+VBVDateFormat=dd.MM.yyyy
+VTDateFormat=dd.MM.yyyy

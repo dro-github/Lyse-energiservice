@@ -1,0 +1,186 @@
+2021-08-05 08:44:41,015 INFO org.springframework.boot.StartupInfoLogger [main] Starting StartPoint on NOLI125045 with PID 15224 (C:\sandbox\bkk_energitjenester_in_progress\target\classes started by ronend in C:\sandbox\bkk_energitjenester_in_progress)
+2021-08-05 08:44:41,032 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-08-05 08:44:42,466 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-08-05 08:44:42,519 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2021-08-05 08:44:42,523 INFO org.springframework.boot.StartupInfoLogger [main] Started StartPoint in 2.485 seconds (JVM running for 3.299)
+2021-08-05 08:44:42,530 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-08-05 08:44:42,554 INFO com.cts.controller.Controller [scheduling-1] Found 6 sub-directories - one directory per file format.
+2021-08-05 08:44:42,555 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC.
+2021-08-05 08:44:42,555 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\ for existing sub-directories.
+2021-08-05 08:44:42,563 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for circutorPLCFormat - one for each meter data collection system .
+2021-08-05 08:44:42,563 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_1.
+2021-08-05 08:44:42,573 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-08-05 08:44:42,573 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-08-05 08:44:42,573 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_2.
+2021-08-05 08:44:42,576 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-08-05 08:44:42,576 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-08-05 08:44:42,576 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for circutorPLCFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC\Borettslag_3.
+2021-08-05 08:44:42,579 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-08-05 08:44:42,580 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-08-05 08:44:42,580 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\CircutorPLC in 0 seconds.
+2021-08-05 08:44:42,580 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk.
+2021-08-05 08:44:42,580 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\ for existing sub-directories.
+2021-08-05 08:44:42,585 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for forbruksImportFormat - one for each meter data collection system .
+2021-08-05 08:44:42,585 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_1.
+2021-08-05 08:44:42,587 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-08-05 08:44:42,588 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-08-05 08:44:42,588 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_2.
+2021-08-05 08:44:42,591 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-08-05 08:44:42,591 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-08-05 08:44:42,591 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk\Borettslag_3.
+2021-08-05 08:44:42,594 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-08-05 08:44:42,594 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-08-05 08:44:42,594 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Forbruk in 0 seconds.
+2021-08-05 08:44:42,596 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV.
+2021-08-05 08:44:42,597 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\ for existing sub-directories.
+2021-08-05 08:44:42,602 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VBVFormat - one for each meter data collection system .
+2021-08-05 08:44:42,602 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_1.
+2021-08-05 08:44:42,605 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-08-05 08:44:42,605 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-08-05 08:44:42,605 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_2.
+2021-08-05 08:44:42,607 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-08-05 08:44:42,608 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-08-05 08:44:42,608 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VBVFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV\Borettslag_3.
+2021-08-05 08:44:42,611 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-08-05 08:44:42,612 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-08-05 08:44:42,613 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVBV in 0 seconds.
+2021-08-05 08:44:42,613 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT.
+2021-08-05 08:44:42,613 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\ for existing sub-directories.
+2021-08-05 08:44:42,619 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for VTFormat - one for each meter data collection system .
+2021-08-05 08:44:42,619 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_1.
+2021-08-05 08:44:42,622 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-08-05 08:44:42,622 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-08-05 08:44:42,622 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_2.
+2021-08-05 08:44:42,624 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-08-05 08:44:42,624 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-08-05 08:44:42,624 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for VTFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT\Borettslag_3.
+2021-08-05 08:44:42,626 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-08-05 08:44:42,626 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-08-05 08:44:42,627 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\KamstrupVT in 0 seconds.
+2021-08-05 08:44:42,627 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus.
+2021-08-05 08:44:42,627 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\ for existing sub-directories.
+2021-08-05 08:44:42,638 INFO com.cts.controller.Controller [scheduling-1] Found 5 sub-folders for mBusFormat - one for each meter data collection system .
+2021-08-05 08:44:42,639 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1.
+2021-08-05 08:44:42,658 INFO com.cts.controller.Controller [scheduling-1] Found 1 new input file/s.
+2021-08-05 08:44:42,659 INFO com.cts.controller.Controller [scheduling-1] Will merge all 1 input files into one file
+2021-08-05 08:44:42,664 INFO com.cts.utils.MergerFiles [scheduling-1] merging: C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Mbus_00Hour_ManyMPs_1_TimestampRead_1628145882642.txt into C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Merged_Temp\mergedFile.txt.
+2021-08-05 08:44:42,667 INFO com.cts.controller.Controller [scheduling-1] Moving used file C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Mbus_00Hour_ManyMPs_1_TimestampRead_1628145882642.txt to Used folder at C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\.
+2021-08-05 08:44:42,667 INFO com.cts.controller.Controller [scheduling-1] Starting to move used input files to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\.
+2021-08-05 08:44:42,678 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] Mbus_00Hour_ManyMPs_1_TimestampRead_1628145882642.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\ .
+2021-08-05 08:44:42,678 INFO com.cts.controller.Controller [scheduling-1] Completed moving used file in 0 seconds.
+2021-08-05 08:44:42,685 INFO com.cts.controller.Controller [scheduling-1] Found input file: mergedFile_TimestampRead_1628145882679.txt.
+2021-08-05 08:44:42,689 INFO com.cts.generator.ProcessInput [scheduling-1] Start processing input file mergedFile_TimestampRead_1628145882679.txt.
+2021-08-05 08:44:42,692 INFO com.cts.ioutils.InputFileReader [scheduling-1] Starting to read mergedFile_TimestampRead_1628145882679.txt.
+2021-08-05 08:44:42,694 INFO com.cts.ioutils.InputFileReader [scheduling-1] Completed reading. Total rows read = 17.
+2021-08-05 08:44:42,695 INFO com.cts.generator.ProcessInput [scheduling-1] Collected 17 input rows.
+2021-08-05 08:44:42,695 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct date format.
+2021-08-05 08:44:42,792 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Completed checking 17 rows, out of which 17 have correct date format.
+2021-08-05 08:44:42,793 INFO com.cts.utils.VerifyDateFormat [scheduling-1] Checked date for 17 rows in less than a second.
+2021-08-05 08:44:42,793 INFO com.cts.generator.ProcessInput [scheduling-1] Checking correct number format.
+2021-08-05 08:44:42,797 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 17 rows, out of which 17 have correct number format.
+2021-08-05 08:44:42,797 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 17 rows in less than a second.
+2021-08-05 08:44:42,797 INFO com.cts.generator.ProcessInput [scheduling-1] Received 17 input rows, will check for an entry in customer for distinct meters in the input.
+2021-08-05 08:44:42,801 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-08-05 08:44:42,908 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-08-05 08:44:44,316 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
+2021-08-05 08:44:44,352 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9680, UNIT kWh, from internal local H2 DB.
+2021-08-05 08:44:44,354 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2021-08-05 08:44:44,355 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2021-08-05 08:44:44,355 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 3 meters. Out of which 3 has Customer entry.
+2021-08-05 08:44:44,356 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 3 meters =  0 seconds.
+2021-08-05 08:44:44,356 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 3 meters which have a Customer record.
+2021-08-05 08:44:44,356 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 17 input rows.
+2021-08-05 08:44:44,356 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
+2021-08-05 08:44:44,360 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 17 meters out of a total of 17 meters.
+2021-08-05 08:44:44,365 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 17 records for gs2 file - mBusFormat.
+2021-08-05 08:44:44,379 INFO com.cts.utils.GetLatestReadingPerMeterPerDayForDailyStands [scheduling-1] Getting valid input for daily stands for M-bus - only the latest reading per meter per day will be used as the daily stand. The reading will be registered @ 00:00:00 regardless of the actual timestamp of the reading (ref.CAS-60852).
+2021-08-05 08:44:44,382 INFO com.cts.utils.GetLatestReadingPerMeterPerDayForDailyStands [scheduling-1] Adding Daily stand for meter 9680 and for date 05/01/2018 00:00:00. Valid stand @00:00:00 hour.
+2021-08-05 08:44:44,382 INFO com.cts.utils.GetLatestReadingPerMeterPerDayForDailyStands [scheduling-1] Adding Daily stand for meter 9680 and for date 05/02/2018 00:00:00. Valid stand @00:00:00 hour.
+2021-08-05 08:44:44,383 INFO com.cts.utils.GetLatestReadingPerMeterPerDayForDailyStands [scheduling-1] Adding Daily stand for meter 9680 and for date 05/03/2018 00:00:00. Valid stand @00:00:00 hour.
+2021-08-05 08:44:44,383 INFO com.cts.utils.GetLatestReadingPerMeterPerDayForDailyStands [scheduling-1] Adding Daily stand for meter 9680 and for date 05/04/2018 00:00:00. Valid stand @00:00:00 hour.
+2021-08-05 08:44:44,383 INFO com.cts.utils.GetLatestReadingPerMeterPerDayForDailyStands [scheduling-1] Adding Daily stand for meter 9680 and for date 05/10/2018 00:00:00. Valid stand @00:00:00 hour.
+2021-08-05 08:44:44,384 INFO com.cts.utils.GetLatestReadingPerMeterPerDayForDailyStands [scheduling-1] Adding Daily stand for meter 9680 and for date 05/20/2018 00:00:00. Valid stand @00:00:00 hour.
+2021-08-05 08:44:44,384 INFO com.cts.utils.GetLatestReadingPerMeterPerDayForDailyStands [scheduling-1] Adding Daily stand for meter 9680 and for date 06/01/2018 00:00:00. Valid stand @00:00:00 hour.
+2021-08-05 08:44:44,385 INFO com.cts.utils.GetLatestReadingPerMeterPerDayForDailyStands [scheduling-1] Adding Daily stand for meter 9680 and for date 06/02/2018 00:00:00. This is the latest stand for this meter.
+2021-08-05 08:44:44,385 INFO com.cts.utils.GetLatestReadingPerMeterPerDayForDailyStands [scheduling-1] Adding Daily stand for meter 12163501 and for date 04/09/2007 00:00:00. Valid stand @00:00:00 hour.
+2021-08-05 08:44:44,385 INFO com.cts.utils.GetLatestReadingPerMeterPerDayForDailyStands [scheduling-1] Adding Daily stand for meter 12163501 and for date 04/10/2007 00:00:00. Valid stand @00:00:00 hour.
+2021-08-05 08:44:44,386 INFO com.cts.utils.GetLatestReadingPerMeterPerDayForDailyStands [scheduling-1] Adding Daily stand for meter 12163501 and for date 05/10/2007 00:00:00. Valid stand @00:00:00 hour.
+2021-08-05 08:44:44,386 INFO com.cts.utils.GetLatestReadingPerMeterPerDayForDailyStands [scheduling-1] Adding Daily stand for meter 12163501 and for date 07/11/2007 00:00:00. This is the latest stand for this meter.
+2021-08-05 08:44:44,386 INFO com.cts.utils.GetLatestReadingPerMeterPerDayForDailyStands [scheduling-1] Adding Daily stand for meter 9670 and for date 12/04/2018 00:00:00. Valid stand @00:00:00 hour.
+2021-08-05 08:44:44,386 INFO com.cts.utils.GetLatestReadingPerMeterPerDayForDailyStands [scheduling-1] Adding Daily stand for meter 9670 and for date 12/05/2018 00:00:00. Valid stand @00:00:00 hour.
+2021-08-05 08:44:44,387 INFO com.cts.utils.GetLatestReadingPerMeterPerDayForDailyStands [scheduling-1] Adding Daily stand for meter 9670 and for date 12/07/2018 00:00:00. Valid stand @00:00:00 hour.
+2021-08-05 08:44:44,387 INFO com.cts.utils.GetLatestReadingPerMeterPerDayForDailyStands [scheduling-1] Adding Daily stand for meter 9670 and for date 12/10/2018 00:00:00. Valid stand @00:00:00 hour.
+2021-08-05 08:44:44,388 INFO com.cts.utils.GetLatestReadingPerMeterPerDayForDailyStands [scheduling-1] Adding Daily stand for meter 9670 and for date 12/12/2018 00:00:00. This is the last stand in the file.
+2021-08-05 08:44:44,389 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] Getting last meter stand for meter 9680 from the db.
+2021-08-05 08:44:44,395 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9680.
+2021-08-05 08:44:45,480 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] Last meter stand for meter 9680 = 78000.0.
+2021-08-05 08:44:45,481 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] getting last reading date for meter 9680 from the db.
+2021-08-05 08:44:45,487 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9680.
+2021-08-05 08:44:45,638 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] LastReadingDate for meter 9680 = 2018-06-01T00:00:00.000+02:00.
+2021-08-05 08:44:45,647 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] The stand date given in the recent file - 05/01/2018 00:00:00 - for meter 9680 is earlier than the last stand date in th DB 06/01/2018 00:00:00.
+2021-08-05 08:44:45,647 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] Will use the readingDate 2018-05-01T00:00:00.000+02:00 and standValue 76115.000 in the file as start values for meter 9680.
+2021-08-05 08:44:45,648 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 9680. Last stand date from DB is 2018-05-01T00:00:00.000+02:00, current stand date is 2018-05-01T00:00:00.000+02:00. Will create day stands for 1 days.
+2021-08-05 08:44:45,660 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 9680. Last stand date from DB is 2018-05-01T00:00:00.000+02:00, current stand date is 2018-05-02T00:00:00.000+02:00. Will create day stands for 1 days.
+2021-08-05 08:44:45,661 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 9680. Last stand date from DB is 2018-05-02T00:00:00.000+02:00, current stand date is 2018-05-03T00:00:00.000+02:00. Will create day stands for 1 days.
+2021-08-05 08:44:45,662 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 9680. Last stand date from DB is 2018-05-03T00:00:00.000+02:00, current stand date is 2018-05-04T00:00:00.000+02:00. Will create day stands for 1 days.
+2021-08-05 08:44:45,663 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 6 day stands for meter 9680. Last stand date from DB is 2018-05-04T00:00:00.000+02:00, current stand date is 2018-05-10T00:00:00.000+02:00. Will create day stands for 6 days.
+2021-08-05 08:44:45,664 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 10 day stands for meter 9680. Last stand date from DB is 2018-05-10T00:00:00.000+02:00, current stand date is 2018-05-20T00:00:00.000+02:00. Will create day stands for 10 days.
+2021-08-05 08:44:45,666 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 12 day stands for meter 9680. Last stand date from DB is 2018-05-20T00:00:00.000+02:00, current stand date is 2018-06-01T00:00:00.000+02:00. Will create day stands for 12 days.
+2021-08-05 08:44:45,668 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 9680. Last stand date from DB is 2018-06-01T00:00:00.000+02:00, current stand date is 2018-06-02T00:00:00.000+02:00. Will create day stands for 1 days.
+2021-08-05 08:44:45,669 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] Getting last meter stand for meter 12163501 from the db.
+2021-08-05 08:44:45,675 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
+2021-08-05 08:44:45,839 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] Last meter stand for meter 12163501 = 409.58.
+2021-08-05 08:44:45,839 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] getting last reading date for meter 12163501 from the db.
+2021-08-05 08:44:45,845 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
+2021-08-05 08:44:46,000 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] LastReadingDate for meter 12163501 = 2007-04-01T00:00:00.000+02:00.
+2021-08-05 08:44:46,001 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 8 day stands for meter 12163501. Last stand date from DB is 2007-04-01T00:00:00.000+02:00, current stand date is 2007-04-09T00:00:00.000+02:00. Will create day stands for 8 days.
+2021-08-05 08:44:46,002 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 12163501. Last stand date from DB is 2007-04-09T00:00:00.000+02:00, current stand date is 2007-04-10T00:00:00.000+02:00. Will create day stands for 1 days.
+2021-08-05 08:44:46,003 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 30 day stands for meter 12163501. Last stand date from DB is 2007-04-10T00:00:00.000+02:00, current stand date is 2007-05-10T00:00:00.000+02:00. Will create day stands for 30 days.
+2021-08-05 08:44:46,006 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 62 day stands for meter 12163501. Last stand date from DB is 2007-05-10T00:00:00.000+02:00, current stand date is 2007-07-11T00:00:00.000+02:00. Will create day stands for 62 days.
+2021-08-05 08:44:46,012 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] Getting last meter stand for meter 9670 from the db.
+2021-08-05 08:44:46,016 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
+2021-08-05 08:44:46,561 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] Last meter stand for meter 9670 = 28000.0.
+2021-08-05 08:44:46,561 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] getting last reading date for meter 9670 from the db.
+2021-08-05 08:44:46,566 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
+2021-08-05 08:44:46,709 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] LastReadingDate for meter 9670 = 2018-12-01T00:00:00.000+01:00.
+2021-08-05 08:44:46,710 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 3 day stands for meter 9670. Last stand date from DB is 2018-12-01T00:00:00.000+01:00, current stand date is 2018-12-04T00:00:00.000+01:00. Will create day stands for 3 days.
+2021-08-05 08:44:46,711 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 9670. Last stand date from DB is 2018-12-04T00:00:00.000+01:00, current stand date is 2018-12-05T00:00:00.000+01:00. Will create day stands for 1 days.
+2021-08-05 08:44:46,712 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 2 day stands for meter 9670. Last stand date from DB is 2018-12-05T00:00:00.000+01:00, current stand date is 2018-12-07T00:00:00.000+01:00. Will create day stands for 2 days.
+2021-08-05 08:44:46,712 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 3 day stands for meter 9670. Last stand date from DB is 2018-12-07T00:00:00.000+01:00, current stand date is 2018-12-10T00:00:00.000+01:00. Will create day stands for 3 days.
+2021-08-05 08:44:46,713 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 2 day stands for meter 9670. Last stand date from DB is 2018-12-10T00:00:00.000+01:00, current stand date is 2018-12-12T00:00:00.000+01:00. Will create day stands for 2 days.
+2021-08-05 08:44:46,714 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
+2021-08-05 08:44:46,716 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.
+2021-08-05 08:44:46,720 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Completed writeOutput.
+2021-08-05 08:44:46,721 INFO com.cts.controller.Controller [scheduling-1] GS2 file for input file mergedFile_TimestampRead_1628145882679.txt written to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Processed\.
+2021-08-05 08:44:46,721 INFO com.cts.controller.Controller [scheduling-1] Starting to move used merged input file to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Merged_Temp\mergedFile_TimestampRead_1628145882679.txt.
+2021-08-05 08:44:46,724 INFO com.cts.utils.MoveUsedInputFilesToUsedFolder [scheduling-1] mergedFile_TimestampRead_1628145882679.txt moved to C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_1\Used\ .
+2021-08-05 08:44:46,725 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 4 seconds.
+2021-08-05 08:44:46,725 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2021-08-05 08:44:46,725 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_2.
+2021-08-05 08:44:46,727 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-08-05 08:44:46,727 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-08-05 08:44:46,727 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Borettslag_3.
+2021-08-05 08:44:46,729 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-08-05 08:44:46,729 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-08-05 08:44:46,729 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Paradishagen.
+2021-08-05 08:44:46,730 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-08-05 08:44:46,730 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-08-05 08:44:46,731 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus\Test.
+2021-08-05 08:44:46,732 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-08-05 08:44:46,732 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-08-05 08:44:46,733 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\M-bus in 4 seconds.
+2021-08-05 08:44:46,733 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde.
+2021-08-05 08:44:46,733 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\ for existing sub-directories.
+2021-08-05 08:44:46,735 INFO com.cts.controller.Controller [scheduling-1] Found 3 sub-folders for gamleAnleggFormat - one for each meter data collection system .
+2021-08-05 08:44:46,736 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_1.
+2021-08-05 08:44:46,737 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-08-05 08:44:46,737 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-08-05 08:44:46,737 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_2.
+2021-08-05 08:44:46,739 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-08-05 08:44:46,739 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-08-05 08:44:46,739 INFO com.cts.controller.Controller [scheduling-1] Scanning for new input file/s for gamleAnleggFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde\Borettslag_3.
+2021-08-05 08:44:46,741 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2021-08-05 08:44:46,741 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2021-08-05 08:44:46,741 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\QKunde in 4 seconds.
+2021-08-05 08:44:46,741 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 4 seconds.
+2021-08-05 08:44:46,741 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.

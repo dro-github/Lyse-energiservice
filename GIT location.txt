@@ -1,0 +1,1 @@
+git clone https://git.infosynergi.no/dro/bkk_energitjenester_in_progress.git

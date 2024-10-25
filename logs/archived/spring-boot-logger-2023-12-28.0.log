@@ -1,0 +1,42 @@
+2023-12-28 16:25:15,522 INFO org.springframework.boot.StartupInfoLogger [main] Starting StartPoint on NOLI125045 with PID 17100 (C:\sandbox\evinyFordelingstjenesterOnSmart24\target\classes started by ronend in C:\sandbox\evinyFordelingstjenesterOnSmart24)
+2023-12-28 16:25:15,531 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-12-28 16:25:16,929 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2023-12-28 16:25:16,997 INFO org.springframework.boot.StartupInfoLogger [main] Started StartPoint in 2.276 seconds (JVM running for 2.958)
+2023-12-28 16:25:17,007 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-12-28 16:25:17,326 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-12-28 16:25:17,500 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2023-12-28 16:25:17,513 INFO com.cts.controller.Controller [scheduling-1] Found 2 sub-directories - one directory per file format.
+2023-12-28 16:25:17,514 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\MVV.
+2023-12-28 16:25:17,523 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-12-28 16:25:17,524 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-12-28 16:25:17,524 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\MVV in 0 seconds.
+2023-12-28 16:25:17,524 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Zaptec.
+2023-12-28 16:25:17,529 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-12-28 16:25:17,529 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-12-28 16:25:17,530 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Zaptec in 0 seconds.
+2023-12-28 16:25:17,531 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 0 seconds.
+2023-12-28 16:25:17,532 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2023-12-28 16:25:53,181 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'taskScheduler'
+2023-12-28 16:25:53,182 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-28 16:25:53,186 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-28 16:26:03,896 INFO org.springframework.boot.StartupInfoLogger [main] Starting StartPoint on NOLI125045 with PID 20700 (C:\sandbox\evinyFordelingstjenesterOnSmart24\target\classes started by ronend in C:\sandbox\evinyFordelingstjenesterOnSmart24)
+2023-12-28 16:26:03,902 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2023-12-28 16:26:05,217 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2023-12-28 16:26:05,290 INFO org.springframework.boot.StartupInfoLogger [main] Started StartPoint in 2.157 seconds (JVM running for 2.805)
+2023-12-28 16:26:05,300 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-12-28 16:26:05,639 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-12-28 16:26:05,789 INFO com.cts.utils.GetListOfSubDirectories [scheduling-1] Scanning C:\Users\ronend\Desktop\BKKE_BASE_FOLDER for existing sub-directories.
+2023-12-28 16:26:05,807 INFO com.cts.controller.Controller [scheduling-1] Found 2 sub-directories - one directory per file format.
+2023-12-28 16:26:05,808 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for mBusFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\MVV.
+2023-12-28 16:26:05,820 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-12-28 16:26:05,821 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-12-28 16:26:05,821 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\MVV in 0 seconds.
+2023-12-28 16:26:05,821 INFO com.cts.controller.Controller [scheduling-1] Scanning for sub directories for forbruksImportFormat in C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Zaptec.
+2023-12-28 16:26:05,826 INFO com.cts.controller.Controller [scheduling-1] Found 0 new input file/s.
+2023-12-28 16:26:05,827 INFO com.cts.controller.Controller [scheduling-1] Will merge all 0 input files into one file
+2023-12-28 16:26:05,827 INFO com.cts.controller.Controller [scheduling-1] Completed processing C:\Users\ronend\Desktop\BKKE_BASE_FOLDER\Zaptec in 0 seconds.
+2023-12-28 16:26:05,828 INFO com.cts.controller.Controller [scheduling-1] Completed processing in 0 seconds.
+2023-12-28 16:26:05,828 INFO com.cts.controller.Controller [scheduling-1] Scan for new input files will be performed in 10 minutes according to scheduling plan.
+2023-12-28 16:26:16,471 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'taskScheduler'
+2023-12-28 16:26:16,474 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-28 16:26:16,479 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
