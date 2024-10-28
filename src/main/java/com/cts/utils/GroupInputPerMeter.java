@@ -1,11 +1,10 @@
 package com.cts.utils;
 
-import org.joda.time.DateTimeZone;
-import org.joda.time.format.DateTimeFormat;
-import org.joda.time.format.DateTimeFormatter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 public class GroupInputPerMeter {
@@ -59,15 +58,15 @@ public class GroupInputPerMeter {
 
     private List<String[]> sortInputByTimestamp(List<String[]> occurrencesForOneMeter) {
         String dateFormatString = GetDateFormatForFile.getDateFormatForFile(currentFileFormat,formatNameToDateFormat);
-        DateTimeFormatter inputFormat = DateTimeFormat.forPattern(dateFormatString);
+        DateTimeFormatter inputFormat = DateTimeFormatter.ofPattern(dateFormatString);
         try {
-            Comparator<String[]> compByDate = Comparator.comparing((String[] o) -> inputFormat.parseDateTime(o[1]));
+            Comparator<String[]> compByDate = Comparator.comparing((String[] o) -> ZonedDateTime.parse(o[1],inputFormat));
             Collections.sort(occurrencesForOneMeter,compByDate);
             return occurrencesForOneMeter;
         }catch (IllegalArgumentException e){
             try {
-                DateTimeFormatter withoutGMT = DateTimeFormat.forPattern("MM/dd/yyyy HH:mm:ss");
-                Comparator<String[]> compByDate = Comparator.comparing((String[] o) -> withoutGMT.parseDateTime(o[1]));
+                DateTimeFormatter withoutGMT = DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm:ss");
+                Comparator<String[]> compByDate = Comparator.comparing((String[] o) -> ZonedDateTime.parse(o[1],withoutGMT));
                 Collections.sort(occurrencesForOneMeter,compByDate);
                 return occurrencesForOneMeter;
             }catch (IllegalArgumentException ex){

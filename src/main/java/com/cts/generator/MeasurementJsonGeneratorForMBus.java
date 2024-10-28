@@ -4,22 +4,17 @@ import com.cts.techyon.api.measurements.MeasurementMessages;
 import com.cts.utils.ProfileIndexArgs;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.joda.time.DateTime;
-import org.joda.time.format.DateTimeFormat;
-import org.joda.time.format.DateTimeFormatter;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
 
 public class MeasurementJsonGeneratorForMBus {
-    private String transactionType;
-    private List<String> allJsonFiles = new ArrayList<>();
+    private final List<String> allJsonFiles = new ArrayList<>();
 
     public MeasurementJsonGeneratorForMBus(String transactionType, List<ProfileIndexArgs> jsonPayloads,int resolution, int maxTransactionsPerFile) throws JsonProcessingException {
-        this.transactionType = transactionType;
-        DateTimeFormatter jsonOutput = DateTimeFormat.forPattern("yyyy-MM-dd'T'HH:mm:ssZZ");
+        DateTimeFormatter jsonOutput = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssxx");
         MeasurementMessages msg = new MeasurementMessages();
         ObjectMapper mpr = new ObjectMapper();
         msg.measurementMessages = new ArrayList<>();
@@ -30,7 +25,7 @@ public class MeasurementJsonGeneratorForMBus {
         for (ProfileIndexArgs thisPayLoad : jsonPayloads) {
             if (transactionCounter >= maxTransactionsPerFile && !previousDevice.equalsIgnoreCase(thisPayLoad.deviceId)){
                 previousDevice = thisPayLoad.deviceId;
-                if (m.indexes.size() > 0) {
+                if (!m.indexes.isEmpty()) {
                     msg.measurementMessages.add(m);
                     oneJsonFile.append(mpr.writeValueAsString(msg));
                     allJsonFiles.add(oneJsonFile.toString());
@@ -50,7 +45,7 @@ public class MeasurementJsonGeneratorForMBus {
             transactionCounter ++;
             if (!previousDevice.equalsIgnoreCase(thisPayLoad.deviceId)){
                 previousDevice = thisPayLoad.deviceId;
-                if (m.indexes.size() > 0) {
+                if (!m.indexes.isEmpty()) {
                     msg.measurementMessages.add(m);
                 }
                 m = new MeasurementMessages.MeasurementMessage();
@@ -77,7 +72,7 @@ public class MeasurementJsonGeneratorForMBus {
              *             oneTag.put("value", "true");
              *             idx.dataPoint.tags.add(oneTag);
              */
-            Map oneTag = new HashMap();
+            Map<String,String> oneTag = new HashMap<String,String>();
             if (thisPayLoad.originType.equalsIgnoreCase("measured_1")) {
                 oneTag.put("key", "readBy");
                 oneTag.put("value", "ReadByEviny");
@@ -97,7 +92,7 @@ public class MeasurementJsonGeneratorForMBus {
                 oneTag.put("key", "estimationType");
                 oneTag.put("value", "Stipulated");
                 idx.dataPoint.tags.add(oneTag);
-                oneTag = new HashMap();
+                oneTag = new HashMap<>();
                 oneTag.put("key", "comment");
                 oneTag.put("value", "QualityV1=Estimated");
                 idx.dataPoint.tags.add(oneTag);
@@ -106,7 +101,7 @@ public class MeasurementJsonGeneratorForMBus {
                 oneTag.put("key", "estimationType");
                 oneTag.put("value", "Interpolated");
                 idx.dataPoint.tags.add(oneTag);
-                oneTag = new HashMap();
+                oneTag = new HashMap<>();
                 oneTag.put("key", "comment");
                 oneTag.put("value", "QualityV1=Estimated");
                 idx.dataPoint.tags.add(oneTag);
@@ -115,7 +110,7 @@ public class MeasurementJsonGeneratorForMBus {
                 oneTag.put("key", "estimationType");
                 oneTag.put("value", "Manual");
                 idx.dataPoint.tags.add(oneTag);
-                oneTag = new HashMap();
+                oneTag = new HashMap<>();
                 oneTag.put("key", "comment");
                 oneTag.put("value", "QualityV1=Estimated");
                 idx.dataPoint.tags.add(oneTag);
@@ -127,10 +122,10 @@ public class MeasurementJsonGeneratorForMBus {
             }
             idx.dataPoint.origin = thisPayLoad.origin;
             m.indexes.add(idx);
-            idx.dataPoint.createdTime = jsonOutput.print(new DateTime());
+            idx.dataPoint.createdTime = jsonOutput.format(ZonedDateTime.now().withZoneSameInstant(ZoneId.of("Europe/Oslo")));
             idx.dataPoint.value = thisPayLoad.indexValue;
         }
-        if (m.indexes.size() > 0) {
+        if (!m.indexes.isEmpty()) {
             msg.measurementMessages.add(m);
         }
         oneJsonFile.append(mpr.writeValueAsString(msg));

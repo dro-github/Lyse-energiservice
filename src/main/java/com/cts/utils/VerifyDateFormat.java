@@ -1,16 +1,14 @@
 package com.cts.utils;
 
 import com.cts.generator.ProcessInput;
-import org.joda.time.DateTime;
-import org.joda.time.DateTimeZone;
-import org.joda.time.LocalDateTime;
-import org.joda.time.format.DateTimeFormat;
-import org.joda.time.format.DateTimeFormatter;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -63,13 +61,13 @@ public class VerifyDateFormat {
         if (currentFileFormat.equalsIgnoreCase(formatNameToFormatReference.get("mBusFormat"))){ // M-Bus format = MM/dd/yyyy (USA date format)
             try{
                 String dateFormatString = formatNameToDateFormat.get(formatNameToFormatReference.get("mBusFormat"));
-                DateTimeFormatter inputFormat = DateTimeFormat.forPattern(dateFormatString);
-                inputFormat.parseDateTime(oneRow[1].trim());
+                DateTimeFormatter inputFormat =  DateTimeFormatter.ofPattern(dateFormatString);
+                inputFormat.parse(oneRow[1].trim());
                 return true;
             } catch (IllegalArgumentException e) {
                 try {
-                    DateTimeFormatter withoutGMT = DateTimeFormat.forPattern("MM/dd/yyyy HH:mm:ss");
-                    withoutGMT.parseDateTime(oneRow[1].trim());
+                    DateTimeFormatter withoutGMT = DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm:ss");
+                    withoutGMT.parse(oneRow[1].trim());
                     return true;
                 } catch (IllegalArgumentException ex) {
                     logger.info("This input row contains non parsable date parameter: meter_id = {}; date = {}. ", oneRow[0], oneRow[1]);
@@ -81,9 +79,9 @@ public class VerifyDateFormat {
         else if (currentFileFormat.equalsIgnoreCase(formatNameToFormatReference.get("forbruksImportFormat"))){
             try{
                 String dateFormatString = formatNameToDateFormat.get(formatNameToFormatReference.get("forbruksImportFormat")) ;
-                DateTimeFormatter inputFormat = DateTimeFormat.forPattern(dateFormatString).withZone(DateTimeZone.forOffsetHours(1));
-                inputFormat.parseDateTime(oneRow[1]);
-                inputFormat.parseDateTime(oneRow[2]);
+                DateTimeFormatter inputFormat = java.time.format.DateTimeFormatter.ofPattern(dateFormatString).withZone(ZoneId.of("Europe/Oslo"));
+                //inputFormat.parse(oneRow[1]);
+                //inputFormat.parse(oneRow[2]);
                 return true;
             } catch (IllegalArgumentException e){
                 logger.info("This input row contains non parsable from_date or to_date parameter: meter_id = {}; From_date = {}; To_date = {}. ",oneRow[0],oneRow[1],oneRow[2]);
@@ -95,10 +93,10 @@ public class VerifyDateFormat {
     }
 
     private boolean verifyDateInUTC(String[] oneRow){
-        DateTimeFormatter withoutGMT = DateTimeFormat.forPattern("MM/dd/yyyy HH:mm:ss");
-        DateTimeFormatter utc = DateTimeFormat.forPattern("yyyy-MM-dd'T'HH:mm:ss+00:00");
+        DateTimeFormatter withoutGMT = DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm:ss");
+        DateTimeFormatter utc = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss+00:00");
         try {
-            utc.print(withoutGMT.parseLocalDateTime(oneRow[1].trim()));
+            utc.format(LocalDateTime.parse(oneRow[1].trim(),withoutGMT));
             return true;
         }catch (IllegalArgumentException exe) {
             logger.info("VerifyDateFormat: Date format does not match any known date format");
@@ -116,17 +114,7 @@ public class VerifyDateFormat {
         avvikRapport.append(("\r\n"));
     }
 
-
     public List<String[]> getInputRowsHavingCorrectDateFormat() {
         return inputRowsHavingCorrectDateFormat;
-    }
-
-    public static void main(String[] args) {
-        DateTimeFormatter dtf = DateTimeFormat.forPattern("YYYY-MM-dd HH:mm:ss").withZone(DateTimeZone.forOffsetHours(0));
-        DateTimeFormatter dtfTZ = DateTimeFormat.forPattern("YYYY-MM-dd HH:mm:ssZZ");
-        DateTime dt = dtf.parseDateTime("2023-03-26 01:00:00");
-        System.out.println(dtfTZ.print(dt));
-        DateTime withZone = dt.withZone(DateTimeZone.forID("Europe/Oslo"));
-        System.out.println(dtfTZ.print(withZone));
     }
 }

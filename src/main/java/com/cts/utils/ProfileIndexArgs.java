@@ -1,17 +1,16 @@
 package com.cts.utils;
 
 import org.apache.commons.lang3.tuple.Pair;
-import org.joda.time.DateTime;
-import org.joda.time.DateTimeZone;
-import org.joda.time.IllegalInstantException;
-import org.joda.time.LocalDateTime;
-import org.joda.time.format.DateTimeFormat;
-import org.joda.time.format.DateTimeFormatter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.util.Map;
 
@@ -43,8 +42,8 @@ public class ProfileIndexArgs {
         this.deviceId = row[0];
         this.jdbcTemplate = jdbcTemplate;
         this.fileFormat = currentFileFormat;
-        inputFormat = DateTimeFormat.forPattern(currentFileDateFormat); //M-Bus = MM/dd/yyyy HH:mm:ss
-        jsonOutput = DateTimeFormat.forPattern("yyyy-MM-dd'T'HH:mm:ssZZ");
+        inputFormat = DateTimeFormatter.ofPattern(currentFileDateFormat);
+        jsonOutput = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssxx");
         unit = getUnitFromH2DB(deviceId);
         if (unit.equalsIgnoreCase("M3")){
             unit = "m3";
@@ -58,32 +57,20 @@ public class ProfileIndexArgs {
         originType = setOriginType(row);
         origin = setOrigin();
         indexValue = getValue(currentFileFormat,row);
-        createdTime = jsonOutput.print(new DateTime(DateTimeZone.getDefault()));
+        createdTime = jsonOutput.format(ZonedDateTime.now().withZoneSameInstant(ZoneId.of("Europe/Oslo")));
         fromTime = getFromOrToTimeForVolume(currentFileFormat,row,1);
         toTime = getFromOrToTimeForVolume(currentFileFormat,row,2);
     }
 
     private String setReadTime(String dateFromInput) {
         try{
-            return jsonOutput.print(inputFormat.parseDateTime(dateFromInput));
-        }catch (IllegalInstantException e){
+            LocalDate ld = LocalDate.parse(dateFromInput,inputFormat);
+            ZonedDateTime zdt = ld.atStartOfDay().atZone(ZoneId.of("Europe/Oslo"));
+            return jsonOutput.format(zdt);
+        }catch (Exception e){
             logger.info("Non-parsable date was detected {}. Hourly stand transaction will be created with GMT offset = +1 for the entire year. Message: {}",dateFromInput,e.getMessage());
             return null;
-        }catch (IllegalArgumentException ex){
-            try{
-                DateTimeFormatter withoutGMT = DateTimeFormat.forPattern("MM/dd/yyyy HH:mm:ss");
-                return jsonOutput.print(withoutGMT.parseDateTime(dateFromInput));
-            }catch (IllegalArgumentException exe){
-                logger.info("Date format does not match any known date format");
-                return null;
-            }
         }
-    }
-
-    private String setHourlyReadTimeFromInputInUTC(String dateFromInput){
-        DateTimeFormatter withoutGMT = DateTimeFormat.forPattern("MM/dd/yyyy HH:mm:ss");
-        DateTimeFormatter utc = DateTimeFormat.forPattern("yyyy-MM-dd'T'HH:mm:ss+00:00");
-        return utc.print(withoutGMT.parseLocalDateTime(dateFromInput));
     }
 
     private String setOriginType(String[] row) {
@@ -107,7 +94,9 @@ public class ProfileIndexArgs {
 
     private String getFromOrToTimeForVolume(String currentFileFormat, String[] row,int pos) {
         if (currentFileFormat.equalsIgnoreCase(formatNameToFormatReference.get("forbruksImportFormat"))) {
-            return jsonOutput.print(inputFormat.parseDateTime(row[pos]));
+            LocalDate ldt = LocalDate.parse(row[pos],inputFormat);
+            ZonedDateTime zdt = ldt.atStartOfDay().atZone(ZoneId.of("Europe/Oslo"));
+            return jsonOutput.format(zdt);
         }
         return null;
     }
