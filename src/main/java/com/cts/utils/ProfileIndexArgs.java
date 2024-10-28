@@ -11,7 +11,6 @@ import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Locale;
 import java.util.Map;
 
 
@@ -29,19 +28,17 @@ public class ProfileIndexArgs {
     public String readTimeForHourlyTransaction;
     public String fromTime;
     public  String toTime;
-    private JdbcTemplate jdbcTemplate;
-    private DateTimeFormatter inputFormat;
+    private final JdbcTemplate jdbcTemplate;
+    private final DateTimeFormatter inputFormat;
     private DateTimeFormatter outputFormat;
-    private DateTimeFormatter jsonOutput;
-    private String fileFormat;
-    private Logger logger = LoggerFactory.getLogger(getClass());
-    private Map<String,String>formatNameToFormatReference;
+    private final DateTimeFormatter jsonOutput;
+    private final Logger logger = LoggerFactory.getLogger(getClass());
+    private final Map<String,String>formatNameToFormatReference;
 
     public ProfileIndexArgs(Map<String,String> formatNameToFormatReference,String currentFileFormat, String currentFileDateFormat, String[] row, JdbcTemplate jdbcTemplate){
         this.formatNameToFormatReference = formatNameToFormatReference;
         this.deviceId = row[0];
         this.jdbcTemplate = jdbcTemplate;
-        this.fileFormat = currentFileFormat;
         inputFormat = DateTimeFormatter.ofPattern(currentFileDateFormat);
         jsonOutput = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssxx");
         unit = getUnitFromH2DB(deviceId);
@@ -64,8 +61,8 @@ public class ProfileIndexArgs {
 
     private String setReadTime(String dateFromInput) {
         try{
-            LocalDate ld = LocalDate.parse(dateFromInput,inputFormat);
-            ZonedDateTime zdt = ld.atStartOfDay().atZone(ZoneId.of("Europe/Oslo"));
+            LocalDateTime ldt = LocalDateTime.parse(dateFromInput,inputFormat);
+            ZonedDateTime zdt = ldt.atZone(ZoneId.of("Europe/Oslo"));
             return jsonOutput.format(zdt);
         }catch (Exception e){
             logger.info("Non-parsable date was detected {}. Hourly stand transaction will be created with GMT offset = +1 for the entire year. Message: {}",dateFromInput,e.getMessage());
@@ -78,9 +75,7 @@ public class ProfileIndexArgs {
         try {
             originQualityType = row[3];
             return originQualityType;
-        }catch (IndexOutOfBoundsException e){
-            return "Measured_1";
-        }catch ( Exception ex){
+        } catch (Exception ex){
             return "Measured_1";
         }
     }

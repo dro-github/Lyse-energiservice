@@ -53,13 +53,13 @@ public class ProcessInput {
         logger.info("Collected {} input rows.", inputRowsAsStringArrays.size());
         logger.info("Checking correct date format.");
         List<String[]> hasCorrectDateFormat = checkDateFormat(inputRowsAsStringArrays, currentFileFormat);
-        if (hasCorrectDateFormat.size() > 0) {
+        if (!hasCorrectDateFormat.isEmpty()) {
             logger.info("Checking correct number format.");
             List<String[]> hasCorrectNumberFormat = checkNumberFormat(hasCorrectDateFormat, currentFileFormat, formatNameToFormatReference);
-            if (hasCorrectNumberFormat.size() > 0) {
+            if (!hasCorrectNumberFormat.isEmpty()) {
                 List<String[]> hasCustomerEntryAndCorrectDateAndNumberFormat = excludeMetersNotInCustomer(hasCorrectNumberFormat);
                 logger.info("proceeding to process {} input rows.", hasCustomerEntryAndCorrectDateAndNumberFormat.size());
-                if (hasCustomerEntryAndCorrectDateAndNumberFormat.size() > 0 && hasCustomerEntryAndCorrectDateAndNumberFormat != null){
+                if (!hasCustomerEntryAndCorrectDateAndNumberFormat.isEmpty()){
                     List<String[]> standReadingsToProcess = GroupAndSortInput(formatNameToFormatReference,formatNameToDateFormat,hasCustomerEntryAndCorrectDateAndNumberFormat);
                     createLastStandFile(standReadingsToProcess, currentFileFormat, formatNameToDateFormat,publishHourlyStand);
                 }
@@ -84,7 +84,7 @@ public class ProcessInput {
     }
 
     public List<String[]> GroupAndSortInput(Map<String, String> formatNameToFormatReference, Map<String, String> formatNameToDateFormat,List<String[]> hasCustomerEntryAndCorrectDateAndNumberFormat) throws IOException {
-            GroupInputPerMeter groupInputPerMeter = new GroupInputPerMeter(currentFileFormat, hasCustomerEntryAndCorrectDateAndNumberFormat, formatNameToFormatReference, formatNameToDateFormat);
+            GroupInputPerMeter groupInputPerMeter = new GroupInputPerMeter(currentFileFormat, hasCustomerEntryAndCorrectDateAndNumberFormat, formatNameToDateFormat);
         List<String[]> standReadingsToProcess = null;
         if (currentFileFormat.equalsIgnoreCase(formatNameToFormatReference.get("mBusFormat"))) {
             standReadingsToProcess = groupInputPerMeter.getInputOrderedPerMeter(); //Ordered per meter and sorted per standTimeStamp

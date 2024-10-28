@@ -9,41 +9,33 @@ import java.util.*;
 
 public class GroupInputPerMeter {
 
-    private Logger logger = LoggerFactory.getLogger(getClass());
-    private List<String[]> inputOrderedPerMeter;
-    private List<String[]> latestOccurrencePerMeter;
-    private List<String> distinctMetersInFile;
-    private String currentFileFormat;
-    private Map<String, String> formatNameToFormatReference;
-    private Map<String, String> formatNameToDateFormat;
+    private final Logger logger = LoggerFactory.getLogger(getClass());
+    private final List<String[]> inputOrderedPerMeter;
+    private final String currentFileFormat;
+    private final Map<String, String> formatNameToDateFormat;
 
-    public GroupInputPerMeter(String fileFormat, List<String[]> inputRows, Map<String, String> formatNameToFormatReference, Map<String, String> formatNameToDateFormat) {
+    public GroupInputPerMeter(String fileFormat, List<String[]> inputRows, Map<String, String> formatNameToDateFormat) {
         currentFileFormat = fileFormat;
-        this.formatNameToFormatReference = formatNameToFormatReference;
         this.formatNameToDateFormat = formatNameToDateFormat;
         inputOrderedPerMeter = groupInputPerMeter(inputRows);
     }
 
     private List<String[]> groupInputPerMeter(List<String[]> inputRows) {
-        distinctMetersInFile = getListOfDistinctMetersInFile(inputRows);
+        List<String> distinctMetersInFile = getListOfDistinctMetersInFile(inputRows);
         List<String[]> groupedInput = new ArrayList<>();
-        for (int i = 0; i < distinctMetersInFile.size(); i++) {
-            String currMeterID = distinctMetersInFile.get(i);
+        for (String currMeterID : distinctMetersInFile) {
             for (String[] str : inputRows) {
                 if (str[0].equalsIgnoreCase(currMeterID)) {
                     groupedInput.add(str);
                 }
             }
         }
-        List<String[]> groupedAndOrdered = orderInputByTimestamp(distinctMetersInFile, groupedInput);
-        return groupedAndOrdered;
+        return orderInputByTimestamp(distinctMetersInFile, groupedInput);
     }
 
     private List<String[]> orderInputByTimestamp(List<String> distinctMetersInFile, List<String[]> groupedInput) {
         List<String[]> groupedAndOrderedInput = new ArrayList<String[]>();
-        latestOccurrencePerMeter = new ArrayList<>();
-        for (int i = 0; i < distinctMetersInFile.size(); i++) {
-            String meter = distinctMetersInFile.get(i);
+        for (String meter : distinctMetersInFile) {
             List<String[]> occurrencesForOneMeter = new ArrayList<>();
             for (String[] str : groupedInput) {
                 if (str[0].equalsIgnoreCase(meter)) {
@@ -61,13 +53,13 @@ public class GroupInputPerMeter {
         DateTimeFormatter inputFormat = DateTimeFormatter.ofPattern(dateFormatString);
         try {
             Comparator<String[]> compByDate = Comparator.comparing((String[] o) -> ZonedDateTime.parse(o[1],inputFormat));
-            Collections.sort(occurrencesForOneMeter,compByDate);
+            occurrencesForOneMeter.sort(compByDate);
             return occurrencesForOneMeter;
         }catch (IllegalArgumentException e){
             try {
                 DateTimeFormatter withoutGMT = DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm:ss");
                 Comparator<String[]> compByDate = Comparator.comparing((String[] o) -> ZonedDateTime.parse(o[1],withoutGMT));
-                Collections.sort(occurrencesForOneMeter,compByDate);
+                occurrencesForOneMeter.sort(compByDate);
                 return occurrencesForOneMeter;
             }catch (IllegalArgumentException ex){
                 logger.info("Date format does not match any known date format");
