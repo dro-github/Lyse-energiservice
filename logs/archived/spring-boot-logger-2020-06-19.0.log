@@ -184,32 +184,32 @@
 2020-06-19 14:47:57,509 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 5 rows, out of which 5 have correct number format.
 2020-06-19 14:47:57,509 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 5 rows in less than a second.
 2020-06-19 14:47:57,510 INFO com.cts.generator.ProcessInput [scheduling-1] Received 5 input rows, will check for an entry in customer for distinct meters in the input.
-2020-06-19 14:47:57,515 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-06-19 14:47:57,515 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-06-19 14:47:57,766 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-06-19 14:48:01,169 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 5 distinct meters. Will check for a Customer registry for each.
-2020-06-19 14:48:01,202 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 5706567274344770 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-19 14:48:02,161 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 5706567274344770, UNIT kVArh from ISCU.
-2020-06-19 14:48:02,162 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] will try to insert meter 5706567274344770, unit kVArh,to local H2 database.
-2020-06-19 14:48:02,166 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Inserted meter 5706567274344770, UNIT kVArh to the H2 database.
-2020-06-19 14:48:02,166 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 5706567274516542 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-19 14:48:02,339 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 5706567274516542, UNIT kWh from ISCU.
-2020-06-19 14:48:02,340 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] will try to insert meter 5706567274516542, unit kWh,to local H2 database.
-2020-06-19 14:48:02,341 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Inserted meter 5706567274516542, UNIT kWh to the H2 database.
-2020-06-19 14:48:02,341 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 5706567274787577 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-19 14:48:02,515 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 5706567274787577, UNIT kVArh from ISCU.
-2020-06-19 14:48:02,516 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] will try to insert meter 5706567274787577, unit kVArh,to local H2 database.
-2020-06-19 14:48:02,517 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Inserted meter 5706567274787577, UNIT kVArh to the H2 database.
-2020-06-19 14:48:02,517 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 017836770 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-19 14:48:02,654 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 017836770, UNIT kWh from ISCU.
-2020-06-19 14:48:02,655 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] will try to insert meter 017836770, unit kWh,to local H2 database.
-2020-06-19 14:48:02,656 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Inserted meter 017836770, UNIT kWh to the H2 database.
-2020-06-19 14:48:02,656 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 017836771 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-19 14:48:02,787 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 017836771, UNIT kW from ISCU.
-2020-06-19 14:48:02,788 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] will try to insert meter 017836771, unit kW,to local H2 database.
-2020-06-19 14:48:02,789 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Inserted meter 017836771, UNIT kW to the H2 database.
-2020-06-19 14:48:02,789 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 5 meters. Out of which 5 has Customer entry.
-2020-06-19 14:48:02,789 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 5 meters =  1 seconds.
-2020-06-19 14:48:02,789 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 5 meters which have a Customer record.
+2020-06-19 14:48:01,169 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 5 distinct meters. Will check for a Customer registry for each.
+2020-06-19 14:48:01,202 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 5706567274344770 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-19 14:48:02,161 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 5706567274344770, UNIT kVArh from ISCU.
+2020-06-19 14:48:02,162 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] will try to insert meter 5706567274344770, unit kVArh,to local H2 database.
+2020-06-19 14:48:02,166 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Inserted meter 5706567274344770, UNIT kVArh to the H2 database.
+2020-06-19 14:48:02,166 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 5706567274516542 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-19 14:48:02,339 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 5706567274516542, UNIT kWh from ISCU.
+2020-06-19 14:48:02,340 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] will try to insert meter 5706567274516542, unit kWh,to local H2 database.
+2020-06-19 14:48:02,341 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Inserted meter 5706567274516542, UNIT kWh to the H2 database.
+2020-06-19 14:48:02,341 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 5706567274787577 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-19 14:48:02,515 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 5706567274787577, UNIT kVArh from ISCU.
+2020-06-19 14:48:02,516 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] will try to insert meter 5706567274787577, unit kVArh,to local H2 database.
+2020-06-19 14:48:02,517 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Inserted meter 5706567274787577, UNIT kVArh to the H2 database.
+2020-06-19 14:48:02,517 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 017836770 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-19 14:48:02,654 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 017836770, UNIT kWh from ISCU.
+2020-06-19 14:48:02,655 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] will try to insert meter 017836770, unit kWh,to local H2 database.
+2020-06-19 14:48:02,656 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Inserted meter 017836770, UNIT kWh to the H2 database.
+2020-06-19 14:48:02,656 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 017836771 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-19 14:48:02,787 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 017836771, UNIT kW from ISCU.
+2020-06-19 14:48:02,788 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] will try to insert meter 017836771, unit kW,to local H2 database.
+2020-06-19 14:48:02,789 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Inserted meter 017836771, UNIT kW to the H2 database.
+2020-06-19 14:48:02,789 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 5 meters. Out of which 5 has Customer entry.
+2020-06-19 14:48:02,789 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 5 meters =  1 seconds.
+2020-06-19 14:48:02,789 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 5 meters which have a Customer record.
 2020-06-19 14:48:02,790 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 5 input rows.
 2020-06-19 14:48:02,790 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2020-06-19 14:48:02,794 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 5 meters out of a total of 5 meters.

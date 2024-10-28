@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import com.cts.customerGateway.CheckMeterInCustomer;
+import com.cts.nanoMeteringGateway.CheckUnitInNanoMetering;
 import com.cts.ioutils.InputFileReader;
 import com.cts.utils.*;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -80,7 +80,7 @@ public class ProcessInput {
 
     private List<String[]> excludeMetersNotInCustomer(List<String[]> completeDataFromInput) {
         logger.info("Received {} input rows, will check for an entry in customer for distinct meters in the input.", completeDataFromInput.size());
-        return new CheckMeterInCustomer(completeDataFromInput,jdbcTemplate,avvikRapport).getMetersInCustomer();
+        return new CheckUnitInNanoMetering(completeDataFromInput,jdbcTemplate,avvikRapport).getMetersInCustomer();
     }
 
     public List<String[]> GroupAndSortInput(Map<String, String> formatNameToFormatReference, Map<String, String> formatNameToDateFormat,List<String[]> hasCustomerEntryAndCorrectDateAndNumberFormat) throws IOException {

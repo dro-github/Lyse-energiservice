@@ -39,13 +39,13 @@
 2023-05-02 11:50:27,614 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 73 rows, out of which 73 have correct number format.
 2023-05-02 11:50:27,614 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 73 rows in less than a second.
 2023-05-02 11:50:27,615 INFO com.cts.generator.ProcessInput [scheduling-1] Received 73 input rows, will check for an entry in customer for distinct meters in the input.
-2023-05-02 11:50:27,620 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
-2023-05-02 11:50:29,265 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2023-05-02 11:50:29,316 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter DRO.CON.15.0005 in the base of previously checked meters, will try to get details by API call to ISCU.
-2023-05-02 11:50:29,316 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id DRO.CON.15.0005.
-2023-05-02 11:50:30,141 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2023-05-02 11:50:30,141 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2023-05-02 11:50:30,142 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2023-05-02 11:50:27,620 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
+2023-05-02 11:50:29,265 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2023-05-02 11:50:29,316 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter DRO.CON.15.0005 in the base of previously checked meters, will try to get details by API call to ISCU.
+2023-05-02 11:50:29,316 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id DRO.CON.15.0005.
+2023-05-02 11:50:30,141 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2023-05-02 11:50:30,141 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2023-05-02 11:50:30,142 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2023-05-02 11:50:30,142 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 73 input rows.
 2023-05-02 11:50:30,150 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 73 records for json file - mBusFormat.
 2023-05-02 11:50:30,175 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] There are 4 readings for timestamp = 00:00:00. Only readings @00:00:00 are relevant for creating dayStand payload.
@@ -110,11 +110,11 @@
 2023-05-02 12:21:00,095 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 72 rows, out of which 72 have correct number format.
 2023-05-02 12:21:00,096 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 72 rows in less than a second.
 2023-05-02 12:21:00,096 INFO com.cts.generator.ProcessInput [scheduling-1] Received 72 input rows, will check for an entry in customer for distinct meters in the input.
-2023-05-02 12:21:00,100 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
-2023-05-02 12:21:01,720 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2023-05-02 12:21:01,770 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2023-05-02 12:21:01,770 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2023-05-02 12:21:01,770 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2023-05-02 12:21:00,100 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
+2023-05-02 12:21:01,720 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2023-05-02 12:21:01,770 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2023-05-02 12:21:01,770 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2023-05-02 12:21:01,770 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2023-05-02 12:21:01,770 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 72 input rows.
 2023-05-02 12:21:01,777 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 72 records for json file - mBusFormat.
 2023-05-02 12:21:01,798 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] There are 3 readings for timestamp = 00:00:00. Only readings @00:00:00 are relevant for creating dayStand payload.
@@ -179,13 +179,13 @@
 2023-05-02 12:28:36,722 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 72 rows, out of which 72 have correct number format.
 2023-05-02 12:28:36,723 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 72 rows in less than a second.
 2023-05-02 12:28:36,723 INFO com.cts.generator.ProcessInput [scheduling-1] Received 72 input rows, will check for an entry in customer for distinct meters in the input.
-2023-05-02 12:28:36,726 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
-2023-05-02 12:28:38,351 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2023-05-02 12:28:38,402 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter GASS-001 in the base of previously checked meters, will try to get details by API call to ISCU.
-2023-05-02 12:28:38,402 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id GASS-001.
-2023-05-02 12:28:38,974 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2023-05-02 12:28:38,974 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2023-05-02 12:28:38,974 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2023-05-02 12:28:36,726 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
+2023-05-02 12:28:38,351 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2023-05-02 12:28:38,402 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter GASS-001 in the base of previously checked meters, will try to get details by API call to ISCU.
+2023-05-02 12:28:38,402 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id GASS-001.
+2023-05-02 12:28:38,974 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2023-05-02 12:28:38,974 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2023-05-02 12:28:38,974 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2023-05-02 12:28:38,975 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 72 input rows.
 2023-05-02 12:28:38,981 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 72 records for json file - mBusFormat.
 2023-05-02 12:28:39,004 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] There are 3 readings for timestamp = 00:00:00. Only readings @00:00:00 are relevant for creating dayStand payload.

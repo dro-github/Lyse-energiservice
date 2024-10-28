@@ -80,13 +80,13 @@
 2021-10-12 09:42:15,800 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct number format.
 2021-10-12 09:42:15,800 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 1 rows in less than a second.
 2021-10-12 09:42:15,800 INFO com.cts.generator.ProcessInput [scheduling-1] Received 1 input rows, will check for an entry in customer for distinct meters in the input.
-2021-10-12 09:42:15,800 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-10-12 09:42:15,800 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2021-10-12 09:42:15,916 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2021-10-12 09:42:17,244 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2021-10-12 09:42:17,276 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2021-10-12 09:42:17,276 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2021-10-12 09:42:17,276 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2021-10-12 09:42:17,276 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-10-12 09:42:17,244 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-10-12 09:42:17,276 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2021-10-12 09:42:17,276 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-10-12 09:42:17,276 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-10-12 09:42:17,276 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2021-10-12 09:42:17,276 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
 2021-10-12 09:42:17,276 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2021-10-12 09:42:17,276 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of a total of 1 meters.
@@ -99,8 +99,8 @@
 2021-10-12 09:42:18,016 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] getting last reading date for meter 12163501 from the db.
 2021-10-12 09:42:18,016 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2021-10-12 09:42:18,116 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] LastReadingDate for meter 12163501 = 2007-04-01T00:00:00.000+02:00.
-2021-10-12 09:42:18,133 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
-2021-10-12 09:42:18,133 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Got timeSeriesCounter details for meter 12163501, hasTimeSeriesCounter is true, from internal local H2 DB.
+2021-10-12 09:42:18,133 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
+2021-10-12 09:42:18,133 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Got timeSeriesCounter details for meter 12163501, hasTimeSeriesCounter is true, from internal local H2 DB.
 2021-10-12 09:42:18,150 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 4048 day stands for meter 12163501. Last stand date from DB is 2007-04-01T00:00:00.000+02:00, current stand date is 2018-05-01T00:00:00.000+01:00. Will create day stands for 4048 days.
 2021-10-12 09:42:18,283 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
 2021-10-12 09:42:18,283 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.
@@ -223,13 +223,13 @@
 2021-10-12 09:49:56,284 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct number format.
 2021-10-12 09:49:56,286 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 1 rows in less than a second.
 2021-10-12 09:49:56,286 INFO com.cts.generator.ProcessInput [scheduling-1] Received 1 input rows, will check for an entry in customer for distinct meters in the input.
-2021-10-12 09:49:56,286 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-10-12 09:49:56,286 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2021-10-12 09:49:56,402 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2021-10-12 09:49:57,556 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2021-10-12 09:49:57,571 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2021-10-12 09:49:57,571 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2021-10-12 09:49:57,571 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2021-10-12 09:49:57,571 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-10-12 09:49:57,556 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-10-12 09:49:57,571 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2021-10-12 09:49:57,571 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-10-12 09:49:57,571 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-10-12 09:49:57,571 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2021-10-12 09:49:57,571 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
 2021-10-12 09:49:57,571 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2021-10-12 09:49:57,571 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of a total of 1 meters.
@@ -242,8 +242,8 @@
 2021-10-12 09:49:58,118 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] getting last reading date for meter 12163501 from the db.
 2021-10-12 09:49:58,131 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2021-10-12 09:49:58,225 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] LastReadingDate for meter 12163501 = 2007-04-01T00:00:00.000+02:00.
-2021-10-12 09:49:58,231 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
-2021-10-12 09:49:58,231 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Got timeSeriesCounter details for meter 12163501, hasTimeSeriesCounter is true, from internal local H2 DB.
+2021-10-12 09:49:58,231 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
+2021-10-12 09:49:58,231 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Got timeSeriesCounter details for meter 12163501, hasTimeSeriesCounter is true, from internal local H2 DB.
 2021-10-12 09:49:58,247 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 12163501. Last stand date from DB is 2007-04-01T00:00:00.000+02:00, current stand date is 2007-04-02T00:00:00.000+01:00. Will create day stands for 1 days.
 2021-10-12 09:49:58,263 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
 2021-10-12 09:49:58,263 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.
@@ -366,13 +366,13 @@
 2021-10-12 09:53:27,702 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct number format.
 2021-10-12 09:53:27,702 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 1 rows in less than a second.
 2021-10-12 09:53:27,702 INFO com.cts.generator.ProcessInput [scheduling-1] Received 1 input rows, will check for an entry in customer for distinct meters in the input.
-2021-10-12 09:53:27,702 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-10-12 09:53:27,702 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2021-10-12 09:53:27,819 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2021-10-12 09:53:29,056 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2021-10-12 09:53:29,083 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2021-10-12 09:53:29,084 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2021-10-12 09:53:29,084 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2021-10-12 09:53:29,084 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-10-12 09:53:29,056 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-10-12 09:53:29,083 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2021-10-12 09:53:29,084 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-10-12 09:53:29,084 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-10-12 09:53:29,084 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2021-10-12 09:53:29,084 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
 2021-10-12 09:53:29,084 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2021-10-12 09:53:29,088 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of a total of 1 meters.
@@ -385,8 +385,8 @@
 2021-10-12 09:53:29,603 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] getting last reading date for meter 12163501 from the db.
 2021-10-12 09:53:29,618 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2021-10-12 09:53:29,723 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] LastReadingDate for meter 12163501 = 2007-04-01T00:00:00.000+02:00.
-2021-10-12 09:53:29,723 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
-2021-10-12 09:53:29,739 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Got timeSeriesCounter details for meter 12163501, hasTimeSeriesCounter is true, from internal local H2 DB.
+2021-10-12 09:53:29,723 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
+2021-10-12 09:53:29,739 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Got timeSeriesCounter details for meter 12163501, hasTimeSeriesCounter is true, from internal local H2 DB.
 2021-10-12 09:53:29,739 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 12163501. Last stand date from DB is 2007-04-01T00:00:00.000+02:00, current stand date is 2007-04-02T00:00:00.000+01:00. Will create day stands for 1 days.
 2021-10-12 09:53:29,739 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
 2021-10-12 09:53:29,739 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.
@@ -509,13 +509,13 @@
 2021-10-12 09:55:18,186 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct number format.
 2021-10-12 09:55:18,186 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 1 rows in less than a second.
 2021-10-12 09:55:18,186 INFO com.cts.generator.ProcessInput [scheduling-1] Received 1 input rows, will check for an entry in customer for distinct meters in the input.
-2021-10-12 09:55:18,186 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-10-12 09:55:18,186 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2021-10-12 09:55:18,269 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2021-10-12 09:55:19,453 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2021-10-12 09:55:19,468 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2021-10-12 09:55:19,468 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2021-10-12 09:55:19,468 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2021-10-12 09:55:19,468 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-10-12 09:55:19,453 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-10-12 09:55:19,468 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2021-10-12 09:55:19,468 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-10-12 09:55:19,468 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-10-12 09:55:19,468 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2021-10-12 09:55:19,468 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
 2021-10-12 09:55:19,468 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2021-10-12 09:55:19,484 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of a total of 1 meters.
@@ -528,8 +528,8 @@
 2021-10-12 09:55:19,970 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] getting last reading date for meter 12163501 from the db.
 2021-10-12 09:55:19,970 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2021-10-12 09:55:20,085 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] LastReadingDate for meter 12163501 = 2007-04-01T00:00:00.000+02:00.
-2021-10-12 09:55:20,107 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
-2021-10-12 09:55:20,124 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Got timeSeriesCounter details for meter 12163501, hasTimeSeriesCounter is true, from internal local H2 DB.
+2021-10-12 09:55:20,107 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
+2021-10-12 09:55:20,124 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Got timeSeriesCounter details for meter 12163501, hasTimeSeriesCounter is true, from internal local H2 DB.
 2021-10-12 09:55:20,136 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 12163501. Last stand date from DB is 2007-04-01T00:00:00.000+02:00, current stand date is 2007-04-02T00:00:00.000+01:00. Will create day stands for 1 days.
 2021-10-12 09:55:20,152 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
 2021-10-12 09:55:20,153 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.
@@ -837,13 +837,13 @@
 2021-10-12 10:03:31,723 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct number format.
 2021-10-12 10:03:31,723 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 1 rows in less than a second.
 2021-10-12 10:03:31,723 INFO com.cts.generator.ProcessInput [scheduling-1] Received 1 input rows, will check for an entry in customer for distinct meters in the input.
-2021-10-12 10:03:31,723 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-10-12 10:03:31,723 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2021-10-12 10:03:31,806 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2021-10-12 10:03:33,206 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2021-10-12 10:03:33,237 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2021-10-12 10:03:33,237 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2021-10-12 10:03:33,237 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2021-10-12 10:03:33,237 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-10-12 10:03:33,206 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-10-12 10:03:33,237 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2021-10-12 10:03:33,237 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-10-12 10:03:33,237 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-10-12 10:03:33,237 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2021-10-12 10:03:33,237 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
 2021-10-12 10:03:33,237 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2021-10-12 10:03:33,237 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of a total of 1 meters.
@@ -856,8 +856,8 @@
 2021-10-12 10:03:33,956 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] getting last reading date for meter 12163501 from the db.
 2021-10-12 10:03:33,972 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2021-10-12 10:03:34,076 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] LastReadingDate for meter 12163501 = 2007-04-01T00:00:00.000+02:00.
-2021-10-12 10:03:34,089 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
-2021-10-12 10:03:34,089 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Got timeSeriesCounter details for meter 12163501, hasTimeSeriesCounter is true, from internal local H2 DB.
+2021-10-12 10:03:34,089 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
+2021-10-12 10:03:34,089 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Got timeSeriesCounter details for meter 12163501, hasTimeSeriesCounter is true, from internal local H2 DB.
 2021-10-12 10:03:34,106 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 12163501. Last stand date from DB is 2007-04-01T00:00:00.000+02:00, current stand date is 2007-04-02T00:00:00.000+01:00. Will create day stands for 1 days.
 2021-10-12 10:03:34,106 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
 2021-10-12 10:03:34,106 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.
@@ -980,13 +980,13 @@
 2021-10-12 10:19:44,977 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct number format.
 2021-10-12 10:19:44,977 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 1 rows in less than a second.
 2021-10-12 10:19:44,977 INFO com.cts.generator.ProcessInput [scheduling-1] Received 1 input rows, will check for an entry in customer for distinct meters in the input.
-2021-10-12 10:19:44,977 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-10-12 10:19:44,977 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2021-10-12 10:19:45,060 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2021-10-12 10:19:46,266 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2021-10-12 10:19:46,297 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2021-10-12 10:19:46,297 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2021-10-12 10:19:46,297 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2021-10-12 10:19:46,297 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-10-12 10:19:46,266 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-10-12 10:19:46,297 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2021-10-12 10:19:46,297 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-10-12 10:19:46,297 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-10-12 10:19:46,297 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2021-10-12 10:19:46,297 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
 2021-10-12 10:19:46,297 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2021-10-12 10:19:46,297 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of a total of 1 meters.
@@ -1147,13 +1147,13 @@ java.lang.IllegalArgumentException: Invalid format: "2007-04-01T00:00:00.000+02:
 2021-10-12 10:21:51,828 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct number format.
 2021-10-12 10:21:51,828 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 1 rows in less than a second.
 2021-10-12 10:21:51,828 INFO com.cts.generator.ProcessInput [scheduling-1] Received 1 input rows, will check for an entry in customer for distinct meters in the input.
-2021-10-12 10:21:51,828 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-10-12 10:21:51,828 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2021-10-12 10:21:51,928 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2021-10-12 10:21:53,195 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2021-10-12 10:21:53,215 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2021-10-12 10:21:53,215 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2021-10-12 10:21:53,231 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2021-10-12 10:21:53,231 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-10-12 10:21:53,195 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-10-12 10:21:53,215 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2021-10-12 10:21:53,215 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-10-12 10:21:53,231 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-10-12 10:21:53,231 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2021-10-12 10:21:53,231 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
 2021-10-12 10:21:53,231 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2021-10-12 10:21:53,231 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of a total of 1 meters.
@@ -1166,8 +1166,8 @@ java.lang.IllegalArgumentException: Invalid format: "2007-04-01T00:00:00.000+02:
 2021-10-12 10:21:53,777 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] getting last reading date for meter 12163501 from the db.
 2021-10-12 10:21:53,777 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2021-10-12 10:21:53,895 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] LastReadingDate for meter 12163501 = 2007-03-31T23:00:00.000+01:00.
-2021-10-12 10:21:53,916 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
-2021-10-12 10:21:53,916 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Got timeSeriesCounter details for meter 12163501, hasTimeSeriesCounter is true, from internal local H2 DB.
+2021-10-12 10:21:53,916 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
+2021-10-12 10:21:53,916 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Got timeSeriesCounter details for meter 12163501, hasTimeSeriesCounter is true, from internal local H2 DB.
 2021-10-12 10:21:53,928 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 12163501. Last stand date from DB is 2007-03-31T23:00:00.000+01:00, current stand date is 2007-04-02T00:00:00.000+01:00. Will create day stands for 1 days.
 2021-10-12 10:21:53,945 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
 2021-10-12 10:21:53,945 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.
@@ -1290,13 +1290,13 @@ java.lang.IllegalArgumentException: Invalid format: "2007-04-01T00:00:00.000+02:
 2021-10-12 10:37:07,198 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct number format.
 2021-10-12 10:37:07,198 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 1 rows in less than a second.
 2021-10-12 10:37:07,198 INFO com.cts.generator.ProcessInput [scheduling-1] Received 1 input rows, will check for an entry in customer for distinct meters in the input.
-2021-10-12 10:37:07,198 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-10-12 10:37:07,198 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2021-10-12 10:37:07,299 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2021-10-12 10:37:08,529 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2021-10-12 10:37:08,545 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2021-10-12 10:37:08,545 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2021-10-12 10:37:08,545 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2021-10-12 10:37:08,545 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-10-12 10:37:08,529 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-10-12 10:37:08,545 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2021-10-12 10:37:08,545 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-10-12 10:37:08,545 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-10-12 10:37:08,545 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2021-10-12 10:37:08,545 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
 2021-10-12 10:37:08,545 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2021-10-12 10:37:08,545 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of a total of 1 meters.
@@ -1309,8 +1309,8 @@ java.lang.IllegalArgumentException: Invalid format: "2007-04-01T00:00:00.000+02:
 2021-10-12 10:37:09,098 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] getting last reading date for meter 12163501 from the db.
 2021-10-12 10:37:09,114 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2021-10-12 10:37:09,215 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] LastReadingDate for meter 12163501 = 2007-03-31T23:00:00.000+01:00.
-2021-10-12 10:37:09,248 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
-2021-10-12 10:37:09,248 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Got timeSeriesCounter details for meter 12163501, hasTimeSeriesCounter is true, from internal local H2 DB.
+2021-10-12 10:37:09,248 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
+2021-10-12 10:37:09,248 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Got timeSeriesCounter details for meter 12163501, hasTimeSeriesCounter is true, from internal local H2 DB.
 2021-10-12 10:37:09,265 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 12163501. Last stand date from DB is 2007-03-31T23:00:00.000+01:00, current stand date is 2007-04-02T00:00:00.000+01:00. Will create day stands for 1 days.
 2021-10-12 10:37:09,265 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
 2021-10-12 10:37:09,265 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.
@@ -1433,13 +1433,13 @@ java.lang.IllegalArgumentException: Invalid format: "2007-04-01T00:00:00.000+02:
 2021-10-12 10:40:01,200 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct number format.
 2021-10-12 10:40:01,200 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 1 rows in less than a second.
 2021-10-12 10:40:01,200 INFO com.cts.generator.ProcessInput [scheduling-1] Received 1 input rows, will check for an entry in customer for distinct meters in the input.
-2021-10-12 10:40:01,200 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-10-12 10:40:01,200 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2021-10-12 10:40:01,299 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2021-10-12 10:40:02,549 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2021-10-12 10:40:02,576 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2021-10-12 10:40:02,576 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2021-10-12 10:40:02,582 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2021-10-12 10:40:02,582 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-10-12 10:40:02,549 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-10-12 10:40:02,576 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2021-10-12 10:40:02,576 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-10-12 10:40:02,582 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-10-12 10:40:02,582 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2021-10-12 10:40:02,582 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
 2021-10-12 10:40:02,582 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2021-10-12 10:40:02,582 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of a total of 1 meters.
@@ -1452,8 +1452,8 @@ java.lang.IllegalArgumentException: Invalid format: "2007-04-01T00:00:00.000+02:
 2021-10-12 10:40:03,164 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] getting last reading date for meter 12163501 from the db.
 2021-10-12 10:40:03,171 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2021-10-12 10:40:03,264 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] LastReadingDate for meter 12163501 = 2007-03-31T23:00:00.000+01:00.
-2021-10-12 10:40:03,278 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
-2021-10-12 10:40:03,293 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Got timeSeriesCounter details for meter 12163501, hasTimeSeriesCounter is true, from internal local H2 DB.
+2021-10-12 10:40:03,278 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
+2021-10-12 10:40:03,293 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Got timeSeriesCounter details for meter 12163501, hasTimeSeriesCounter is true, from internal local H2 DB.
 2021-10-12 10:40:03,309 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 12163501. Last stand date from DB is 2007-03-31T23:00:00.000+01:00, current stand date is 2007-04-02T00:00:00.000+01:00. Will create day stands for 1 days.
 2021-10-12 10:40:03,309 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
 2021-10-12 10:40:03,309 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.
@@ -1576,13 +1576,13 @@ java.lang.IllegalArgumentException: Invalid format: "2007-04-01T00:00:00.000+02:
 2021-10-12 15:05:24,286 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct number format.
 2021-10-12 15:05:24,286 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 1 rows in less than a second.
 2021-10-12 15:05:24,287 INFO com.cts.generator.ProcessInput [scheduling-1] Received 1 input rows, will check for an entry in customer for distinct meters in the input.
-2021-10-12 15:05:24,290 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-10-12 15:05:24,290 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2021-10-12 15:05:24,405 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2021-10-12 15:05:25,696 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2021-10-12 15:05:25,727 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2021-10-12 15:05:25,728 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2021-10-12 15:05:25,728 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2021-10-12 15:05:25,728 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-10-12 15:05:25,696 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-10-12 15:05:25,727 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2021-10-12 15:05:25,728 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-10-12 15:05:25,728 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-10-12 15:05:25,728 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2021-10-12 15:05:25,728 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
 2021-10-12 15:05:25,728 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2021-10-12 15:05:25,731 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of a total of 1 meters.
@@ -1746,13 +1746,13 @@ java.lang.IllegalArgumentException: Invalid format: "2007-04-01T00:00:00.000+02:
 2021-10-12 15:08:46,540 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct number format.
 2021-10-12 15:08:46,540 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 1 rows in less than a second.
 2021-10-12 15:08:46,541 INFO com.cts.generator.ProcessInput [scheduling-1] Received 1 input rows, will check for an entry in customer for distinct meters in the input.
-2021-10-12 15:08:46,543 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-10-12 15:08:46,543 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2021-10-12 15:08:46,644 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2021-10-12 15:08:48,063 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2021-10-12 15:08:48,096 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2021-10-12 15:08:48,096 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2021-10-12 15:08:48,097 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2021-10-12 15:08:48,097 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-10-12 15:08:48,063 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-10-12 15:08:48,096 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2021-10-12 15:08:48,096 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-10-12 15:08:48,097 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-10-12 15:08:48,097 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2021-10-12 15:08:48,097 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
 2021-10-12 15:08:48,097 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2021-10-12 15:08:48,100 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of a total of 1 meters.
@@ -1765,8 +1765,8 @@ java.lang.IllegalArgumentException: Invalid format: "2007-04-01T00:00:00.000+02:
 2021-10-12 15:08:48,793 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] getting last reading date for meter 12163501 from the db.
 2021-10-12 15:08:48,800 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2021-10-12 15:08:48,932 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] LastReadingDate for meter 12163501 = 2007-04-01T00:00:00.000+02:00.
-2021-10-12 15:08:48,943 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
-2021-10-12 15:08:48,948 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Got timeSeriesCounter details for meter 12163501, hasTimeSeriesCounter is true, from internal local H2 DB.
+2021-10-12 15:08:48,943 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
+2021-10-12 15:08:48,948 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Got timeSeriesCounter details for meter 12163501, hasTimeSeriesCounter is true, from internal local H2 DB.
 2021-10-12 15:08:48,960 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 12163501. Last stand date from DB is 2007-04-01T00:00:00.000+02:00, current stand date is 2007-04-02T00:00:00.000+01:00. Will create day stands for 1 days.
 2021-10-12 15:08:48,964 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
 2021-10-12 15:08:48,967 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.

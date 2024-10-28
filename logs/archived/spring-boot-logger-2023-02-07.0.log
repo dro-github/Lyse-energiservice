@@ -44,12 +44,12 @@
 2023-01-17 09:48:28,664 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 42 rows, out of which 42 have correct number format.
 2023-01-17 09:48:28,665 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 42 rows in less than a second.
 2023-01-17 09:48:28,666 INFO com.cts.generator.ProcessInput [scheduling-1] Received 42 input rows, will check for an entry in customer for distinct meters in the input.
-2023-01-17 09:48:28,670 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2023-01-17 09:48:28,670 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2023-01-17 09:48:28,825 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-01-17 09:48:30,575 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 31 distinct meters. Will check for a Customer registry for each.
-2023-01-17 09:48:30,676 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 31 meters. Out of which 31 has Customer entry.
-2023-01-17 09:48:30,676 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 31 meters =  0 seconds.
-2023-01-17 09:48:30,676 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 31 meters which have a Customer record.
+2023-01-17 09:48:30,575 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 31 distinct meters. Will check for a Customer registry for each.
+2023-01-17 09:48:30,676 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 31 meters. Out of which 31 has Customer entry.
+2023-01-17 09:48:30,676 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 31 meters =  0 seconds.
+2023-01-17 09:48:30,676 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 31 meters which have a Customer record.
 2023-01-17 09:48:30,677 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 42 input rows.
 2023-01-17 09:48:30,684 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 42 records for json file - mBusFormat.
 2023-01-17 09:48:30,732 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] Reached end of input. proceeding to last json file. Max_transactions_per_file = 2000. 
@@ -126,12 +126,12 @@ java.lang.IllegalArgumentException: Invalid format: ""2022-11-01T00:00:00+01:00"
 2023-01-17 09:50:37,970 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 42 rows, out of which 42 have correct number format.
 2023-01-17 09:50:37,970 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 42 rows in less than a second.
 2023-01-17 09:50:37,970 INFO com.cts.generator.ProcessInput [scheduling-1] Received 42 input rows, will check for an entry in customer for distinct meters in the input.
-2023-01-17 09:50:37,970 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2023-01-17 09:50:37,970 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2023-01-17 09:50:38,086 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-01-17 09:50:39,769 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 31 distinct meters. Will check for a Customer registry for each.
-2023-01-17 09:50:39,853 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 31 meters. Out of which 31 has Customer entry.
-2023-01-17 09:50:39,853 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 31 meters =  0 seconds.
-2023-01-17 09:50:39,853 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 31 meters which have a Customer record.
+2023-01-17 09:50:39,769 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 31 distinct meters. Will check for a Customer registry for each.
+2023-01-17 09:50:39,853 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 31 meters. Out of which 31 has Customer entry.
+2023-01-17 09:50:39,853 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 31 meters =  0 seconds.
+2023-01-17 09:50:39,853 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 31 meters which have a Customer record.
 2023-01-17 09:50:39,853 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 42 input rows.
 2023-01-17 09:50:39,853 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 42 records for json file - mBusFormat.
 2023-01-17 09:50:39,903 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] Reached end of input. proceeding to last json file. Max_transactions_per_file = 2000. 
@@ -248,12 +248,12 @@ java.lang.IllegalArgumentException: Invalid format: ""2022-11-01T00:00:00+01:00"
 2023-01-17 10:19:57,890 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 42 rows, out of which 42 have correct number format.
 2023-01-17 10:19:57,890 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 42 rows in less than a second.
 2023-01-17 10:19:57,890 INFO com.cts.generator.ProcessInput [scheduling-1] Received 42 input rows, will check for an entry in customer for distinct meters in the input.
-2023-01-17 10:19:57,890 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2023-01-17 10:19:57,890 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2023-01-17 10:19:58,040 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-01-17 10:19:59,482 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 31 distinct meters. Will check for a Customer registry for each.
-2023-01-17 10:19:59,557 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 31 meters. Out of which 31 has Customer entry.
-2023-01-17 10:19:59,557 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 31 meters =  0 seconds.
-2023-01-17 10:19:59,557 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 31 meters which have a Customer record.
+2023-01-17 10:19:59,482 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 31 distinct meters. Will check for a Customer registry for each.
+2023-01-17 10:19:59,557 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 31 meters. Out of which 31 has Customer entry.
+2023-01-17 10:19:59,557 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 31 meters =  0 seconds.
+2023-01-17 10:19:59,557 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 31 meters which have a Customer record.
 2023-01-17 10:19:59,557 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 42 input rows.
 2023-01-17 10:19:59,574 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 42 records for json file - mBusFormat.
 2023-01-17 10:19:59,607 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] Reached end of input. proceeding to last json file. Max_transactions_per_file = 2000. 
@@ -330,12 +330,12 @@ java.lang.IllegalArgumentException: Invalid format: ""2022-11-01T00:00:00+01:00"
 2023-01-17 10:28:42,044 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 42 rows, out of which 42 have correct number format.
 2023-01-17 10:28:42,044 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 42 rows in less than a second.
 2023-01-17 10:28:42,044 INFO com.cts.generator.ProcessInput [scheduling-1] Received 42 input rows, will check for an entry in customer for distinct meters in the input.
-2023-01-17 10:28:42,044 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2023-01-17 10:28:42,044 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2023-01-17 10:28:42,178 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-01-17 10:28:43,683 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 31 distinct meters. Will check for a Customer registry for each.
-2023-01-17 10:28:43,767 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 31 meters. Out of which 31 has Customer entry.
-2023-01-17 10:28:43,783 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 31 meters =  0 seconds.
-2023-01-17 10:28:43,783 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 31 meters which have a Customer record.
+2023-01-17 10:28:43,683 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 31 distinct meters. Will check for a Customer registry for each.
+2023-01-17 10:28:43,767 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 31 meters. Out of which 31 has Customer entry.
+2023-01-17 10:28:43,783 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 31 meters =  0 seconds.
+2023-01-17 10:28:43,783 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 31 meters which have a Customer record.
 2023-01-17 10:28:43,783 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 42 input rows.
 2023-01-17 10:28:43,783 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 42 records for json file - mBusFormat.
 2023-01-17 10:28:43,830 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] Reached end of input. proceeding to last json file. Max_transactions_per_file = 2000. 
@@ -412,12 +412,12 @@ java.lang.IllegalArgumentException: Invalid format: ""2022-11-01T00:00:00+01:00"
 2023-01-17 11:17:38,129 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 42 rows, out of which 42 have correct number format.
 2023-01-17 11:17:38,129 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 42 rows in less than a second.
 2023-01-17 11:17:38,129 INFO com.cts.generator.ProcessInput [scheduling-1] Received 42 input rows, will check for an entry in customer for distinct meters in the input.
-2023-01-17 11:17:38,146 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2023-01-17 11:17:38,146 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2023-01-17 11:17:38,229 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-01-17 11:17:39,812 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 31 distinct meters. Will check for a Customer registry for each.
-2023-01-17 11:17:39,912 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 31 meters. Out of which 31 has Customer entry.
-2023-01-17 11:17:39,912 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 31 meters =  0 seconds.
-2023-01-17 11:17:39,912 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 31 meters which have a Customer record.
+2023-01-17 11:17:39,812 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 31 distinct meters. Will check for a Customer registry for each.
+2023-01-17 11:17:39,912 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 31 meters. Out of which 31 has Customer entry.
+2023-01-17 11:17:39,912 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 31 meters =  0 seconds.
+2023-01-17 11:17:39,912 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 31 meters which have a Customer record.
 2023-01-17 11:17:39,912 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 42 input rows.
 2023-01-17 11:17:39,912 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 42 records for json file - mBusFormat.
 2023-01-17 11:17:39,946 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] There are 37 readings for timestamp != 00:00:00. Only readings @00:00:00 are relevant for creating dayStand payload.
@@ -495,12 +495,12 @@ java.lang.IllegalArgumentException: Invalid format: ""2022-11-01T00:00:00+01:00"
 2023-01-17 11:31:48,141 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 42 rows, out of which 42 have correct number format.
 2023-01-17 11:31:48,141 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 42 rows in less than a second.
 2023-01-17 11:31:48,141 INFO com.cts.generator.ProcessInput [scheduling-1] Received 42 input rows, will check for an entry in customer for distinct meters in the input.
-2023-01-17 11:31:48,141 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2023-01-17 11:31:48,141 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2023-01-17 11:31:48,307 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-01-17 11:31:49,827 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 31 distinct meters. Will check for a Customer registry for each.
-2023-01-17 11:31:49,921 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 31 meters. Out of which 31 has Customer entry.
-2023-01-17 11:31:49,921 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 31 meters =  0 seconds.
-2023-01-17 11:31:49,921 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 31 meters which have a Customer record.
+2023-01-17 11:31:49,827 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 31 distinct meters. Will check for a Customer registry for each.
+2023-01-17 11:31:49,921 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 31 meters. Out of which 31 has Customer entry.
+2023-01-17 11:31:49,921 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 31 meters =  0 seconds.
+2023-01-17 11:31:49,921 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 31 meters which have a Customer record.
 2023-01-17 11:31:49,921 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 42 input rows.
 2023-01-17 11:31:49,937 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 42 records for json file - mBusFormat.
 2023-01-17 11:31:49,968 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] There are 42 readings for timestamp != 00:00:00. Only readings @00:00:00 are relevant for creating dayStand payload.
@@ -578,12 +578,12 @@ java.lang.IllegalArgumentException: Invalid format: ""2022-11-01T00:00:00+01:00"
 2023-01-17 11:33:44,161 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 42 rows, out of which 42 have correct number format.
 2023-01-17 11:33:44,161 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 42 rows in less than a second.
 2023-01-17 11:33:44,161 INFO com.cts.generator.ProcessInput [scheduling-1] Received 42 input rows, will check for an entry in customer for distinct meters in the input.
-2023-01-17 11:33:44,163 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2023-01-17 11:33:44,163 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2023-01-17 11:33:44,341 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-01-17 11:33:45,858 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 31 distinct meters. Will check for a Customer registry for each.
-2023-01-17 11:33:45,941 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 31 meters. Out of which 31 has Customer entry.
-2023-01-17 11:33:45,941 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 31 meters =  0 seconds.
-2023-01-17 11:33:45,941 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 31 meters which have a Customer record.
+2023-01-17 11:33:45,858 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 31 distinct meters. Will check for a Customer registry for each.
+2023-01-17 11:33:45,941 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 31 meters. Out of which 31 has Customer entry.
+2023-01-17 11:33:45,941 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 31 meters =  0 seconds.
+2023-01-17 11:33:45,941 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 31 meters which have a Customer record.
 2023-01-17 11:33:45,941 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 42 input rows.
 2023-01-17 11:33:45,941 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 42 records for json file - mBusFormat.
 2023-01-17 11:33:45,990 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] There are 41 readings for timestamp != 00:00:00. Only readings @00:00:00 are relevant for creating dayStand payload.
@@ -661,12 +661,12 @@ java.lang.IllegalArgumentException: Invalid format: ""2022-11-01T00:00:00+01:00"
 2023-01-17 11:40:51,593 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 69 rows, out of which 69 have correct number format.
 2023-01-17 11:40:51,593 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 69 rows in less than a second.
 2023-01-17 11:40:51,593 INFO com.cts.generator.ProcessInput [scheduling-1] Received 69 input rows, will check for an entry in customer for distinct meters in the input.
-2023-01-17 11:40:51,610 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2023-01-17 11:40:51,610 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2023-01-17 11:40:51,743 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-01-17 11:40:53,192 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 31 distinct meters. Will check for a Customer registry for each.
-2023-01-17 11:40:53,307 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 31 meters. Out of which 31 has Customer entry.
-2023-01-17 11:40:53,307 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 31 meters =  0 seconds.
-2023-01-17 11:40:53,307 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 31 meters which have a Customer record.
+2023-01-17 11:40:53,192 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 31 distinct meters. Will check for a Customer registry for each.
+2023-01-17 11:40:53,307 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 31 meters. Out of which 31 has Customer entry.
+2023-01-17 11:40:53,307 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 31 meters =  0 seconds.
+2023-01-17 11:40:53,307 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 31 meters which have a Customer record.
 2023-01-17 11:40:53,307 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 69 input rows.
 2023-01-17 11:40:53,307 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 69 records for json file - mBusFormat.
 2023-01-17 11:40:53,361 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] There are 37 readings for timestamp != 00:00:00. Only readings @00:00:00 are relevant for creating dayStand payload.

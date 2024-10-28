@@ -34,12 +34,12 @@
 2022-11-23 12:55:15,831 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 84 rows, out of which 83 have correct number format.
 2022-11-23 12:55:15,831 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 84 rows in less than a second.
 2022-11-23 12:55:15,832 INFO com.cts.generator.ProcessInput [scheduling-1] Received 83 input rows, will check for an entry in customer for distinct meters in the input.
-2022-11-23 12:55:15,836 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2022-11-23 12:55:15,836 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2022-11-23 12:55:16,029 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2022-11-23 12:55:17,844 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 80 distinct meters. Will check for a Customer registry for each.
-2022-11-23 12:55:17,915 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter TullOgVas in the base of previously checked meters, will try to get details by API call to ISCU.
-2022-11-23 12:55:17,915 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id TullOgVas.
-2022-11-23 12:55:18,988 ERROR com.cts.customerGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = TullOgVas. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
+2022-11-23 12:55:17,844 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 80 distinct meters. Will check for a Customer registry for each.
+2022-11-23 12:55:17,915 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter TullOgVas in the base of previously checked meters, will try to get details by API call to ISCU.
+2022-11-23 12:55:17,915 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id TullOgVas.
+2022-11-23 12:55:18,988 ERROR com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = TullOgVas. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
 org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found: [No matching record for the given condition]
 	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
 	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
@@ -49,11 +49,11 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:743)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677)
 	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:345)
-	at com.cts.customerGateway.MeterSetupClient.get(MeterSetupClient.java:75)
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:80)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:40)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:33)
+	at com.cts.nanoMeteringGateway.MeterSetupClient.get(MeterSetupClient.java:75)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:80)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:40)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:33)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:91)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:71)
 	at com.cts.controller.Controller.printOutput(Controller.java:188)
@@ -71,13 +71,13 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2022-11-23 12:55:18,989 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = TullOgVas. This meter is ignored. General Exception. Exception message below:
-2022-11-23 12:55:18,989 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Unable to fetch UNIT.
+2022-11-23 12:55:18,989 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = TullOgVas. This meter is ignored. General Exception. Exception message below:
+2022-11-23 12:55:18,989 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Unable to fetch UNIT.
 java.lang.NullPointerException: null
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:80)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:40)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:33)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:80)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:40)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:33)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:91)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:71)
 	at com.cts.controller.Controller.printOutput(Controller.java:188)
@@ -95,9 +95,9 @@ java.lang.NullPointerException: null
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2022-11-23 12:55:19,017 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 80 meters. Out of which 79 has Customer entry.
-2022-11-23 12:55:19,017 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 80 meters =  1 seconds.
-2022-11-23 12:55:19,018 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 79 meters which have a Customer record.
+2022-11-23 12:55:19,017 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 80 meters. Out of which 79 has Customer entry.
+2022-11-23 12:55:19,017 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 80 meters =  1 seconds.
+2022-11-23 12:55:19,018 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 79 meters which have a Customer record.
 2022-11-23 12:55:19,018 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 82 input rows.
 2022-11-23 12:55:19,018 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2022-11-23 12:55:19,024 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 82 meters out of a total of 82 meters.
@@ -190,12 +190,12 @@ java.lang.NullPointerException: null
 2022-11-23 12:59:06,398 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 252 rows, out of which 249 have correct number format.
 2022-11-23 12:59:06,398 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 252 rows in less than a second.
 2022-11-23 12:59:06,398 INFO com.cts.generator.ProcessInput [scheduling-1] Received 249 input rows, will check for an entry in customer for distinct meters in the input.
-2022-11-23 12:59:06,403 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2022-11-23 12:59:06,403 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2022-11-23 12:59:06,533 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2022-11-23 12:59:08,357 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 80 distinct meters. Will check for a Customer registry for each.
-2022-11-23 12:59:08,424 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter TullOgVas in the base of previously checked meters, will try to get details by API call to ISCU.
-2022-11-23 12:59:08,424 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id TullOgVas.
-2022-11-23 12:59:09,210 ERROR com.cts.customerGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = TullOgVas. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
+2022-11-23 12:59:08,357 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 80 distinct meters. Will check for a Customer registry for each.
+2022-11-23 12:59:08,424 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter TullOgVas in the base of previously checked meters, will try to get details by API call to ISCU.
+2022-11-23 12:59:08,424 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id TullOgVas.
+2022-11-23 12:59:09,210 ERROR com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = TullOgVas. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
 org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found: [No matching record for the given condition]
 	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
 	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
@@ -205,11 +205,11 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:743)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677)
 	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:345)
-	at com.cts.customerGateway.MeterSetupClient.get(MeterSetupClient.java:75)
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:80)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:40)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:33)
+	at com.cts.nanoMeteringGateway.MeterSetupClient.get(MeterSetupClient.java:75)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:80)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:40)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:33)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:91)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:71)
 	at com.cts.controller.Controller.printOutput(Controller.java:188)
@@ -227,13 +227,13 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2022-11-23 12:59:09,211 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = TullOgVas. This meter is ignored. General Exception. Exception message below:
-2022-11-23 12:59:09,211 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Unable to fetch UNIT.
+2022-11-23 12:59:09,211 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = TullOgVas. This meter is ignored. General Exception. Exception message below:
+2022-11-23 12:59:09,211 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Unable to fetch UNIT.
 java.lang.NullPointerException: null
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:80)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:40)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:33)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:80)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:40)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:33)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:91)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:71)
 	at com.cts.controller.Controller.printOutput(Controller.java:188)
@@ -251,9 +251,9 @@ java.lang.NullPointerException: null
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2022-11-23 12:59:09,249 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 80 meters. Out of which 79 has Customer entry.
-2022-11-23 12:59:09,250 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 80 meters =  0 seconds.
-2022-11-23 12:59:09,250 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 79 meters which have a Customer record.
+2022-11-23 12:59:09,249 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 80 meters. Out of which 79 has Customer entry.
+2022-11-23 12:59:09,250 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 80 meters =  0 seconds.
+2022-11-23 12:59:09,250 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 79 meters which have a Customer record.
 2022-11-23 12:59:09,250 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 246 input rows.
 2022-11-23 12:59:09,251 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2022-11-23 12:59:09,258 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 246 meters out of a total of 246 meters.
@@ -348,12 +348,12 @@ java.lang.NullPointerException: null
 2022-11-23 13:36:10,599 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 252 rows, out of which 249 have correct number format.
 2022-11-23 13:36:10,600 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 252 rows in less than a second.
 2022-11-23 13:36:10,601 INFO com.cts.generator.ProcessInput [scheduling-1] Received 249 input rows, will check for an entry in customer for distinct meters in the input.
-2022-11-23 13:36:10,607 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2022-11-23 13:36:10,607 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2022-11-23 13:36:10,719 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2022-11-23 13:36:12,641 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 80 distinct meters. Will check for a Customer registry for each.
-2022-11-23 13:36:12,722 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter TullOgVas in the base of previously checked meters, will try to get details by API call to ISCU.
-2022-11-23 13:36:12,723 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id TullOgVas.
-2022-11-23 13:36:13,567 ERROR com.cts.customerGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = TullOgVas. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
+2022-11-23 13:36:12,641 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 80 distinct meters. Will check for a Customer registry for each.
+2022-11-23 13:36:12,722 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter TullOgVas in the base of previously checked meters, will try to get details by API call to ISCU.
+2022-11-23 13:36:12,723 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id TullOgVas.
+2022-11-23 13:36:13,567 ERROR com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = TullOgVas. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
 org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found: [No matching record for the given condition]
 	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
 	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
@@ -363,11 +363,11 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:743)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677)
 	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:345)
-	at com.cts.customerGateway.MeterSetupClient.get(MeterSetupClient.java:75)
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:80)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:40)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:33)
+	at com.cts.nanoMeteringGateway.MeterSetupClient.get(MeterSetupClient.java:75)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:80)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:40)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:33)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:91)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:71)
 	at com.cts.controller.Controller.printOutput(Controller.java:188)
@@ -385,13 +385,13 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2022-11-23 13:36:13,568 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = TullOgVas. This meter is ignored. General Exception. Exception message below:
-2022-11-23 13:36:13,568 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Unable to fetch UNIT.
+2022-11-23 13:36:13,568 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = TullOgVas. This meter is ignored. General Exception. Exception message below:
+2022-11-23 13:36:13,568 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Unable to fetch UNIT.
 java.lang.NullPointerException: null
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:80)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:40)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:33)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:80)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:40)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:33)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:91)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:71)
 	at com.cts.controller.Controller.printOutput(Controller.java:188)
@@ -409,9 +409,9 @@ java.lang.NullPointerException: null
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2022-11-23 13:36:13,612 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 80 meters. Out of which 79 has Customer entry.
-2022-11-23 13:36:13,613 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 80 meters =  0 seconds.
-2022-11-23 13:36:13,613 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 79 meters which have a Customer record.
+2022-11-23 13:36:13,612 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 80 meters. Out of which 79 has Customer entry.
+2022-11-23 13:36:13,613 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 80 meters =  0 seconds.
+2022-11-23 13:36:13,613 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 79 meters which have a Customer record.
 2022-11-23 13:36:13,614 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 246 input rows.
 2022-11-23 13:36:13,620 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2022-11-23 13:36:13,636 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 246 meters out of a total of 246 meters.
@@ -561,12 +561,12 @@ java.lang.NullPointerException: null
 2022-11-23 14:22:36,119 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 252 rows, out of which 249 have correct number format.
 2022-11-23 14:22:36,119 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 252 rows in less than a second.
 2022-11-23 14:22:36,119 INFO com.cts.generator.ProcessInput [scheduling-1] Received 249 input rows, will check for an entry in customer for distinct meters in the input.
-2022-11-23 14:22:36,124 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2022-11-23 14:22:36,124 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2022-11-23 14:22:36,259 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2022-11-23 14:22:37,895 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 80 distinct meters. Will check for a Customer registry for each.
-2022-11-23 14:22:37,963 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter TullOgVas in the base of previously checked meters, will try to get details by API call to ISCU.
-2022-11-23 14:22:37,963 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id TullOgVas.
-2022-11-23 14:22:38,787 ERROR com.cts.customerGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = TullOgVas. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
+2022-11-23 14:22:37,895 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 80 distinct meters. Will check for a Customer registry for each.
+2022-11-23 14:22:37,963 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter TullOgVas in the base of previously checked meters, will try to get details by API call to ISCU.
+2022-11-23 14:22:37,963 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id TullOgVas.
+2022-11-23 14:22:38,787 ERROR com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = TullOgVas. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
 org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found: [No matching record for the given condition]
 	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
 	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
@@ -576,11 +576,11 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:743)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677)
 	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:345)
-	at com.cts.customerGateway.MeterSetupClient.get(MeterSetupClient.java:75)
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:80)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:40)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:33)
+	at com.cts.nanoMeteringGateway.MeterSetupClient.get(MeterSetupClient.java:75)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:80)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:40)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:33)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:91)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:71)
 	at com.cts.controller.Controller.printOutput(Controller.java:188)
@@ -598,13 +598,13 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2022-11-23 14:22:38,788 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = TullOgVas. This meter is ignored. General Exception. Exception message below:
-2022-11-23 14:22:38,789 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Unable to fetch UNIT.
+2022-11-23 14:22:38,788 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = TullOgVas. This meter is ignored. General Exception. Exception message below:
+2022-11-23 14:22:38,789 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Unable to fetch UNIT.
 java.lang.NullPointerException: null
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:80)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:40)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:33)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:80)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:40)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:33)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:91)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:71)
 	at com.cts.controller.Controller.printOutput(Controller.java:188)
@@ -622,9 +622,9 @@ java.lang.NullPointerException: null
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2022-11-23 14:22:38,820 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 80 meters. Out of which 79 has Customer entry.
-2022-11-23 14:22:38,821 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 80 meters =  0 seconds.
-2022-11-23 14:22:38,821 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 79 meters which have a Customer record.
+2022-11-23 14:22:38,820 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 80 meters. Out of which 79 has Customer entry.
+2022-11-23 14:22:38,821 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 80 meters =  0 seconds.
+2022-11-23 14:22:38,821 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 79 meters which have a Customer record.
 2022-11-23 14:22:38,822 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 246 input rows.
 2022-11-23 14:22:38,822 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2022-11-23 14:22:38,828 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 246 meters out of a total of 246 meters.

@@ -22,16 +22,16 @@
 2020-09-11 14:02:53,337 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct number format.
 2020-09-11 14:02:53,337 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 1 rows in less than a second.
 2020-09-11 14:02:53,337 INFO com.cts.generator.ProcessInput [scheduling-1] Received 1 input rows, will check for an entry in customer for distinct meters in the input.
-2020-09-11 14:02:53,341 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-09-11 14:02:53,341 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-09-11 14:02:53,671 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-09-11 14:03:08,982 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2020-09-11 14:03:09,016 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-09-11 14:03:09,906 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh from ISCU.
-2020-09-11 14:03:09,906 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] will try to insert meter 12163501, unit kWh,to local H2 database.
-2020-09-11 14:03:09,909 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Inserted meter 12163501, UNIT kWh to the H2 database.
-2020-09-11 14:03:09,909 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2020-09-11 14:03:09,910 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2020-09-11 14:03:09,910 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2020-09-11 14:03:08,982 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2020-09-11 14:03:09,016 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-09-11 14:03:09,906 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh from ISCU.
+2020-09-11 14:03:09,906 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] will try to insert meter 12163501, unit kWh,to local H2 database.
+2020-09-11 14:03:09,909 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Inserted meter 12163501, UNIT kWh to the H2 database.
+2020-09-11 14:03:09,909 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2020-09-11 14:03:09,910 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2020-09-11 14:03:09,910 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2020-09-11 14:03:09,910 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
 2020-09-11 14:03:09,910 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for circutorPLCFormat.
 2020-09-11 14:03:09,914 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of 1 meters received.
@@ -39,11 +39,11 @@
 2020-09-11 14:03:09,918 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 1 records for gs2 file - circutorPLCFormat.
 2020-09-11 14:03:10,403 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 4018 day stands for meter 12163501. Last stand date from DB is 2007-04-01T00:00:00.000+02:00, current stand date is 2018-04-01T00:00:00.000+02:00. Will create day stands for 4018 days.
 2020-09-11 14:03:10,541 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Creating file for stand per hour for circutorPLCFormat.
-2020-09-11 14:03:10,890 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-09-11 14:03:10,911 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-09-11 14:03:11,050 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979 from ISCU.
-2020-09-11 14:03:11,051 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] will try to insert meter 12163501, deliveryPoint 2979,to local H2 database.
-2020-09-11 14:03:11,051 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Inserted meter 12163501, lev_punkt_id 2979 to the H2 database.
+2020-09-11 14:03:10,890 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-09-11 14:03:10,911 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-09-11 14:03:11,050 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979 from ISCU.
+2020-09-11 14:03:11,051 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] will try to insert meter 12163501, deliveryPoint 2979,to local H2 database.
+2020-09-11 14:03:11,051 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Inserted meter 12163501, lev_punkt_id 2979 to the H2 database.
 2020-09-11 14:03:11,052 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Meter = 12163501, Objectid = 2979 - Gap of 96432 hours between last available stand_hour 2007-04-01T00:00:00.000+02:00 and current input hour 2018-04-01T00:00:00.000+02:00.
 2020-09-11 14:03:11,052 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Last stand before the gap = 409.580, current stand after the gap = 76086.000.
 2020-09-11 14:03:11,052 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Will fill the gap by equal distribution of total consumption in the gap divided by number of hours in the gap.
@@ -140,16 +140,16 @@
 2020-09-11 14:12:07,528 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct number format.
 2020-09-11 14:12:07,529 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 1 rows in less than a second.
 2020-09-11 14:12:07,530 INFO com.cts.generator.ProcessInput [scheduling-1] Received 1 input rows, will check for an entry in customer for distinct meters in the input.
-2020-09-11 14:12:07,534 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-09-11 14:12:07,534 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-09-11 14:12:07,742 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-09-11 14:12:23,464 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2020-09-11 14:12:23,494 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-09-11 14:12:24,251 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh from ISCU.
-2020-09-11 14:12:24,251 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] will try to insert meter 12163501, unit kWh,to local H2 database.
-2020-09-11 14:12:24,253 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Inserted meter 12163501, UNIT kWh to the H2 database.
-2020-09-11 14:12:24,253 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2020-09-11 14:12:24,253 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2020-09-11 14:12:24,253 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2020-09-11 14:12:23,464 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2020-09-11 14:12:23,494 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-09-11 14:12:24,251 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh from ISCU.
+2020-09-11 14:12:24,251 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] will try to insert meter 12163501, unit kWh,to local H2 database.
+2020-09-11 14:12:24,253 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Inserted meter 12163501, UNIT kWh to the H2 database.
+2020-09-11 14:12:24,253 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2020-09-11 14:12:24,253 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2020-09-11 14:12:24,253 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2020-09-11 14:12:24,253 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
 2020-09-11 14:12:24,254 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for circutorPLCFormat.
 2020-09-11 14:12:24,256 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of 1 meters received.
@@ -157,11 +157,11 @@
 2020-09-11 14:12:24,260 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 1 records for gs2 file - circutorPLCFormat.
 2020-09-11 14:12:24,720 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 4018 day stands for meter 12163501. Last stand date from DB is 2007-04-01T00:00:00.000+02:00, current stand date is 2018-04-01T00:00:00.000+02:00. Will create day stands for 4018 days.
 2020-09-11 14:12:24,880 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Creating file for stand per hour for circutorPLCFormat.
-2020-09-11 14:12:25,192 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-09-11 14:12:25,199 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-09-11 14:12:25,334 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979 from ISCU.
-2020-09-11 14:12:25,334 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] will try to insert meter 12163501, deliveryPoint 2979,to local H2 database.
-2020-09-11 14:12:25,334 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Inserted meter 12163501, lev_punkt_id 2979 to the H2 database.
+2020-09-11 14:12:25,192 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-09-11 14:12:25,199 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-09-11 14:12:25,334 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979 from ISCU.
+2020-09-11 14:12:25,334 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] will try to insert meter 12163501, deliveryPoint 2979,to local H2 database.
+2020-09-11 14:12:25,334 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Inserted meter 12163501, lev_punkt_id 2979 to the H2 database.
 2020-09-11 14:12:25,335 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Meter = 12163501, Objectid = 2979 - Gap of 96432 hours between last available stand_hour 2007-04-01T00:00:00.000+02:00 and current input hour 2018-04-01T00:00:00.000+02:00.
 2020-09-11 14:12:25,335 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Last stand before the gap = 409.580, current stand after the gap = 76086.000.
 2020-09-11 14:12:25,335 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Will fill the gap by equal distribution of total consumption in the gap divided by number of hours in the gap.
@@ -258,19 +258,19 @@
 2020-09-11 14:54:36,790 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 2 rows, out of which 2 have correct number format.
 2020-09-11 14:54:36,791 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 2 rows in less than a second.
 2020-09-11 14:54:36,791 INFO com.cts.generator.ProcessInput [scheduling-1] Received 2 input rows, will check for an entry in customer for distinct meters in the input.
-2020-09-11 14:54:36,794 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-09-11 14:54:36,794 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-09-11 14:54:37,040 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-09-11 14:54:51,909 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
-2020-09-11 14:54:51,936 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-09-11 14:54:51,937 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 12163501.
-2020-09-11 14:54:51,937 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: 
-2020-09-11 14:54:52,746 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh from ISCU.
-2020-09-11 14:54:52,747 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] will try to insert meter 12163501, unit kWh,to local H2 database.
-2020-09-11 14:54:52,749 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Inserted meter 12163501, UNIT kWh to the H2 database.
-2020-09-11 14:54:52,749 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter NoSuchMeter in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-09-11 14:54:52,749 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id NoSuchMeter.
-2020-09-11 14:54:52,749 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: 
-2020-09-11 14:54:52,882 ERROR com.cts.customerGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = NoSuchMeter. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
+2020-09-11 14:54:51,909 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
+2020-09-11 14:54:51,936 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-09-11 14:54:51,937 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 12163501.
+2020-09-11 14:54:51,937 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is:
+2020-09-11 14:54:52,746 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh from ISCU.
+2020-09-11 14:54:52,747 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] will try to insert meter 12163501, unit kWh,to local H2 database.
+2020-09-11 14:54:52,749 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Inserted meter 12163501, UNIT kWh to the H2 database.
+2020-09-11 14:54:52,749 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter NoSuchMeter in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-09-11 14:54:52,749 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id NoSuchMeter.
+2020-09-11 14:54:52,749 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is:
+2020-09-11 14:54:52,882 ERROR com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = NoSuchMeter. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
 org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found: [No matching record for the given condition]
 	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
 	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
@@ -280,11 +280,11 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:743)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677)
 	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:345)
-	at com.cts.customerGateway.MeterSetupClient.get(MeterSetupClient.java:74)
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:80)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:40)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:33)
+	at com.cts.nanoMeteringGateway.MeterSetupClient.get(MeterSetupClient.java:74)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:80)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:40)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:33)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:88)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:67)
 	at com.cts.controller.Controller.printOutput(Controller.java:207)
@@ -303,13 +303,13 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-2020-09-11 14:54:52,882 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = NoSuchMeter. This meter is ignored. General Exception. Exception message below:
-2020-09-11 14:54:52,882 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Unable to fetch UNIT.
+2020-09-11 14:54:52,882 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = NoSuchMeter. This meter is ignored. General Exception. Exception message below:
+2020-09-11 14:54:52,882 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Unable to fetch UNIT.
 java.lang.NullPointerException: null
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:80)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:40)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:33)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:80)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:40)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:33)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:88)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:67)
 	at com.cts.controller.Controller.printOutput(Controller.java:207)
@@ -328,9 +328,9 @@ java.lang.NullPointerException: null
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-2020-09-11 14:54:52,883 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 2 meters. Out of which 1 has Customer entry.
-2020-09-11 14:54:52,883 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 2 meters =  0 seconds.
-2020-09-11 14:54:52,883 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2020-09-11 14:54:52,883 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 2 meters. Out of which 1 has Customer entry.
+2020-09-11 14:54:52,883 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 2 meters =  0 seconds.
+2020-09-11 14:54:52,883 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2020-09-11 14:54:52,883 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
 2020-09-11 14:54:52,883 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for circutorPLCFormat.
 2020-09-11 14:54:52,889 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of 1 meters received.
@@ -338,13 +338,13 @@ java.lang.NullPointerException: null
 2020-09-11 14:54:52,895 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 1 records for gs2 file - circutorPLCFormat.
 2020-09-11 14:54:53,340 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 4018 day stands for meter 12163501. Last stand date from DB is 2007-04-01T00:00:00.000+02:00, current stand date is 2018-04-01T00:00:00.000+02:00. Will create day stands for 4018 days.
 2020-09-11 14:54:53,461 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Creating file for stand per hour for circutorPLCFormat.
-2020-09-11 14:54:53,751 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-09-11 14:54:53,772 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-09-11 14:54:53,773 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 12163501.
-2020-09-11 14:54:53,774 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: 
-2020-09-11 14:54:53,905 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979 from ISCU.
-2020-09-11 14:54:53,905 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] will try to insert meter 12163501, deliveryPoint 2979,to local H2 database.
-2020-09-11 14:54:53,906 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Inserted meter 12163501, lev_punkt_id 2979 to the H2 database.
+2020-09-11 14:54:53,751 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-09-11 14:54:53,772 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-09-11 14:54:53,773 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 12163501.
+2020-09-11 14:54:53,774 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is:
+2020-09-11 14:54:53,905 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979 from ISCU.
+2020-09-11 14:54:53,905 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] will try to insert meter 12163501, deliveryPoint 2979,to local H2 database.
+2020-09-11 14:54:53,906 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Inserted meter 12163501, lev_punkt_id 2979 to the H2 database.
 2020-09-11 14:54:53,907 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Meter = 12163501, Objectid = 2979 - Gap of 96432 hours between last available stand_hour 2007-04-01T00:00:00.000+02:00 and current input hour 2018-04-01T00:00:00.000+02:00.
 2020-09-11 14:54:53,907 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Last stand before the gap = 409.580, current stand after the gap = 76086.000.
 2020-09-11 14:54:53,907 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Will fill the gap by equal distribution of total consumption in the gap divided by number of hours in the gap.
@@ -444,19 +444,19 @@ java.lang.NullPointerException: null
 2020-09-11 14:59:59,590 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 2 rows, out of which 2 have correct number format.
 2020-09-11 14:59:59,591 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 2 rows in less than a second.
 2020-09-11 14:59:59,591 INFO com.cts.generator.ProcessInput [scheduling-1] Received 2 input rows, will check for an entry in customer for distinct meters in the input.
-2020-09-11 14:59:59,595 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-09-11 14:59:59,595 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-09-11 14:59:59,947 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-09-11 15:00:14,912 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
-2020-09-11 15:00:14,939 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-09-11 15:00:14,939 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 12163501.
-2020-09-11 15:00:14,939 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501
-2020-09-11 15:00:15,848 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh from ISCU.
-2020-09-11 15:00:15,849 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] will try to insert meter 12163501, unit kWh,to local H2 database.
-2020-09-11 15:00:15,851 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Inserted meter 12163501, UNIT kWh to the H2 database.
-2020-09-11 15:00:15,852 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter NoSuchMeter in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-09-11 15:00:15,852 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id NoSuchMeter.
-2020-09-11 15:00:15,852 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/NoSuchMeter
-2020-09-11 15:00:15,982 ERROR com.cts.customerGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = NoSuchMeter. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
+2020-09-11 15:00:14,912 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
+2020-09-11 15:00:14,939 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-09-11 15:00:14,939 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 12163501.
+2020-09-11 15:00:14,939 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501
+2020-09-11 15:00:15,848 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh from ISCU.
+2020-09-11 15:00:15,849 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] will try to insert meter 12163501, unit kWh,to local H2 database.
+2020-09-11 15:00:15,851 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Inserted meter 12163501, UNIT kWh to the H2 database.
+2020-09-11 15:00:15,852 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter NoSuchMeter in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-09-11 15:00:15,852 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id NoSuchMeter.
+2020-09-11 15:00:15,852 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/NoSuchMeter
+2020-09-11 15:00:15,982 ERROR com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = NoSuchMeter. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
 org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found: [No matching record for the given condition]
 	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
 	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
@@ -466,11 +466,11 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:743)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677)
 	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:345)
-	at com.cts.customerGateway.MeterSetupClient.get(MeterSetupClient.java:74)
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:80)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:40)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:33)
+	at com.cts.nanoMeteringGateway.MeterSetupClient.get(MeterSetupClient.java:74)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:80)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:40)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:33)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:88)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:67)
 	at com.cts.controller.Controller.printOutput(Controller.java:207)
@@ -489,13 +489,13 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-2020-09-11 15:00:15,983 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = NoSuchMeter. This meter is ignored. General Exception. Exception message below:
-2020-09-11 15:00:15,983 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Unable to fetch UNIT.
+2020-09-11 15:00:15,983 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = NoSuchMeter. This meter is ignored. General Exception. Exception message below:
+2020-09-11 15:00:15,983 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Unable to fetch UNIT.
 java.lang.NullPointerException: null
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:80)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:40)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:33)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:80)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:40)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:33)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:88)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:67)
 	at com.cts.controller.Controller.printOutput(Controller.java:207)
@@ -514,9 +514,9 @@ java.lang.NullPointerException: null
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-2020-09-11 15:00:15,983 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 2 meters. Out of which 1 has Customer entry.
-2020-09-11 15:00:15,984 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 2 meters =  1 seconds.
-2020-09-11 15:00:15,984 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2020-09-11 15:00:15,983 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 2 meters. Out of which 1 has Customer entry.
+2020-09-11 15:00:15,984 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 2 meters =  1 seconds.
+2020-09-11 15:00:15,984 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2020-09-11 15:00:15,984 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
 2020-09-11 15:00:15,984 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for circutorPLCFormat.
 2020-09-11 15:00:15,987 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of 1 meters received.
@@ -524,13 +524,13 @@ java.lang.NullPointerException: null
 2020-09-11 15:00:15,990 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 1 records for gs2 file - circutorPLCFormat.
 2020-09-11 15:00:16,484 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 4018 day stands for meter 12163501. Last stand date from DB is 2007-04-01T00:00:00.000+02:00, current stand date is 2018-04-01T00:00:00.000+02:00. Will create day stands for 4018 days.
 2020-09-11 15:00:16,650 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Creating file for stand per hour for circutorPLCFormat.
-2020-09-11 15:00:16,971 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-09-11 15:00:16,979 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-09-11 15:00:16,979 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 12163501.
-2020-09-11 15:00:16,979 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501
-2020-09-11 15:00:17,142 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979 from ISCU.
-2020-09-11 15:00:17,142 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] will try to insert meter 12163501, deliveryPoint 2979,to local H2 database.
-2020-09-11 15:00:17,143 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Inserted meter 12163501, lev_punkt_id 2979 to the H2 database.
+2020-09-11 15:00:16,971 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-09-11 15:00:16,979 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-09-11 15:00:16,979 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 12163501.
+2020-09-11 15:00:16,979 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501
+2020-09-11 15:00:17,142 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979 from ISCU.
+2020-09-11 15:00:17,142 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] will try to insert meter 12163501, deliveryPoint 2979,to local H2 database.
+2020-09-11 15:00:17,143 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Inserted meter 12163501, lev_punkt_id 2979 to the H2 database.
 2020-09-11 15:00:17,144 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Meter = 12163501, Objectid = 2979 - Gap of 96432 hours between last available stand_hour 2007-04-01T00:00:00.000+02:00 and current input hour 2018-04-01T00:00:00.000+02:00.
 2020-09-11 15:00:17,144 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Last stand before the gap = 409.580, current stand after the gap = 76086.000.
 2020-09-11 15:00:17,144 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Will fill the gap by equal distribution of total consumption in the gap divided by number of hours in the gap.
@@ -787,23 +787,23 @@ java.lang.NullPointerException: null
 2020-09-11 15:09:39,448 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 2 rows, out of which 2 have correct number format.
 2020-09-11 15:09:39,449 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 2 rows in less than a second.
 2020-09-11 15:09:39,449 INFO com.cts.generator.ProcessInput [scheduling-1] Received 2 input rows, will check for an entry in customer for distinct meters in the input.
-2020-09-11 15:09:39,454 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-09-11 15:09:39,454 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-09-11 15:09:39,674 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-09-11 15:09:54,372 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
-2020-09-11 15:09:54,400 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-09-11 15:09:54,401 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 12163501.
-2020-09-11 15:09:54,401 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501
-2020-09-11 15:09:54,401 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] UserName is dro.
-2020-09-11 15:09:54,401 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] PassWord is Sismaoffice39.
-2020-09-11 15:09:55,208 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh from ISCU.
-2020-09-11 15:09:55,209 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] will try to insert meter 12163501, unit kWh,to local H2 database.
-2020-09-11 15:09:55,211 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Inserted meter 12163501, UNIT kWh to the H2 database.
-2020-09-11 15:09:55,212 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter NoSuchMeter in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-09-11 15:09:55,212 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id NoSuchMeter.
-2020-09-11 15:09:55,213 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/NoSuchMeter
-2020-09-11 15:09:55,213 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] UserName is dro.
-2020-09-11 15:09:55,213 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] PassWord is Sismaoffice39.
-2020-09-11 15:09:55,357 ERROR com.cts.customerGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = NoSuchMeter. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
+2020-09-11 15:09:54,372 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
+2020-09-11 15:09:54,400 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-09-11 15:09:54,401 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 12163501.
+2020-09-11 15:09:54,401 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501
+2020-09-11 15:09:54,401 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] UserName is dro.
+2020-09-11 15:09:54,401 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] PassWord is Sismaoffice39.
+2020-09-11 15:09:55,208 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh from ISCU.
+2020-09-11 15:09:55,209 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] will try to insert meter 12163501, unit kWh,to local H2 database.
+2020-09-11 15:09:55,211 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Inserted meter 12163501, UNIT kWh to the H2 database.
+2020-09-11 15:09:55,212 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter NoSuchMeter in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-09-11 15:09:55,212 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id NoSuchMeter.
+2020-09-11 15:09:55,213 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/NoSuchMeter
+2020-09-11 15:09:55,213 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] UserName is dro.
+2020-09-11 15:09:55,213 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] PassWord is Sismaoffice39.
+2020-09-11 15:09:55,357 ERROR com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = NoSuchMeter. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
 org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found: [No matching record for the given condition]
 	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
 	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
@@ -813,11 +813,11 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:743)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677)
 	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:345)
-	at com.cts.customerGateway.MeterSetupClient.get(MeterSetupClient.java:76)
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:80)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:40)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:33)
+	at com.cts.nanoMeteringGateway.MeterSetupClient.get(MeterSetupClient.java:76)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:80)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:40)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:33)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:88)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:67)
 	at com.cts.controller.Controller.printOutput(Controller.java:207)
@@ -836,13 +836,13 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-2020-09-11 15:09:55,358 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = NoSuchMeter. This meter is ignored. General Exception. Exception message below:
-2020-09-11 15:09:55,359 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Unable to fetch UNIT.
+2020-09-11 15:09:55,358 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = NoSuchMeter. This meter is ignored. General Exception. Exception message below:
+2020-09-11 15:09:55,359 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Unable to fetch UNIT.
 java.lang.NullPointerException: null
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:80)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:40)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:33)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:80)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:40)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:33)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:88)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:67)
 	at com.cts.controller.Controller.printOutput(Controller.java:207)
@@ -861,9 +861,9 @@ java.lang.NullPointerException: null
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-2020-09-11 15:09:55,359 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 2 meters. Out of which 1 has Customer entry.
-2020-09-11 15:09:55,359 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 2 meters =  0 seconds.
-2020-09-11 15:09:55,359 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2020-09-11 15:09:55,359 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 2 meters. Out of which 1 has Customer entry.
+2020-09-11 15:09:55,359 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 2 meters =  0 seconds.
+2020-09-11 15:09:55,359 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2020-09-11 15:09:55,360 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
 2020-09-11 15:09:55,360 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for circutorPLCFormat.
 2020-09-11 15:09:55,365 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of 1 meters received.
@@ -871,15 +871,15 @@ java.lang.NullPointerException: null
 2020-09-11 15:09:55,371 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 1 records for gs2 file - circutorPLCFormat.
 2020-09-11 15:09:55,875 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 4018 day stands for meter 12163501. Last stand date from DB is 2007-04-01T00:00:00.000+02:00, current stand date is 2018-04-01T00:00:00.000+02:00. Will create day stands for 4018 days.
 2020-09-11 15:09:56,011 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Creating file for stand per hour for circutorPLCFormat.
-2020-09-11 15:09:56,292 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-09-11 15:09:56,309 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-09-11 15:09:56,310 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 12163501.
-2020-09-11 15:09:56,310 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501
-2020-09-11 15:09:56,310 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] UserName is dro.
-2020-09-11 15:09:56,311 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] PassWord is Sismaoffice39.
-2020-09-11 15:09:56,446 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979 from ISCU.
-2020-09-11 15:09:56,447 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] will try to insert meter 12163501, deliveryPoint 2979,to local H2 database.
-2020-09-11 15:09:56,449 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Inserted meter 12163501, lev_punkt_id 2979 to the H2 database.
+2020-09-11 15:09:56,292 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-09-11 15:09:56,309 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-09-11 15:09:56,310 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 12163501.
+2020-09-11 15:09:56,310 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501
+2020-09-11 15:09:56,310 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] UserName is dro.
+2020-09-11 15:09:56,311 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] PassWord is Sismaoffice39.
+2020-09-11 15:09:56,446 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979 from ISCU.
+2020-09-11 15:09:56,447 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] will try to insert meter 12163501, deliveryPoint 2979,to local H2 database.
+2020-09-11 15:09:56,449 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Inserted meter 12163501, lev_punkt_id 2979 to the H2 database.
 2020-09-11 15:09:56,450 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Meter = 12163501, Objectid = 2979 - Gap of 96432 hours between last available stand_hour 2007-04-01T00:00:00.000+02:00 and current input hour 2018-04-01T00:00:00.000+02:00.
 2020-09-11 15:09:56,451 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Last stand before the gap = 409.580, current stand after the gap = 76086.000.
 2020-09-11 15:09:56,452 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Will fill the gap by equal distribution of total consumption in the gap divided by number of hours in the gap.
@@ -979,25 +979,25 @@ java.lang.NullPointerException: null
 2020-09-11 15:18:43,123 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 2 rows, out of which 2 have correct number format.
 2020-09-11 15:18:43,123 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 2 rows in less than a second.
 2020-09-11 15:18:43,123 INFO com.cts.generator.ProcessInput [scheduling-1] Received 2 input rows, will check for an entry in customer for distinct meters in the input.
-2020-09-11 15:18:43,127 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-09-11 15:18:43,127 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-09-11 15:18:43,382 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-09-11 15:18:58,725 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
-2020-09-11 15:18:58,752 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-09-11 15:18:58,753 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 12163501.
-2020-09-11 15:18:58,753 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501
-2020-09-11 15:18:58,753 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] UserName is dro.
-2020-09-11 15:18:58,753 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] PassWord is Sismaoffice39.
-2020-09-11 15:18:58,754 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501, MeterSetupV2.class).getBody();
-2020-09-11 15:18:59,564 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh from ISCU.
-2020-09-11 15:18:59,565 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] will try to insert meter 12163501, unit kWh,to local H2 database.
-2020-09-11 15:18:59,566 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Inserted meter 12163501, UNIT kWh to the H2 database.
-2020-09-11 15:18:59,567 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter NoSuchMeter in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-09-11 15:18:59,567 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id NoSuchMeter.
-2020-09-11 15:18:59,568 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/NoSuchMeter
-2020-09-11 15:18:59,568 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] UserName is dro.
-2020-09-11 15:18:59,568 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] PassWord is Sismaoffice39.
-2020-09-11 15:18:59,568 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/NoSuchMeter, MeterSetupV2.class).getBody();
-2020-09-11 15:18:59,708 ERROR com.cts.customerGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = NoSuchMeter. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
+2020-09-11 15:18:58,725 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
+2020-09-11 15:18:58,752 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-09-11 15:18:58,753 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 12163501.
+2020-09-11 15:18:58,753 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501
+2020-09-11 15:18:58,753 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] UserName is dro.
+2020-09-11 15:18:58,753 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] PassWord is Sismaoffice39.
+2020-09-11 15:18:58,754 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501, MeterSetupV2.class).getBody();
+2020-09-11 15:18:59,564 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh from ISCU.
+2020-09-11 15:18:59,565 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] will try to insert meter 12163501, unit kWh,to local H2 database.
+2020-09-11 15:18:59,566 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Inserted meter 12163501, UNIT kWh to the H2 database.
+2020-09-11 15:18:59,567 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter NoSuchMeter in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-09-11 15:18:59,567 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id NoSuchMeter.
+2020-09-11 15:18:59,568 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/NoSuchMeter
+2020-09-11 15:18:59,568 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] UserName is dro.
+2020-09-11 15:18:59,568 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] PassWord is Sismaoffice39.
+2020-09-11 15:18:59,568 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/NoSuchMeter, MeterSetupV2.class).getBody();
+2020-09-11 15:18:59,708 ERROR com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = NoSuchMeter. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
 org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found: [No matching record for the given condition]
 	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
 	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
@@ -1007,11 +1007,11 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:743)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677)
 	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:345)
-	at com.cts.customerGateway.MeterSetupClient.get(MeterSetupClient.java:77)
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:80)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:40)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:33)
+	at com.cts.nanoMeteringGateway.MeterSetupClient.get(MeterSetupClient.java:77)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:80)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:40)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:33)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:88)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:67)
 	at com.cts.controller.Controller.printOutput(Controller.java:207)
@@ -1030,13 +1030,13 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-2020-09-11 15:18:59,709 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = NoSuchMeter. This meter is ignored. General Exception. Exception message below:
-2020-09-11 15:18:59,710 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Unable to fetch UNIT.
+2020-09-11 15:18:59,709 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = NoSuchMeter. This meter is ignored. General Exception. Exception message below:
+2020-09-11 15:18:59,710 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Unable to fetch UNIT.
 java.lang.NullPointerException: null
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:80)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:40)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:33)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:80)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:40)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:33)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:88)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:67)
 	at com.cts.controller.Controller.printOutput(Controller.java:207)
@@ -1055,9 +1055,9 @@ java.lang.NullPointerException: null
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-2020-09-11 15:18:59,710 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 2 meters. Out of which 1 has Customer entry.
-2020-09-11 15:18:59,710 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 2 meters =  0 seconds.
-2020-09-11 15:18:59,710 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2020-09-11 15:18:59,710 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 2 meters. Out of which 1 has Customer entry.
+2020-09-11 15:18:59,710 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 2 meters =  0 seconds.
+2020-09-11 15:18:59,710 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2020-09-11 15:18:59,711 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
 2020-09-11 15:18:59,711 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for circutorPLCFormat.
 2020-09-11 15:18:59,718 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of 1 meters received.
@@ -1065,16 +1065,16 @@ java.lang.NullPointerException: null
 2020-09-11 15:18:59,723 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 1 records for gs2 file - circutorPLCFormat.
 2020-09-11 15:19:00,216 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 4018 day stands for meter 12163501. Last stand date from DB is 2007-04-01T00:00:00.000+02:00, current stand date is 2018-04-01T00:00:00.000+02:00. Will create day stands for 4018 days.
 2020-09-11 15:19:00,352 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Creating file for stand per hour for circutorPLCFormat.
-2020-09-11 15:19:00,635 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-09-11 15:19:00,641 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-09-11 15:19:00,641 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 12163501.
-2020-09-11 15:19:00,641 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501
-2020-09-11 15:19:00,642 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] UserName is dro.
-2020-09-11 15:19:00,642 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] PassWord is Sismaoffice39.
-2020-09-11 15:19:00,642 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501, MeterSetupV2.class).getBody();
-2020-09-11 15:19:00,772 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979 from ISCU.
-2020-09-11 15:19:00,773 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] will try to insert meter 12163501, deliveryPoint 2979,to local H2 database.
-2020-09-11 15:19:00,776 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Inserted meter 12163501, lev_punkt_id 2979 to the H2 database.
+2020-09-11 15:19:00,635 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-09-11 15:19:00,641 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-09-11 15:19:00,641 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 12163501.
+2020-09-11 15:19:00,641 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501
+2020-09-11 15:19:00,642 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] UserName is dro.
+2020-09-11 15:19:00,642 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] PassWord is Sismaoffice39.
+2020-09-11 15:19:00,642 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501, MeterSetupV2.class).getBody();
+2020-09-11 15:19:00,772 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979 from ISCU.
+2020-09-11 15:19:00,773 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] will try to insert meter 12163501, deliveryPoint 2979,to local H2 database.
+2020-09-11 15:19:00,776 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Inserted meter 12163501, lev_punkt_id 2979 to the H2 database.
 2020-09-11 15:19:00,778 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Meter = 12163501, Objectid = 2979 - Gap of 96432 hours between last available stand_hour 2007-04-01T00:00:00.000+02:00 and current input hour 2018-04-01T00:00:00.000+02:00.
 2020-09-11 15:19:00,779 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Last stand before the gap = 409.580, current stand after the gap = 76086.000.
 2020-09-11 15:19:00,779 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Will fill the gap by equal distribution of total consumption in the gap divided by number of hours in the gap.

@@ -67,14 +67,14 @@
 2020-09-18 10:24:31,821 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 97 rows, out of which 97 have correct number format.
 2020-09-18 10:24:31,822 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 97 rows in less than a second.
 2020-09-18 10:24:31,822 INFO com.cts.generator.ProcessInput [scheduling-1] Received 97 input rows, will check for an entry in customer for distinct meters in the input.
-2020-09-18 10:24:31,826 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-09-18 10:24:31,826 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-09-18 10:24:32,048 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-09-18 10:24:39,736 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 97 distinct meters. Will check for a Customer registry for each.
-2020-09-18 10:24:39,765 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter Dummy_1 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-09-18 10:24:39,765 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id Dummy_1.
-2020-09-18 10:24:39,765 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/Dummy_1
-2020-09-18 10:24:39,765 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/Dummy_1, MeterSetupV2.class).getBody();
-2020-09-18 10:24:40,508 ERROR com.cts.customerGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = Dummy_1. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
+2020-09-18 10:24:39,736 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 97 distinct meters. Will check for a Customer registry for each.
+2020-09-18 10:24:39,765 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter Dummy_1 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-09-18 10:24:39,765 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id Dummy_1.
+2020-09-18 10:24:39,765 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/Dummy_1
+2020-09-18 10:24:39,765 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/Dummy_1, MeterSetupV2.class).getBody();
+2020-09-18 10:24:40,508 ERROR com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = Dummy_1. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
 org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found: [No matching record for the given condition]
 	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
 	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
@@ -84,11 +84,11 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:743)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677)
 	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:345)
-	at com.cts.customerGateway.MeterSetupClient.get(MeterSetupClient.java:75)
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:80)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:40)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:33)
+	at com.cts.nanoMeteringGateway.MeterSetupClient.get(MeterSetupClient.java:75)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:80)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:40)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:33)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:88)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:67)
 	at com.cts.controller.Controller.printOutput(Controller.java:207)
@@ -106,13 +106,13 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2020-09-18 10:24:40,509 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = Dummy_1. This meter is ignored. General Exception. Exception message below:
-2020-09-18 10:24:40,509 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Unable to fetch UNIT.
+2020-09-18 10:24:40,509 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = Dummy_1. This meter is ignored. General Exception. Exception message below:
+2020-09-18 10:24:40,509 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Unable to fetch UNIT.
 java.lang.NullPointerException: null
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:80)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:40)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:33)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:80)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:40)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:33)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:88)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:67)
 	at com.cts.controller.Controller.printOutput(Controller.java:207)
@@ -130,35 +130,35 @@ java.lang.NullPointerException: null
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2020-09-18 10:24:40,513 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9691, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,515 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9673, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,517 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,519 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9622, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,520 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9588, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,520 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9562, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,521 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9479, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,522 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9435, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,523 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9432, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,523 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9425, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,524 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9328, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,525 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 93208, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,526 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 93109, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,526 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 93019, UNIT kVAr, from internal local H2 DB.
-2020-09-18 10:24:40,527 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 93018, UNIT kVArh, from internal local H2 DB.
-2020-09-18 10:24:40,528 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9268, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,529 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 92035, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,530 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9107, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,531 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 91026, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,531 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 91013, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,532 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 91006, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,533 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9050, UNIT kW, from internal local H2 DB.
-2020-09-18 10:24:40,533 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9046, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,534 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89996, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,535 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter Dummy_2 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-09-18 10:24:40,535 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id Dummy_2.
-2020-09-18 10:24:40,535 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/Dummy_2
-2020-09-18 10:24:40,535 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/Dummy_2, MeterSetupV2.class).getBody();
-2020-09-18 10:24:40,651 ERROR com.cts.customerGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = Dummy_2. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
+2020-09-18 10:24:40,513 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9691, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,515 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9673, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,517 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,519 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9622, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,520 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9588, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,520 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9562, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,521 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9479, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,522 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9435, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,523 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9432, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,523 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9425, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,524 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9328, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,525 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 93208, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,526 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 93109, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,526 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 93019, UNIT kVAr, from internal local H2 DB.
+2020-09-18 10:24:40,527 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 93018, UNIT kVArh, from internal local H2 DB.
+2020-09-18 10:24:40,528 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9268, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,529 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 92035, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,530 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9107, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,531 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 91026, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,531 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 91013, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,532 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 91006, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,533 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9050, UNIT kW, from internal local H2 DB.
+2020-09-18 10:24:40,533 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9046, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,534 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89996, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,535 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter Dummy_2 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-09-18 10:24:40,535 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id Dummy_2.
+2020-09-18 10:24:40,535 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/Dummy_2
+2020-09-18 10:24:40,535 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/Dummy_2, MeterSetupV2.class).getBody();
+2020-09-18 10:24:40,651 ERROR com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = Dummy_2. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
 org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found: [No matching record for the given condition]
 	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
 	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
@@ -168,11 +168,11 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:743)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677)
 	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:345)
-	at com.cts.customerGateway.MeterSetupClient.get(MeterSetupClient.java:75)
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:80)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:40)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:33)
+	at com.cts.nanoMeteringGateway.MeterSetupClient.get(MeterSetupClient.java:75)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:80)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:40)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:33)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:88)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:67)
 	at com.cts.controller.Controller.printOutput(Controller.java:207)
@@ -190,13 +190,13 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2020-09-18 10:24:40,652 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = Dummy_2. This meter is ignored. General Exception. Exception message below:
-2020-09-18 10:24:40,652 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Unable to fetch UNIT.
+2020-09-18 10:24:40,652 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = Dummy_2. This meter is ignored. General Exception. Exception message below:
+2020-09-18 10:24:40,652 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Unable to fetch UNIT.
 java.lang.NullPointerException: null
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:80)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:40)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:33)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:80)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:40)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:33)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:88)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:67)
 	at com.cts.controller.Controller.printOutput(Controller.java:207)
@@ -214,11 +214,11 @@ java.lang.NullPointerException: null
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2020-09-18 10:24:40,653 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter Dummy_3 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-09-18 10:24:40,653 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id Dummy_3.
-2020-09-18 10:24:40,653 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/Dummy_3
-2020-09-18 10:24:40,654 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/Dummy_3, MeterSetupV2.class).getBody();
-2020-09-18 10:24:40,767 ERROR com.cts.customerGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = Dummy_3. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
+2020-09-18 10:24:40,653 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter Dummy_3 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-09-18 10:24:40,653 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id Dummy_3.
+2020-09-18 10:24:40,653 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/Dummy_3
+2020-09-18 10:24:40,654 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/Dummy_3, MeterSetupV2.class).getBody();
+2020-09-18 10:24:40,767 ERROR com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = Dummy_3. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
 org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found: [No matching record for the given condition]
 	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
 	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
@@ -228,11 +228,11 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:743)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677)
 	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:345)
-	at com.cts.customerGateway.MeterSetupClient.get(MeterSetupClient.java:75)
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:80)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:40)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:33)
+	at com.cts.nanoMeteringGateway.MeterSetupClient.get(MeterSetupClient.java:75)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:80)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:40)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:33)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:88)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:67)
 	at com.cts.controller.Controller.printOutput(Controller.java:207)
@@ -250,13 +250,13 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2020-09-18 10:24:40,768 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = Dummy_3. This meter is ignored. General Exception. Exception message below:
-2020-09-18 10:24:40,768 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Unable to fetch UNIT.
+2020-09-18 10:24:40,768 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = Dummy_3. This meter is ignored. General Exception. Exception message below:
+2020-09-18 10:24:40,768 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Unable to fetch UNIT.
 java.lang.NullPointerException: null
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:80)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:40)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:33)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:80)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:59)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:40)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:33)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:88)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:67)
 	at com.cts.controller.Controller.printOutput(Controller.java:207)
@@ -274,79 +274,79 @@ java.lang.NullPointerException: null
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2020-09-18 10:24:40,769 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89989, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,770 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89982, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,770 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89979, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,771 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89963, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,772 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89948, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,772 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89945, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,773 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89944, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,774 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89942, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,774 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89937, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,775 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89935, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,776 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89910, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,777 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89902, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,777 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89897, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,778 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89891, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,778 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89874, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,779 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89868, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,779 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89866, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,780 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89865, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,780 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89859, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,780 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89849, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,781 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89826, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,781 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89818, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,781 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89817, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,782 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89816, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,782 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89813, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,782 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89810, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,783 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89809, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,783 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89802, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,784 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89798, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,784 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89779, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,784 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89778, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,785 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89767, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,785 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89748, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,786 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89742, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,786 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89741, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,787 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89737, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,787 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89736, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,788 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89733, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,788 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89725, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,788 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89713, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,789 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89696, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,789 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89693, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,789 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89672, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,790 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89671, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,790 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89670, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,791 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89668, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,791 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89665, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,792 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89663, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,792 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89662, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,793 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89643, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,793 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89640, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,794 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89637, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,794 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89636, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,794 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89634, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,794 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89633, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,795 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89622, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,795 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89621, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,795 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89609, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,796 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89605, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,796 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89595, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,796 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89586, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,797 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89581, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,798 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89577, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,798 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89575, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,799 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89572, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,799 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89568, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,800 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89567, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,800 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89566, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,801 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89565, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,802 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 89564, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:24:40,802 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 97 meters. Out of which 94 has Customer entry.
-2020-09-18 10:24:40,802 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 97 meters =  1 seconds.
-2020-09-18 10:24:40,802 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 94 meters which have a Customer record.
+2020-09-18 10:24:40,769 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89989, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,770 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89982, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,770 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89979, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,771 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89963, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,772 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89948, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,772 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89945, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,773 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89944, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,774 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89942, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,774 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89937, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,775 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89935, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,776 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89910, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,777 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89902, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,777 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89897, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,778 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89891, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,778 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89874, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,779 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89868, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,779 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89866, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,780 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89865, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,780 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89859, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,780 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89849, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,781 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89826, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,781 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89818, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,781 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89817, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,782 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89816, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,782 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89813, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,782 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89810, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,783 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89809, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,783 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89802, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,784 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89798, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,784 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89779, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,784 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89778, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,785 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89767, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,785 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89748, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,786 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89742, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,786 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89741, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,787 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89737, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,787 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89736, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,788 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89733, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,788 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89725, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,788 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89713, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,789 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89696, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,789 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89693, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,789 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89672, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,790 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89671, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,790 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89670, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,791 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89668, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,791 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89665, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,792 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89663, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,792 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89662, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,793 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89643, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,793 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89640, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,794 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89637, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,794 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89636, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,794 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89634, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,794 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89633, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,795 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89622, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,795 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89621, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,795 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89609, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,796 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89605, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,796 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89595, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,796 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89586, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,797 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89581, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,798 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89577, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,798 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89575, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,799 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89572, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,799 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89568, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,800 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89567, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,800 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89566, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,801 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89565, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,802 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 89564, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:24:40,802 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 97 meters. Out of which 94 has Customer entry.
+2020-09-18 10:24:40,802 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 97 meters =  1 seconds.
+2020-09-18 10:24:40,802 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 94 meters which have a Customer record.
 2020-09-18 10:24:40,803 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 94 input rows.
 2020-09-18 10:24:40,803 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2020-09-18 10:24:40,811 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 94 meters out of a total of 94 meters.
@@ -691,13 +691,13 @@ java.lang.NullPointerException: null
 2020-09-18 10:26:35,876 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 49 rows, out of which 49 have correct number format.
 2020-09-18 10:26:35,877 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 49 rows in less than a second.
 2020-09-18 10:26:35,877 INFO com.cts.generator.ProcessInput [scheduling-1] Received 49 input rows, will check for an entry in customer for distinct meters in the input.
-2020-09-18 10:26:35,882 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-09-18 10:26:35,882 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-09-18 10:26:36,165 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-09-18 10:26:43,671 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2020-09-18 10:26:43,705 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2020-09-18 10:26:43,705 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2020-09-18 10:26:43,705 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2020-09-18 10:26:43,705 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2020-09-18 10:26:43,671 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2020-09-18 10:26:43,705 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2020-09-18 10:26:43,705 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2020-09-18 10:26:43,705 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2020-09-18 10:26:43,705 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2020-09-18 10:26:43,706 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 49 input rows.
 2020-09-18 10:26:43,707 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for circutorPLCFormat.
 2020-09-18 10:26:43,713 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 49 meters out of 49 meters received.
@@ -706,8 +706,8 @@ java.lang.NullPointerException: null
 2020-09-18 10:26:44,513 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 12163501. Last stand date from DB is 2019-12-26T08:00:00.000+01:00, current stand date is 2019-12-27T00:00:00.000+01:00. Will create day stands for 1 days.
 2020-09-18 10:26:44,660 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 2 day stands for meter 12163501. Last stand date from DB is 2019-12-26T08:00:00.000+01:00, current stand date is 2019-12-28T00:00:00.000+01:00. Will create day stands for 2 days.
 2020-09-18 10:26:44,667 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Creating file for stand per hour for circutorPLCFormat.
-2020-09-18 10:26:44,974 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-09-18 10:26:44,983 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979, from internal local H2 DB.
+2020-09-18 10:26:44,974 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-09-18 10:26:44,983 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979, from internal local H2 DB.
 2020-09-18 10:26:44,984 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Meter = 12163501, Objectid = 2979 - Gap of 111657 hours between last available stand_hour 2007-04-01T00:00:00.000+02:00 and current input hour 2019-12-26T08:00:00.000+01:00.
 2020-09-18 10:26:44,984 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Last stand before the gap = 409.580, current stand after the gap = 60531.000.
 2020-09-18 10:26:44,984 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Will fill the gap by equal distribution of total consumption in the gap divided by number of hours in the gap.
@@ -804,13 +804,13 @@ java.lang.NullPointerException: null
 2020-09-18 12:14:21,665 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 49 rows, out of which 49 have correct number format.
 2020-09-18 12:14:21,668 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 49 rows in less than a second.
 2020-09-18 12:14:21,669 INFO com.cts.generator.ProcessInput [scheduling-1] Received 49 input rows, will check for an entry in customer for distinct meters in the input.
-2020-09-18 12:14:21,673 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-09-18 12:14:21,673 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-09-18 12:14:22,041 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-09-18 12:14:29,337 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2020-09-18 12:14:29,366 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2020-09-18 12:14:29,366 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2020-09-18 12:14:29,367 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2020-09-18 12:14:29,367 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2020-09-18 12:14:29,337 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2020-09-18 12:14:29,366 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2020-09-18 12:14:29,366 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2020-09-18 12:14:29,367 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2020-09-18 12:14:29,367 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2020-09-18 12:14:29,367 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 49 input rows.
 2020-09-18 12:14:29,367 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for circutorPLCFormat.
 2020-09-18 12:14:29,372 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 49 meters out of 49 meters received.
@@ -818,8 +818,8 @@ java.lang.NullPointerException: null
 2020-09-18 12:14:29,382 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 1 records for gs2 file - circutorPLCFormat.
 2020-09-18 12:14:30,089 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 2 day stands for meter 12163501. Last stand date from DB is 2019-12-26T08:00:00.000+01:00, current stand date is 2019-12-28T00:00:00.000+01:00. Will create day stands for 2 days.
 2020-09-18 12:14:30,104 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Creating file for stand per hour for circutorPLCFormat.
-2020-09-18 12:14:30,384 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-09-18 12:14:30,394 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979, from internal local H2 DB.
+2020-09-18 12:14:30,384 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-09-18 12:14:30,394 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979, from internal local H2 DB.
 2020-09-18 12:14:30,395 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Meter = 12163501, Objectid = 2979 - Gap of 111657 hours between last available stand_hour 2007-04-01T00:00:00.000+02:00 and current input hour 2019-12-26T08:00:00.000+01:00.
 2020-09-18 12:14:30,395 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Last stand before the gap = 409.580, current stand after the gap = 60531.000.
 2020-09-18 12:14:30,395 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Will fill the gap by equal distribution of total consumption in the gap divided by number of hours in the gap.

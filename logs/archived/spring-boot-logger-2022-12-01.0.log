@@ -32,12 +32,12 @@
 2022-12-01 11:02:04,617 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 3 rows, out of which 3 have correct number format.
 2022-12-01 11:02:04,618 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 3 rows in less than a second.
 2022-12-01 11:02:04,619 INFO com.cts.generator.ProcessInput [scheduling-1] Received 3 input rows, will check for an entry in customer for distinct meters in the input.
-2022-12-01 11:02:04,623 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2022-12-01 11:02:04,623 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2022-12-01 11:02:04,776 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2022-12-01 11:02:06,542 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2022-12-01 11:02:06,572 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 890202 in the base of previously checked meters, will try to get details by API call to ISCU.
-2022-12-01 11:02:06,573 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 890202.
-2022-12-01 11:02:07,335 ERROR com.cts.customerGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = 890202. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
+2022-12-01 11:02:06,542 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2022-12-01 11:02:06,572 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 890202 in the base of previously checked meters, will try to get details by API call to ISCU.
+2022-12-01 11:02:06,573 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 890202.
+2022-12-01 11:02:07,335 ERROR com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = 890202. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
 org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found: [No matching record for the given condition]
 	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
 	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
@@ -47,11 +47,11 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:743)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677)
 	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:345)
-	at com.cts.customerGateway.MeterSetupClient.get(MeterSetupClient.java:75)
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:84)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:63)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:41)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:34)
+	at com.cts.nanoMeteringGateway.MeterSetupClient.get(MeterSetupClient.java:75)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:84)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:63)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:41)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:34)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:84)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:61)
 	at com.cts.controller.Controller.printOutput(Controller.java:181)
@@ -69,13 +69,13 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2022-12-01 11:02:07,336 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 890202. This meter is ignored. General Exception. Exception message below:
-2022-12-01 11:02:07,336 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Unable to fetch UNIT.
+2022-12-01 11:02:07,336 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 890202. This meter is ignored. General Exception. Exception message below:
+2022-12-01 11:02:07,336 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Unable to fetch UNIT.
 java.lang.NullPointerException: null
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:84)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:63)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:41)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:34)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:84)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:63)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:41)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:34)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:84)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:61)
 	at com.cts.controller.Controller.printOutput(Controller.java:181)
@@ -93,9 +93,9 @@ java.lang.NullPointerException: null
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2022-12-01 11:02:07,337 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 0 has Customer entry.
-2022-12-01 11:02:07,337 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2022-12-01 11:02:07,337 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 0 meters which have a Customer record.
+2022-12-01 11:02:07,337 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 0 has Customer entry.
+2022-12-01 11:02:07,337 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2022-12-01 11:02:07,337 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 0 meters which have a Customer record.
 2022-12-01 11:02:07,337 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 0 input rows.
 2022-12-01 11:02:07,337 INFO com.cts.controller.Controller [scheduling-1] No output created from file mergedFile_TimestampRead_1669888924506.txt. This might be due to wrong input at all rows, corrupt file or no input to be processed into a transaction, e.g. no stand hour between 23:00 and 01:00.
 2022-12-01 11:02:07,340 INFO com.cts.ioutils.DeviationReportWriter [scheduling-1] Publish Deviation Report = TRUE
@@ -157,14 +157,14 @@ java.lang.NullPointerException: null
 2022-12-01 11:03:16,204 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 3 rows, out of which 3 have correct number format.
 2022-12-01 11:03:16,206 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 3 rows in less than a second.
 2022-12-01 11:03:16,206 INFO com.cts.generator.ProcessInput [scheduling-1] Received 3 input rows, will check for an entry in customer for distinct meters in the input.
-2022-12-01 11:03:16,211 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2022-12-01 11:03:16,211 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2022-12-01 11:03:16,434 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2022-12-01 11:03:18,161 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2022-12-01 11:03:18,195 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 890202 in the base of previously checked meters, will try to get details by API call to ISCU.
-2022-12-01 11:03:18,195 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 890202.
-2022-12-01 11:03:18,947 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2022-12-01 11:03:18,948 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2022-12-01 11:03:18,948 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2022-12-01 11:03:18,161 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2022-12-01 11:03:18,195 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 890202 in the base of previously checked meters, will try to get details by API call to ISCU.
+2022-12-01 11:03:18,195 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 890202.
+2022-12-01 11:03:18,947 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2022-12-01 11:03:18,948 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2022-12-01 11:03:18,948 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2022-12-01 11:03:18,948 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 3 input rows.
 2022-12-01 11:03:18,952 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 3 records for json file - mBusFormat.
 2022-12-01 11:03:18,973 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] Reached end of input. proceeding to last json file. Max_transactions_per_file = 75. 
@@ -229,12 +229,12 @@ java.lang.NullPointerException: null
 2022-12-01 11:07:18,750 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 3 rows, out of which 3 have correct number format.
 2022-12-01 11:07:18,750 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 3 rows in less than a second.
 2022-12-01 11:07:18,751 INFO com.cts.generator.ProcessInput [scheduling-1] Received 3 input rows, will check for an entry in customer for distinct meters in the input.
-2022-12-01 11:07:18,754 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2022-12-01 11:07:18,754 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2022-12-01 11:07:18,841 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2022-12-01 11:07:20,348 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2022-12-01 11:07:20,380 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2022-12-01 11:07:20,380 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2022-12-01 11:07:20,380 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2022-12-01 11:07:20,348 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2022-12-01 11:07:20,380 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2022-12-01 11:07:20,380 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2022-12-01 11:07:20,380 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2022-12-01 11:07:20,381 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 3 input rows.
 2022-12-01 11:07:20,384 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 3 records for json file - mBusFormat.
 2022-12-01 11:07:20,396 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] Reached end of input. proceeding to last json file. Max_transactions_per_file = 75. 
@@ -299,16 +299,16 @@ java.lang.NullPointerException: null
 2022-12-01 12:29:13,244 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 9 rows, out of which 9 have correct number format.
 2022-12-01 12:29:13,245 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 9 rows in less than a second.
 2022-12-01 12:29:13,246 INFO com.cts.generator.ProcessInput [scheduling-1] Received 9 input rows, will check for an entry in customer for distinct meters in the input.
-2022-12-01 12:29:13,249 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2022-12-01 12:29:13,249 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2022-12-01 12:29:13,388 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2022-12-01 12:29:14,969 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
-2022-12-01 12:29:15,002 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 16800370 in the base of previously checked meters, will try to get details by API call to ISCU.
-2022-12-01 12:29:15,003 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 16800370.
-2022-12-01 12:29:15,590 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 00071719 in the base of previously checked meters, will try to get details by API call to ISCU.
-2022-12-01 12:29:15,590 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 00071719.
-2022-12-01 12:29:15,681 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 3 meters. Out of which 3 has Customer entry.
-2022-12-01 12:29:15,681 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 3 meters =  0 seconds.
-2022-12-01 12:29:15,681 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 3 meters which have a Customer record.
+2022-12-01 12:29:14,969 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
+2022-12-01 12:29:15,002 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 16800370 in the base of previously checked meters, will try to get details by API call to ISCU.
+2022-12-01 12:29:15,003 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 16800370.
+2022-12-01 12:29:15,590 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 00071719 in the base of previously checked meters, will try to get details by API call to ISCU.
+2022-12-01 12:29:15,590 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 00071719.
+2022-12-01 12:29:15,681 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 3 meters. Out of which 3 has Customer entry.
+2022-12-01 12:29:15,681 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 3 meters =  0 seconds.
+2022-12-01 12:29:15,681 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 3 meters which have a Customer record.
 2022-12-01 12:29:15,681 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 9 input rows.
 2022-12-01 12:29:15,686 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 9 records for json file - mBusFormat.
 2022-12-01 12:29:15,701 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] Reached end of input. proceeding to last json file. Max_transactions_per_file = 75. 
@@ -373,12 +373,12 @@ java.lang.NullPointerException: null
 2022-12-01 12:38:35,200 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 9 rows, out of which 9 have correct number format.
 2022-12-01 12:38:35,200 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 9 rows in less than a second.
 2022-12-01 12:38:35,200 INFO com.cts.generator.ProcessInput [scheduling-1] Received 9 input rows, will check for an entry in customer for distinct meters in the input.
-2022-12-01 12:38:35,205 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2022-12-01 12:38:35,205 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2022-12-01 12:38:35,359 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2022-12-01 12:38:36,892 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
-2022-12-01 12:38:36,933 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 3 meters. Out of which 3 has Customer entry.
-2022-12-01 12:38:36,933 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 3 meters =  0 seconds.
-2022-12-01 12:38:36,933 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 3 meters which have a Customer record.
+2022-12-01 12:38:36,892 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
+2022-12-01 12:38:36,933 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 3 meters. Out of which 3 has Customer entry.
+2022-12-01 12:38:36,933 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 3 meters =  0 seconds.
+2022-12-01 12:38:36,933 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 3 meters which have a Customer record.
 2022-12-01 12:38:36,933 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 9 input rows.
 2022-12-01 12:38:36,937 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 9 records for json file - mBusFormat.
 2022-12-01 12:38:36,953 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] Reached end of input. proceeding to last json file. Max_transactions_per_file = 75. 
@@ -639,12 +639,12 @@ java.lang.NullPointerException: null
 2022-12-01 14:48:36,851 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 7 rows, out of which 7 have correct number format.
 2022-12-01 14:48:36,852 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 7 rows in less than a second.
 2022-12-01 14:48:36,853 INFO com.cts.generator.ProcessInput [scheduling-1] Received 7 input rows, will check for an entry in customer for distinct meters in the input.
-2022-12-01 14:48:36,859 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2022-12-01 14:48:36,859 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2022-12-01 14:48:37,046 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2022-12-01 14:48:38,562 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
-2022-12-01 14:48:38,595 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 3 meters. Out of which 3 has Customer entry.
-2022-12-01 14:48:38,595 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 3 meters =  0 seconds.
-2022-12-01 14:48:38,596 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 3 meters which have a Customer record.
+2022-12-01 14:48:38,562 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
+2022-12-01 14:48:38,595 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 3 meters. Out of which 3 has Customer entry.
+2022-12-01 14:48:38,595 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 3 meters =  0 seconds.
+2022-12-01 14:48:38,596 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 3 meters which have a Customer record.
 2022-12-01 14:48:38,596 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 7 input rows.
 2022-12-01 14:48:38,600 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 7 records for json file - mBusFormat.
 2022-12-01 14:48:38,616 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] Reached end of input. proceeding to last json file. Max_transactions_per_file = 75. 

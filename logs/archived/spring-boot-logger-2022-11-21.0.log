@@ -44,13 +44,13 @@
 2022-11-21 13:01:47,867 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 4 rows, out of which 4 have correct number format.
 2022-11-21 13:01:47,867 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 4 rows in less than a second.
 2022-11-21 13:01:47,867 INFO com.cts.generator.ProcessInput [scheduling-1] Received 4 input rows, will check for an entry in customer for distinct meters in the input.
-2022-11-21 13:01:47,867 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2022-11-21 13:01:47,867 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2022-11-21 13:01:48,081 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2022-11-21 13:01:49,991 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2022-11-21 13:01:50,048 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992896672992, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:01:50,048 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2022-11-21 13:01:50,048 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2022-11-21 13:01:50,048 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2022-11-21 13:01:49,991 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2022-11-21 13:01:50,048 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992896672992, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:01:50,048 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2022-11-21 13:01:50,048 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2022-11-21 13:01:50,048 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2022-11-21 13:01:50,048 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 4 input rows.
 2022-11-21 13:01:50,048 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2022-11-21 13:01:50,048 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 4 meters out of a total of 4 meters.
@@ -141,91 +141,91 @@
 2022-11-21 13:03:49,266 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 81 rows, out of which 81 have correct number format.
 2022-11-21 13:03:49,266 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 81 rows in less than a second.
 2022-11-21 13:03:49,266 INFO com.cts.generator.ProcessInput [scheduling-1] Received 81 input rows, will check for an entry in customer for distinct meters in the input.
-2022-11-21 13:03:49,266 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2022-11-21 13:03:49,266 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2022-11-21 13:03:49,499 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2022-11-21 13:03:51,305 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 79 distinct meters. Will check for a Customer registry for each.
-2022-11-21 13:03:51,359 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992896672992, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,359 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921264314, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,359 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992893266576, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,359 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905134886, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,366 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179428, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,366 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179695, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,366 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921282929, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,366 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906157761, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,366 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906164288, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,366 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905128021, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,366 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179008, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,376 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921277277, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,376 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921260866, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,376 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906178971, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,376 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179688, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,383 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921264543, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,383 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921279561, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,383 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906158027, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,383 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179831, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,383 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921265281, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,383 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992893792440, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,383 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921264826, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,383 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921264451, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,383 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179220, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,393 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992893372369, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,393 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906156917, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,393 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921264628, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,399 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906157464, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,399 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905133063, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,399 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905148821, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,399 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992920816118, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,399 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906158041, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,399 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921264611, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,409 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906178995, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,409 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992893331090, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,409 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179091, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,409 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921283537, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,409 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179138, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,416 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906158287, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,416 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905135944, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,416 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906164363, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,416 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905134718, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,416 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921265298, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,416 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179374, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,416 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905132349, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,416 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905181712, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,416 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906157600, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,416 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992920816170, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,416 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179800, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,426 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179787, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,426 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905148289, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,426 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905133957, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,426 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992903859248, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,426 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992896655766, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,426 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179268, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,426 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992892893773, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,426 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179015, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,426 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905145196, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,433 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905134541, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,433 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906554447, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,433 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905148951, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,433 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906157983, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,433 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179060, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,433 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992892869150, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,433 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921268541, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,433 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906178728, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,433 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906155620, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,433 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921265045, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,433 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905152033, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,443 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992896655353, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,443 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992890452644, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,443 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992896654561, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,443 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992890126736, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,443 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992890129943, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,443 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992896654448, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,443 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992896654394, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,449 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992890120901, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:03:51,449 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992896663433, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,449 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992893010711, UNIT kVArh, from internal local H2 DB.
-2022-11-21 13:03:51,449 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 79 meters. Out of which 79 has Customer entry.
-2022-11-21 13:03:51,449 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 79 meters =  0 seconds.
-2022-11-21 13:03:51,449 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 79 meters which have a Customer record.
+2022-11-21 13:03:51,305 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 79 distinct meters. Will check for a Customer registry for each.
+2022-11-21 13:03:51,359 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992896672992, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,359 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921264314, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,359 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992893266576, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,359 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905134886, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,366 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179428, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,366 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179695, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,366 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921282929, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,366 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906157761, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,366 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906164288, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,366 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905128021, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,366 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179008, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,376 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921277277, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,376 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921260866, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,376 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906178971, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,376 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179688, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,383 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921264543, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,383 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921279561, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,383 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906158027, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,383 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179831, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,383 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921265281, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,383 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992893792440, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,383 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921264826, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,383 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921264451, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,383 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179220, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,393 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992893372369, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,393 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906156917, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,393 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921264628, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,399 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906157464, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,399 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905133063, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,399 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905148821, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,399 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992920816118, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,399 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906158041, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,399 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921264611, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,409 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906178995, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,409 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992893331090, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,409 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179091, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,409 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921283537, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,409 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179138, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,416 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906158287, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,416 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905135944, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,416 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906164363, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,416 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905134718, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,416 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921265298, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,416 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179374, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,416 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905132349, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,416 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905181712, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,416 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906157600, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,416 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992920816170, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,416 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179800, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,426 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179787, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,426 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905148289, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,426 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905133957, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,426 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992903859248, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,426 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992896655766, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,426 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179268, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,426 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992892893773, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,426 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179015, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,426 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905145196, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,433 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905134541, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,433 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906554447, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,433 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905148951, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,433 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906157983, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,433 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179060, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,433 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992892869150, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,433 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921268541, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,433 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906178728, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,433 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906155620, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,433 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921265045, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,433 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905152033, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,443 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992896655353, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,443 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992890452644, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,443 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992896654561, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,443 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992890126736, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,443 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992890129943, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,443 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992896654448, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,443 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992896654394, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,449 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992890120901, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:03:51,449 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992896663433, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,449 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992893010711, UNIT kVArh, from internal local H2 DB.
+2022-11-21 13:03:51,449 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 79 meters. Out of which 79 has Customer entry.
+2022-11-21 13:03:51,449 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 79 meters =  0 seconds.
+2022-11-21 13:03:51,449 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 79 meters which have a Customer record.
 2022-11-21 13:03:51,449 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 81 input rows.
 2022-11-21 13:03:51,449 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2022-11-21 13:03:51,449 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 81 meters out of a total of 81 meters.
@@ -547,13 +547,13 @@
 2022-11-21 13:58:07,367 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 4 rows, out of which 4 have correct number format.
 2022-11-21 13:58:07,367 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 4 rows in less than a second.
 2022-11-21 13:58:07,367 INFO com.cts.generator.ProcessInput [scheduling-1] Received 4 input rows, will check for an entry in customer for distinct meters in the input.
-2022-11-21 13:58:07,377 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2022-11-21 13:58:07,377 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2022-11-21 13:58:07,541 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2022-11-21 13:58:09,127 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2022-11-21 13:58:09,177 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992896672992, UNIT kWh, from internal local H2 DB.
-2022-11-21 13:58:09,177 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2022-11-21 13:58:09,177 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2022-11-21 13:58:09,177 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2022-11-21 13:58:09,127 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2022-11-21 13:58:09,177 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992896672992, UNIT kWh, from internal local H2 DB.
+2022-11-21 13:58:09,177 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2022-11-21 13:58:09,177 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2022-11-21 13:58:09,177 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2022-11-21 13:58:09,177 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 4 input rows.
 2022-11-21 13:58:09,177 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2022-11-21 13:58:09,177 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 4 meters out of a total of 4 meters.
@@ -644,91 +644,91 @@
 2022-11-21 16:43:12,205 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 81 rows, out of which 81 have correct number format.
 2022-11-21 16:43:12,205 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 81 rows in less than a second.
 2022-11-21 16:43:12,205 INFO com.cts.generator.ProcessInput [scheduling-1] Received 81 input rows, will check for an entry in customer for distinct meters in the input.
-2022-11-21 16:43:12,213 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2022-11-21 16:43:12,213 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2022-11-21 16:43:12,346 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2022-11-21 16:43:14,056 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 79 distinct meters. Will check for a Customer registry for each.
-2022-11-21 16:43:14,098 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992896672992, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,098 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921264314, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,098 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992893266576, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,108 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905134886, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,108 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179428, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,108 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179695, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,108 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921282929, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,118 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906157761, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,118 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906164288, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,118 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905128021, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,118 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179008, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,129 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921277277, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,129 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921260866, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,129 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906178971, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,129 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179688, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,129 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921264543, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,139 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921279561, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,139 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906158027, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,146 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179831, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,146 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921265281, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,146 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992893792440, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,146 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921264826, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,146 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921264451, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,146 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179220, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,146 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992893372369, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,146 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906156917, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,156 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921264628, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,156 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906157464, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,156 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905133063, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,156 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905148821, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,156 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992920816118, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,156 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906158041, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,162 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921264611, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,162 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906178995, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,162 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992893331090, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,162 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179091, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,162 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921283537, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,162 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179138, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,162 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906158287, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,162 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905135944, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,162 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906164363, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,162 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905134718, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,162 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921265298, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,172 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179374, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,172 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905132349, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,172 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905181712, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,172 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906157600, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,172 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992920816170, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,172 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179800, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,179 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179787, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,179 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905148289, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,179 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905133957, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,179 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992903859248, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,179 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992896655766, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,179 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179268, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,179 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992892893773, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,179 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179015, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,189 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905145196, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,189 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905134541, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,189 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906554447, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,189 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905148951, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,189 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906157983, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,189 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179060, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,195 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992892869150, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,195 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921268541, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,195 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906178728, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,198 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906155620, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,198 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921265045, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,198 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905152033, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,198 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992896655353, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,198 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992890452644, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,198 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992896654561, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,198 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992890126736, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,198 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992890129943, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,198 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992896654448, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,198 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992896654394, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,198 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992890120901, UNIT kWh, from internal local H2 DB.
-2022-11-21 16:43:14,198 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992896663433, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,198 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992893010711, UNIT kVArh, from internal local H2 DB.
-2022-11-21 16:43:14,208 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 79 meters. Out of which 79 has Customer entry.
-2022-11-21 16:43:14,208 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 79 meters =  0 seconds.
-2022-11-21 16:43:14,208 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 79 meters which have a Customer record.
+2022-11-21 16:43:14,056 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 79 distinct meters. Will check for a Customer registry for each.
+2022-11-21 16:43:14,098 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992896672992, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,098 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921264314, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,098 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992893266576, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,108 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905134886, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,108 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179428, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,108 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179695, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,108 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921282929, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,118 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906157761, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,118 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906164288, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,118 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905128021, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,118 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179008, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,129 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921277277, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,129 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921260866, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,129 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906178971, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,129 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179688, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,129 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921264543, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,139 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921279561, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,139 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906158027, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,146 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179831, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,146 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921265281, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,146 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992893792440, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,146 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921264826, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,146 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921264451, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,146 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179220, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,146 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992893372369, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,146 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906156917, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,156 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921264628, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,156 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906157464, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,156 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905133063, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,156 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905148821, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,156 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992920816118, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,156 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906158041, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,162 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921264611, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,162 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906178995, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,162 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992893331090, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,162 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179091, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,162 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921283537, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,162 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179138, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,162 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906158287, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,162 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905135944, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,162 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906164363, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,162 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905134718, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,162 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921265298, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,172 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179374, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,172 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905132349, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,172 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905181712, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,172 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906157600, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,172 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992920816170, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,172 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179800, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,179 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179787, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,179 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905148289, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,179 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905133957, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,179 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992903859248, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,179 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992896655766, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,179 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179268, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,179 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992892893773, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,179 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179015, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,189 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905145196, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,189 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905134541, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,189 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906554447, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,189 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905148951, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,189 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906157983, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,189 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179060, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,195 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992892869150, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,195 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921268541, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,195 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906178728, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,198 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906155620, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,198 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921265045, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,198 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905152033, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,198 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992896655353, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,198 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992890452644, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,198 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992896654561, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,198 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992890126736, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,198 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992890129943, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,198 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992896654448, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,198 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992896654394, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,198 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992890120901, UNIT kWh, from internal local H2 DB.
+2022-11-21 16:43:14,198 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992896663433, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,198 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992893010711, UNIT kVArh, from internal local H2 DB.
+2022-11-21 16:43:14,208 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 79 meters. Out of which 79 has Customer entry.
+2022-11-21 16:43:14,208 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 79 meters =  0 seconds.
+2022-11-21 16:43:14,208 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 79 meters which have a Customer record.
 2022-11-21 16:43:14,208 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 81 input rows.
 2022-11-21 16:43:14,208 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2022-11-21 16:43:14,208 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 81 meters out of a total of 81 meters.
@@ -1046,91 +1046,91 @@
 2022-11-21 17:05:28,361 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 81 rows, out of which 81 have correct number format.
 2022-11-21 17:05:28,361 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 81 rows in less than a second.
 2022-11-21 17:05:28,361 INFO com.cts.generator.ProcessInput [scheduling-1] Received 81 input rows, will check for an entry in customer for distinct meters in the input.
-2022-11-21 17:05:28,369 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2022-11-21 17:05:28,369 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2022-11-21 17:05:28,585 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2022-11-21 17:05:30,229 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 79 distinct meters. Will check for a Customer registry for each.
-2022-11-21 17:05:30,279 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992896672992, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,279 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921264314, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,279 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992893266576, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,279 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905134886, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,289 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179428, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,289 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179695, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,289 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921282929, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,289 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906157761, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,289 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906164288, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,289 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905128021, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,289 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179008, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,289 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921277277, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,299 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921260866, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,299 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906178971, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,299 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179688, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,299 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921264543, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,299 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921279561, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,299 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906158027, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,299 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179831, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,309 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921265281, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,309 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992893792440, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,309 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921264826, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,309 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921264451, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,309 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179220, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,309 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992893372369, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,309 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906156917, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,309 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921264628, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,309 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906157464, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,319 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905133063, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,319 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905148821, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,319 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992920816118, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,319 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906158041, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,319 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921264611, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,319 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906178995, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,319 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992893331090, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,319 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179091, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,319 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921283537, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,329 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179138, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,329 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906158287, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,329 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905135944, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,329 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906164363, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,329 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905134718, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,329 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921265298, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,329 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179374, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,329 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905132349, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,339 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905181712, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,339 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906157600, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,339 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992920816170, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,339 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179800, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,339 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179787, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,339 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905148289, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,339 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905133957, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,339 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992903859248, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,339 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992896655766, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,339 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179268, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,339 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992892893773, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,339 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179015, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,339 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905145196, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,349 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905134541, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,349 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906554447, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,349 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905148951, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,349 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906157983, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,349 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906179060, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,349 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992892869150, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,349 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921268541, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,349 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906178728, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,349 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992906155620, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,349 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992921265045, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,349 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992905152033, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,349 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992896655353, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,349 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992890452644, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,359 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992896654561, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,359 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992890126736, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,359 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992890129943, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,359 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992896654448, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,359 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992896654394, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,359 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992890120901, UNIT kWh, from internal local H2 DB.
-2022-11-21 17:05:30,359 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992896663433, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,359 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 7359992893010711, UNIT kVArh, from internal local H2 DB.
-2022-11-21 17:05:30,359 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 79 meters. Out of which 79 has Customer entry.
-2022-11-21 17:05:30,359 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 79 meters =  0 seconds.
-2022-11-21 17:05:30,359 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 79 meters which have a Customer record.
+2022-11-21 17:05:30,229 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 79 distinct meters. Will check for a Customer registry for each.
+2022-11-21 17:05:30,279 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992896672992, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,279 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921264314, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,279 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992893266576, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,279 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905134886, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,289 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179428, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,289 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179695, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,289 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921282929, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,289 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906157761, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,289 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906164288, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,289 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905128021, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,289 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179008, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,289 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921277277, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,299 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921260866, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,299 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906178971, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,299 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179688, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,299 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921264543, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,299 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921279561, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,299 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906158027, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,299 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179831, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,309 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921265281, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,309 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992893792440, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,309 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921264826, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,309 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921264451, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,309 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179220, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,309 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992893372369, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,309 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906156917, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,309 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921264628, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,309 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906157464, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,319 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905133063, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,319 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905148821, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,319 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992920816118, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,319 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906158041, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,319 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921264611, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,319 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906178995, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,319 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992893331090, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,319 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179091, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,319 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921283537, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,329 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179138, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,329 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906158287, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,329 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905135944, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,329 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906164363, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,329 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905134718, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,329 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921265298, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,329 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179374, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,329 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905132349, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,339 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905181712, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,339 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906157600, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,339 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992920816170, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,339 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179800, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,339 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179787, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,339 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905148289, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,339 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905133957, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,339 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992903859248, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,339 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992896655766, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,339 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179268, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,339 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992892893773, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,339 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179015, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,339 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905145196, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,349 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905134541, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,349 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906554447, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,349 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905148951, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,349 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906157983, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,349 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906179060, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,349 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992892869150, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,349 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921268541, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,349 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906178728, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,349 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992906155620, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,349 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992921265045, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,349 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992905152033, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,349 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992896655353, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,349 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992890452644, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,359 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992896654561, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,359 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992890126736, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,359 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992890129943, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,359 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992896654448, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,359 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992896654394, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,359 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992890120901, UNIT kWh, from internal local H2 DB.
+2022-11-21 17:05:30,359 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992896663433, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,359 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 7359992893010711, UNIT kVArh, from internal local H2 DB.
+2022-11-21 17:05:30,359 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 79 meters. Out of which 79 has Customer entry.
+2022-11-21 17:05:30,359 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 79 meters =  0 seconds.
+2022-11-21 17:05:30,359 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 79 meters which have a Customer record.
 2022-11-21 17:05:30,359 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 81 input rows.
 2022-11-21 17:05:30,359 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2022-11-21 17:05:30,369 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 81 meters out of a total of 81 meters.

@@ -32,14 +32,14 @@
 2023-03-24 15:45:14,884 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 114 rows, out of which 114 have correct number format.
 2023-03-24 15:45:14,885 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 114 rows in less than a second.
 2023-03-24 15:45:14,885 INFO com.cts.generator.ProcessInput [scheduling-1] Received 114 input rows, will check for an entry in customer for distinct meters in the input.
-2023-03-24 15:45:14,890 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2023-03-24 15:45:14,890 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2023-03-24 15:45:15,111 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-03-24 15:45:16,895 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 114 distinct meters. Will check for a Customer registry for each.
-2023-03-24 15:45:17,011 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 100 meters. Out of which 100 has Customer entry.
-2023-03-24 15:45:17,011 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 100 meters =  0 seconds.
-2023-03-24 15:45:17,011 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 114 meters. Out of which 114 has Customer entry.
-2023-03-24 15:45:17,011 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 114 meters =  0 seconds.
-2023-03-24 15:45:17,011 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 114 meters which have a Customer record.
+2023-03-24 15:45:16,895 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 114 distinct meters. Will check for a Customer registry for each.
+2023-03-24 15:45:17,011 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 100 meters. Out of which 100 has Customer entry.
+2023-03-24 15:45:17,011 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 100 meters =  0 seconds.
+2023-03-24 15:45:17,011 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 114 meters. Out of which 114 has Customer entry.
+2023-03-24 15:45:17,011 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 114 meters =  0 seconds.
+2023-03-24 15:45:17,011 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 114 meters which have a Customer record.
 2023-03-24 15:45:17,011 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 114 input rows.
 2023-03-24 15:45:17,033 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 114 records for json file - forbruksImportFormat.
 2023-03-24 15:45:17,080 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] Creating jsonPayload for periodic consumption 'Forbruk' format
@@ -119,14 +119,14 @@
 2023-03-24 15:53:50,495 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 114 rows, out of which 114 have correct number format.
 2023-03-24 15:53:50,495 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 114 rows in less than a second.
 2023-03-24 15:53:50,495 INFO com.cts.generator.ProcessInput [scheduling-1] Received 114 input rows, will check for an entry in customer for distinct meters in the input.
-2023-03-24 15:53:50,504 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2023-03-24 15:53:50,504 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2023-03-24 15:53:50,729 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-03-24 15:53:52,412 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 114 distinct meters. Will check for a Customer registry for each.
-2023-03-24 15:53:52,526 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 100 meters. Out of which 100 has Customer entry.
-2023-03-24 15:53:52,526 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 100 meters =  0 seconds.
-2023-03-24 15:53:52,526 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 114 meters. Out of which 114 has Customer entry.
-2023-03-24 15:53:52,526 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 114 meters =  0 seconds.
-2023-03-24 15:53:52,526 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 114 meters which have a Customer record.
+2023-03-24 15:53:52,412 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 114 distinct meters. Will check for a Customer registry for each.
+2023-03-24 15:53:52,526 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 100 meters. Out of which 100 has Customer entry.
+2023-03-24 15:53:52,526 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 100 meters =  0 seconds.
+2023-03-24 15:53:52,526 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 114 meters. Out of which 114 has Customer entry.
+2023-03-24 15:53:52,526 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 114 meters =  0 seconds.
+2023-03-24 15:53:52,526 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 114 meters which have a Customer record.
 2023-03-24 15:53:52,526 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 114 input rows.
 2023-03-24 15:53:52,542 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 114 records for json file - forbruksImportFormat.
 2023-03-24 15:53:52,589 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] Creating jsonPayload for periodic consumption 'Forbruk' format

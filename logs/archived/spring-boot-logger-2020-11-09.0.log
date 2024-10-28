@@ -80,13 +80,13 @@
 2020-11-09 10:20:17,253 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 8 rows, out of which 8 have correct number format.
 2020-11-09 10:20:17,254 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 8 rows in less than a second.
 2020-11-09 10:20:17,254 INFO com.cts.generator.ProcessInput [scheduling-1] Received 8 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-09 10:20:17,258 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-09 10:20:17,258 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-09 10:20:17,409 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-09 10:20:24,516 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2020-11-09 10:20:24,551 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-09 10:20:24,551 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2020-11-09 10:20:24,551 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2020-11-09 10:20:24,551 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2020-11-09 10:20:24,516 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2020-11-09 10:20:24,551 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-09 10:20:24,551 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2020-11-09 10:20:24,551 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2020-11-09 10:20:24,551 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2020-11-09 10:20:24,551 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 8 input rows.
 2020-11-09 10:20:24,552 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2020-11-09 10:20:24,555 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 8 meters out of a total of 8 meters.
@@ -232,13 +232,13 @@
 2020-11-09 10:25:03,789 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 10 rows, out of which 10 have correct number format.
 2020-11-09 10:25:03,789 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 10 rows in less than a second.
 2020-11-09 10:25:03,790 INFO com.cts.generator.ProcessInput [scheduling-1] Received 10 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-09 10:25:03,794 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-09 10:25:03,794 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-09 10:25:03,931 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-09 10:25:10,758 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2020-11-09 10:25:10,788 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-09 10:25:10,788 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2020-11-09 10:25:10,788 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2020-11-09 10:25:10,789 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2020-11-09 10:25:10,758 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2020-11-09 10:25:10,788 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-09 10:25:10,788 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2020-11-09 10:25:10,788 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2020-11-09 10:25:10,789 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2020-11-09 10:25:10,789 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 10 input rows.
 2020-11-09 10:25:10,789 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2020-11-09 10:25:10,792 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 10 meters out of a total of 10 meters.
@@ -384,13 +384,13 @@
 2020-11-09 10:28:35,892 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 11 rows, out of which 11 have correct number format.
 2020-11-09 10:28:35,892 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 11 rows in less than a second.
 2020-11-09 10:28:35,893 INFO com.cts.generator.ProcessInput [scheduling-1] Received 11 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-09 10:28:35,897 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-09 10:28:35,897 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-09 10:28:36,124 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-09 10:28:43,344 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2020-11-09 10:28:43,378 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-09 10:28:43,378 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2020-11-09 10:28:43,378 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2020-11-09 10:28:43,378 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2020-11-09 10:28:43,344 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2020-11-09 10:28:43,378 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-09 10:28:43,378 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2020-11-09 10:28:43,378 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2020-11-09 10:28:43,378 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2020-11-09 10:28:43,378 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 11 input rows.
 2020-11-09 10:28:43,378 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2020-11-09 10:28:43,381 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 11 meters out of a total of 11 meters.
@@ -489,15 +489,15 @@
 2020-11-09 11:32:16,349 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 25 rows, out of which 25 have correct number format.
 2020-11-09 11:32:16,349 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 25 rows in less than a second.
 2020-11-09 11:32:16,349 INFO com.cts.generator.ProcessInput [scheduling-1] Received 25 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-09 11:32:16,352 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-09 11:32:16,352 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-09 11:32:16,547 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-09 11:32:23,763 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
-2020-11-09 11:32:23,793 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2020-11-09 11:32:23,795 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-09 11:32:23,796 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9680, UNIT kWh, from internal local H2 DB.
-2020-11-09 11:32:23,797 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 3 meters. Out of which 3 has Customer entry.
-2020-11-09 11:32:23,797 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 3 meters =  0 seconds.
-2020-11-09 11:32:23,797 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 3 meters which have a Customer record.
+2020-11-09 11:32:23,763 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
+2020-11-09 11:32:23,793 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2020-11-09 11:32:23,795 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-09 11:32:23,796 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9680, UNIT kWh, from internal local H2 DB.
+2020-11-09 11:32:23,797 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 3 meters. Out of which 3 has Customer entry.
+2020-11-09 11:32:23,797 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 3 meters =  0 seconds.
+2020-11-09 11:32:23,797 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 3 meters which have a Customer record.
 2020-11-09 11:32:23,797 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 25 input rows.
 2020-11-09 11:32:23,797 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for circutorPLCFormat.
 2020-11-09 11:32:23,800 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 25 meters out of 25 meters received.
@@ -557,8 +557,8 @@
 2020-11-09 11:32:26,052 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 12 day stands for meter 9680. Last stand date from DB is 2018-05-20T00:00:00.000+02:00, current stand date is 2018-06-01T00:00:00.000+02:00. Will create day stands for 12 days.
 2020-11-09 11:32:26,056 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 9680. Last stand date from DB is 2018-06-01T00:00:00.000+02:00, current stand date is 2018-06-02T00:00:00.000+02:00. Will create day stands for 1 days.
 2020-11-09 11:32:26,070 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Creating file for stand per hour for circutorPLCFormat.
-2020-11-09 11:32:26,072 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-11-09 11:32:26,081 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979, from internal local H2 DB.
+2020-11-09 11:32:26,072 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-11-09 11:32:26,081 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979, from internal local H2 DB.
 2020-11-09 11:32:26,088 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2020-11-09 11:32:26,221 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2020-11-09 11:32:26,342 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] The stand date given in the recent file - 31/03/2007 00:00:00 - for meter 12163501 is earlier than the last stand date in th DB 01/04/2007 00:00:00.
@@ -584,8 +584,8 @@
 2020-11-09 11:32:26,357 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Meter = 12163501, Objectid = 2979 - Gap of 22 hours between last available stand_hour 2007-07-10T03:00:00.000+02:00 and current input hour 2007-07-11T01:00:00.000+02:00.
 2020-11-09 11:32:26,358 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Last stand before the gap = 504.580, current stand after the gap = 512.580.
 2020-11-09 11:32:26,358 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Will fill the gap by equal distribution of total consumption in the gap divided by number of hours in the gap.
-2020-11-09 11:32:26,358 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-11-09 11:32:26,363 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 9670, lev_punkt_id 51834, from internal local H2 DB.
+2020-11-09 11:32:26,358 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-11-09 11:32:26,363 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 9670, lev_punkt_id 51834, from internal local H2 DB.
 2020-11-09 11:32:26,369 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
 2020-11-09 11:32:26,531 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
 2020-11-09 11:32:26,674 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Meter = 9670, Objectid = 51834 - Gap of 3 hours between last available stand_hour 2018-04-01T00:00:00.000+02:00 and current input hour 2018-04-01T03:00:00.000+02:00.
@@ -606,8 +606,8 @@
 2020-11-09 11:32:26,680 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Meter = 9670, Objectid = 51834 - Gap of 288 hours between last available stand_hour 2018-05-20T00:00:00.000+02:00 and current input hour 2018-06-01T00:00:00.000+02:00.
 2020-11-09 11:32:26,680 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Last stand before the gap = 26403.000, current stand after the gap = 26414.000.
 2020-11-09 11:32:26,680 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Will fill the gap by equal distribution of total consumption in the gap divided by number of hours in the gap.
-2020-11-09 11:32:26,681 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-11-09 11:32:26,687 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 9680, lev_punkt_id 16877, from internal local H2 DB.
+2020-11-09 11:32:26,681 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-11-09 11:32:26,687 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 9680, lev_punkt_id 16877, from internal local H2 DB.
 2020-11-09 11:32:26,691 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9680.
 2020-11-09 11:32:26,849 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9680.
 2020-11-09 11:32:26,990 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Meter = 9680, Objectid = 16877 - Gap of 720 hours between last available stand_hour 2018-04-01T00:00:00.000+02:00 and current input hour 2018-05-01T00:00:00.000+02:00.
@@ -822,14 +822,14 @@
 2020-11-09 11:48:33,031 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 8 rows, out of which 8 have correct number format.
 2020-11-09 11:48:33,031 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 8 rows in less than a second.
 2020-11-09 11:48:33,032 INFO com.cts.generator.ProcessInput [scheduling-1] Received 8 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-09 11:48:33,035 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-09 11:48:33,035 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-09 11:48:33,140 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-09 11:48:40,256 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
-2020-11-09 11:48:40,287 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-09 11:48:40,289 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2020-11-09 11:48:40,289 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 2 meters. Out of which 2 has Customer entry.
-2020-11-09 11:48:40,290 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 2 meters =  0 seconds.
-2020-11-09 11:48:40,290 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 2 meters which have a Customer record.
+2020-11-09 11:48:40,256 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
+2020-11-09 11:48:40,287 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-09 11:48:40,289 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2020-11-09 11:48:40,289 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 2 meters. Out of which 2 has Customer entry.
+2020-11-09 11:48:40,290 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 2 meters =  0 seconds.
+2020-11-09 11:48:40,290 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 2 meters which have a Customer record.
 2020-11-09 11:48:40,290 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 8 input rows.
 2020-11-09 11:48:40,290 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for gamleAnleggFormat.
 2020-11-09 11:48:40,293 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 8 meters.
@@ -859,14 +859,14 @@
 2020-11-09 11:48:41,563 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 3 day stands for meter 12163501. Last stand date from DB is 2007-04-01T00:00:00.000+02:00, current stand date is 2007-04-04T00:00:00.000+02:00. Will create day stands for 3 days.
 2020-11-09 11:48:41,565 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing -1 day stands for meter 12163501. Last stand date from DB is 2007-04-04T00:00:00.000+02:00, current stand date is 2007-04-03T00:00:00.000+02:00. Will create day stands for -1 days.
 2020-11-09 11:48:41,582 INFO com.cts.generator.GeneratorForStandPerHourForGamleAnlegg [scheduling-1] Creating file for stand per hour for gamleAnleggFormat.
-2020-11-09 11:48:41,586 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-11-09 11:48:41,596 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 9670, lev_punkt_id 51834, from internal local H2 DB.
+2020-11-09 11:48:41,586 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-11-09 11:48:41,596 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 9670, lev_punkt_id 51834, from internal local H2 DB.
 2020-11-09 11:48:41,603 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
 2020-11-09 11:48:41,751 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
 2020-11-09 11:48:41,899 INFO com.cts.generator.GeneratorForStandPerHourForGamleAnlegg [scheduling-1] The stand date given in the recent file - 2018.03.31 00:00 - for meter 9670 is earlier than the last stand date in th DB 2018.04.01 00:00.
 2020-11-09 11:48:41,900 INFO com.cts.generator.GeneratorForStandPerHourForGamleAnlegg [scheduling-1] Will use the readingDate 2018-03-31T00:00:00.000+02:00 and standValue 26362.000 in the file as start values for meter 9670.
-2020-11-09 11:48:41,918 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-11-09 11:48:41,927 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979, from internal local H2 DB.
+2020-11-09 11:48:41,918 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-11-09 11:48:41,927 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979, from internal local H2 DB.
 2020-11-09 11:48:41,936 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2020-11-09 11:48:42,079 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2020-11-09 11:48:42,208 INFO com.cts.generator.GeneratorForStandPerHourForGamleAnlegg [scheduling-1] The stand date given in the recent file - 2007.03.31 00:00 - for meter 12163501 is earlier than the last stand date in th DB 2007.04.01 00:00.
@@ -923,15 +923,15 @@
 2020-11-09 12:02:10,522 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 25 rows, out of which 25 have correct number format.
 2020-11-09 12:02:10,522 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 25 rows in less than a second.
 2020-11-09 12:02:10,523 INFO com.cts.generator.ProcessInput [scheduling-1] Received 25 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-09 12:02:10,525 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-09 12:02:10,525 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-09 12:02:10,678 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-09 12:02:17,739 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
-2020-11-09 12:02:17,770 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2020-11-09 12:02:17,771 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-09 12:02:17,773 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9680, UNIT kWh, from internal local H2 DB.
-2020-11-09 12:02:17,773 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 3 meters. Out of which 3 has Customer entry.
-2020-11-09 12:02:17,774 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 3 meters =  0 seconds.
-2020-11-09 12:02:17,774 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 3 meters which have a Customer record.
+2020-11-09 12:02:17,739 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
+2020-11-09 12:02:17,770 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2020-11-09 12:02:17,771 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-09 12:02:17,773 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9680, UNIT kWh, from internal local H2 DB.
+2020-11-09 12:02:17,773 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 3 meters. Out of which 3 has Customer entry.
+2020-11-09 12:02:17,774 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 3 meters =  0 seconds.
+2020-11-09 12:02:17,774 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 3 meters which have a Customer record.
 2020-11-09 12:02:17,774 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 25 input rows.
 2020-11-09 12:02:17,774 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for circutorPLCFormat.
 2020-11-09 12:02:17,778 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 25 meters out of 25 meters received.
@@ -991,8 +991,8 @@
 2020-11-09 12:02:20,432 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 12 day stands for meter 9680. Last stand date from DB is 2018-05-20T00:00:00.000+02:00, current stand date is 2018-06-01T00:00:00.000+02:00. Will create day stands for 12 days.
 2020-11-09 12:02:20,434 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 9680. Last stand date from DB is 2018-06-01T00:00:00.000+02:00, current stand date is 2018-06-02T00:00:00.000+02:00. Will create day stands for 1 days.
 2020-11-09 12:02:20,444 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Creating file for stand per hour for circutorPLCFormat.
-2020-11-09 12:02:20,448 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-11-09 12:02:20,456 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979, from internal local H2 DB.
+2020-11-09 12:02:20,448 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-11-09 12:02:20,456 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979, from internal local H2 DB.
 2020-11-09 12:02:20,462 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2020-11-09 12:02:20,603 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2020-11-09 12:02:20,809 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] The stand date given in the recent file - 31/03/2007 00:00:00 - for meter 12163501 is earlier than the last stand date in th DB 01/04/2007 00:00:00.
@@ -1018,8 +1018,8 @@
 2020-11-09 12:02:20,855 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Meter = 12163501, Objectid = 2979 - Gap of 22 hours between last available stand_hour 2007-07-10T03:00:00.000+02:00 and current input hour 2007-07-11T01:00:00.000+02:00.
 2020-11-09 12:02:20,856 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Last stand before the gap = 504.580, current stand after the gap = 512.580.
 2020-11-09 12:02:20,856 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Will fill the gap by equal distribution of total consumption in the gap divided by number of hours in the gap.
-2020-11-09 12:02:20,857 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-11-09 12:02:20,863 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 9670, lev_punkt_id 51834, from internal local H2 DB.
+2020-11-09 12:02:20,857 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-11-09 12:02:20,863 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 9670, lev_punkt_id 51834, from internal local H2 DB.
 2020-11-09 12:02:20,869 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
 2020-11-09 12:02:21,046 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
 2020-11-09 12:02:21,204 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Meter = 9670, Objectid = 51834 - Gap of 3 hours between last available stand_hour 2018-04-01T00:00:00.000+02:00 and current input hour 2018-04-01T03:00:00.000+02:00.
@@ -1040,8 +1040,8 @@
 2020-11-09 12:02:21,229 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Meter = 9670, Objectid = 51834 - Gap of 288 hours between last available stand_hour 2018-05-20T00:00:00.000+02:00 and current input hour 2018-06-01T00:00:00.000+02:00.
 2020-11-09 12:02:21,230 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Last stand before the gap = 26403.000, current stand after the gap = 26414.000.
 2020-11-09 12:02:21,230 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Will fill the gap by equal distribution of total consumption in the gap divided by number of hours in the gap.
-2020-11-09 12:02:21,233 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-11-09 12:02:21,246 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 9680, lev_punkt_id 16877, from internal local H2 DB.
+2020-11-09 12:02:21,233 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-11-09 12:02:21,246 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 9680, lev_punkt_id 16877, from internal local H2 DB.
 2020-11-09 12:02:21,253 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9680.
 2020-11-09 12:02:21,413 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9680.
 2020-11-09 12:02:21,560 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Meter = 9680, Objectid = 16877 - Gap of 720 hours between last available stand_hour 2018-04-01T00:00:00.000+02:00 and current input hour 2018-05-01T00:00:00.000+02:00.
@@ -1163,13 +1163,13 @@
 2020-11-09 12:02:21,660 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 9 rows, out of which 9 have correct number format.
 2020-11-09 12:02:21,660 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 9 rows in less than a second.
 2020-11-09 12:02:21,660 INFO com.cts.generator.ProcessInput [scheduling-1] Received 9 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-09 12:02:21,660 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
-2020-11-09 12:02:21,665 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
-2020-11-09 12:02:21,666 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-09 12:02:21,667 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2020-11-09 12:02:21,667 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 2 meters. Out of which 2 has Customer entry.
-2020-11-09 12:02:21,667 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 2 meters =  0 seconds.
-2020-11-09 12:02:21,667 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 2 meters which have a Customer record.
+2020-11-09 12:02:21,660 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
+2020-11-09 12:02:21,665 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
+2020-11-09 12:02:21,666 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-09 12:02:21,667 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2020-11-09 12:02:21,667 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 2 meters. Out of which 2 has Customer entry.
+2020-11-09 12:02:21,667 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 2 meters =  0 seconds.
+2020-11-09 12:02:21,667 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 2 meters which have a Customer record.
 2020-11-09 12:02:21,667 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 9 input rows.
 2020-11-09 12:02:21,667 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for gamleAnleggFormat.
 2020-11-09 12:02:21,667 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 9 meters.
@@ -1198,14 +1198,14 @@
 2020-11-09 12:02:22,301 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 2 day stands for meter 12163501. Last stand date from DB is 2007-04-01T00:00:00.000+02:00, current stand date is 2007-04-03T00:00:00.000+02:00. Will create day stands for 2 days.
 2020-11-09 12:02:22,302 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 12163501. Last stand date from DB is 2007-04-03T00:00:00.000+02:00, current stand date is 2007-04-04T00:00:00.000+02:00. Will create day stands for 1 days.
 2020-11-09 12:02:22,316 INFO com.cts.generator.GeneratorForStandPerHourForGamleAnlegg [scheduling-1] Creating file for stand per hour for gamleAnleggFormat.
-2020-11-09 12:02:22,316 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-11-09 12:02:22,326 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 9670, lev_punkt_id 51834, from internal local H2 DB.
+2020-11-09 12:02:22,316 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-11-09 12:02:22,326 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 9670, lev_punkt_id 51834, from internal local H2 DB.
 2020-11-09 12:02:22,332 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
 2020-11-09 12:02:22,482 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
 2020-11-09 12:02:22,623 INFO com.cts.generator.GeneratorForStandPerHourForGamleAnlegg [scheduling-1] The stand date given in the recent file - 2018.03.31 00:00 - for meter 9670 is earlier than the last stand date in th DB 2018.04.01 00:00.
 2020-11-09 12:02:22,623 INFO com.cts.generator.GeneratorForStandPerHourForGamleAnlegg [scheduling-1] Will use the readingDate 2018-03-31T00:00:00.000+02:00 and standValue 26352.000 in the file as start values for meter 9670.
-2020-11-09 12:02:22,626 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-11-09 12:02:22,632 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979, from internal local H2 DB.
+2020-11-09 12:02:22,626 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-11-09 12:02:22,632 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979, from internal local H2 DB.
 2020-11-09 12:02:22,639 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2020-11-09 12:02:22,771 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2020-11-09 12:02:22,921 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
@@ -1331,14 +1331,14 @@
 2020-11-09 12:20:45,046 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 9 rows, out of which 9 have correct number format.
 2020-11-09 12:20:45,047 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 9 rows in less than a second.
 2020-11-09 12:20:45,048 INFO com.cts.generator.ProcessInput [scheduling-1] Received 9 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-09 12:20:45,052 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-09 12:20:45,052 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-09 12:20:45,162 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-09 12:20:52,224 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
-2020-11-09 12:20:52,255 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-09 12:20:52,257 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2020-11-09 12:20:52,257 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 2 meters. Out of which 2 has Customer entry.
-2020-11-09 12:20:52,257 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 2 meters =  0 seconds.
-2020-11-09 12:20:52,257 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 2 meters which have a Customer record.
+2020-11-09 12:20:52,224 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
+2020-11-09 12:20:52,255 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-09 12:20:52,257 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2020-11-09 12:20:52,257 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 2 meters. Out of which 2 has Customer entry.
+2020-11-09 12:20:52,257 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 2 meters =  0 seconds.
+2020-11-09 12:20:52,257 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 2 meters which have a Customer record.
 2020-11-09 12:20:52,257 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 9 input rows.
 2020-11-09 12:20:52,258 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for gamleAnleggFormat.
 2020-11-09 12:20:52,261 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 9 meters.
@@ -1367,14 +1367,14 @@
 2020-11-09 12:20:53,916 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 2 day stands for meter 12163501. Last stand date from DB is 2007-04-01T00:00:00.000+02:00, current stand date is 2007-04-03T00:00:00.000+02:00. Will create day stands for 2 days.
 2020-11-09 12:20:53,918 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 12163501. Last stand date from DB is 2007-04-03T00:00:00.000+02:00, current stand date is 2007-04-04T00:00:00.000+02:00. Will create day stands for 1 days.
 2020-11-09 12:20:53,933 INFO com.cts.generator.GeneratorForStandPerHourForGamleAnlegg [scheduling-1] Creating file for stand per hour for gamleAnleggFormat.
-2020-11-09 12:20:53,938 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-11-09 12:20:53,952 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 9670, lev_punkt_id 51834, from internal local H2 DB.
+2020-11-09 12:20:53,938 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-11-09 12:20:53,952 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 9670, lev_punkt_id 51834, from internal local H2 DB.
 2020-11-09 12:20:53,961 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
 2020-11-09 12:20:54,141 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
 2020-11-09 12:20:54,324 INFO com.cts.generator.GeneratorForStandPerHourForGamleAnlegg [scheduling-1] The stand date given in the recent file - 2018.03.31 00:00 - for meter 9670 is earlier than the last stand date in th DB 2018.04.01 00:00.
 2020-11-09 12:20:54,324 INFO com.cts.generator.GeneratorForStandPerHourForGamleAnlegg [scheduling-1] Will use the readingDate 2018-03-31T00:00:00.000+02:00 and standValue 26352.000 in the file as start values for meter 9670.
-2020-11-09 12:20:54,328 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-11-09 12:20:54,336 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979, from internal local H2 DB.
+2020-11-09 12:20:54,328 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-11-09 12:20:54,336 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979, from internal local H2 DB.
 2020-11-09 12:20:54,341 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2020-11-09 12:20:54,531 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2020-11-09 12:20:54,737 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
@@ -1495,14 +1495,14 @@
 2020-11-09 12:31:58,452 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 9 rows, out of which 9 have correct number format.
 2020-11-09 12:31:58,452 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 9 rows in less than a second.
 2020-11-09 12:31:58,453 INFO com.cts.generator.ProcessInput [scheduling-1] Received 9 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-09 12:31:58,457 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-09 12:31:58,457 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-09 12:31:58,544 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-09 12:32:05,416 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
-2020-11-09 12:32:05,452 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-09 12:32:05,453 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2020-11-09 12:32:05,454 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 2 meters. Out of which 2 has Customer entry.
-2020-11-09 12:32:05,454 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 2 meters =  0 seconds.
-2020-11-09 12:32:05,454 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 2 meters which have a Customer record.
+2020-11-09 12:32:05,416 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
+2020-11-09 12:32:05,452 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-09 12:32:05,453 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2020-11-09 12:32:05,454 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 2 meters. Out of which 2 has Customer entry.
+2020-11-09 12:32:05,454 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 2 meters =  0 seconds.
+2020-11-09 12:32:05,454 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 2 meters which have a Customer record.
 2020-11-09 12:32:05,454 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 9 input rows.
 2020-11-09 12:32:05,454 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for gamleAnleggFormat.
 2020-11-09 12:32:05,457 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 9 meters.
@@ -1531,14 +1531,14 @@
 2020-11-09 12:32:06,610 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 2 day stands for meter 12163501. Last stand date from DB is 2007-04-01T00:00:00.000+02:00, current stand date is 2007-04-03T00:00:00.000+02:00. Will create day stands for 2 days.
 2020-11-09 12:32:06,613 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 12163501. Last stand date from DB is 2007-04-03T00:00:00.000+02:00, current stand date is 2007-04-04T00:00:00.000+02:00. Will create day stands for 1 days.
 2020-11-09 12:32:06,628 INFO com.cts.generator.GeneratorForStandPerHourForGamleAnlegg [scheduling-1] Creating file for stand per hour for gamleAnleggFormat.
-2020-11-09 12:32:06,634 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-11-09 12:32:06,644 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 9670, lev_punkt_id 51834, from internal local H2 DB.
+2020-11-09 12:32:06,634 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-11-09 12:32:06,644 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 9670, lev_punkt_id 51834, from internal local H2 DB.
 2020-11-09 12:32:06,650 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
 2020-11-09 12:32:06,797 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
 2020-11-09 12:32:06,950 INFO com.cts.generator.GeneratorForStandPerHourForGamleAnlegg [scheduling-1] The stand date given in the recent file - 2018.03.31 00:00 - for meter 9670 is earlier than the last stand date in th DB 2018.04.01 00:00.
 2020-11-09 12:32:06,950 INFO com.cts.generator.GeneratorForStandPerHourForGamleAnlegg [scheduling-1] Will use the readingDate 2018-03-31T00:00:00.000+02:00 and standValue 26352.000 in the file as start values for meter 9670.
-2020-11-09 12:32:06,974 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-11-09 12:32:06,981 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979, from internal local H2 DB.
+2020-11-09 12:32:06,974 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-11-09 12:32:06,981 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979, from internal local H2 DB.
 2020-11-09 12:32:06,987 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2020-11-09 12:32:07,122 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2020-11-09 12:32:07,256 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
@@ -1659,14 +1659,14 @@
 2020-11-09 12:42:54,977 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 10 rows, out of which 10 have correct number format.
 2020-11-09 12:42:54,978 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 10 rows in less than a second.
 2020-11-09 12:42:54,978 INFO com.cts.generator.ProcessInput [scheduling-1] Received 10 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-09 12:42:54,981 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-09 12:42:54,981 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-09 12:42:55,070 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-09 12:43:01,992 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
-2020-11-09 12:43:02,024 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-09 12:43:02,026 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2020-11-09 12:43:02,026 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 2 meters. Out of which 2 has Customer entry.
-2020-11-09 12:43:02,026 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 2 meters =  0 seconds.
-2020-11-09 12:43:02,026 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 2 meters which have a Customer record.
+2020-11-09 12:43:01,992 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
+2020-11-09 12:43:02,024 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-09 12:43:02,026 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2020-11-09 12:43:02,026 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 2 meters. Out of which 2 has Customer entry.
+2020-11-09 12:43:02,026 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 2 meters =  0 seconds.
+2020-11-09 12:43:02,026 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 2 meters which have a Customer record.
 2020-11-09 12:43:02,026 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 10 input rows.
 2020-11-09 12:43:02,026 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for gamleAnleggFormat.
 2020-11-09 12:43:02,030 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 10 meters.
@@ -1695,14 +1695,14 @@
 2020-11-09 12:43:03,421 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 2 day stands for meter 12163501. Last stand date from DB is 2007-04-01T00:00:00.000+02:00, current stand date is 2007-04-03T00:00:00.000+02:00. Will create day stands for 2 days.
 2020-11-09 12:43:03,422 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 12163501. Last stand date from DB is 2007-04-03T00:00:00.000+02:00, current stand date is 2007-04-04T00:00:00.000+02:00. Will create day stands for 1 days.
 2020-11-09 12:43:03,427 INFO com.cts.generator.GeneratorForStandPerHourForGamleAnlegg [scheduling-1] Creating file for stand per hour for gamleAnleggFormat.
-2020-11-09 12:43:03,429 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-11-09 12:43:03,434 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 9670, lev_punkt_id 51834, from internal local H2 DB.
+2020-11-09 12:43:03,429 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-11-09 12:43:03,434 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 9670, lev_punkt_id 51834, from internal local H2 DB.
 2020-11-09 12:43:03,439 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
 2020-11-09 12:43:03,601 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
 2020-11-09 12:43:03,747 INFO com.cts.generator.GeneratorForStandPerHourForGamleAnlegg [scheduling-1] The stand date given in the recent file - 2018.03.31 00:00 - for meter 9670 is earlier than the last stand date in th DB 2018.04.01 00:00.
 2020-11-09 12:43:03,747 INFO com.cts.generator.GeneratorForStandPerHourForGamleAnlegg [scheduling-1] Will use the readingDate 2018-03-31T00:00:00.000+02:00 and standValue 26352.000 in the file as start values for meter 9670.
-2020-11-09 12:43:03,756 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-11-09 12:43:03,764 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979, from internal local H2 DB.
+2020-11-09 12:43:03,756 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-11-09 12:43:03,764 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979, from internal local H2 DB.
 2020-11-09 12:43:03,771 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2020-11-09 12:43:03,898 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2020-11-09 12:43:04,029 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
@@ -1752,15 +1752,15 @@
 2020-11-09 14:15:08,325 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 25 rows, out of which 25 have correct number format.
 2020-11-09 14:15:08,326 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 25 rows in less than a second.
 2020-11-09 14:15:08,327 INFO com.cts.generator.ProcessInput [scheduling-1] Received 25 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-09 14:15:08,331 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-09 14:15:08,331 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-09 14:15:08,525 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-09 14:15:15,413 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
-2020-11-09 14:15:15,443 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2020-11-09 14:15:15,445 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-09 14:15:15,446 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9680, UNIT kWh, from internal local H2 DB.
-2020-11-09 14:15:15,446 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 3 meters. Out of which 3 has Customer entry.
-2020-11-09 14:15:15,447 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 3 meters =  0 seconds.
-2020-11-09 14:15:15,447 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 3 meters which have a Customer record.
+2020-11-09 14:15:15,413 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
+2020-11-09 14:15:15,443 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2020-11-09 14:15:15,445 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-09 14:15:15,446 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9680, UNIT kWh, from internal local H2 DB.
+2020-11-09 14:15:15,446 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 3 meters. Out of which 3 has Customer entry.
+2020-11-09 14:15:15,447 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 3 meters =  0 seconds.
+2020-11-09 14:15:15,447 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 3 meters which have a Customer record.
 2020-11-09 14:15:15,447 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 25 input rows.
 2020-11-09 14:15:15,447 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for circutorPLCFormat.
 2020-11-09 14:15:15,451 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 25 meters out of 25 meters received.
@@ -1820,8 +1820,8 @@
 2020-11-09 14:15:18,322 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 12 day stands for meter 9680. Last stand date from DB is 2018-05-20T00:00:00.000+02:00, current stand date is 2018-06-01T00:00:00.000+02:00. Will create day stands for 12 days.
 2020-11-09 14:15:18,326 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 9680. Last stand date from DB is 2018-06-01T00:00:00.000+02:00, current stand date is 2018-06-02T00:00:00.000+02:00. Will create day stands for 1 days.
 2020-11-09 14:15:18,339 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Creating file for stand per hour for circutorPLCFormat.
-2020-11-09 14:15:18,341 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-11-09 14:15:18,347 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979, from internal local H2 DB.
+2020-11-09 14:15:18,341 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-11-09 14:15:18,347 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979, from internal local H2 DB.
 2020-11-09 14:15:18,352 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2020-11-09 14:15:18,553 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2020-11-09 14:15:18,719 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] The stand date given in the recent file - 31/03/2007 00:00:00 - for meter 12163501 is earlier than the last stand date in th DB 01/04/2007 00:00:00.
@@ -1847,8 +1847,8 @@
 2020-11-09 14:15:18,764 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Meter = 12163501, Objectid = 2979 - Gap of 22 hours between last available stand_hour 2007-07-10T03:00:00.000+02:00 and current input hour 2007-07-11T01:00:00.000+02:00.
 2020-11-09 14:15:18,764 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Last stand before the gap = 504.580, current stand after the gap = 512.580.
 2020-11-09 14:15:18,765 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Will fill the gap by equal distribution of total consumption in the gap divided by number of hours in the gap.
-2020-11-09 14:15:18,765 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-11-09 14:15:18,775 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 9670, lev_punkt_id 51834, from internal local H2 DB.
+2020-11-09 14:15:18,765 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-11-09 14:15:18,775 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 9670, lev_punkt_id 51834, from internal local H2 DB.
 2020-11-09 14:15:18,784 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
 2020-11-09 14:15:19,324 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
 2020-11-09 14:15:19,540 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Meter = 9670, Objectid = 51834 - Gap of 3 hours between last available stand_hour 2018-04-01T00:00:00.000+02:00 and current input hour 2018-04-01T03:00:00.000+02:00.
@@ -1869,8 +1869,8 @@
 2020-11-09 14:15:19,552 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Meter = 9670, Objectid = 51834 - Gap of 288 hours between last available stand_hour 2018-05-20T00:00:00.000+02:00 and current input hour 2018-06-01T00:00:00.000+02:00.
 2020-11-09 14:15:19,553 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Last stand before the gap = 26403.000, current stand after the gap = 26414.000.
 2020-11-09 14:15:19,553 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Will fill the gap by equal distribution of total consumption in the gap divided by number of hours in the gap.
-2020-11-09 14:15:19,555 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-11-09 14:15:19,563 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 9680, lev_punkt_id 16877, from internal local H2 DB.
+2020-11-09 14:15:19,555 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-11-09 14:15:19,563 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 9680, lev_punkt_id 16877, from internal local H2 DB.
 2020-11-09 14:15:19,570 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9680.
 2020-11-09 14:15:19,801 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9680.
 2020-11-09 14:15:20,043 INFO com.cts.generator.GeneratorForStandPerHourForCircutorPLCFormat [scheduling-1] Meter = 9680, Objectid = 16877 - Gap of 720 hours between last available stand_hour 2018-04-01T00:00:00.000+02:00 and current input hour 2018-05-01T00:00:00.000+02:00.
@@ -1968,12 +1968,12 @@
 2020-11-09 14:15:20,148 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 9 rows, out of which 9 have correct number format.
 2020-11-09 14:15:20,149 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 9 rows in less than a second.
 2020-11-09 14:15:20,149 INFO com.cts.generator.ProcessInput [scheduling-1] Received 9 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-09 14:15:20,149 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
-2020-11-09 14:15:20,153 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2020-11-09 14:15:20,154 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-09 14:15:20,154 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2020-11-09 14:15:20,154 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2020-11-09 14:15:20,154 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2020-11-09 14:15:20,149 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
+2020-11-09 14:15:20,153 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2020-11-09 14:15:20,154 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-09 14:15:20,154 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2020-11-09 14:15:20,154 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2020-11-09 14:15:20,154 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2020-11-09 14:15:20,154 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 9 input rows.
 2020-11-09 14:15:20,154 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2020-11-09 14:15:20,154 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 9 meters out of a total of 9 meters.
@@ -2045,13 +2045,13 @@
 2020-11-09 14:15:20,756 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 10 rows, out of which 10 have correct number format.
 2020-11-09 14:15:20,756 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 10 rows in less than a second.
 2020-11-09 14:15:20,756 INFO com.cts.generator.ProcessInput [scheduling-1] Received 10 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-09 14:15:20,756 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
-2020-11-09 14:15:20,761 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
-2020-11-09 14:15:20,761 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-09 14:15:20,762 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2020-11-09 14:15:20,762 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 2 meters. Out of which 2 has Customer entry.
-2020-11-09 14:15:20,762 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 2 meters =  0 seconds.
-2020-11-09 14:15:20,762 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 2 meters which have a Customer record.
+2020-11-09 14:15:20,756 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
+2020-11-09 14:15:20,761 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
+2020-11-09 14:15:20,761 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-09 14:15:20,762 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2020-11-09 14:15:20,762 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 2 meters. Out of which 2 has Customer entry.
+2020-11-09 14:15:20,762 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 2 meters =  0 seconds.
+2020-11-09 14:15:20,762 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 2 meters which have a Customer record.
 2020-11-09 14:15:20,762 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 10 input rows.
 2020-11-09 14:15:20,762 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for gamleAnleggFormat.
 2020-11-09 14:15:20,762 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 10 meters.
@@ -2080,14 +2080,14 @@
 2020-11-09 14:15:21,847 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 2 day stands for meter 12163501. Last stand date from DB is 2007-04-01T00:00:00.000+02:00, current stand date is 2007-04-03T00:00:00.000+02:00. Will create day stands for 2 days.
 2020-11-09 14:15:21,849 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 12163501. Last stand date from DB is 2007-04-03T00:00:00.000+02:00, current stand date is 2007-04-04T00:00:00.000+02:00. Will create day stands for 1 days.
 2020-11-09 14:15:21,862 INFO com.cts.generator.GeneratorForStandPerHourForGamleAnlegg [scheduling-1] Creating file for stand per hour for gamleAnleggFormat.
-2020-11-09 14:15:21,862 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-11-09 14:15:21,879 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 9670, lev_punkt_id 51834, from internal local H2 DB.
+2020-11-09 14:15:21,862 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-11-09 14:15:21,879 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 9670, lev_punkt_id 51834, from internal local H2 DB.
 2020-11-09 14:15:21,885 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
 2020-11-09 14:15:22,273 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 9670.
 2020-11-09 14:15:22,760 INFO com.cts.generator.GeneratorForStandPerHourForGamleAnlegg [scheduling-1] The stand date given in the recent file - 2018.03.31 00:00 - for meter 9670 is earlier than the last stand date in th DB 2018.04.01 00:00.
 2020-11-09 14:15:22,761 INFO com.cts.generator.GeneratorForStandPerHourForGamleAnlegg [scheduling-1] Will use the readingDate 2018-03-31T00:00:00.000+02:00 and standValue 26352.000 in the file as start values for meter 9670.
-2020-11-09 14:15:22,766 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
-2020-11-09 14:15:22,781 INFO com.cts.customerGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979, from internal local H2 DB.
+2020-11-09 14:15:22,766 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Starting to check for Customer record.
+2020-11-09 14:15:22,781 INFO com.cts.nanoMeteringGateway.GetDeliveryPoint [scheduling-1] Got meter details for meter 12163501, lev_punkt_id 2979, from internal local H2 DB.
 2020-11-09 14:15:22,789 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2020-11-09 14:15:23,092 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2020-11-09 14:15:23,475 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
@@ -2189,13 +2189,13 @@
 2020-11-09 14:25:00,699 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 8 rows, out of which 8 have correct number format.
 2020-11-09 14:25:00,700 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 8 rows in less than a second.
 2020-11-09 14:25:00,700 INFO com.cts.generator.ProcessInput [scheduling-1] Received 8 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-09 14:25:00,705 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-09 14:25:00,705 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-09 14:25:00,860 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-09 14:25:08,027 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2020-11-09 14:25:08,062 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-09 14:25:08,062 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2020-11-09 14:25:08,062 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2020-11-09 14:25:08,062 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2020-11-09 14:25:08,027 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2020-11-09 14:25:08,062 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-09 14:25:08,062 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2020-11-09 14:25:08,062 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2020-11-09 14:25:08,062 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2020-11-09 14:25:08,062 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 8 input rows.
 2020-11-09 14:25:08,062 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2020-11-09 14:25:08,065 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 8 meters out of a total of 8 meters.
@@ -2348,15 +2348,15 @@
 2020-11-09 14:30:43,750 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 23 rows, out of which 21 have correct number format.
 2020-11-09 14:30:43,750 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 23 rows in less than a second.
 2020-11-09 14:30:43,750 INFO com.cts.generator.ProcessInput [scheduling-1] Received 21 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-09 14:30:43,753 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-09 14:30:43,753 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-09 14:30:43,867 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-09 14:30:50,884 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
-2020-11-09 14:30:50,915 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2020-11-09 14:30:50,917 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-09 14:30:50,918 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9680, UNIT kWh, from internal local H2 DB.
-2020-11-09 14:30:50,919 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 3 meters. Out of which 3 has Customer entry.
-2020-11-09 14:30:50,919 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 3 meters =  0 seconds.
-2020-11-09 14:30:50,919 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 3 meters which have a Customer record.
+2020-11-09 14:30:50,884 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
+2020-11-09 14:30:50,915 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2020-11-09 14:30:50,917 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-09 14:30:50,918 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9680, UNIT kWh, from internal local H2 DB.
+2020-11-09 14:30:50,919 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 3 meters. Out of which 3 has Customer entry.
+2020-11-09 14:30:50,919 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 3 meters =  0 seconds.
+2020-11-09 14:30:50,919 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 3 meters which have a Customer record.
 2020-11-09 14:30:50,919 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 21 input rows.
 2020-11-09 14:30:50,920 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2020-11-09 14:30:50,923 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 21 meters out of a total of 21 meters.
@@ -2526,15 +2526,15 @@
 2020-11-09 14:39:06,819 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 16 rows, out of which 14 have correct number format.
 2020-11-09 14:39:06,820 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 16 rows in less than a second.
 2020-11-09 14:39:06,820 INFO com.cts.generator.ProcessInput [scheduling-1] Received 14 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-09 14:39:06,824 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-09 14:39:06,824 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-09 14:39:06,980 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-09 14:39:13,870 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
-2020-11-09 14:39:13,903 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9680, UNIT kWh, from internal local H2 DB.
-2020-11-09 14:39:13,905 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-09 14:39:13,908 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2020-11-09 14:39:13,908 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 3 meters. Out of which 3 has Customer entry.
-2020-11-09 14:39:13,908 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 3 meters =  0 seconds.
-2020-11-09 14:39:13,909 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 3 meters which have a Customer record.
+2020-11-09 14:39:13,870 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
+2020-11-09 14:39:13,903 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9680, UNIT kWh, from internal local H2 DB.
+2020-11-09 14:39:13,905 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-09 14:39:13,908 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2020-11-09 14:39:13,908 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 3 meters. Out of which 3 has Customer entry.
+2020-11-09 14:39:13,908 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 3 meters =  0 seconds.
+2020-11-09 14:39:13,909 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 3 meters which have a Customer record.
 2020-11-09 14:39:13,909 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 14 input rows.
 2020-11-09 14:39:13,909 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2020-11-09 14:39:13,913 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 14 meters out of a total of 14 meters.
@@ -2696,15 +2696,15 @@
 2020-11-09 14:49:07,835 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 16 rows, out of which 16 have correct number format.
 2020-11-09 14:49:07,835 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 16 rows in less than a second.
 2020-11-09 14:49:07,835 INFO com.cts.generator.ProcessInput [scheduling-1] Received 16 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-09 14:49:07,840 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-09 14:49:07,840 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-09 14:49:08,056 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-09 14:49:15,254 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
-2020-11-09 14:49:15,286 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9680, UNIT kWh, from internal local H2 DB.
-2020-11-09 14:49:15,288 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-09 14:49:15,290 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2020-11-09 14:49:15,290 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 3 meters. Out of which 3 has Customer entry.
-2020-11-09 14:49:15,290 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 3 meters =  0 seconds.
-2020-11-09 14:49:15,290 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 3 meters which have a Customer record.
+2020-11-09 14:49:15,254 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
+2020-11-09 14:49:15,286 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9680, UNIT kWh, from internal local H2 DB.
+2020-11-09 14:49:15,288 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-09 14:49:15,290 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2020-11-09 14:49:15,290 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 3 meters. Out of which 3 has Customer entry.
+2020-11-09 14:49:15,290 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 3 meters =  0 seconds.
+2020-11-09 14:49:15,290 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 3 meters which have a Customer record.
 2020-11-09 14:49:15,290 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 16 input rows.
 2020-11-09 14:49:15,291 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2020-11-09 14:49:15,294 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 16 meters out of a total of 16 meters.

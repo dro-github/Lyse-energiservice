@@ -37,12 +37,12 @@
 2023-09-27 15:18:02,891 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 208 rows, out of which 208 have correct number format.
 2023-09-27 15:18:02,891 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 208 rows in less than a second.
 2023-09-27 15:18:02,892 INFO com.cts.generator.ProcessInput [scheduling-1] Received 208 input rows, will check for an entry in customer for distinct meters in the input.
-2023-09-27 15:18:02,894 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2023-09-27 15:18:02,894 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2023-09-27 15:18:02,928 WARN com.infosynergi.framework.yafr.restful.YafrRestTemplate [scheduling-1] Failed to reset the logger, framework log events may be logged as part of application logs, error: In java 12+ final cannot be removed.
-2023-09-27 15:18:03,359 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 4 distinct meters. Will check for a Customer registry for each.
-2023-09-27 15:18:03,425 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 4 meters. Out of which 4 has Customer entry.
-2023-09-27 15:18:03,427 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 4 meters =  0 seconds.
-2023-09-27 15:18:03,427 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 4 meters which have a Customer record.
+2023-09-27 15:18:03,359 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 4 distinct meters. Will check for a Customer registry for each.
+2023-09-27 15:18:03,425 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 4 meters. Out of which 4 has Customer entry.
+2023-09-27 15:18:03,427 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 4 meters =  0 seconds.
+2023-09-27 15:18:03,427 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 4 meters which have a Customer record.
 2023-09-27 15:18:03,428 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 208 input rows.
 2023-09-27 15:18:03,448 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 208 records for json file - mBusFormat.
 2023-09-27 15:18:03,518 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] There are 24 readings for timestamp = 00:00:00. Only readings @00:00:00 are relevant for creating dayStand payload.

@@ -80,13 +80,13 @@
 2021-09-27 14:20:18,317 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 9 rows, out of which 9 have correct number format.
 2021-09-27 14:20:18,317 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 9 rows in less than a second.
 2021-09-27 14:20:18,318 INFO com.cts.generator.ProcessInput [scheduling-1] Received 9 input rows, will check for an entry in customer for distinct meters in the input.
-2021-09-27 14:20:18,322 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-09-27 14:20:18,322 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2021-09-27 14:20:18,415 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2021-09-27 14:20:19,689 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2021-09-27 14:20:19,727 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9680, UNIT kWh, from internal local H2 DB.
-2021-09-27 14:20:19,727 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2021-09-27 14:20:19,728 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2021-09-27 14:20:19,728 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-09-27 14:20:19,689 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-09-27 14:20:19,727 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9680, UNIT kWh, from internal local H2 DB.
+2021-09-27 14:20:19,727 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-09-27 14:20:19,728 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-09-27 14:20:19,728 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2021-09-27 14:20:19,728 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 9 input rows.
 2021-09-27 14:20:19,728 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2021-09-27 14:20:19,732 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 9 meters out of a total of 9 meters.
@@ -239,13 +239,13 @@
 2021-09-27 14:25:48,010 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 9 rows, out of which 9 have correct number format.
 2021-09-27 14:25:48,010 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 9 rows in less than a second.
 2021-09-27 14:25:48,011 INFO com.cts.generator.ProcessInput [scheduling-1] Received 9 input rows, will check for an entry in customer for distinct meters in the input.
-2021-09-27 14:25:48,015 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-09-27 14:25:48,015 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2021-09-27 14:25:48,132 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2021-09-27 14:25:49,390 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2021-09-27 14:25:49,423 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9680, UNIT kWh, from internal local H2 DB.
-2021-09-27 14:25:49,423 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2021-09-27 14:25:49,423 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2021-09-27 14:25:49,423 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-09-27 14:25:49,390 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-09-27 14:25:49,423 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9680, UNIT kWh, from internal local H2 DB.
+2021-09-27 14:25:49,423 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-09-27 14:25:49,423 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-09-27 14:25:49,423 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2021-09-27 14:25:49,423 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 9 input rows.
 2021-09-27 14:25:49,423 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2021-09-27 14:25:49,426 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 9 meters out of a total of 9 meters.
@@ -269,61 +269,61 @@
 2021-09-27 14:25:50,135 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] The stand date given in the recent file - 05/01/2018 00:00:00 - for meter 9680 is earlier than the last stand date in th DB 05/31/2018 23:00:00.
 2021-09-27 14:25:50,135 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] Will use the readingDate 2018-05-01T00:00:00.000+01:00 and standValue 76115.000 in the file as start values for meter 9680.
 2021-09-27 14:25:50,136 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 9680. Last stand date from DB is 2018-05-01T00:00:00.000+01:00, current stand date is 2018-05-01T00:00:00.000+01:00. Will create day stands for 1 days.
-2021-09-27 14:25:50,151 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
-2021-09-27 14:25:50,157 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
-2021-09-27 14:25:50,157 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 9680.
-2021-09-27 14:25:50,157 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680
-2021-09-27 14:25:50,157 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680, MeterSetupV2.class).getBody();
-2021-09-27 14:25:50,354 WARN com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] could not get counter details for meter_id = 9680. No hourly stand series will be created for this meter.
+2021-09-27 14:25:50,151 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
+2021-09-27 14:25:50,157 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
+2021-09-27 14:25:50,157 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 9680.
+2021-09-27 14:25:50,157 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680
+2021-09-27 14:25:50,157 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680, MeterSetupV2.class).getBody();
+2021-09-27 14:25:50,354 WARN com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] could not get counter details for meter_id = 9680. No hourly stand series will be created for this meter.
 2021-09-27 14:25:50,356 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 9680. Last stand date from DB is 2018-05-01T00:00:00.000+01:00, current stand date is 2018-05-02T00:00:00.000+01:00. Will create day stands for 1 days.
-2021-09-27 14:25:50,358 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
-2021-09-27 14:25:50,370 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
-2021-09-27 14:25:50,371 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 9680.
-2021-09-27 14:25:50,371 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680
-2021-09-27 14:25:50,371 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680, MeterSetupV2.class).getBody();
-2021-09-27 14:25:50,485 WARN com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] could not get counter details for meter_id = 9680. No hourly stand series will be created for this meter.
+2021-09-27 14:25:50,358 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
+2021-09-27 14:25:50,370 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
+2021-09-27 14:25:50,371 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 9680.
+2021-09-27 14:25:50,371 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680
+2021-09-27 14:25:50,371 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680, MeterSetupV2.class).getBody();
+2021-09-27 14:25:50,485 WARN com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] could not get counter details for meter_id = 9680. No hourly stand series will be created for this meter.
 2021-09-27 14:25:50,486 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 9680. Last stand date from DB is 2018-05-02T00:00:00.000+01:00, current stand date is 2018-05-03T00:00:00.000+01:00. Will create day stands for 1 days.
-2021-09-27 14:25:50,487 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
-2021-09-27 14:25:50,497 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
-2021-09-27 14:25:50,498 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 9680.
-2021-09-27 14:25:50,498 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680
-2021-09-27 14:25:50,499 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680, MeterSetupV2.class).getBody();
-2021-09-27 14:25:50,607 WARN com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] could not get counter details for meter_id = 9680. No hourly stand series will be created for this meter.
+2021-09-27 14:25:50,487 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
+2021-09-27 14:25:50,497 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
+2021-09-27 14:25:50,498 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 9680.
+2021-09-27 14:25:50,498 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680
+2021-09-27 14:25:50,499 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680, MeterSetupV2.class).getBody();
+2021-09-27 14:25:50,607 WARN com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] could not get counter details for meter_id = 9680. No hourly stand series will be created for this meter.
 2021-09-27 14:25:50,607 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 9680. Last stand date from DB is 2018-05-03T00:00:00.000+01:00, current stand date is 2018-05-04T00:00:00.000+01:00. Will create day stands for 1 days.
-2021-09-27 14:25:50,608 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
-2021-09-27 14:25:50,613 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
-2021-09-27 14:25:50,613 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 9680.
-2021-09-27 14:25:50,613 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680
-2021-09-27 14:25:50,613 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680, MeterSetupV2.class).getBody();
-2021-09-27 14:25:50,711 WARN com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] could not get counter details for meter_id = 9680. No hourly stand series will be created for this meter.
+2021-09-27 14:25:50,608 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
+2021-09-27 14:25:50,613 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
+2021-09-27 14:25:50,613 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 9680.
+2021-09-27 14:25:50,613 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680
+2021-09-27 14:25:50,613 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680, MeterSetupV2.class).getBody();
+2021-09-27 14:25:50,711 WARN com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] could not get counter details for meter_id = 9680. No hourly stand series will be created for this meter.
 2021-09-27 14:25:50,712 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 6 day stands for meter 9680. Last stand date from DB is 2018-05-04T00:00:00.000+01:00, current stand date is 2018-05-10T00:00:00.000+01:00. Will create day stands for 6 days.
-2021-09-27 14:25:50,713 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
-2021-09-27 14:25:50,717 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
-2021-09-27 14:25:50,717 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 9680.
-2021-09-27 14:25:50,717 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680
-2021-09-27 14:25:50,718 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680, MeterSetupV2.class).getBody();
-2021-09-27 14:25:50,818 WARN com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] could not get counter details for meter_id = 9680. No hourly stand series will be created for this meter.
+2021-09-27 14:25:50,713 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
+2021-09-27 14:25:50,717 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
+2021-09-27 14:25:50,717 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 9680.
+2021-09-27 14:25:50,717 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680
+2021-09-27 14:25:50,718 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680, MeterSetupV2.class).getBody();
+2021-09-27 14:25:50,818 WARN com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] could not get counter details for meter_id = 9680. No hourly stand series will be created for this meter.
 2021-09-27 14:25:50,819 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 10 day stands for meter 9680. Last stand date from DB is 2018-05-10T00:00:00.000+01:00, current stand date is 2018-05-20T00:00:00.000+01:00. Will create day stands for 10 days.
-2021-09-27 14:25:50,823 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
-2021-09-27 14:25:50,837 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
-2021-09-27 14:25:50,838 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 9680.
-2021-09-27 14:25:50,838 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680
-2021-09-27 14:25:50,838 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680, MeterSetupV2.class).getBody();
-2021-09-27 14:25:50,943 WARN com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] could not get counter details for meter_id = 9680. No hourly stand series will be created for this meter.
+2021-09-27 14:25:50,823 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
+2021-09-27 14:25:50,837 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
+2021-09-27 14:25:50,838 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 9680.
+2021-09-27 14:25:50,838 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680
+2021-09-27 14:25:50,838 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680, MeterSetupV2.class).getBody();
+2021-09-27 14:25:50,943 WARN com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] could not get counter details for meter_id = 9680. No hourly stand series will be created for this meter.
 2021-09-27 14:25:50,944 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 12 day stands for meter 9680. Last stand date from DB is 2018-05-20T00:00:00.000+01:00, current stand date is 2018-06-01T00:00:00.000+01:00. Will create day stands for 12 days.
-2021-09-27 14:25:50,945 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
-2021-09-27 14:25:50,950 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
-2021-09-27 14:25:50,950 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 9680.
-2021-09-27 14:25:50,950 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680
-2021-09-27 14:25:50,950 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680, MeterSetupV2.class).getBody();
-2021-09-27 14:25:51,056 WARN com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] could not get counter details for meter_id = 9680. No hourly stand series will be created for this meter.
+2021-09-27 14:25:50,945 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
+2021-09-27 14:25:50,950 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
+2021-09-27 14:25:50,950 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 9680.
+2021-09-27 14:25:50,950 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680
+2021-09-27 14:25:50,950 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680, MeterSetupV2.class).getBody();
+2021-09-27 14:25:51,056 WARN com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] could not get counter details for meter_id = 9680. No hourly stand series will be created for this meter.
 2021-09-27 14:25:51,057 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1 day stands for meter 9680. Last stand date from DB is 2018-06-01T00:00:00.000+01:00, current stand date is 2018-06-02T00:00:00.000+01:00. Will create day stands for 1 days.
-2021-09-27 14:25:51,057 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
-2021-09-27 14:25:51,065 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
-2021-09-27 14:25:51,065 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 9680.
-2021-09-27 14:25:51,066 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680
-2021-09-27 14:25:51,066 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680, MeterSetupV2.class).getBody();
-2021-09-27 14:25:51,183 WARN com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] could not get counter details for meter_id = 9680. No hourly stand series will be created for this meter.
+2021-09-27 14:25:51,057 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
+2021-09-27 14:25:51,065 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
+2021-09-27 14:25:51,065 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 9680.
+2021-09-27 14:25:51,066 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680
+2021-09-27 14:25:51,066 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/9680, MeterSetupV2.class).getBody();
+2021-09-27 14:25:51,183 WARN com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] could not get counter details for meter_id = 9680. No hourly stand series will be created for this meter.
 2021-09-27 14:25:51,184 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 1030 day stands for meter 9680. Last stand date from DB is 2018-06-02T00:00:00.000+01:00, current stand date is 2021-03-28T02:00:00.000+01:00. Will create day stands for 1030 days.
 2021-09-27 14:25:51,242 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
 2021-09-27 14:25:51,244 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.
@@ -446,13 +446,13 @@
 2021-09-27 14:29:33,724 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct number format.
 2021-09-27 14:29:33,725 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 1 rows in less than a second.
 2021-09-27 14:29:33,726 INFO com.cts.generator.ProcessInput [scheduling-1] Received 1 input rows, will check for an entry in customer for distinct meters in the input.
-2021-09-27 14:29:33,730 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-09-27 14:29:33,730 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2021-09-27 14:29:33,823 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2021-09-27 14:29:35,028 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2021-09-27 14:29:35,060 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2021-09-27 14:29:35,060 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2021-09-27 14:29:35,060 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2021-09-27 14:29:35,061 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-09-27 14:29:35,028 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-09-27 14:29:35,060 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2021-09-27 14:29:35,060 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-09-27 14:29:35,060 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-09-27 14:29:35,061 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2021-09-27 14:29:35,061 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
 2021-09-27 14:29:35,061 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2021-09-27 14:29:35,063 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of a total of 1 meters.
@@ -465,14 +465,14 @@
 2021-09-27 14:29:35,685 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] getting last reading date for meter 12163501 from the db.
 2021-09-27 14:29:35,691 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2021-09-27 14:29:35,788 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] LastReadingDate for meter 12163501 = 2007-04-01T00:00:00.000+02:00.
-2021-09-27 14:29:35,809 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
-2021-09-27 14:29:35,818 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
-2021-09-27 14:29:35,818 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 12163501.
-2021-09-27 14:29:35,818 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501
-2021-09-27 14:29:35,818 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501, MeterSetupV2.class).getBody();
-2021-09-27 14:29:36,025 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Got counter details for meter 12163501, hasTimeSeriesCounter = true from ISCU.
-2021-09-27 14:29:36,025 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] will try to insert meter 12163501, hasTimeSeriesCounter true,to local H2 database.
-2021-09-27 14:29:36,028 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Inserted meter 12163501, hasTimeSeriesCounter true to the H2 database.
+2021-09-27 14:29:35,809 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
+2021-09-27 14:29:35,818 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
+2021-09-27 14:29:35,818 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 12163501.
+2021-09-27 14:29:35,818 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501
+2021-09-27 14:29:35,818 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501, MeterSetupV2.class).getBody();
+2021-09-27 14:29:36,025 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Got counter details for meter 12163501, hasTimeSeriesCounter = true from ISCU.
+2021-09-27 14:29:36,025 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] will try to insert meter 12163501, hasTimeSeriesCounter true,to local H2 database.
+2021-09-27 14:29:36,028 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Inserted meter 12163501, hasTimeSeriesCounter true to the H2 database.
 2021-09-27 14:29:36,038 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 4048 day stands for meter 12163501. Last stand date from DB is 2007-04-01T00:00:00.000+02:00, current stand date is 2018-05-01T00:00:00.000+01:00. Will create day stands for 4048 days.
 2021-09-27 14:29:36,151 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
 2021-09-27 14:29:36,153 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.
@@ -595,13 +595,13 @@
 2021-09-27 14:35:32,720 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct number format.
 2021-09-27 14:35:32,720 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 1 rows in less than a second.
 2021-09-27 14:35:32,721 INFO com.cts.generator.ProcessInput [scheduling-1] Received 1 input rows, will check for an entry in customer for distinct meters in the input.
-2021-09-27 14:35:32,724 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-09-27 14:35:32,724 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2021-09-27 14:35:32,818 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2021-09-27 14:35:34,196 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2021-09-27 14:35:34,228 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2021-09-27 14:35:34,229 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2021-09-27 14:35:34,229 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2021-09-27 14:35:34,229 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-09-27 14:35:34,196 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-09-27 14:35:34,228 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2021-09-27 14:35:34,229 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-09-27 14:35:34,229 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-09-27 14:35:34,229 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2021-09-27 14:35:34,229 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
 2021-09-27 14:35:34,229 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2021-09-27 14:35:34,231 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of a total of 1 meters.
@@ -614,14 +614,14 @@
 2021-09-27 14:35:34,854 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] getting last reading date for meter 12163501 from the db.
 2021-09-27 14:35:34,859 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2021-09-27 14:35:34,963 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] LastReadingDate for meter 12163501 = 2007-04-01T00:00:00.000+02:00.
-2021-09-27 14:35:34,972 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
-2021-09-27 14:35:34,980 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Got timeSeriesCounter details for meter 12163501, hasTimeSeriesCounter is true, from internal local H2 DB.
-2021-09-27 14:35:34,981 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 12163501.
-2021-09-27 14:35:34,981 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501
-2021-09-27 14:35:34,981 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501, MeterSetupV2.class).getBody();
-2021-09-27 14:35:35,209 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Got counter details for meter 12163501, hasTimeSeriesCounter = true from ISCU.
-2021-09-27 14:35:35,210 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] will try to insert meter 12163501, hasTimeSeriesCounter true,to local H2 database.
-2021-09-27 14:35:35,213 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Inserted meter 12163501, hasTimeSeriesCounter true to the H2 database.
+2021-09-27 14:35:34,972 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
+2021-09-27 14:35:34,980 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Got timeSeriesCounter details for meter 12163501, hasTimeSeriesCounter is true, from internal local H2 DB.
+2021-09-27 14:35:34,981 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 12163501.
+2021-09-27 14:35:34,981 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501
+2021-09-27 14:35:34,981 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501, MeterSetupV2.class).getBody();
+2021-09-27 14:35:35,209 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Got counter details for meter 12163501, hasTimeSeriesCounter = true from ISCU.
+2021-09-27 14:35:35,210 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] will try to insert meter 12163501, hasTimeSeriesCounter true,to local H2 database.
+2021-09-27 14:35:35,213 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Inserted meter 12163501, hasTimeSeriesCounter true to the H2 database.
 2021-09-27 14:35:35,224 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 4048 day stands for meter 12163501. Last stand date from DB is 2007-04-01T00:00:00.000+02:00, current stand date is 2018-05-01T00:00:00.000+01:00. Will create day stands for 4048 days.
 2021-09-27 14:35:35,335 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
 2021-09-27 14:35:35,338 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.
@@ -744,13 +744,13 @@
 2021-09-27 14:39:56,955 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct number format.
 2021-09-27 14:39:56,955 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 1 rows in less than a second.
 2021-09-27 14:39:56,955 INFO com.cts.generator.ProcessInput [scheduling-1] Received 1 input rows, will check for an entry in customer for distinct meters in the input.
-2021-09-27 14:39:56,960 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-09-27 14:39:56,960 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2021-09-27 14:39:57,083 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2021-09-27 14:39:58,555 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2021-09-27 14:39:58,593 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2021-09-27 14:39:58,593 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2021-09-27 14:39:58,594 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2021-09-27 14:39:58,594 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-09-27 14:39:58,555 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-09-27 14:39:58,593 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2021-09-27 14:39:58,593 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-09-27 14:39:58,594 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-09-27 14:39:58,594 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2021-09-27 14:39:58,594 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
 2021-09-27 14:39:58,594 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2021-09-27 14:39:58,598 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of a total of 1 meters.
@@ -763,13 +763,13 @@
 2021-09-27 14:39:59,243 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] getting last reading date for meter 12163501 from the db.
 2021-09-27 14:39:59,249 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2021-09-27 14:39:59,357 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] LastReadingDate for meter 12163501 = 2007-04-01T00:00:00.000+02:00.
-2021-09-27 14:39:59,367 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
+2021-09-27 14:39:59,367 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
 2021-09-27 14:39:59,378 ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler [scheduling-1] Unexpected error occurred in scheduled task
 org.springframework.dao.IncorrectResultSizeDataAccessException: Incorrect result size: expected 1, actual 2
 	at org.springframework.dao.support.DataAccessUtils.nullableSingleResult(DataAccessUtils.java:100)
 	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:791)
-	at com.cts.customerGateway.GetTimeSeriesCounter.setHasTimeSeriesCounter(GetTimeSeriesCounter.java:35)
-	at com.cts.customerGateway.GetTimeSeriesCounter.<init>(GetTimeSeriesCounter.java:30)
+	at com.cts.nanoMeteringGateway.GetTimeSeriesCounter.setHasTimeSeriesCounter(GetTimeSeriesCounter.java:35)
+	at com.cts.nanoMeteringGateway.GetTimeSeriesCounter.<init>(GetTimeSeriesCounter.java:30)
 	at com.cts.generator.GeneratorForLastHourlyStand.getSeg2(GeneratorForLastHourlyStand.java:141)
 	at com.cts.generator.GeneratorForLastHourlyStand.makeProfileReadings(GeneratorForLastHourlyStand.java:75)
 	at com.cts.generator.GeneratorForLastHourlyStand.<init>(GeneratorForLastHourlyStand.java:63)
@@ -876,13 +876,13 @@ org.springframework.dao.IncorrectResultSizeDataAccessException: Incorrect result
 2021-09-27 14:44:01,379 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct number format.
 2021-09-27 14:44:01,379 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 1 rows in less than a second.
 2021-09-27 14:44:01,379 INFO com.cts.generator.ProcessInput [scheduling-1] Received 1 input rows, will check for an entry in customer for distinct meters in the input.
-2021-09-27 14:44:01,383 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-09-27 14:44:01,383 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2021-09-27 14:44:01,495 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2021-09-27 14:44:02,916 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2021-09-27 14:44:02,961 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2021-09-27 14:44:02,962 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2021-09-27 14:44:02,963 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2021-09-27 14:44:02,963 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-09-27 14:44:02,916 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-09-27 14:44:02,961 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2021-09-27 14:44:02,962 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-09-27 14:44:02,963 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-09-27 14:44:02,963 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2021-09-27 14:44:02,963 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
 2021-09-27 14:44:02,964 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2021-09-27 14:44:02,969 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of a total of 1 meters.
@@ -895,13 +895,13 @@ org.springframework.dao.IncorrectResultSizeDataAccessException: Incorrect result
 2021-09-27 14:44:03,760 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] getting last reading date for meter 12163501 from the db.
 2021-09-27 14:44:03,767 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2021-09-27 14:44:03,885 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] LastReadingDate for meter 12163501 = 2007-04-01T00:00:00.000+02:00.
-2021-09-27 14:44:03,896 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
+2021-09-27 14:44:03,896 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
 2021-09-27 14:44:03,906 ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler [scheduling-1] Unexpected error occurred in scheduled task
 org.springframework.dao.IncorrectResultSizeDataAccessException: Incorrect result size: expected 1, actual 2
 	at org.springframework.dao.support.DataAccessUtils.nullableSingleResult(DataAccessUtils.java:100)
 	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:791)
-	at com.cts.customerGateway.GetTimeSeriesCounter.setHasTimeSeriesCounter(GetTimeSeriesCounter.java:35)
-	at com.cts.customerGateway.GetTimeSeriesCounter.<init>(GetTimeSeriesCounter.java:30)
+	at com.cts.nanoMeteringGateway.GetTimeSeriesCounter.setHasTimeSeriesCounter(GetTimeSeriesCounter.java:35)
+	at com.cts.nanoMeteringGateway.GetTimeSeriesCounter.<init>(GetTimeSeriesCounter.java:30)
 	at com.cts.generator.GeneratorForLastHourlyStand.getSeg2(GeneratorForLastHourlyStand.java:141)
 	at com.cts.generator.GeneratorForLastHourlyStand.makeProfileReadings(GeneratorForLastHourlyStand.java:75)
 	at com.cts.generator.GeneratorForLastHourlyStand.<init>(GeneratorForLastHourlyStand.java:63)
@@ -1008,19 +1008,19 @@ org.springframework.dao.IncorrectResultSizeDataAccessException: Incorrect result
 2021-09-27 14:45:00,115 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct number format.
 2021-09-27 14:45:00,115 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 1 rows in less than a second.
 2021-09-27 14:45:00,116 INFO com.cts.generator.ProcessInput [scheduling-1] Received 1 input rows, will check for an entry in customer for distinct meters in the input.
-2021-09-27 14:45:00,120 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-09-27 14:45:00,120 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2021-09-27 14:45:00,184 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2021-09-27 14:45:01,454 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2021-09-27 14:45:01,479 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
-2021-09-27 14:45:01,479 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 12163501.
-2021-09-27 14:45:01,479 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501
-2021-09-27 14:45:01,479 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501, MeterSetupV2.class).getBody();
-2021-09-27 14:45:02,085 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh from ISCU.
-2021-09-27 14:45:02,085 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] will try to insert meter 12163501, unit kWh,to local H2 database.
-2021-09-27 14:45:02,087 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Inserted meter 12163501, UNIT kWh to the H2 database.
-2021-09-27 14:45:02,087 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2021-09-27 14:45:02,088 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2021-09-27 14:45:02,088 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-09-27 14:45:01,454 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-09-27 14:45:01,479 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
+2021-09-27 14:45:01,479 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 12163501.
+2021-09-27 14:45:01,479 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501
+2021-09-27 14:45:01,479 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501, MeterSetupV2.class).getBody();
+2021-09-27 14:45:02,085 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh from ISCU.
+2021-09-27 14:45:02,085 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] will try to insert meter 12163501, unit kWh,to local H2 database.
+2021-09-27 14:45:02,087 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Inserted meter 12163501, UNIT kWh to the H2 database.
+2021-09-27 14:45:02,087 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-09-27 14:45:02,088 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-09-27 14:45:02,088 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2021-09-27 14:45:02,088 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
 2021-09-27 14:45:02,088 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2021-09-27 14:45:02,091 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of a total of 1 meters.
@@ -1033,14 +1033,14 @@ org.springframework.dao.IncorrectResultSizeDataAccessException: Incorrect result
 2021-09-27 14:45:02,323 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] getting last reading date for meter 12163501 from the db.
 2021-09-27 14:45:02,330 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2021-09-27 14:45:02,445 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] LastReadingDate for meter 12163501 = 2007-04-01T00:00:00.000+02:00.
-2021-09-27 14:45:02,453 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
-2021-09-27 14:45:02,459 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
-2021-09-27 14:45:02,459 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 12163501.
-2021-09-27 14:45:02,459 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501
-2021-09-27 14:45:02,459 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501, MeterSetupV2.class).getBody();
-2021-09-27 14:45:02,572 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Got counter details for meter 12163501, hasTimeSeriesCounter = true from ISCU.
-2021-09-27 14:45:02,573 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] will try to insert meter 12163501, hasTimeSeriesCounter true,to local H2 database.
-2021-09-27 14:45:02,574 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Inserted meter 12163501, hasTimeSeriesCounter true to the H2 database.
+2021-09-27 14:45:02,453 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
+2021-09-27 14:45:02,459 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Could not find meter 12163501 in the base of previously checked meters, will try to get details by API call to ISCU.
+2021-09-27 14:45:02,459 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 12163501.
+2021-09-27 14:45:02,459 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Full URL to the API is: https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501
+2021-09-27 14:45:02,459 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Executing: return yafrRestTemplate.getForEntity(https://juniorgorg10.infosynergi.no:9061/iscustomer/api/metersetups/12163501, MeterSetupV2.class).getBody();
+2021-09-27 14:45:02,572 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Got counter details for meter 12163501, hasTimeSeriesCounter = true from ISCU.
+2021-09-27 14:45:02,573 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] will try to insert meter 12163501, hasTimeSeriesCounter true,to local H2 database.
+2021-09-27 14:45:02,574 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Inserted meter 12163501, hasTimeSeriesCounter true to the H2 database.
 2021-09-27 14:45:02,585 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 4048 day stands for meter 12163501. Last stand date from DB is 2007-04-01T00:00:00.000+02:00, current stand date is 2018-05-01T00:00:00.000+01:00. Will create day stands for 4048 days.
 2021-09-27 14:45:02,707 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
 2021-09-27 14:45:02,710 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.
@@ -1163,13 +1163,13 @@ org.springframework.dao.IncorrectResultSizeDataAccessException: Incorrect result
 2021-09-27 14:46:34,068 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 1 rows, out of which 1 have correct number format.
 2021-09-27 14:46:34,068 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 1 rows in less than a second.
 2021-09-27 14:46:34,068 INFO com.cts.generator.ProcessInput [scheduling-1] Received 1 input rows, will check for an entry in customer for distinct meters in the input.
-2021-09-27 14:46:34,072 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2021-09-27 14:46:34,072 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2021-09-27 14:46:34,270 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2021-09-27 14:46:35,546 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2021-09-27 14:46:35,572 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2021-09-27 14:46:35,572 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2021-09-27 14:46:35,572 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2021-09-27 14:46:35,572 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2021-09-27 14:46:35,546 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2021-09-27 14:46:35,572 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2021-09-27 14:46:35,572 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2021-09-27 14:46:35,572 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2021-09-27 14:46:35,572 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2021-09-27 14:46:35,573 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1 input rows.
 2021-09-27 14:46:35,573 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2021-09-27 14:46:35,575 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 1 meters out of a total of 1 meters.
@@ -1182,8 +1182,8 @@ org.springframework.dao.IncorrectResultSizeDataAccessException: Incorrect result
 2021-09-27 14:46:36,204 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] getting last reading date for meter 12163501 from the db.
 2021-09-27 14:46:36,210 INFO com.cts.meteringGateWay.MeterReadingsClient [scheduling-1] Getting last reading details For meter_id 12163501.
 2021-09-27 14:46:36,327 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] LastReadingDate for meter 12163501 = 2007-04-01T00:00:00.000+02:00.
-2021-09-27 14:46:36,336 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
-2021-09-27 14:46:36,341 INFO com.cts.customerGateway.GetTimeSeriesCounter [scheduling-1] Got timeSeriesCounter details for meter 12163501, hasTimeSeriesCounter is true, from internal local H2 DB.
+2021-09-27 14:46:36,336 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Starting to check for timeSeries counter.
+2021-09-27 14:46:36,341 INFO com.cts.nanoMeteringGateway.GetTimeSeriesCounter [scheduling-1] Got timeSeriesCounter details for meter 12163501, hasTimeSeriesCounter is true, from internal local H2 DB.
 2021-09-27 14:46:36,351 INFO com.cts.generator.GeneratorForLastHourlyStand [scheduling-1] There are missing 4048 day stands for meter 12163501. Last stand date from DB is 2007-04-01T00:00:00.000+02:00, current stand date is 2018-05-01T00:00:00.000+01:00. Will create day stands for 4048 days.
 2021-09-27 14:46:36,472 INFO com.cts.generator.ProcessInput [scheduling-1] Created hourlyVolume GS2 file from input.
 2021-09-27 14:46:36,475 INFO com.cts.ioutils.OutputFileWriter [scheduling-1] Starting writeOutput to print LastHourlyStand.

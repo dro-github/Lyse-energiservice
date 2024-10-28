@@ -89,12 +89,12 @@
 2023-03-23 16:46:13,341 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 2001 rows, out of which 2001 have correct number format.
 2023-03-23 16:46:13,341 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 2001 rows in less than a second.
 2023-03-23 16:46:13,341 INFO com.cts.generator.ProcessInput [scheduling-1] Received 2001 input rows, will check for an entry in customer for distinct meters in the input.
-2023-03-23 16:46:13,346 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2023-03-23 16:46:13,346 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2023-03-23 16:46:13,423 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-03-23 16:46:15,442 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 2001 distinct meters. Will check for a Customer registry for each.
-2023-03-23 16:46:15,518 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 93019 in the base of previously checked meters, will try to get details by API call to ISCU.
-2023-03-23 16:46:15,518 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 93019.
-2023-03-23 16:46:16,371 ERROR com.cts.customerGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = 93019. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
+2023-03-23 16:46:15,442 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 2001 distinct meters. Will check for a Customer registry for each.
+2023-03-23 16:46:15,518 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 93019 in the base of previously checked meters, will try to get details by API call to ISCU.
+2023-03-23 16:46:15,518 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 93019.
+2023-03-23 16:46:16,371 ERROR com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = 93019. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
 org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found: [No matching record for the given condition]
 	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
 	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
@@ -104,11 +104,11 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:743)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677)
 	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:345)
-	at com.cts.customerGateway.MeterSetupClient.get(MeterSetupClient.java:75)
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:84)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:63)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:41)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:34)
+	at com.cts.nanoMeteringGateway.MeterSetupClient.get(MeterSetupClient.java:75)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:84)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:63)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:41)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:34)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:85)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:62)
 	at com.cts.controller.Controller.printOutput(Controller.java:189)
@@ -126,13 +126,13 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2023-03-23 16:46:16,372 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 93019. This meter is ignored. General Exception. Exception message below:
-2023-03-23 16:46:16,372 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Unable to fetch UNIT.
+2023-03-23 16:46:16,372 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 93019. This meter is ignored. General Exception. Exception message below:
+2023-03-23 16:46:16,372 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Unable to fetch UNIT.
 java.lang.NullPointerException: null
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:84)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:63)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:41)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:34)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:84)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:63)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:41)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:34)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:85)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:62)
 	at com.cts.controller.Controller.printOutput(Controller.java:189)
@@ -150,9 +150,9 @@ java.lang.NullPointerException: null
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2023-03-23 16:46:16,373 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 93018 in the base of previously checked meters, will try to get details by API call to ISCU.
-2023-03-23 16:46:16,374 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 93018.
-2023-03-23 16:46:16,478 ERROR com.cts.customerGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = 93018. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
+2023-03-23 16:46:16,373 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 93018 in the base of previously checked meters, will try to get details by API call to ISCU.
+2023-03-23 16:46:16,374 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 93018.
+2023-03-23 16:46:16,478 ERROR com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = 93018. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
 org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found: [No matching record for the given condition]
 	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
 	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
@@ -162,11 +162,11 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:743)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677)
 	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:345)
-	at com.cts.customerGateway.MeterSetupClient.get(MeterSetupClient.java:75)
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:84)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:63)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:41)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:34)
+	at com.cts.nanoMeteringGateway.MeterSetupClient.get(MeterSetupClient.java:75)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:84)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:63)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:41)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:34)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:85)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:62)
 	at com.cts.controller.Controller.printOutput(Controller.java:189)
@@ -184,13 +184,13 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2023-03-23 16:46:16,479 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 93018. This meter is ignored. General Exception. Exception message below:
-2023-03-23 16:46:16,479 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Unable to fetch UNIT.
+2023-03-23 16:46:16,479 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 93018. This meter is ignored. General Exception. Exception message below:
+2023-03-23 16:46:16,479 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Unable to fetch UNIT.
 java.lang.NullPointerException: null
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:84)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:63)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:41)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:34)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:84)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:63)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:41)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:34)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:85)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:62)
 	at com.cts.controller.Controller.printOutput(Controller.java:189)
@@ -208,11 +208,11 @@ java.lang.NullPointerException: null
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2023-03-23 16:46:16,511 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 100 meters. Out of which 98 has Customer entry.
-2023-03-23 16:46:16,511 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 100 meters =  1 seconds.
-2023-03-23 16:46:16,543 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 88836 in the base of previously checked meters, will try to get details by API call to ISCU.
-2023-03-23 16:46:16,543 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 88836.
-2023-03-23 16:46:16,645 ERROR com.cts.customerGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = 88836. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
+2023-03-23 16:46:16,511 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 100 meters. Out of which 98 has Customer entry.
+2023-03-23 16:46:16,511 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 100 meters =  1 seconds.
+2023-03-23 16:46:16,543 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 88836 in the base of previously checked meters, will try to get details by API call to ISCU.
+2023-03-23 16:46:16,543 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 88836.
+2023-03-23 16:46:16,645 ERROR com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = 88836. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
 org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found: [No matching record for the given condition]
 	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
 	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
@@ -222,11 +222,11 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:743)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677)
 	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:345)
-	at com.cts.customerGateway.MeterSetupClient.get(MeterSetupClient.java:75)
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:84)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:63)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:41)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:34)
+	at com.cts.nanoMeteringGateway.MeterSetupClient.get(MeterSetupClient.java:75)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:84)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:63)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:41)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:34)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:85)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:62)
 	at com.cts.controller.Controller.printOutput(Controller.java:189)
@@ -244,13 +244,13 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2023-03-23 16:46:16,645 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 88836. This meter is ignored. General Exception. Exception message below:
-2023-03-23 16:46:16,645 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Unable to fetch UNIT.
+2023-03-23 16:46:16,645 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 88836. This meter is ignored. General Exception. Exception message below:
+2023-03-23 16:46:16,645 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Unable to fetch UNIT.
 java.lang.NullPointerException: null
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:84)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:63)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:41)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:34)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:84)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:63)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:41)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:34)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:85)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:62)
 	at com.cts.controller.Controller.printOutput(Controller.java:189)
@@ -268,45 +268,45 @@ java.lang.NullPointerException: null
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2023-03-23 16:46:16,648 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 200 meters. Out of which 197 has Customer entry.
-2023-03-23 16:46:16,648 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 200 meters =  1 seconds.
-2023-03-23 16:46:16,687 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 300 meters. Out of which 297 has Customer entry.
-2023-03-23 16:46:16,688 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 300 meters =  1 seconds.
-2023-03-23 16:46:16,726 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 400 meters. Out of which 397 has Customer entry.
-2023-03-23 16:46:16,728 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 400 meters =  1 seconds.
-2023-03-23 16:46:16,763 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 500 meters. Out of which 497 has Customer entry.
-2023-03-23 16:46:16,763 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 500 meters =  1 seconds.
-2023-03-23 16:46:16,798 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 600 meters. Out of which 597 has Customer entry.
-2023-03-23 16:46:16,798 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 600 meters =  1 seconds.
-2023-03-23 16:46:16,820 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 700 meters. Out of which 697 has Customer entry.
-2023-03-23 16:46:16,820 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 700 meters =  1 seconds.
-2023-03-23 16:46:16,839 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 800 meters. Out of which 797 has Customer entry.
-2023-03-23 16:46:16,839 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 800 meters =  1 seconds.
-2023-03-23 16:46:16,857 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 900 meters. Out of which 897 has Customer entry.
-2023-03-23 16:46:16,857 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 900 meters =  1 seconds.
-2023-03-23 16:46:16,875 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1000 meters. Out of which 997 has Customer entry.
-2023-03-23 16:46:16,875 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1000 meters =  1 seconds.
-2023-03-23 16:46:16,899 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1100 meters. Out of which 1097 has Customer entry.
-2023-03-23 16:46:16,900 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1100 meters =  1 seconds.
-2023-03-23 16:46:16,919 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1200 meters. Out of which 1197 has Customer entry.
-2023-03-23 16:46:16,919 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1200 meters =  1 seconds.
-2023-03-23 16:46:16,938 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1300 meters. Out of which 1297 has Customer entry.
-2023-03-23 16:46:16,938 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1300 meters =  1 seconds.
-2023-03-23 16:46:16,956 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1400 meters. Out of which 1397 has Customer entry.
-2023-03-23 16:46:16,956 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1400 meters =  1 seconds.
-2023-03-23 16:46:16,972 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1500 meters. Out of which 1497 has Customer entry.
-2023-03-23 16:46:16,972 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1500 meters =  1 seconds.
-2023-03-23 16:46:16,993 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1600 meters. Out of which 1597 has Customer entry.
-2023-03-23 16:46:16,994 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1600 meters =  1 seconds.
-2023-03-23 16:46:17,014 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1700 meters. Out of which 1697 has Customer entry.
-2023-03-23 16:46:17,015 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1700 meters =  1 seconds.
-2023-03-23 16:46:17,035 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1800 meters. Out of which 1797 has Customer entry.
-2023-03-23 16:46:17,035 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1800 meters =  1 seconds.
-2023-03-23 16:46:17,062 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1900 meters. Out of which 1897 has Customer entry.
-2023-03-23 16:46:17,062 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1900 meters =  1 seconds.
-2023-03-23 16:46:17,078 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 79650 in the base of previously checked meters, will try to get details by API call to ISCU.
-2023-03-23 16:46:17,079 INFO com.cts.customerGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 79650.
-2023-03-23 16:46:17,197 ERROR com.cts.customerGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = 79650. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
+2023-03-23 16:46:16,648 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 200 meters. Out of which 197 has Customer entry.
+2023-03-23 16:46:16,648 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 200 meters =  1 seconds.
+2023-03-23 16:46:16,687 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 300 meters. Out of which 297 has Customer entry.
+2023-03-23 16:46:16,688 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 300 meters =  1 seconds.
+2023-03-23 16:46:16,726 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 400 meters. Out of which 397 has Customer entry.
+2023-03-23 16:46:16,728 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 400 meters =  1 seconds.
+2023-03-23 16:46:16,763 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 500 meters. Out of which 497 has Customer entry.
+2023-03-23 16:46:16,763 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 500 meters =  1 seconds.
+2023-03-23 16:46:16,798 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 600 meters. Out of which 597 has Customer entry.
+2023-03-23 16:46:16,798 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 600 meters =  1 seconds.
+2023-03-23 16:46:16,820 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 700 meters. Out of which 697 has Customer entry.
+2023-03-23 16:46:16,820 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 700 meters =  1 seconds.
+2023-03-23 16:46:16,839 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 800 meters. Out of which 797 has Customer entry.
+2023-03-23 16:46:16,839 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 800 meters =  1 seconds.
+2023-03-23 16:46:16,857 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 900 meters. Out of which 897 has Customer entry.
+2023-03-23 16:46:16,857 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 900 meters =  1 seconds.
+2023-03-23 16:46:16,875 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1000 meters. Out of which 997 has Customer entry.
+2023-03-23 16:46:16,875 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1000 meters =  1 seconds.
+2023-03-23 16:46:16,899 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1100 meters. Out of which 1097 has Customer entry.
+2023-03-23 16:46:16,900 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1100 meters =  1 seconds.
+2023-03-23 16:46:16,919 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1200 meters. Out of which 1197 has Customer entry.
+2023-03-23 16:46:16,919 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1200 meters =  1 seconds.
+2023-03-23 16:46:16,938 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1300 meters. Out of which 1297 has Customer entry.
+2023-03-23 16:46:16,938 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1300 meters =  1 seconds.
+2023-03-23 16:46:16,956 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1400 meters. Out of which 1397 has Customer entry.
+2023-03-23 16:46:16,956 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1400 meters =  1 seconds.
+2023-03-23 16:46:16,972 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1500 meters. Out of which 1497 has Customer entry.
+2023-03-23 16:46:16,972 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1500 meters =  1 seconds.
+2023-03-23 16:46:16,993 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1600 meters. Out of which 1597 has Customer entry.
+2023-03-23 16:46:16,994 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1600 meters =  1 seconds.
+2023-03-23 16:46:17,014 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1700 meters. Out of which 1697 has Customer entry.
+2023-03-23 16:46:17,015 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1700 meters =  1 seconds.
+2023-03-23 16:46:17,035 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1800 meters. Out of which 1797 has Customer entry.
+2023-03-23 16:46:17,035 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1800 meters =  1 seconds.
+2023-03-23 16:46:17,062 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1900 meters. Out of which 1897 has Customer entry.
+2023-03-23 16:46:17,062 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1900 meters =  1 seconds.
+2023-03-23 16:46:17,078 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 79650 in the base of previously checked meters, will try to get details by API call to ISCU.
+2023-03-23 16:46:17,079 INFO com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] Getting details For meter_id 79650.
+2023-03-23 16:46:17,197 ERROR com.cts.nanoMeteringGateway.MeterSetupClient [scheduling-1] could not get UNIT value for meter_id = 79650. This meter is ignored. org.springframework.web.client.HttpClientErrorException:
 org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found: [No matching record for the given condition]
 	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
 	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
@@ -316,11 +316,11 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:743)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677)
 	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:345)
-	at com.cts.customerGateway.MeterSetupClient.get(MeterSetupClient.java:75)
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:84)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:63)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:41)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:34)
+	at com.cts.nanoMeteringGateway.MeterSetupClient.get(MeterSetupClient.java:75)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:84)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:63)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:41)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:34)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:85)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:62)
 	at com.cts.controller.Controller.printOutput(Controller.java:189)
@@ -338,13 +338,13 @@ org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found:
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2023-03-23 16:46:17,197 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 79650. This meter is ignored. General Exception. Exception message below:
-2023-03-23 16:46:17,197 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Unable to fetch UNIT.
+2023-03-23 16:46:17,197 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 79650. This meter is ignored. General Exception. Exception message below:
+2023-03-23 16:46:17,197 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Unable to fetch UNIT.
 java.lang.NullPointerException: null
-	at com.cts.customerGateway.CheckMeterInCustomer.hasCustomerEntry(CheckMeterInCustomer.java:84)
-	at com.cts.customerGateway.CheckMeterInCustomer.getDistinctMetersInCustomer(CheckMeterInCustomer.java:63)
-	at com.cts.customerGateway.CheckMeterInCustomer.filterInputRows(CheckMeterInCustomer.java:41)
-	at com.cts.customerGateway.CheckMeterInCustomer.<init>(CheckMeterInCustomer.java:34)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.hasCustomerEntry(CheckMeterInCustomer.java:84)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.getDistinctMetersInCustomer(CheckMeterInCustomer.java:63)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.filterInputRows(CheckMeterInCustomer.java:41)
+	at com.cts.nanoMeteringGateway.CheckUnitInNanoMetering.<init>(CheckMeterInCustomer.java:34)
 	at com.cts.generator.ProcessInput.excludeMetersNotInCustomer(ProcessInput.java:85)
 	at com.cts.generator.ProcessInput.<init>(ProcessInput.java:62)
 	at com.cts.controller.Controller.printOutput(Controller.java:189)
@@ -362,11 +362,11 @@ java.lang.NullPointerException: null
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2023-03-23 16:46:17,198 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 2000 meters. Out of which 1996 has Customer entry.
-2023-03-23 16:46:17,199 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 2000 meters =  1 seconds.
-2023-03-23 16:46:17,199 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 2001 meters. Out of which 1997 has Customer entry.
-2023-03-23 16:46:17,199 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 2001 meters =  1 seconds.
-2023-03-23 16:46:17,199 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1997 meters which have a Customer record.
+2023-03-23 16:46:17,198 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 2000 meters. Out of which 1996 has Customer entry.
+2023-03-23 16:46:17,199 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 2000 meters =  1 seconds.
+2023-03-23 16:46:17,199 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 2001 meters. Out of which 1997 has Customer entry.
+2023-03-23 16:46:17,199 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 2001 meters =  1 seconds.
+2023-03-23 16:46:17,199 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1997 meters which have a Customer record.
 2023-03-23 16:46:17,207 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 1997 input rows.
 2023-03-23 16:46:17,432 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 1997 records for json file - forbruksImportFormat.
 2023-03-23 16:46:17,936 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] Creating jsonPayload for periodic consumption 'Forbruk' format
@@ -412,11 +412,11 @@ java.lang.NullPointerException: null
 2023-03-23 16:46:18,103 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 75 rows, out of which 75 have correct number format.
 2023-03-23 16:46:18,103 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 75 rows in less than a second.
 2023-03-23 16:46:18,103 INFO com.cts.generator.ProcessInput [scheduling-1] Received 75 input rows, will check for an entry in customer for distinct meters in the input.
-2023-03-23 16:46:18,103 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
-2023-03-23 16:46:18,110 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
-2023-03-23 16:46:18,112 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 3 meters. Out of which 3 has Customer entry.
-2023-03-23 16:46:18,112 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 3 meters =  0 seconds.
-2023-03-23 16:46:18,112 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 3 meters which have a Customer record.
+2023-03-23 16:46:18,103 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
+2023-03-23 16:46:18,110 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
+2023-03-23 16:46:18,112 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 3 meters. Out of which 3 has Customer entry.
+2023-03-23 16:46:18,112 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 3 meters =  0 seconds.
+2023-03-23 16:46:18,112 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 3 meters which have a Customer record.
 2023-03-23 16:46:18,112 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 75 input rows.
 2023-03-23 16:46:18,113 INFO com.cts.generator.ProcessInput [scheduling-1] Will process 75 records for json file - mBusFormat.
 2023-03-23 16:46:18,118 INFO com.cts.generator.CreateJSONForProfileIndexD0 [scheduling-1] There are 6 readings for timestamp = 00:00:00. Only readings @00:00:00 are relevant for creating dayStand payload.

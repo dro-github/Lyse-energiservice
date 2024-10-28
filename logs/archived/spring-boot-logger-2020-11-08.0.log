@@ -80,13 +80,13 @@
 2020-11-08 12:59:41,948 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 7 rows, out of which 7 have correct number format.
 2020-11-08 12:59:41,948 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 7 rows in less than a second.
 2020-11-08 12:59:41,948 INFO com.cts.generator.ProcessInput [scheduling-1] Received 7 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-08 12:59:41,958 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-08 12:59:41,958 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-08 12:59:42,101 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-08 12:59:50,408 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2020-11-08 12:59:50,456 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-08 12:59:50,456 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2020-11-08 12:59:50,456 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2020-11-08 12:59:50,456 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2020-11-08 12:59:50,408 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2020-11-08 12:59:50,456 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-08 12:59:50,456 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2020-11-08 12:59:50,456 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2020-11-08 12:59:50,456 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2020-11-08 12:59:50,456 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 7 input rows.
 2020-11-08 12:59:50,456 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2020-11-08 12:59:50,456 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 7 meters out of a total of 7 meters.
@@ -229,13 +229,13 @@
 2020-11-08 13:13:16,731 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 7 rows, out of which 7 have correct number format.
 2020-11-08 13:13:16,731 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 7 rows in less than a second.
 2020-11-08 13:13:16,731 INFO com.cts.generator.ProcessInput [scheduling-1] Received 7 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-08 13:13:16,731 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-08 13:13:16,731 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-08 13:13:16,894 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-08 13:13:23,543 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2020-11-08 13:13:23,559 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-08 13:13:23,559 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2020-11-08 13:13:23,559 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2020-11-08 13:13:23,559 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2020-11-08 13:13:23,543 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2020-11-08 13:13:23,559 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-08 13:13:23,559 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2020-11-08 13:13:23,559 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2020-11-08 13:13:23,559 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2020-11-08 13:13:23,559 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 7 input rows.
 2020-11-08 13:13:23,559 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2020-11-08 13:13:23,574 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 7 meters out of a total of 7 meters.
@@ -378,13 +378,13 @@
 2020-11-08 13:26:07,236 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 7 rows, out of which 7 have correct number format.
 2020-11-08 13:26:07,236 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 7 rows in less than a second.
 2020-11-08 13:26:07,236 INFO com.cts.generator.ProcessInput [scheduling-1] Received 7 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-08 13:26:07,236 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-08 13:26:07,236 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-08 13:26:07,360 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-08 13:26:14,305 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2020-11-08 13:26:14,352 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-08 13:26:14,352 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2020-11-08 13:26:14,352 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2020-11-08 13:26:14,352 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2020-11-08 13:26:14,305 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2020-11-08 13:26:14,352 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-08 13:26:14,352 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2020-11-08 13:26:14,352 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2020-11-08 13:26:14,352 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2020-11-08 13:26:14,352 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 7 input rows.
 2020-11-08 13:26:14,352 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2020-11-08 13:26:14,352 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 7 meters out of a total of 7 meters.
@@ -527,13 +527,13 @@
 2020-11-08 13:27:15,762 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 7 rows, out of which 7 have correct number format.
 2020-11-08 13:27:15,762 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 7 rows in less than a second.
 2020-11-08 13:27:15,762 INFO com.cts.generator.ProcessInput [scheduling-1] Received 7 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-08 13:27:15,762 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-08 13:27:15,762 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-08 13:27:15,905 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-08 13:27:22,951 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2020-11-08 13:27:22,968 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-08 13:27:22,968 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2020-11-08 13:27:22,968 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2020-11-08 13:27:22,968 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2020-11-08 13:27:22,951 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2020-11-08 13:27:22,968 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-08 13:27:22,968 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2020-11-08 13:27:22,968 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2020-11-08 13:27:22,968 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2020-11-08 13:27:22,968 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 7 input rows.
 2020-11-08 13:27:22,968 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2020-11-08 13:27:22,984 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 7 meters out of a total of 7 meters.
@@ -676,13 +676,13 @@
 2020-11-08 13:30:07,881 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 7 rows, out of which 7 have correct number format.
 2020-11-08 13:30:07,881 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 7 rows in less than a second.
 2020-11-08 13:30:07,881 INFO com.cts.generator.ProcessInput [scheduling-1] Received 7 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-08 13:30:07,889 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-08 13:30:07,889 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-08 13:30:08,014 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-08 13:30:14,666 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2020-11-08 13:30:14,697 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-08 13:30:14,697 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2020-11-08 13:30:14,697 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2020-11-08 13:30:14,697 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2020-11-08 13:30:14,666 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2020-11-08 13:30:14,697 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-08 13:30:14,697 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2020-11-08 13:30:14,697 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2020-11-08 13:30:14,697 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2020-11-08 13:30:14,697 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 7 input rows.
 2020-11-08 13:30:14,697 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2020-11-08 13:30:14,697 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 7 meters out of a total of 7 meters.
@@ -825,13 +825,13 @@
 2020-11-08 13:52:53,447 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 7 rows, out of which 7 have correct number format.
 2020-11-08 13:52:53,447 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 7 rows in less than a second.
 2020-11-08 13:52:53,447 INFO com.cts.generator.ProcessInput [scheduling-1] Received 7 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-08 13:52:53,462 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-08 13:52:53,462 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-08 13:52:53,562 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-08 13:53:00,395 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2020-11-08 13:53:00,427 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-08 13:53:00,427 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2020-11-08 13:53:00,427 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2020-11-08 13:53:00,427 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2020-11-08 13:53:00,395 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2020-11-08 13:53:00,427 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-08 13:53:00,427 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2020-11-08 13:53:00,427 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2020-11-08 13:53:00,427 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2020-11-08 13:53:00,427 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 7 input rows.
 2020-11-08 13:53:00,427 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2020-11-08 13:53:00,427 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 7 meters out of a total of 7 meters.
@@ -974,13 +974,13 @@
 2020-11-08 14:00:42,324 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 7 rows, out of which 7 have correct number format.
 2020-11-08 14:00:42,324 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 7 rows in less than a second.
 2020-11-08 14:00:42,324 INFO com.cts.generator.ProcessInput [scheduling-1] Received 7 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-08 14:00:42,324 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-08 14:00:42,324 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-08 14:00:42,462 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-08 14:00:49,555 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2020-11-08 14:00:49,589 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-08 14:00:49,589 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2020-11-08 14:00:49,589 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2020-11-08 14:00:49,589 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2020-11-08 14:00:49,555 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2020-11-08 14:00:49,589 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-08 14:00:49,589 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2020-11-08 14:00:49,589 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2020-11-08 14:00:49,589 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2020-11-08 14:00:49,589 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 7 input rows.
 2020-11-08 14:00:49,589 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2020-11-08 14:00:49,589 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 7 meters out of a total of 7 meters.
@@ -1123,13 +1123,13 @@
 2020-11-08 14:09:35,256 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 7 rows, out of which 7 have correct number format.
 2020-11-08 14:09:35,256 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 7 rows in less than a second.
 2020-11-08 14:09:35,256 INFO com.cts.generator.ProcessInput [scheduling-1] Received 7 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-08 14:09:35,256 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-08 14:09:35,256 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-08 14:09:35,372 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-08 14:09:42,295 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2020-11-08 14:09:42,327 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-08 14:09:42,327 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2020-11-08 14:09:42,327 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2020-11-08 14:09:42,327 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2020-11-08 14:09:42,295 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2020-11-08 14:09:42,327 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-08 14:09:42,327 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2020-11-08 14:09:42,327 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2020-11-08 14:09:42,327 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2020-11-08 14:09:42,327 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 7 input rows.
 2020-11-08 14:09:42,327 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2020-11-08 14:09:42,327 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 7 meters out of a total of 7 meters.
@@ -1273,13 +1273,13 @@
 2020-11-08 14:27:13,735 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 7 rows, out of which 7 have correct number format.
 2020-11-08 14:27:13,735 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 7 rows in less than a second.
 2020-11-08 14:27:13,735 INFO com.cts.generator.ProcessInput [scheduling-1] Received 7 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-08 14:27:13,743 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-08 14:27:13,743 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-08 14:27:13,886 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-08 14:27:20,857 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2020-11-08 14:27:20,888 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-08 14:27:20,888 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2020-11-08 14:27:20,888 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2020-11-08 14:27:20,888 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2020-11-08 14:27:20,857 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2020-11-08 14:27:20,888 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-08 14:27:20,888 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2020-11-08 14:27:20,888 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2020-11-08 14:27:20,888 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2020-11-08 14:27:20,888 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 7 input rows.
 2020-11-08 14:27:20,888 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2020-11-08 14:27:20,888 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 7 meters out of a total of 7 meters.
@@ -1423,13 +1423,13 @@
 2020-11-08 14:29:48,593 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 7 rows, out of which 7 have correct number format.
 2020-11-08 14:29:48,593 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 7 rows in less than a second.
 2020-11-08 14:29:48,593 INFO com.cts.generator.ProcessInput [scheduling-1] Received 7 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-08 14:29:48,593 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-08 14:29:48,593 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-08 14:29:48,783 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-08 14:29:55,512 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
-2020-11-08 14:29:55,543 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-08 14:29:55,543 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
-2020-11-08 14:29:55,543 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 1 meters =  0 seconds.
-2020-11-08 14:29:55,543 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
+2020-11-08 14:29:55,512 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 1 distinct meters. Will check for a Customer registry for each.
+2020-11-08 14:29:55,543 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-08 14:29:55,543 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 1 meters. Out of which 1 has Customer entry.
+2020-11-08 14:29:55,543 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 1 meters =  0 seconds.
+2020-11-08 14:29:55,543 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 1 meters which have a Customer record.
 2020-11-08 14:29:55,543 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 7 input rows.
 2020-11-08 14:29:55,543 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2020-11-08 14:29:55,543 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 7 meters out of a total of 7 meters.
@@ -1580,15 +1580,15 @@
 2020-11-08 14:39:20,544 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 24 rows, out of which 22 have correct number format.
 2020-11-08 14:39:20,544 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 24 rows in less than a second.
 2020-11-08 14:39:20,544 INFO com.cts.generator.ProcessInput [scheduling-1] Received 22 input rows, will check for an entry in customer for distinct meters in the input.
-2020-11-08 14:39:20,555 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-11-08 14:39:20,555 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-11-08 14:39:20,670 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-11-08 14:39:27,716 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
-2020-11-08 14:39:27,747 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
-2020-11-08 14:39:27,747 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9680, UNIT kWh, from internal local H2 DB.
-2020-11-08 14:39:27,747 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
-2020-11-08 14:39:27,747 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 3 meters. Out of which 3 has Customer entry.
-2020-11-08 14:39:27,747 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 3 meters =  0 seconds.
-2020-11-08 14:39:27,747 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 3 meters which have a Customer record.
+2020-11-08 14:39:27,716 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
+2020-11-08 14:39:27,747 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 12163501, UNIT kWh, from internal local H2 DB.
+2020-11-08 14:39:27,747 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9680, UNIT kWh, from internal local H2 DB.
+2020-11-08 14:39:27,747 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Got meter details for meter 9670, UNIT kWh, from internal local H2 DB.
+2020-11-08 14:39:27,747 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 3 meters. Out of which 3 has Customer entry.
+2020-11-08 14:39:27,747 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 3 meters =  0 seconds.
+2020-11-08 14:39:27,747 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 3 meters which have a Customer record.
 2020-11-08 14:39:27,747 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 22 input rows.
 2020-11-08 14:39:27,747 INFO com.cts.generator.ProcessInput [scheduling-1] Getting necessary details for mBusFormat.
 2020-11-08 14:39:27,747 INFO com.cts.generator.ProcessInput [scheduling-1] Necessary details collected for 22 meters out of a total of 22 meters.

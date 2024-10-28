@@ -31,54 +31,54 @@
 2020-06-29 07:49:46,390 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 24 rows, out of which 22 have correct number format.
 2020-06-29 07:49:46,390 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 24 rows in less than a second.
 2020-06-29 07:49:46,391 INFO com.cts.generator.ProcessInput [scheduling-1] Received 22 input rows, will check for an entry in customer for distinct meters in the input.
-2020-06-29 07:49:46,395 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-06-29 07:49:46,395 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-06-29 07:49:46,988 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-06-29 07:50:02,076 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 14 distinct meters. Will check for a Customer registry for each.
-2020-06-29 07:50:02,125 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter Dummy_6 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 07:50:03,156 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = Dummy_6. This meter is ignored. Exception message below:
-2020-06-29 07:50:03,157 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 07:50:03,158 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 07:50:03,203 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9680. This meter is ignored. Exception message below:
-2020-06-29 07:50:03,204 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 07:50:03,204 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter GHI in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 07:50:03,247 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = GHI. This meter is ignored. Exception message below:
-2020-06-29 07:50:03,248 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 07:50:03,248 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9673 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 07:50:03,290 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9673. This meter is ignored. Exception message below:
-2020-06-29 07:50:03,291 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 07:50:03,291 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter JKL in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 07:50:03,335 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = JKL. This meter is ignored. Exception message below:
-2020-06-29 07:50:03,335 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 07:50:03,336 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter MNO in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 07:50:03,378 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = MNO. This meter is ignored. Exception message below:
-2020-06-29 07:50:03,379 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 07:50:03,379 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9670 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 07:50:03,424 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9670. This meter is ignored. Exception message below:
-2020-06-29 07:50:03,424 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 07:50:03,425 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter PQR in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 07:50:03,468 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = PQR. This meter is ignored. Exception message below:
-2020-06-29 07:50:03,469 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 07:50:03,469 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter STU in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 07:50:03,511 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = STU. This meter is ignored. Exception message below:
-2020-06-29 07:50:03,512 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 07:50:03,512 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 965 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 07:50:03,554 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 965. This meter is ignored. Exception message below:
-2020-06-29 07:50:03,555 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 07:50:03,555 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter ABC in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 07:50:03,596 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = ABC. This meter is ignored. Exception message below:
-2020-06-29 07:50:03,596 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 07:50:03,597 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 810 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 07:50:03,640 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 810. This meter is ignored. Exception message below:
-2020-06-29 07:50:03,640 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 07:50:03,641 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter DEF in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 07:50:03,682 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = DEF. This meter is ignored. Exception message below:
-2020-06-29 07:50:03,683 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 07:50:03,683 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 104 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 07:50:03,725 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 104. This meter is ignored. Exception message below:
-2020-06-29 07:50:03,725 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 07:50:03,726 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 14 meters. Out of which 0 has Customer entry.
-2020-06-29 07:50:03,726 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 14 meters =  1 seconds.
-2020-06-29 07:50:03,726 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 0 meters which have a Customer record.
+2020-06-29 07:50:02,076 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 14 distinct meters. Will check for a Customer registry for each.
+2020-06-29 07:50:02,125 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter Dummy_6 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,156 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = Dummy_6. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,157 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 07:50:03,158 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,203 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 9680. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,204 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 07:50:03,204 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter GHI in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,247 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = GHI. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,248 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 07:50:03,248 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 9673 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,290 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 9673. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,291 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 07:50:03,291 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter JKL in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,335 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = JKL. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,335 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 07:50:03,336 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter MNO in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,378 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = MNO. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,379 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 07:50:03,379 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 9670 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,424 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 9670. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,424 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 07:50:03,425 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter PQR in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,468 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = PQR. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,469 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 07:50:03,469 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter STU in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,511 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = STU. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,512 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 07:50:03,512 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 965 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,554 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 965. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,555 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 07:50:03,555 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter ABC in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,596 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = ABC. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,596 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 07:50:03,597 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 810 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,640 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 810. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,640 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 07:50:03,641 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter DEF in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,682 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = DEF. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,683 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 07:50:03,683 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 104 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,725 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 104. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,725 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 07:50:03,726 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 14 meters. Out of which 0 has Customer entry.
+2020-06-29 07:50:03,726 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 14 meters =  1 seconds.
+2020-06-29 07:50:03,726 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 0 meters which have a Customer record.
 2020-06-29 07:50:03,727 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 0 input rows.
 2020-06-29 07:50:03,727 INFO com.cts.controller.Controller [scheduling-1] No output created from file Test_circutorplc_TimestampRead_1593409786225.txt. This might be due to wrong input at all rows, corrupt file or no input to be processed into a transaction, e.g. no stand hour between 23:00 and 01:00.
 2020-06-29 07:50:03,729 INFO com.cts.ioutils.DeviationReportWriter [scheduling-1] Publish Deviation Report = TRUE
@@ -98,20 +98,20 @@
 2020-06-29 07:50:03,754 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 12 rows, out of which 12 have correct number format.
 2020-06-29 07:50:03,754 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 12 rows in less than a second.
 2020-06-29 07:50:03,754 INFO com.cts.generator.ProcessInput [scheduling-1] Received 12 input rows, will check for an entry in customer for distinct meters in the input.
-2020-06-29 07:50:03,754 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
-2020-06-29 07:50:03,764 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
-2020-06-29 07:50:03,765 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 07:50:03,811 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9680. This meter is ignored. Exception message below:
-2020-06-29 07:50:03,811 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 07:50:03,812 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9670 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 07:50:03,859 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9670. This meter is ignored. Exception message below:
-2020-06-29 07:50:03,860 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 07:50:03,860 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 965 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 07:50:03,905 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 965. This meter is ignored. Exception message below:
-2020-06-29 07:50:03,906 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 07:50:03,906 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 3 meters. Out of which 0 has Customer entry.
-2020-06-29 07:50:03,906 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 3 meters =  0 seconds.
-2020-06-29 07:50:03,906 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 0 meters which have a Customer record.
+2020-06-29 07:50:03,754 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
+2020-06-29 07:50:03,764 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
+2020-06-29 07:50:03,765 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,811 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 9680. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,811 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 07:50:03,812 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 9670 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,859 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 9670. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,860 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 07:50:03,860 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 965 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,905 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 965. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,906 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 07:50:03,906 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 3 meters. Out of which 0 has Customer entry.
+2020-06-29 07:50:03,906 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 3 meters =  0 seconds.
+2020-06-29 07:50:03,906 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 0 meters which have a Customer record.
 2020-06-29 07:50:03,906 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 0 input rows.
 2020-06-29 07:50:03,907 INFO com.cts.controller.Controller [scheduling-1] No output created from file Test_circutorplc_2mps_TimestampRead_1593409786238.txt. This might be due to wrong input at all rows, corrupt file or no input to be processed into a transaction, e.g. no stand hour between 23:00 and 01:00.
 2020-06-29 07:50:03,908 INFO com.cts.ioutils.DeviationReportWriter [scheduling-1] Publish Deviation Report = TRUE
@@ -131,17 +131,17 @@
 2020-06-29 07:50:03,928 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 9 rows, out of which 9 have correct number format.
 2020-06-29 07:50:03,928 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 9 rows in less than a second.
 2020-06-29 07:50:03,928 INFO com.cts.generator.ProcessInput [scheduling-1] Received 9 input rows, will check for an entry in customer for distinct meters in the input.
-2020-06-29 07:50:03,928 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
-2020-06-29 07:50:03,942 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
-2020-06-29 07:50:03,943 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 07:50:03,992 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9680. This meter is ignored. Exception message below:
-2020-06-29 07:50:03,992 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 07:50:03,992 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9670 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 07:50:04,035 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9670. This meter is ignored. Exception message below:
-2020-06-29 07:50:04,036 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 07:50:04,036 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 2 meters. Out of which 0 has Customer entry.
-2020-06-29 07:50:04,036 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 2 meters =  0 seconds.
-2020-06-29 07:50:04,036 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 0 meters which have a Customer record.
+2020-06-29 07:50:03,928 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
+2020-06-29 07:50:03,942 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
+2020-06-29 07:50:03,943 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:03,992 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 9680. This meter is ignored. Exception message below:
+2020-06-29 07:50:03,992 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 07:50:03,992 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 9670 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 07:50:04,035 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 9670. This meter is ignored. Exception message below:
+2020-06-29 07:50:04,036 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 07:50:04,036 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 2 meters. Out of which 0 has Customer entry.
+2020-06-29 07:50:04,036 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 2 meters =  0 seconds.
+2020-06-29 07:50:04,036 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 0 meters which have a Customer record.
 2020-06-29 07:50:04,036 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 0 input rows.
 2020-06-29 07:50:04,036 INFO com.cts.controller.Controller [scheduling-1] No output created from file Test_circutorplc_Test_TS_With_gaps_1_TimestampRead_1593409786244.txt. This might be due to wrong input at all rows, corrupt file or no input to be processed into a transaction, e.g. no stand hour between 23:00 and 01:00.
 2020-06-29 07:50:04,037 INFO com.cts.ioutils.DeviationReportWriter [scheduling-1] Publish Deviation Report = TRUE
@@ -242,54 +242,54 @@
 2020-06-29 08:11:18,927 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 24 rows, out of which 22 have correct number format.
 2020-06-29 08:11:18,928 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 24 rows in less than a second.
 2020-06-29 08:11:18,928 INFO com.cts.generator.ProcessInput [scheduling-1] Received 22 input rows, will check for an entry in customer for distinct meters in the input.
-2020-06-29 08:11:18,933 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-06-29 08:11:18,933 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-06-29 08:11:19,254 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-06-29 08:11:34,238 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 14 distinct meters. Will check for a Customer registry for each.
-2020-06-29 08:11:34,268 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter Dummy_6 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 08:11:35,017 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = Dummy_6. This meter is ignored. Exception message below:
-2020-06-29 08:11:35,017 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 08:11:35,018 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 08:11:35,076 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9680. This meter is ignored. Exception message below:
-2020-06-29 08:11:35,076 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 08:11:35,076 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter GHI in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 08:11:35,135 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = GHI. This meter is ignored. Exception message below:
-2020-06-29 08:11:35,136 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 08:11:35,137 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9673 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 08:11:35,194 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9673. This meter is ignored. Exception message below:
-2020-06-29 08:11:35,195 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 08:11:35,196 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter JKL in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 08:11:35,249 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = JKL. This meter is ignored. Exception message below:
-2020-06-29 08:11:35,250 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 08:11:35,250 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter MNO in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 08:11:35,305 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = MNO. This meter is ignored. Exception message below:
-2020-06-29 08:11:35,306 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 08:11:35,306 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9670 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 08:11:35,360 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9670. This meter is ignored. Exception message below:
-2020-06-29 08:11:35,360 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 08:11:35,361 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter PQR in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 08:11:35,415 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = PQR. This meter is ignored. Exception message below:
-2020-06-29 08:11:35,415 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 08:11:35,416 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter STU in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 08:11:35,521 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = STU. This meter is ignored. Exception message below:
-2020-06-29 08:11:35,522 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 08:11:35,522 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 965 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 08:11:35,577 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 965. This meter is ignored. Exception message below:
-2020-06-29 08:11:35,577 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 08:11:35,578 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter ABC in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 08:11:35,635 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = ABC. This meter is ignored. Exception message below:
-2020-06-29 08:11:35,635 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 08:11:35,636 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 810 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 08:11:35,690 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 810. This meter is ignored. Exception message below:
-2020-06-29 08:11:35,690 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 08:11:35,691 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter DEF in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 08:11:35,744 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = DEF. This meter is ignored. Exception message below:
-2020-06-29 08:11:35,744 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 08:11:35,744 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 104 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 08:11:35,798 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 104. This meter is ignored. Exception message below:
-2020-06-29 08:11:35,798 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 08:11:35,798 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 14 meters. Out of which 0 has Customer entry.
-2020-06-29 08:11:35,798 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 14 meters =  1 seconds.
-2020-06-29 08:11:35,799 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 0 meters which have a Customer record.
+2020-06-29 08:11:34,238 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 14 distinct meters. Will check for a Customer registry for each.
+2020-06-29 08:11:34,268 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter Dummy_6 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,017 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = Dummy_6. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,017 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 08:11:35,018 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,076 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 9680. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,076 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 08:11:35,076 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter GHI in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,135 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = GHI. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,136 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 08:11:35,137 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 9673 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,194 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 9673. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,195 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 08:11:35,196 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter JKL in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,249 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = JKL. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,250 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 08:11:35,250 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter MNO in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,305 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = MNO. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,306 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 08:11:35,306 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 9670 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,360 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 9670. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,360 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 08:11:35,361 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter PQR in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,415 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = PQR. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,415 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 08:11:35,416 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter STU in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,521 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = STU. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,522 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 08:11:35,522 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 965 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,577 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 965. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,577 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 08:11:35,578 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter ABC in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,635 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = ABC. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,635 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 08:11:35,636 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 810 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,690 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 810. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,690 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 08:11:35,691 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter DEF in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,744 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = DEF. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,744 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 08:11:35,744 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 104 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,798 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 104. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,798 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 08:11:35,798 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 14 meters. Out of which 0 has Customer entry.
+2020-06-29 08:11:35,798 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 14 meters =  1 seconds.
+2020-06-29 08:11:35,799 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 0 meters which have a Customer record.
 2020-06-29 08:11:35,799 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 0 input rows.
 2020-06-29 08:11:35,799 INFO com.cts.controller.Controller [scheduling-1] No output created from file Test_circutorplc_TimestampRead_1593411078709.txt. This might be due to wrong input at all rows, corrupt file or no input to be processed into a transaction, e.g. no stand hour between 23:00 and 01:00.
 2020-06-29 08:11:35,801 INFO com.cts.ioutils.DeviationReportWriter [scheduling-1] Publish Deviation Report = TRUE
@@ -309,20 +309,20 @@
 2020-06-29 08:11:35,818 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 12 rows, out of which 12 have correct number format.
 2020-06-29 08:11:35,818 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 12 rows in less than a second.
 2020-06-29 08:11:35,818 INFO com.cts.generator.ProcessInput [scheduling-1] Received 12 input rows, will check for an entry in customer for distinct meters in the input.
-2020-06-29 08:11:35,818 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
-2020-06-29 08:11:35,828 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
-2020-06-29 08:11:35,829 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 08:11:35,886 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9680. This meter is ignored. Exception message below:
-2020-06-29 08:11:35,887 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 08:11:35,887 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9670 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 08:11:35,943 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9670. This meter is ignored. Exception message below:
-2020-06-29 08:11:35,943 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 08:11:35,943 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 965 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 08:11:35,996 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 965. This meter is ignored. Exception message below:
-2020-06-29 08:11:35,996 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 08:11:35,997 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 3 meters. Out of which 0 has Customer entry.
-2020-06-29 08:11:35,997 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 3 meters =  0 seconds.
-2020-06-29 08:11:35,997 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 0 meters which have a Customer record.
+2020-06-29 08:11:35,818 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
+2020-06-29 08:11:35,828 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
+2020-06-29 08:11:35,829 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,886 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 9680. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,887 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 08:11:35,887 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 9670 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,943 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 9670. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,943 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 08:11:35,943 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 965 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:35,996 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 965. This meter is ignored. Exception message below:
+2020-06-29 08:11:35,996 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 08:11:35,997 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 3 meters. Out of which 0 has Customer entry.
+2020-06-29 08:11:35,997 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 3 meters =  0 seconds.
+2020-06-29 08:11:35,997 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 0 meters which have a Customer record.
 2020-06-29 08:11:35,997 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 0 input rows.
 2020-06-29 08:11:35,997 INFO com.cts.controller.Controller [scheduling-1] No output created from file Test_circutorplc_2mps_TimestampRead_1593411078726.txt. This might be due to wrong input at all rows, corrupt file or no input to be processed into a transaction, e.g. no stand hour between 23:00 and 01:00.
 2020-06-29 08:11:35,998 INFO com.cts.ioutils.DeviationReportWriter [scheduling-1] Publish Deviation Report = TRUE
@@ -342,17 +342,17 @@
 2020-06-29 08:11:36,012 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 9 rows, out of which 9 have correct number format.
 2020-06-29 08:11:36,012 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 9 rows in less than a second.
 2020-06-29 08:11:36,012 INFO com.cts.generator.ProcessInput [scheduling-1] Received 9 input rows, will check for an entry in customer for distinct meters in the input.
-2020-06-29 08:11:36,013 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
-2020-06-29 08:11:36,020 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
-2020-06-29 08:11:36,020 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 08:11:36,078 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9680. This meter is ignored. Exception message below:
-2020-06-29 08:11:36,078 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 08:11:36,079 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9670 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 08:11:36,130 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9670. This meter is ignored. Exception message below:
-2020-06-29 08:11:36,131 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 08:11:36,131 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 2 meters. Out of which 0 has Customer entry.
-2020-06-29 08:11:36,131 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 2 meters =  0 seconds.
-2020-06-29 08:11:36,131 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 0 meters which have a Customer record.
+2020-06-29 08:11:36,013 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
+2020-06-29 08:11:36,020 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 2 distinct meters. Will check for a Customer registry for each.
+2020-06-29 08:11:36,020 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:36,078 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 9680. This meter is ignored. Exception message below:
+2020-06-29 08:11:36,078 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 08:11:36,079 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 9670 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:11:36,130 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 9670. This meter is ignored. Exception message below:
+2020-06-29 08:11:36,131 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 08:11:36,131 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 2 meters. Out of which 0 has Customer entry.
+2020-06-29 08:11:36,131 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 2 meters =  0 seconds.
+2020-06-29 08:11:36,131 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 0 meters which have a Customer record.
 2020-06-29 08:11:36,131 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 0 input rows.
 2020-06-29 08:11:36,131 INFO com.cts.controller.Controller [scheduling-1] No output created from file Test_circutorplc_Test_TS_With_gaps_1_TimestampRead_1593411078732.txt. This might be due to wrong input at all rows, corrupt file or no input to be processed into a transaction, e.g. no stand hour between 23:00 and 01:00.
 2020-06-29 08:11:36,131 INFO com.cts.ioutils.DeviationReportWriter [scheduling-1] Publish Deviation Report = TRUE
@@ -444,21 +444,21 @@
 2020-06-29 08:14:44,818 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Completed checking 12 rows, out of which 12 have correct number format.
 2020-06-29 08:14:44,819 INFO com.cts.utils.VerifyNumberFormat [scheduling-1] Checked number for 12 rows in less than a second.
 2020-06-29 08:14:44,819 INFO com.cts.generator.ProcessInput [scheduling-1] Received 12 input rows, will check for an entry in customer for distinct meters in the input.
-2020-06-29 08:14:44,822 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Starting to check for Customer record.
+2020-06-29 08:14:44,822 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Starting to check for Customer record.
 2020-06-29 08:14:45,139 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-06-29 08:14:58,961 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
-2020-06-29 08:14:58,991 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 08:14:59,691 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9680. This meter is ignored. Exception message below:
-2020-06-29 08:14:59,691 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 08:14:59,692 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 9670 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 08:14:59,749 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 9670. This meter is ignored. Exception message below:
-2020-06-29 08:14:59,750 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 08:14:59,752 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Could not find meter 965 in the base of previously checked meters, will try to get details by API call to ISCU.
-2020-06-29 08:14:59,812 WARN com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] could not get UNIT value for meter_id = 965. This meter is ignored. Exception message below:
-2020-06-29 08:14:59,813 ERROR com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] null
-2020-06-29 08:14:59,813 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] So far checked 3 meters. Out of which 0 has Customer entry.
-2020-06-29 08:14:59,814 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Time to check 3 meters =  0 seconds.
-2020-06-29 08:14:59,814 INFO com.cts.customerGateway.CheckMeterInCustomer [scheduling-1] Completed check for entry in Customer, found 0 meters which have a Customer record.
+2020-06-29 08:14:58,961 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Found 3 distinct meters. Will check for a Customer registry for each.
+2020-06-29 08:14:58,991 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 9680 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:14:59,691 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 9680. This meter is ignored. Exception message below:
+2020-06-29 08:14:59,691 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 08:14:59,692 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 9670 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:14:59,749 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 9670. This meter is ignored. Exception message below:
+2020-06-29 08:14:59,750 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 08:14:59,752 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Could not find meter 965 in the base of previously checked meters, will try to get details by API call to ISCU.
+2020-06-29 08:14:59,812 WARN com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] could not get UNIT value for meter_id = 965. This meter is ignored. Exception message below:
+2020-06-29 08:14:59,813 ERROR com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] null
+2020-06-29 08:14:59,813 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] So far checked 3 meters. Out of which 0 has Customer entry.
+2020-06-29 08:14:59,814 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Time to check 3 meters =  0 seconds.
+2020-06-29 08:14:59,814 INFO com.cts.nanoMeteringGateway.CheckUnitInNanoMetering [scheduling-1] Completed check for entry in Customer, found 0 meters which have a Customer record.
 2020-06-29 08:14:59,815 INFO com.cts.generator.ProcessInput [scheduling-1] proceeding to process 0 input rows.
 2020-06-29 08:14:59,816 INFO com.cts.controller.Controller [scheduling-1] No output created from file Test_circutorplc_2mps_TimestampRead_1593411284711.txt. This might be due to wrong input at all rows, corrupt file or no input to be processed into a transaction, e.g. no stand hour between 23:00 and 01:00.
 2020-06-29 08:14:59,822 INFO com.cts.ioutils.DeviationReportWriter [scheduling-1] Publish Deviation Report = TRUE
