@@ -16,7 +16,7 @@ public class MeasurementVolumeJsonGeneratorForForbruk {
     private final List<String> allJsonFiles = new ArrayList<>();
 
     public MeasurementVolumeJsonGeneratorForForbruk(List<ProfileIndexArgs> jsonPayloads, int resolution, int maxTransactionsPerFile) throws JsonProcessingException {
-        DateTimeFormatter jsonOutput = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssZZ");
+        DateTimeFormatter jsonOutput = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssxxx");
         MeasurementsVolumesMessages msg = new MeasurementsVolumesMessages();
         ObjectMapper mpr = new ObjectMapper();
         msg.measurementMessages = new ArrayList<>();

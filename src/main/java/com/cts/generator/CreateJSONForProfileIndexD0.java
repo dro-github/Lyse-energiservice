@@ -14,7 +14,7 @@ public class CreateJSONForProfileIndexD0 {
 
     private List<String> listOfJSONFiles;
     private final Logger logger = LoggerFactory.getLogger(getClass());
-    private final DateTimeFormatter input = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssZZ");
+    private final DateTimeFormatter input = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssxxx");
     private final Map<String,String>formatNameToFormatReference;
 
     public CreateJSONForProfileIndexD0(Map<String,String>formatNameToFormatReference,String currentFileFormat,Map<String,String> formatNameToDateFormat,List<String[]> payloadDetailsForIndex, JdbcTemplate jdbcTemplate, int maxTransactionsPerFile,boolean publishHourlyStand) throws JsonProcessingException {

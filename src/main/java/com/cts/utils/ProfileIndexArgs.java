@@ -40,15 +40,15 @@ public class ProfileIndexArgs {
         this.deviceId = row[0];
         this.jdbcTemplate = jdbcTemplate;
         inputFormat = DateTimeFormatter.ofPattern(currentFileDateFormat);
-        jsonOutput = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssxx");
+        jsonOutput = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssxxx");
         unit = getUnitFromH2DB(deviceId);
         if (unit.equalsIgnoreCase("M3")){
             unit = "m3";
         }
         sensorType = getSensorType();
         direction = "Downstream";
-        readTime = setReadTime(row[1]);//Parsed using real-time timeZone (gmt+1/winter and gmt+2/DST - summer).;
-        readTimeForHourlyTransaction = setReadTime(row[1]);//Hourly reading are received and registered in current
+        readTime = setReadTime(currentFileFormat,row[1]);//Parsed using real-time timeZone (gmt+1/winter and gmt+2/DST - summer).;
+        readTimeForHourlyTransaction = setReadTime(currentFileFormat,row[1]);//Hourly reading are received and registered in current
         /*TODO - For resending of old files after introducing hourly stand - make sure that hourlyStand (ONLY HOURLY STAND! NOT DayStand!) is assigned in UTC.
         *  If offset reference from config file is UTC then parse in UTC - call to setHourlyReadTimeFromInputInUTC(String dateFromInput) - Won't reject based on DST transition days. */
         originType = setOriginType(row);
@@ -59,14 +59,26 @@ public class ProfileIndexArgs {
         toTime = getFromOrToTimeForVolume(currentFileFormat,row,2);
     }
 
-    private String setReadTime(String dateFromInput) {
-        try{
-            LocalDateTime ldt = LocalDateTime.parse(dateFromInput,inputFormat);
-            ZonedDateTime zdt = ldt.atZone(ZoneId.of("Europe/Oslo"));
-            return jsonOutput.format(zdt);
-        }catch (Exception e){
-            logger.info("Non-parsable date was detected {}. Hourly stand transaction will be created with GMT offset = +1 for the entire year. Message: {}",dateFromInput,e.getMessage());
-            return null;
+    private String setReadTime(String currentFileFormat,String dateFromInput) {
+        if (currentFileFormat.equalsIgnoreCase("MVV")) {
+            try {
+                LocalDateTime ldt = LocalDateTime.parse(dateFromInput, inputFormat);
+                ZonedDateTime zdt = ldt.atZone(ZoneId.of("Europe/Oslo"));
+                return jsonOutput.format(zdt);
+            } catch (Exception e) {
+                logger.info("FileFormat = MVV. Non-parsable date was detected {}. Hourly stand transaction will be created with GMT offset = +1 for the entire year. Message: {}",dateFromInput, e.getMessage());
+                return null;
+            }
+        }
+        else {
+            try {
+                LocalDate ld = LocalDate.parse(dateFromInput, inputFormat);
+                ZonedDateTime zdt = ld.atStartOfDay().atZone(ZoneId.of("Europe/Oslo"));
+                return jsonOutput.format(zdt);
+            } catch (Exception e) {
+                logger.info("FileFormat = Zaptec. Non-parsable date was detected {}. Hourly stand transaction will be created with GMT offset = +1 for the entire year. Message: {}", dateFromInput, e.getMessage());
+                return null;
+            }
         }
     }
 

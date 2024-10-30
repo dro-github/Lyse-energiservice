@@ -3,6 +3,8 @@ package com.cts.utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
@@ -55,15 +57,21 @@ public class GroupInputPerMeter {
             Comparator<String[]> compByDate = Comparator.comparing((String[] o) -> ZonedDateTime.parse(o[1],inputFormat));
             occurrencesForOneMeter.sort(compByDate);
             return occurrencesForOneMeter;
-        }catch (IllegalArgumentException e){
-            try {
-                DateTimeFormatter withoutGMT = DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm:ss");
-                Comparator<String[]> compByDate = Comparator.comparing((String[] o) -> ZonedDateTime.parse(o[1],withoutGMT));
+        }catch (java.time.format.DateTimeParseException ex){
+            try{
+                Comparator<String[]> compByDate = Comparator.comparing((String[] o) -> LocalDate.parse(o[1],inputFormat));
                 occurrencesForOneMeter.sort(compByDate);
                 return occurrencesForOneMeter;
-            }catch (IllegalArgumentException ex){
-                logger.info("Date format does not match any known date format");
-                return occurrencesForOneMeter;
+            } catch (IllegalArgumentException e){
+                try {
+                    DateTimeFormatter withoutGMT = DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm:ss");
+                    Comparator<String[]> compByDate = Comparator.comparing((String[] o) -> LocalDateTime.parse(o[1],withoutGMT));
+                    occurrencesForOneMeter.sort(compByDate);
+                    return occurrencesForOneMeter;
+                }catch (Exception exe){
+                    logger.info("Date format does not match any known date format");
+                    return occurrencesForOneMeter;
+                }
             }
         }
     }

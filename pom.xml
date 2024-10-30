@@ -121,12 +121,6 @@
                     <source>10</source>
                     <target>10</target>
                 </configuration>
-                <!--
-                                <configuration>
-                                    <source>11</source>
-                                    <target>11</target>
-                                </configuration>
-                -->
             </plugin>
 
         </plugins>

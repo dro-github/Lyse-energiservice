@@ -14,7 +14,7 @@ public class MeasurementJsonGeneratorForMBus {
     private final List<String> allJsonFiles = new ArrayList<>();
 
     public MeasurementJsonGeneratorForMBus(String transactionType, List<ProfileIndexArgs> jsonPayloads,int resolution, int maxTransactionsPerFile) throws JsonProcessingException {
-        DateTimeFormatter jsonOutput = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssxx");
+        DateTimeFormatter jsonOutput = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssxxx");
         MeasurementMessages msg = new MeasurementMessages();
         ObjectMapper mpr = new ObjectMapper();
         msg.measurementMessages = new ArrayList<>();
